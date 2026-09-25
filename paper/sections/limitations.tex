@@ -1,0 +1,32 @@
+\section{Limitations}
+\label{sec:limitations}
+
+We state the boundaries of the evidence plainly, because a negative result is only as
+useful as its scope is honest.
+
+\textbf{Scope of the negatives.} The three studies are scoped, not universal. Q17 covers
+two assets and eight paired dates under a quote-based utility that uses quote endpoints and
+assumed costs. It does not observe realized fills, endogenous market impact, funding, or
+queue priority, so it is a decision-utility statement, not a live-trading profitability
+statement. Q18 uses sampled-L2 receipt-clock data over nine dates. Its date panel is small
+and its intervals are wide, so it rejects a simple sufficiency rule rather than proving
+that depth never helps. Q16's reconstruction diagnostic uses development-exposed dates and
+is descriptive rather than a pristine prospective holdout.
+
+\textbf{Data realism.} Provider receipt time is uncalibrated against exchange time, and the
+sampled-L2 feed does not establish native queue priority or calibrated latency. Where an
+entity or feed could not be certified, the corresponding claim is withheld. The
+native-FIFO Q16 endpoint (Section~\ref{sec:synthesis}) is the clearest such withholding.
+
+\textbf{Estimation confounds.} Several neural fits reached their fixed iteration budget,
+and their warnings are preserved rather than suppressed. Full-depth neural underperformance
+can therefore reflect an optimization limit rather than an information limit. Because
+changing only that family cannot rescue a result that requires agreement across families,
+we do not lean on any single neural cell.
+
+\textbf{What we do not claim.} We do not claim that information is worthless, that richer
+feeds should never be purchased, or that these negatives generalize to other venues,
+horizons, or asset classes. We claim that, measured at the decision with everything else
+held fixed, the value of more and better-reconstructed market information was small,
+conditional, and fragile to the policy and cost layer, across three questions on real
+data.

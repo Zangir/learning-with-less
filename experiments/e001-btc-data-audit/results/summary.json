@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-001"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "A reproducibility gate for later experiments; it does not itself reproduce a market result.",
+  "result_records": [
+    {
+      "result_id": "R-001",
+      "experiment_id": "E-001",
+      "protocol_revision": 1,
+      "source_task_id": "T-001",
+      "reported_at": "2026-09-19T19:11:07.847141+04:00",
+      "summary": "Fresh original synthetic checks and bounded real BTC first-hour integrity/schema audit; not market replications.",
+      "limitations": [
+        "Initial replay state and clock uncertified",
+        "One development hour only",
+        "Original synthetic source checks are separate from real-data results"
+      ],
+      "revision": 1
+    }
+  ]
+}

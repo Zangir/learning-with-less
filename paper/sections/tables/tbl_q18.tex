@@ -1,0 +1,56 @@
+\begin{longtable}{lllllrr}
+\caption{Q18 depth/history/delay factorial: relative-loss gap of the full depth+history
+view against the reduced view (positive favors the richer view), with simultaneous upper
+bounds on transfer dates. Source: \texttt{experiments/results/q18\_contrasts.csv}.}
+\label{tab:q18}\\
+\toprule
+stage & asset & model & delay & factor & rel.\ loss & sim.\ upper \\
+\midrule
+\endfirsthead
+\toprule
+stage & asset & model & delay & factor & rel.\ loss & sim.\ upper \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+pilot & BTC & logistic & 0 & depth & 0.009179 & -- \\
+pilot & BTC & logistic & 0 & history & 0.020433 & -- \\
+pilot & BTC & logistic & 55 & depth & -0.006219 & -- \\
+pilot & BTC & logistic & 55 & history & 0.012249 & -- \\
+pilot & BTC & hist\_gb & 0 & depth & 0.015945 & -- \\
+pilot & BTC & hist\_gb & 0 & history & 0.022297 & -- \\
+pilot & BTC & hist\_gb & 55 & depth & 0.020958 & -- \\
+pilot & BTC & hist\_gb & 55 & history & 0.019063 & -- \\
+pilot & ETH & logistic & 0 & depth & -0.003899 & -- \\
+pilot & ETH & logistic & 0 & history & -0.011585 & -- \\
+pilot & ETH & logistic & 55 & depth & -0.056422 & -- \\
+pilot & ETH & logistic & 55 & history & -0.016132 & -- \\
+pilot & ETH & hist\_gb & 0 & depth & 0.078818 & -- \\
+pilot & ETH & hist\_gb & 0 & history & 0.021399 & -- \\
+pilot & ETH & hist\_gb & 55 & depth & 0.008940 & -- \\
+pilot & ETH & hist\_gb & 55 & history & 0.019923 & -- \\
+transfer & BTC & logistic & 0 & depth & 0.077166 & 0.239233 \\
+transfer & BTC & logistic & 0 & history & -0.011160 & 0.043219 \\
+transfer & BTC & logistic & 55 & depth & 0.015667 & 0.070315 \\
+transfer & BTC & logistic & 55 & history & -0.047349 & 0.013859 \\
+transfer & BTC & hist\_gb & 0 & depth & -0.035137 & 0.014592 \\
+transfer & BTC & hist\_gb & 0 & history & 0.028600 & 0.035509 \\
+transfer & BTC & hist\_gb & 55 & depth & -0.011948 & 0.016189 \\
+transfer & BTC & hist\_gb & 55 & history & 0.008541 & 0.011751 \\
+transfer & BTC & mlp & 0 & depth & -0.001089 & 0.083898 \\
+transfer & BTC & mlp & 0 & history & 0.053874 & 0.140525 \\
+transfer & BTC & mlp & 55 & depth & -0.048831 & -0.026603 \\
+transfer & BTC & mlp & 55 & history & -0.035745 & 0.071483 \\
+transfer & ETH & logistic & 0 & depth & 0.103533 & 0.303054 \\
+transfer & ETH & logistic & 0 & history & 0.021481 & 0.080885 \\
+transfer & ETH & logistic & 55 & depth & 0.089966 & 0.218659 \\
+transfer & ETH & logistic & 55 & history & 0.004337 & 0.084905 \\
+transfer & ETH & hist\_gb & 0 & depth & 0.006368 & 0.112091 \\
+transfer & ETH & hist\_gb & 0 & history & 0.048809 & 0.068430 \\
+transfer & ETH & hist\_gb & 55 & depth & -0.012304 & -0.008693 \\
+transfer & ETH & hist\_gb & 55 & history & 0.025069 & 0.048440 \\
+transfer & ETH & mlp & 0 & depth & -0.038786 & 0.203815 \\
+transfer & ETH & mlp & 0 & history & 0.082120 & 0.134936 \\
+transfer & ETH & mlp & 55 & depth & -0.067779 & 0.148440 \\
+transfer & ETH & mlp & 55 & history & 0.075997 & 0.140244 \\
+\end{longtable}

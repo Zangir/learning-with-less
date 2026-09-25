@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-001"
+  ],
+  "question_ids": [
+    "Q-001"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-001"
+  ],
+  "result_ids": [
+    "R-001"
+  ],
+  "review_ids": [
+    "RV-001"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [],
+  "source_commits": [],
+  "remote_archive_branches": [],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "source-report.md",
+      "sha256": "e525357bb3d142247b0c92178fcf0bc198b8222dc3678cfbaba25e3da1e3af86",
+      "size_bytes": 12108
+    },
+    {
+      "path": "results/sample-audit.json",
+      "sha256": "38c6494125b344258fda182ca85e240343330af3c09fe73e84583d475d8638cf",
+      "size_bytes": 2598
+    },
+    {
+      "path": "results/baseline-checks.json",
+      "sha256": "38ec16cbd4a6cbb572059c70c1339fec88540dae198721766087b2e431b622d0",
+      "size_bytes": 3569
+    },
+    {
+      "path": "results/replication-plan.json",
+      "sha256": "a53bf582af75b57cbc4c6708573af9529c99eb1c033e816ad71948e1a39ba05c",
+      "size_bytes": 2359
+    }
+  ]
+}

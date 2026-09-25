@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-273"
+  ],
+  "question_ids": [
+    "Q-001",
+    "Q-026"
+  ],
+  "hypothesis_ids": [
+    "H-027"
+  ],
+  "task_ids": [
+    "T-023",
+    "T-024"
+  ],
+  "result_ids": [
+    "R-044"
+  ],
+  "review_ids": [
+    "RV-042"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [
+    "feat/t023-book-washout-mini"
+  ],
+  "source_commits": [
+    "6e3f98c33272ace1cbbbee6f0b046b7d0b318d77"
+  ],
+  "remote_archive_branches": [
+    "old/t023-book-washout-mini"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "figures/main.png",
+      "sha256": "382dfbaaf490e3b0ff2960cfeee890a18a89c74632363a7ae18f3d2d02026133",
+      "size_bytes": 302199
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "b4729b2702d5de089328d56c559f3618424aa59cf547d1e3a3274e9e263bf23b",
+      "size_bytes": 4308155
+    },
+    {
+      "path": "results/knowledge-coverage-by-hour.csv",
+      "sha256": "2e7ecd5da68411bd993f8ea4c8f3b9f1276bb60636c16c0268ce44a445cec623",
+      "size_bytes": 2243
+    }
+  ],
+  "dataset": {
+    "record": "Zenodo 18184441",
+    "file": "book_diffs_202512.tar",
+    "asset": "BTC",
+    "window_utc": "2025-12-01T00:00:00Z/2025-12-03T00:00:00Z"
+  }
+}

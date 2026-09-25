@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-016",
+    "E-266"
+  ],
+  "question_ids": [
+    "Q-001"
+  ],
+  "hypothesis_ids": [
+    "H-001"
+  ],
+  "task_ids": [
+    "T-001",
+    "T-009",
+    "T-019"
+  ],
+  "result_ids": [
+    "R-006",
+    "R-013",
+    "R-015",
+    "R-016",
+    "R-035",
+    "R-039"
+  ],
+  "review_ids": [
+    "RV-004",
+    "RV-009",
+    "RV-012",
+    "RV-014",
+    "RV-033",
+    "RV-037"
+  ],
+  "protocol_revisions": [
+    4,
+    1
+  ],
+  "source_branches": [
+    "feat/t009-q16-hyperliquid",
+    "feat/t019-q16-empirical"
+  ],
+  "source_commits": [
+    "1162461281c79599cc7fe6ffea4d1ec71f177cdd",
+    "fc5388a61c721748d3906540635de0f217337c21"
+  ],
+  "remote_archive_branches": [
+    "old/t009-q16-hyperliquid",
+    "old/t019-q16-empirical"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "explanation-paper.pdf",
+      "sha256": "b53495d017ada77c7825472628ae1946d5318970d1175cfc80ba64a38fc27abc",
+      "size_bytes": 895181
+    },
+    {
+      "path": "original-three-papers-explained.pdf",
+      "sha256": "c53a58761f5d9edc26d52c3b9482b5dd600712a86386273a82653331578dc322",
+      "size_bytes": 92652
+    },
+    {
+      "path": "result-paper.pdf",
+      "sha256": "41f541ffea089b26eff336f73bd496e6d13de720bf0071b645dfea60dc02f955",
+      "size_bytes": 520459
+    },
+    {
+      "path": "figures/main.png",
+      "sha256": "49c6cce4d3f1d781b2c8f592a83405568bee88539f4a7829db01b9918fa3f254",
+      "size_bytes": 386484
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "da8dbb70f4953e2ecd2efa74b045ff8ed15fd61cc8c59488f08a45442be2eaa1",
+      "size_bytes": 4355811
+    },
+    {
+      "path": "results/controlled-summary.json",
+      "sha256": "153d2dedcbc4152cd441adcd1e059f8edb2b0d3fb59642009150b47e1c4e63af",
+      "size_bytes": 21499
+    },
+    {
+      "path": "results/conservation-summary.json",
+      "sha256": "353f268a7a0c8887736acc7554d9e32dea6602404829ba09c94180cdd47e3886",
+      "size_bytes": 1836
+    },
+    {
+      "path": "software-readiness-paper.pdf",
+      "sha256": "56da60b1a440da715b25a26d44afe3c61ff524b92ce188ee5e4ea3d44cce1d02",
+      "size_bytes": 174615
+    }
+  ]
+}

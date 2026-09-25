@@ -1,0 +1,107 @@
+{
+  "scope": "Fresh software checks on original synthetic fixtures; not real-market replications",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_snapshot_commits": [
+    {
+      "repository": "anon-author/iclr2027-q16-paper",
+      "commit": "e1e7506cc4f800fd1b65245e20530512cecb4493",
+      "branch": "main",
+      "private": true,
+      "destination": "anon experiments/Q16/paper",
+      "files": 46,
+      "bytes": 534687,
+      "skipped": []
+    },
+    {
+      "repository": "anon-author/iclr2027-q16-code",
+      "commit": "0892e8de1a5cd97031c1bd7f57e1d7a409862d52",
+      "branch": "main",
+      "private": true,
+      "destination": "anon experiments/Q16/code",
+      "files": 23,
+      "bytes": 279278,
+      "skipped": []
+    },
+    {
+      "repository": "anon-author/iclr2027-q17-paper",
+      "commit": "38ee01b9bb737098e086ab3616a913ac5d129906",
+      "branch": "main",
+      "private": true,
+      "destination": "anon experiments/Q17/paper",
+      "files": 48,
+      "bytes": 650797,
+      "skipped": []
+    },
+    {
+      "repository": "anon-author/iclr2027-q17-code",
+      "commit": "7320f9112d8ba1ac6229c1c3ebeca42ce58bfd9e",
+      "branch": "main",
+      "private": true,
+      "destination": "anon experiments/Q17/code",
+      "files": 32,
+      "bytes": 1101451,
+      "skipped": []
+    },
+    {
+      "repository": "anon-author/iclr2027-q18-paper",
+      "commit": "b4bb84cd089034de732e79e133575725dace3f8e",
+      "branch": "main",
+      "private": true,
+      "destination": "anon experiments/Q18/paper",
+      "files": 45,
+      "bytes": 622395,
+      "skipped": []
+    },
+    {
+      "repository": "anon-author/iclr2027-q18-code",
+      "commit": "228685e9c63bb71e699a52efa76220d20578b0f7",
+      "branch": "main",
+      "private": true,
+      "destination": "anon experiments/Q18/code",
+      "files": 26,
+      "bytes": 390065,
+      "skipped": []
+    },
+    {
+      "repository": "anon-author/iclr2027-student-projects",
+      "commit": "1b31ac0967d4dcf45278a80e132ea8d3b7ad9bea",
+      "branch": "main",
+      "private": true,
+      "destination": "anon experiments/student-projects",
+      "files": 72,
+      "bytes": 530486,
+      "skipped": [],
+      "copy_scope": "Selected Q16-Q18 project guidance and simulated reviews only; release contents have separate provenance"
+    }
+  ],
+  "Q16": {
+    "scope": "Constructed finite positive-integer displayed FIFO queues; replayed existing unit probe order, not infinitesimal counterfactual. Probe cannot be cancelled. Both arms observe identical atomic event kinds and sizes. Count arm also observes initial and post-event order counts. No real-market inference.",
+    "seed": 16029001,
+    "trials": 1000,
+    "events_per_trial": 8,
+    "volume_ambiguous": 59,
+    "count_ambiguous": 19,
+    "count_strictly_narrower": 40,
+    "truth_excluded": 0,
+    "max_states": 1384,
+    "runtime_seconds": 0.1879326999769546
+  },
+  "Q17": {
+    "passed": true,
+    "checks": 8,
+    "fixture_rows": 7000,
+    "decision_rows": 61,
+    "seconds": 0.03291979999630712,
+    "scope": "Authored synthetic fixture; no market data or model API"
+  },
+  "Q18": {
+    "scope": "synthetic software smoke, not a market experiment",
+    "real_runner_completed": true,
+    "nonfinite_input_rejected": true,
+    "fits": 32,
+    "contrasts": 16,
+    "market_results_reproduced": false
+  },
+  "seconds": 24.16448920001858
+}

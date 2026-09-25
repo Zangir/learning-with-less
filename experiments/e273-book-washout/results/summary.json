@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-273"
+  ],
+  "execution_statuses": [
+    "reviewed_terminal_prefix"
+  ],
+  "assessments": [
+    "inconclusive_independently_reviewed"
+  ],
+  "headline_result": "Eleven complete hours covered 32,633,820 events and revealed 11,328 legacy order IDs; 148 were still first discovered in hour 10. Observed-lifecycle coverage reached 99.92985%, but true live-book completeness is unidentified.",
+  "result_records": [
+    {
+      "result_id": "R-044",
+      "experiment_id": "E-273",
+      "producer_task_id": "T-023",
+      "status": "accepted_qualified_independently_reviewed",
+      "result_class": "reviewed_inconclusive_incomplete_chronological_prefix",
+      "manifest_sha256": "03c8d2fa82d8a70606fbb0447f0dd63ed9d445d76b39b5d6b25f458dd7703c13",
+      "completed_hours": 11,
+      "btc_events": 32633820,
+      "legacy_total": 11328,
+      "legacy_update": 4197,
+      "legacy_remove": 7131,
+      "anomaly_events": 0,
+      "observed_lifecycle_coverage_pct": 99.9298493755616,
+      "operational_decision": "incomplete",
+      "reported_at": "2026-09-24T09:14:12.450977+00:00",
+      "review_ids": [
+        "RV-042"
+      ],
+      "review_verdict": "accept_qualified",
+      "review_sha256": "2a35bb959864a6c37d2d2374d333f30e262f1e515a53bd207128ad827b42f9b1",
+      "accepted_at": "2026-09-24T10:03:58.264435+00:00",
+      "supported_claim": "In 11 complete chronological BTC hours, 11,328 OIDs first appeared through update/remove and 148 were still first revealed in hour 10; the 24+24-hour decision and true full-book completeness remain unidentified."
+    }
+  ]
+}

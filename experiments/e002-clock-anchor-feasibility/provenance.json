@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-002"
+  ],
+  "question_ids": [
+    "Q-001"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-006"
+  ],
+  "result_ids": [
+    "R-003"
+  ],
+  "review_ids": [
+    "RV-002"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [],
+  "source_commits": [],
+  "remote_archive_branches": [],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "source-report.md",
+      "sha256": "e2786ce12ad9309997a8279bc8af2436095752560b88e3828f60f7262ac16c21",
+      "size_bytes": 4673
+    },
+    {
+      "path": "figures/main.png",
+      "sha256": "24ecdcbb70b1529c6f5ca2f01e27093ce17d02e2adcb6e2f44494b7da23f2d91",
+      "size_bytes": 107871
+    },
+    {
+      "path": "results/clock-coverage.json",
+      "sha256": "1ddff5eec94be80c9f4caa940c84583fcade1842a95159f51e79014b511a78f1",
+      "size_bytes": 2558
+    }
+  ]
+}

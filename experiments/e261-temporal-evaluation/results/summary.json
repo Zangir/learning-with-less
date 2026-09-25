@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-261"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "The earlier aggregate rich-depth breakout advantage disappeared; learned breakout arms lost to frequency under event weighting, and rebound frequency won both aggregates.",
+  "result_records": [
+    {
+      "result_id": "R-031",
+      "title": "Fixed-model BTC later-period evaluation",
+      "experiment_id": "E-261",
+      "protocol_revision": 1,
+      "source_task_id": "T-016",
+      "reported_at": "2026-09-22T07:28:27.671148+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_fixed_temporal_negative",
+      "artifact_manifest_sha256": "5450d4411bbfc91451b4b60b330c23da0eec5f31fabe628dcf9c26d9083b72c0",
+      "summary": "Reviewed R031/RV029: fixed BTC models lose the earlier aggregate rich-depth breakout advantage on August-November dates. All learned breakout arms lose to frequency under event weighting; rebound frequency wins both aggregates. Next: diagnose class mix and conditional loss using existing predictions, with zero new fits.",
+      "limitations": [
+        "R031 / RV029 / D042. Fixed models, exposed monthly sampled-L2 days, normalized-input admission only. No population inference, source authenticity, profit or depth-information impossibility. Original Q16/Q17/Q18 and broader E230/E232 remain open."
+      ],
+      "review_ids": [
+        "RV-029"
+      ],
+      "job_refs": [
+        {
+          "session": "drc-lob-t016-p3-audit",
+          "stage": "p3-audit",
+          "status": "completed",
+          "started_utc": "2026-09-22T06:49:39.545506+00:00",
+          "finished_utc": "2026-09-22T06:50:35.224083+00:00",
+          "elapsed_seconds": 55.688,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 1277902848,
+          "timeout_seconds": 3600,
+          "aggregate_cpu_seconds": 52.53125,
+          "commands": [
+            {
+              "stage": "t016_p3.audit",
+              "exit_code": 0,
+              "seconds": 55.688
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-p3-evaluation",
+          "stage": "p3-evaluation",
+          "status": "completed",
+          "started_utc": "2026-09-22T06:47:41.009189+00:00",
+          "finished_utc": "2026-09-22T06:49:09.477090+00:00",
+          "elapsed_seconds": 88.469,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 1234137088,
+          "timeout_seconds": 3600,
+          "aggregate_cpu_seconds": 82.53125,
+          "commands": [
+            {
+              "stage": "t016_p3.evaluate",
+              "exit_code": 0,
+              "seconds": 88.469
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-p3-preflight",
+          "stage": "p3-preflight",
+          "status": "completed",
+          "started_utc": "2026-09-22T06:47:12.362497+00:00",
+          "finished_utc": "2026-09-22T06:47:23.769219+00:00",
+          "elapsed_seconds": 11.406,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 495214592,
+          "timeout_seconds": 3600,
+          "aggregate_cpu_seconds": 10.265625,
+          "commands": [
+            {
+              "stage": "t016_p3.freeze",
+              "exit_code": 0,
+              "seconds": 11.406
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-p3-render",
+          "stage": "p3-render",
+          "status": "failed",
+          "started_utc": "2026-09-22T06:52:17.624973+00:00",
+          "finished_utc": "2026-09-22T06:52:28.128240+00:00",
+          "elapsed_seconds": 10.5,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 513105920,
+          "timeout_seconds": 3600,
+          "aggregate_cpu_seconds": 9.515625,
+          "commands": [
+            {
+              "stage": "render-report",
+              "exit_code": 1,
+              "seconds": 10.5
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-p3-render2",
+          "stage": "p3-render2",
+          "status": "completed",
+          "started_utc": "2026-09-22T06:53:47.073224+00:00",
+          "finished_utc": "2026-09-22T06:53:57.673140+00:00",
+          "elapsed_seconds": 10.609,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 513556480,
+          "timeout_seconds": 3600,
+          "aggregate_cpu_seconds": 9.5625,
+          "commands": [
+            {
+              "stage": "render-report",
+              "exit_code": 0,
+              "seconds": 10.609
+            }
+          ]
+        }
+      ],
+      "job_observed_at": "2026-09-22T06:57:38.104946+00:00",
+      "accepted_at": "2026-09-22T08:31:20.155374+00:00",
+      "decision_id": "D-042"
+    }
+  ]
+}

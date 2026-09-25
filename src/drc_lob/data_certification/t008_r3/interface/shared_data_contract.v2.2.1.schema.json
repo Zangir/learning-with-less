@@ -1,0 +1,404 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "else": {
+        "properties": {
+          "fixture_only": {
+            "const": false
+          }
+        }
+      },
+      "if": {
+        "properties": {
+          "origin": {
+            "const": "synthetic_integration"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "fixture_only": {
+            "const": true
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "atomic_cut": {
+      "properties": {
+        "evidence": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "authoritative_snapshot_at_event_time",
+            "documented_atomic_event_envelope",
+            "state_invariant_across_admissible_interleavings"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "evidence"
+      ],
+      "type": "object"
+    },
+    "continuity": {
+      "properties": {
+        "all_venue_events_observed": {
+          "type": "boolean"
+        },
+        "cadence_ns": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "kind": {
+          "enum": [
+            "complete_event_stream",
+            "sampled_snapshots"
+          ]
+        },
+        "max_age_ns": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "max_gap_ns": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "observed_max_gap_ns": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kind",
+        "max_gap_ns",
+        "cadence_ns",
+        "observed_max_gap_ns",
+        "all_venue_events_observed",
+        "max_age_ns",
+        "source_segments_file",
+        "source_segments_sha256"
+      ],
+      "type": "object"
+    },
+    "fixture_only": {
+      "type": "boolean"
+    },
+    "horizons": {
+      "const": {
+        "Q17_forecast": {
+          "forward_guard_ns": 10000000000,
+          "lookback_ns": 20000000000
+        },
+        "Q17_full_latency_grid": {
+          "forward_guard_ns": 10500000000,
+          "lookback_ns": 20000000000
+        },
+        "Q17_primary_utility": {
+          "forward_guard_ns": 10100000000,
+          "lookback_ns": 20000000000
+        },
+        "Q17_scheduling": {
+          "forward_guard_ns": 131500000000,
+          "grid_ns": 11000000000,
+          "lookback_ns": 20000000000,
+          "opportunities": 12
+        },
+        "Q18": {
+          "forward_guard_ns": 10500000000,
+          "guard_kind": "adopted_conservative_padding",
+          "label_horizon_ns": 10000000000,
+          "lookback_ns": 75000000000
+        }
+      }
+    },
+    "origin": {
+      "enum": [
+        "synthetic_integration",
+        "exploratory_real",
+        "eligible_empirical"
+      ]
+    },
+    "producer": {
+      "const": "T-008"
+    },
+    "purpose": {
+      "const": "historical_paired_hyperliquid_sampled_state_adaptation"
+    },
+    "review": {
+      "properties": {
+        "status": {
+          "const": "not_issued_by_producer"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "type": "object"
+    },
+    "schema": {
+      "const": "t008-producer-state/2"
+    },
+    "scopes": {
+      "properties": {
+        "Q16": {
+          "properties": {
+            "clock_scope": {
+              "enum": [
+                "exchange_time",
+                "observed_receive_time",
+                "not_certified"
+              ]
+            },
+            "continuity_scope": {
+              "type": "string"
+            },
+            "decision": {
+              "enum": [
+                "affirmative",
+                "negative"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state_scope": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "decision",
+            "reason",
+            "clock_scope",
+            "state_scope",
+            "continuity_scope"
+          ],
+          "type": "object"
+        },
+        "Q17": {
+          "properties": {
+            "clock_scope": {
+              "enum": [
+                "exchange_time",
+                "observed_receive_time",
+                "not_certified"
+              ]
+            },
+            "continuity_scope": {
+              "type": "string"
+            },
+            "decision": {
+              "enum": [
+                "affirmative",
+                "negative"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state_scope": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "decision",
+            "reason",
+            "clock_scope",
+            "state_scope",
+            "continuity_scope"
+          ],
+          "type": "object"
+        },
+        "Q18": {
+          "properties": {
+            "clock_scope": {
+              "enum": [
+                "exchange_time",
+                "observed_receive_time",
+                "not_certified"
+              ]
+            },
+            "continuity_scope": {
+              "type": "string"
+            },
+            "decision": {
+              "enum": [
+                "affirmative",
+                "negative"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state_scope": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "decision",
+            "reason",
+            "clock_scope",
+            "state_scope",
+            "continuity_scope"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "Q16",
+        "Q17",
+        "Q18"
+      ],
+      "type": "object"
+    },
+    "sources": {
+      "items": {
+        "required": [
+          "source_id",
+          "file",
+          "sha256",
+          "provenance",
+          "rights"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "split_roles": {
+      "properties": {
+        "Q17": {
+          "enum": [
+            "train",
+            "validation",
+            "test",
+            "unused",
+            "development"
+          ]
+        },
+        "Q18": {
+          "enum": [
+            "train",
+            "validation",
+            "test",
+            "unused",
+            "development"
+          ]
+        }
+      },
+      "required": [
+        "Q17",
+        "Q18"
+      ],
+      "type": "object"
+    },
+    "version": {
+      "const": "2.2.1"
+    },
+    "windows": {
+      "items": {
+        "properties": {
+          "asset": {
+            "enum": [
+              "BTC",
+              "ETH",
+              "SOL"
+            ]
+          },
+          "end_ns": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "first_source_ordinal": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "last_source_ordinal": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "scope": {
+            "enum": [
+              "Q16",
+              "Q17",
+              "Q18"
+            ]
+          },
+          "source_ids": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "start_ns": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "state_depth": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "window_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "window_id",
+          "scope",
+          "asset",
+          "start_ns",
+          "end_ns",
+          "first_source_ordinal",
+          "last_source_ordinal",
+          "state_depth",
+          "source_ids",
+          "evidence_ids"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema",
+    "version",
+    "producer",
+    "origin",
+    "fixture_only",
+    "purpose",
+    "sources",
+    "units",
+    "scopes",
+    "windows",
+    "atomic_cut",
+    "continuity",
+    "review",
+    "horizons",
+    "asset",
+    "date",
+    "split_roles",
+    "acquisition_proof_file",
+    "acquisition_proof_sha256",
+    "eligibility_mask",
+    "receipt_semantics",
+    "supersedes_contract_file",
+    "supersedes_contract_sha256",
+    "source_provenance_file",
+    "source_provenance_sha256"
+  ],
+  "title": "T-008 paired sampled snapshot producer contract2.2.1 with bound receipt provenance",
+  "type": "object"
+}

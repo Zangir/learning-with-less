@@ -1,0 +1,103 @@
+{
+  "seed": 16029001,
+  "scope": "Acquisition/join audit; no forecast, fill probability, or economic claim",
+  "source_manifest_sha256": "dd33442506739d9a59ad4059531f6bdd0f0d8cd92dae7cedd97446d6a19930b7",
+  "max_json_lines": 200000,
+  "statuses": {
+    "records": 7882598,
+    "dtype_bytes": 54,
+    "first_utc": "2025-11-30T23:59:59.867476878",
+    "last_utc": "2025-12-01T00:59:59.774857692",
+    "timestamp_decreases": 0,
+    "tied_adjacent_timestamp": 7845046,
+    "status_counts": {
+      "1": 2494671,
+      "2": 2394906,
+      "3": 2804526,
+      "4": 76773,
+      "5": 102148,
+      "6": 571,
+      "7": 3621,
+      "8": 1712,
+      "9": 2524,
+      "10": 442,
+      "11": 497,
+      "12": 135,
+      "13": 72
+    },
+    "user_count": 7530,
+    "unique_orders": 5391631,
+    "status_1_size": {
+      "rows": 2494671,
+      "zero_size": 2566,
+      "equal_original": 2494671
+    },
+    "status_2_size": {
+      "rows": 2394906,
+      "zero_size": 1405,
+      "equal_original": 2385277
+    },
+    "status_5_size": {
+      "rows": 102148,
+      "zero_size": 97921,
+      "equal_original": 0
+    }
+  },
+  "book_diffs_prefix": {
+    "lines_inspected": 200000,
+    "coins": {
+      "SOL": 38679,
+      "ETH": 69453,
+      "BTC": 91868
+    },
+    "keys": {
+      "user": 200000,
+      "oid": 200000,
+      "coin": 200000,
+      "side": 200000,
+      "px": 200000,
+      "raw_book_diff": 200000
+    },
+    "btc_rows": 91868,
+    "kinds": {
+      "new": 45194,
+      "remove": 44889,
+      "update": 1785
+    },
+    "unique_orders": 46959,
+    "first_seen_kind_counts": {
+      "new": 45194,
+      "remove": 1627,
+      "update": 138
+    },
+    "status_join_candidate_counts": {
+      "new/1": 45194,
+      "remove/1": 44889,
+      "update/0": 1785
+    },
+    "candidate_time_count": 90083,
+    "candidate_time_decreases": 1,
+    "candidate_first_utc": "2025-11-30T23:59:59.867476878",
+    "candidate_last_utc": "2025-12-01T00:01:35.433508947",
+    "join_is_not_certified_event_clock": true
+  },
+  "trades_prefix": {
+    "lines_inspected": 200000,
+    "btc_rows": 35814,
+    "keys": {
+      "coin": 200000,
+      "side": 200000,
+      "time": 200000,
+      "px": 200000,
+      "sz": 200000,
+      "hash": 200000,
+      "trade_dir_override": 200000,
+      "side_info": 200000
+    },
+    "first_time": "2025-11-30T23:59:59.867476878",
+    "last_time": "2025-12-01T00:15:47.421406643",
+    "unique_btc_orders": 39437,
+    "btc_order_overlap_diff_prefix": 1261
+  },
+  "seconds": 10.576994699978968
+}

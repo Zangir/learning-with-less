@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-257"
+  ],
+  "question_ids": [
+    "Q-019"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-016"
+  ],
+  "result_ids": [
+    "R-027"
+  ],
+  "review_ids": [
+    "RV-025"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [
+    "feat/t016-fixed-persistence"
+  ],
+  "source_commits": [
+    "d3b48b7906284fe6261e5693a0a227aa644fa166"
+  ],
+  "remote_archive_branches": [
+    "old/t016-fixed-persistence"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "figures/main.png",
+      "sha256": "e010a12541172039375da2d9af54c5adbe99d438f01e24eb8e244530705fec33",
+      "size_bytes": 125841
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "8c6609fca03035dc3cd1fa8dfe2a126a0a959983b38c3c915212001b2f0e81cd",
+      "size_bytes": 338
+    },
+    {
+      "path": "result-paper.pdf",
+      "sha256": "9146c238843415a4e4e113a5edeb99e3ffbf22fb3f6745d808d032f5a99916fb",
+      "size_bytes": 228492
+    },
+    {
+      "path": "results/cohort-summary.json",
+      "sha256": "822a456cc86b91c05f650b7d4ec1db2b327e46b14bf7106b5332e1bff77b1987",
+      "size_bytes": 39576
+    }
+  ]
+}

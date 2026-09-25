@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-210"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid_in_controlled_synthetic_scope"
+  ],
+  "headline_result": "Restricted summaries incurred 0.075 regret, but matched direct and posterior coordinates were equal; no restoration-specific advantage was isolated.",
+  "result_records": [
+    {
+      "result_id": "R-009",
+      "experiment_id": "E-210",
+      "experiment_ids": [
+        "E-205",
+        "E-210"
+      ],
+      "source_task_id": "T-012",
+      "reported_at": "2026-09-21T16:10:02.478375+04:00",
+      "revision": 1,
+      "evidence_manifest_sha256": "480e4c325953c4e45b516c01280a121f53d58cc8a14db88d4e94358716d6929c",
+      "summary": "Calibrated binary mean equals posterior decision control; noisy-label finite-sample gain is known-noise denoising.",
+      "assessment": "valid_in_synthetic_scope",
+      "limitations": [
+        "Controlled synthetic experiment only, no market/novelty claim.",
+        "Binary population controls are algebraic identities, not independently learned methods.",
+        "Finite self-distillation vector is copied, not learned; matched-supervision direct learner is next.",
+        "Decision intervals at n120 and n480 include zero; preserve finite-sample uncertainty."
+      ],
+      "review_ids": [
+        "RV-005"
+      ],
+      "code_commit": "90e3d848ce81fb590f8ddf20b44bbd921268784e",
+      "accepted_at": "2026-09-21T17:15:38.686485+04:00",
+      "decision_ids": [
+        "D-011"
+      ],
+      "status": "accepted_in_scope"
+    },
+    {
+      "result_id": "R-014",
+      "experiment_id": "E-210",
+      "protocol_revision": 2,
+      "source_task_id": "T-012",
+      "reported_at": "2026-09-21T14:15:26.698836+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_controlled_synthetic_result",
+      "execution_status": "completed_synthetic",
+      "evidence_manifest_sha256": "acffc16da5d7bc51d337ce88377de6bcdd7041a94bad0b8b666260cee34ab4a1",
+      "code_commit": "0232af281c516ee3923126212717f8d8caeefa93",
+      "review_ids": [
+        "RV-010"
+      ],
+      "summary": "Author reports matched direct/posterior coordinate equality; restricted-summary regret.075 and correct-symmetry sample-efficiency gains; no restoration-specific benefit.",
+      "limitations": [
+        "Synthetic known-law experiment; coordinate identity and prior-based variance reduction do not establish reconstruction novelty."
+      ],
+      "accepted_at": "2026-09-21T15:13:17.575427+00:00"
+    }
+  ]
+}

@@ -1,0 +1,1262 @@
+{
+  "schema_version": 2,
+  "source_state_revision": 187,
+  "selection_rule": "Experiments with at least one result record or an assigned engineer task.",
+  "state_experiment_count": 33,
+  "package_count": 30,
+  "grouping": {
+    "E-016+E-266": "experiments/e016-q16-real-data",
+    "E-017+E-267": "experiments/e017-q17-real-data",
+    "E-018+E-268": "experiments/e018-q18-real-data"
+  },
+  "experiments": [
+    {
+      "experiment_ids": [
+        "E-001"
+      ],
+      "package": "experiments/e001-btc-data-audit",
+      "title": "Bounded BTC source, schema, timing, and replay audit",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-001"
+      ],
+      "result_ids": [
+        "R-001"
+      ],
+      "review_ids": [
+        "RV-001"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [],
+      "source_commits": [],
+      "remote_archive_branches": []
+    },
+    {
+      "experiment_ids": [
+        "E-016",
+        "E-266"
+      ],
+      "package": "experiments/e016-q16-real-data",
+      "title": "Q16 finite-queue ambiguity on Hyperliquid",
+      "execution_statuses": [
+        "completed",
+        "blocked_on_source_admission_and_bounded_acquisition"
+      ],
+      "scientific_assessments": [
+        "conditional_and_controlled_evidence_accepted_empirical_goal_open",
+        "source_candidate_found_empirical_result_not_computed"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001"
+      ],
+      "hypothesis_ids": [
+        "H-001"
+      ],
+      "task_ids": [
+        "T-001",
+        "T-009",
+        "T-019"
+      ],
+      "result_ids": [
+        "R-006",
+        "R-013",
+        "R-015",
+        "R-016",
+        "R-035",
+        "R-039"
+      ],
+      "review_ids": [
+        "RV-004",
+        "RV-009",
+        "RV-012",
+        "RV-014",
+        "RV-033",
+        "RV-037"
+      ],
+      "protocol_revisions": [
+        4,
+        1
+      ],
+      "source_branches": [
+        "feat/t009-q16-hyperliquid",
+        "feat/t019-q16-empirical"
+      ],
+      "source_commits": [
+        "1162461281c79599cc7fe6ffea4d1ec71f177cdd",
+        "fc5388a61c721748d3906540635de0f217337c21"
+      ],
+      "remote_archive_branches": [
+        "old/t009-q16-hyperliquid",
+        "old/t019-q16-empirical"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-017",
+        "E-267"
+      ],
+      "package": "experiments/e017-q17-real-data",
+      "title": "Q17 prediction versus decision utility on Hyperliquid",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "hour00_valid_descriptive_negative_mandatory_empirical_open",
+        "valid"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001"
+      ],
+      "hypothesis_ids": [
+        "H-002"
+      ],
+      "task_ids": [
+        "T-001",
+        "T-010",
+        "T-011"
+      ],
+      "result_ids": [
+        "R-007",
+        "R-011",
+        "R-018",
+        "R-037"
+      ],
+      "review_ids": [
+        "RV-004",
+        "RV-007",
+        "RV-013",
+        "RV-016",
+        "RV-036"
+      ],
+      "protocol_revisions": [
+        3,
+        1
+      ],
+      "source_branches": [
+        "feat/q18-hyperliquid-adapter",
+        "feat/t010-q17-hyperliquid"
+      ],
+      "source_commits": [
+        "217dcedc98b248641a74f0c301cc24c4629f0cb7",
+        "faa8aa47106dd7607fdf35e8a8cc7109f8764fe1"
+      ],
+      "remote_archive_branches": [
+        "old/q18-hyperliquid-adapter",
+        "old/t010-q17-hyperliquid"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-018",
+        "E-268"
+      ],
+      "package": "experiments/e018-q18-real-data",
+      "title": "Q18 depth, history, and delay factorial on Hyperliquid",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "hour00_and_full_day_limited_descriptive_negatives_accepted_mandatory_empirical_open",
+        "valid"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001"
+      ],
+      "hypothesis_ids": [
+        "H-003"
+      ],
+      "task_ids": [
+        "T-001",
+        "T-011"
+      ],
+      "result_ids": [
+        "R-008",
+        "R-010",
+        "R-017",
+        "R-019",
+        "R-036"
+      ],
+      "review_ids": [
+        "RV-004",
+        "RV-006",
+        "RV-013",
+        "RV-015",
+        "RV-017",
+        "RV-034"
+      ],
+      "protocol_revisions": [
+        3,
+        1
+      ],
+      "source_branches": [
+        "feat/q18-hyperliquid-adapter"
+      ],
+      "source_commits": [
+        "faa8aa47106dd7607fdf35e8a8cc7109f8764fe1"
+      ],
+      "remote_archive_branches": [
+        "old/q18-hyperliquid-adapter"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-002"
+      ],
+      "package": "experiments/e002-clock-anchor-feasibility",
+      "title": "Existing-hour clock-anchor feasibility diagnostic",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-006"
+      ],
+      "result_ids": [
+        "R-003"
+      ],
+      "review_ids": [
+        "RV-002"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [],
+      "source_commits": [],
+      "remote_archive_branches": []
+    },
+    {
+      "experiment_ids": [
+        "E-200"
+      ],
+      "package": "experiments/e200-event-clock",
+      "title": "Causal event-clock and availability certificate",
+      "execution_statuses": [
+        "running"
+      ],
+      "scientific_assessments": [
+        "valid_in_limited_scope_broader_objective_open"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-008"
+      ],
+      "result_ids": [
+        "R-005",
+        "R-012"
+      ],
+      "review_ids": [
+        "RV-003",
+        "RV-008",
+        "RV-011"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t008-data-certification"
+      ],
+      "source_commits": [
+        "a8d6237d28f37a3b00d687585926eaf60e242aa2"
+      ],
+      "remote_archive_branches": [
+        "old/t008-data-certification"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-201"
+      ],
+      "package": "experiments/e201-initial-state",
+      "title": "Initial-state and matching-rule certificate",
+      "execution_statuses": [
+        "running"
+      ],
+      "scientific_assessments": [
+        "valid_in_limited_scope_broader_objective_open"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-008"
+      ],
+      "result_ids": [
+        "R-005",
+        "R-012"
+      ],
+      "review_ids": [
+        "RV-003",
+        "RV-008"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t008-data-certification"
+      ],
+      "source_commits": [
+        "a8d6237d28f37a3b00d687585926eaf60e242aa2"
+      ],
+      "remote_archive_branches": [
+        "old/t008-data-certification"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-202"
+      ],
+      "package": "experiments/e202-day-blocks-budget",
+      "title": "Chronological day blocks and data-budget feasibility",
+      "execution_statuses": [
+        "running"
+      ],
+      "scientific_assessments": [
+        "valid_in_limited_scope_broader_objective_open"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001",
+        "Q-004"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-008"
+      ],
+      "result_ids": [
+        "R-005",
+        "R-012"
+      ],
+      "review_ids": [
+        "RV-003",
+        "RV-008",
+        "RV-011"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t008-data-certification"
+      ],
+      "source_commits": [
+        "a8d6237d28f37a3b00d687585926eaf60e242aa2"
+      ],
+      "remote_archive_branches": [
+        "old/t008-data-certification"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-203"
+      ],
+      "package": "experiments/e203-observation-contract",
+      "title": "Paired causal coarse/rich observation contract",
+      "execution_statuses": [
+        "running"
+      ],
+      "scientific_assessments": [
+        "valid_in_limited_scope_broader_objective_open"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-006",
+        "Q-007"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-008"
+      ],
+      "result_ids": [
+        "R-005",
+        "R-012"
+      ],
+      "review_ids": [
+        "RV-003",
+        "RV-008"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t008-data-certification"
+      ],
+      "source_commits": [
+        "a8d6237d28f37a3b00d687585926eaf60e242aa2"
+      ],
+      "remote_archive_branches": [
+        "old/t008-data-certification"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-204"
+      ],
+      "package": "experiments/e204-label-execution-feasibility",
+      "title": "Observed-order labels and execution-model feasibility",
+      "execution_statuses": [
+        "running"
+      ],
+      "scientific_assessments": [
+        "valid_in_limited_scope_broader_objective_open"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-017",
+        "Q-019",
+        "Q-020"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-008"
+      ],
+      "result_ids": [
+        "R-005",
+        "R-012"
+      ],
+      "review_ids": [
+        "RV-003",
+        "RV-008"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t008-data-certification"
+      ],
+      "source_commits": [
+        "a8d6237d28f37a3b00d687585926eaf60e242aa2"
+      ],
+      "remote_archive_branches": [
+        "old/t008-data-certification"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-205"
+      ],
+      "package": "experiments/e205-simulator-mechanism-validation",
+      "title": "Simulator selection and mechanism validation",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-009",
+        "Q-010",
+        "Q-018"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-012"
+      ],
+      "result_ids": [
+        "R-009",
+        "R-024"
+      ],
+      "review_ids": [
+        "RV-005",
+        "RV-022"
+      ],
+      "protocol_revisions": [
+        2
+      ],
+      "source_branches": [
+        "feat/t012-information-value-design"
+      ],
+      "source_commits": [
+        "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+      ],
+      "remote_archive_branches": [
+        "old/t012-information-value-design"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-210"
+      ],
+      "package": "experiments/e210-controlled-action-ambiguity",
+      "title": "Controlled action-relevant ambiguity simulation",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid_in_controlled_synthetic_scope"
+      ],
+      "priority": "P2",
+      "question_ids": [
+        "Q-009"
+      ],
+      "hypothesis_ids": [
+        "H-010"
+      ],
+      "task_ids": [
+        "T-012"
+      ],
+      "result_ids": [
+        "R-009",
+        "R-014"
+      ],
+      "review_ids": [
+        "RV-005",
+        "RV-010"
+      ],
+      "protocol_revisions": [
+        2
+      ],
+      "source_branches": [
+        "feat/t012-information-value-design"
+      ],
+      "source_commits": [
+        "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+      ],
+      "remote_archive_branches": [
+        "old/t012-information-value-design"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-253"
+      ],
+      "package": "experiments/e253-breakout-rebound-protocol",
+      "title": "Breakout/rebound protocol and feasibility",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid_P0_design_with_reviewed_amendment"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-019"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-016"
+      ],
+      "result_ids": [
+        "R-023"
+      ],
+      "review_ids": [
+        "RV-021"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t016-fixed-persistence"
+      ],
+      "source_commits": [
+        "d3b48b7906284fe6261e5693a0a227aa644fa166"
+      ],
+      "remote_archive_branches": [
+        "old/t016-fixed-persistence"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-254"
+      ],
+      "package": "experiments/e254-shared-computation-identity",
+      "title": "Shared computation and matched-method identity",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid_in_declared_exact_scope"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-002",
+        "Q-016",
+        "Q-025"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-012"
+      ],
+      "result_ids": [
+        "R-022"
+      ],
+      "review_ids": [
+        "RV-020"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t012-information-value-design"
+      ],
+      "source_commits": [
+        "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+      ],
+      "remote_archive_branches": [
+        "old/t012-information-value-design"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-255"
+      ],
+      "package": "experiments/e255-breakout-rebound-extraction",
+      "title": "Label-blind breakout/rebound extraction audit",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-019"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-016"
+      ],
+      "result_ids": [
+        "R-025"
+      ],
+      "review_ids": [
+        "RV-023"
+      ],
+      "protocol_revisions": [
+        2
+      ],
+      "source_branches": [
+        "feat/t016-fixed-persistence"
+      ],
+      "source_commits": [
+        "d3b48b7906284fe6261e5693a0a227aa644fa166"
+      ],
+      "remote_archive_branches": [
+        "old/t016-fixed-persistence"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-256"
+      ],
+      "package": "experiments/e256-restricted-simulator",
+      "title": "Restricted simulator repair and delivered-feed validation",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-009",
+        "Q-010",
+        "Q-018"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-012"
+      ],
+      "result_ids": [
+        "R-026"
+      ],
+      "review_ids": [
+        "RV-024"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t012-information-value-design"
+      ],
+      "source_commits": [
+        "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+      ],
+      "remote_archive_branches": [
+        "old/t012-information-value-design"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-257"
+      ],
+      "package": "experiments/e257-btc-development-cohort",
+      "title": "Fixed labels and seven-date BTC development cohort",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-019"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-016"
+      ],
+      "result_ids": [
+        "R-027"
+      ],
+      "review_ids": [
+        "RV-025"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t016-fixed-persistence"
+      ],
+      "source_commits": [
+        "d3b48b7906284fe6261e5693a0a227aa644fa166"
+      ],
+      "remote_archive_branches": [
+        "old/t016-fixed-persistence"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-258"
+      ],
+      "package": "experiments/e258-controlled-fill-prediction",
+      "title": "Fill prediction: point versus distributional reconstruction",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-009",
+        "Q-010",
+        "Q-018"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-012"
+      ],
+      "result_ids": [
+        "R-028"
+      ],
+      "review_ids": [
+        "RV-026"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t012-information-value-design"
+      ],
+      "source_commits": [
+        "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+      ],
+      "remote_archive_branches": [
+        "old/t012-information-value-design"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-259"
+      ],
+      "package": "experiments/e259-coarse-predicted-rich-comparison",
+      "title": "BTC coarse, predicted-rich, and observed-rich development comparison",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-019"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-016"
+      ],
+      "result_ids": [
+        "R-029"
+      ],
+      "review_ids": [
+        "RV-027"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t016-fixed-persistence"
+      ],
+      "source_commits": [
+        "d3b48b7906284fe6261e5693a0a227aa644fa166"
+      ],
+      "remote_archive_branches": [
+        "old/t016-fixed-persistence"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-260"
+      ],
+      "package": "experiments/e260-rich-label-identifiability",
+      "title": "Rich-label adaptation novelty and identifiability challenge",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-002",
+        "Q-003",
+        "Q-023"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-012"
+      ],
+      "result_ids": [
+        "R-030"
+      ],
+      "review_ids": [
+        "RV-028"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t012-information-value-design"
+      ],
+      "source_commits": [
+        "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+      ],
+      "remote_archive_branches": [
+        "old/t012-information-value-design"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-261"
+      ],
+      "package": "experiments/e261-temporal-evaluation",
+      "title": "Fixed-model BTC August-November evaluation",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-019"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-016"
+      ],
+      "result_ids": [
+        "R-031"
+      ],
+      "review_ids": [
+        "RV-029"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t016-fixed-persistence"
+      ],
+      "source_commits": [
+        "d3b48b7906284fe6261e5693a0a227aa644fa166"
+      ],
+      "remote_archive_branches": [
+        "old/t016-fixed-persistence"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-262"
+      ],
+      "package": "experiments/e262-participant-checkpoint-cancelled",
+      "title": "Cancelled participant checkpoint",
+      "execution_statuses": [
+        "cancelled"
+      ],
+      "scientific_assessments": [
+        "no_execution_no_scientific_result"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-008"
+      ],
+      "result_ids": [],
+      "review_ids": [],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t008-data-certification"
+      ],
+      "source_commits": [
+        "a8d6237d28f37a3b00d687585926eaf60e242aa2"
+      ],
+      "remote_archive_branches": [
+        "old/t008-data-certification"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-263"
+      ],
+      "package": "experiments/e263-contribution-triage",
+      "title": "Contribution triage across the remaining architecture",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-002",
+        "Q-003"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-012"
+      ],
+      "result_ids": [
+        "R-033"
+      ],
+      "review_ids": [
+        "RV-031"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t012-information-value-design"
+      ],
+      "source_commits": [
+        "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+      ],
+      "remote_archive_branches": [
+        "old/t012-information-value-design"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-264"
+      ],
+      "package": "experiments/e264-fixed-output-diagnosis",
+      "title": "Fixed-output diagnosis of reconstruction and prediction",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-019"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-016"
+      ],
+      "result_ids": [
+        "R-034"
+      ],
+      "review_ids": [
+        "RV-032"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t016-fixed-persistence"
+      ],
+      "source_commits": [
+        "d3b48b7906284fe6261e5693a0a227aa644fa166"
+      ],
+      "remote_archive_branches": [
+        "old/t016-fixed-persistence"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-265"
+      ],
+      "package": "experiments/e265-hyperliquid-source-recovery",
+      "title": "Recover and admit real Hyperliquid inputs",
+      "execution_statuses": [
+        "source_candidate_found_pending_protocol_admission"
+      ],
+      "scientific_assessments": [
+        "source_location_resolved_candidate_not_yet_admitted"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-018"
+      ],
+      "result_ids": [
+        "R-032",
+        "R-038"
+      ],
+      "review_ids": [
+        "RV-030",
+        "RV-035"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t018-source-recovery"
+      ],
+      "source_commits": [
+        "e638930f2fde8f5fd9b3aec264237ee44261507f"
+      ],
+      "remote_archive_branches": [
+        "old/t018-source-recovery"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-269"
+      ],
+      "package": "experiments/e269-persistence-preparation",
+      "title": "Prospective fixed-model persistence preparation",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid_preparation_only"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-019"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-016"
+      ],
+      "result_ids": [
+        "R-040"
+      ],
+      "review_ids": [
+        "RV-038"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t016-fixed-persistence"
+      ],
+      "source_commits": [
+        "d3b48b7906284fe6261e5693a0a227aa644fa166"
+      ],
+      "remote_archive_branches": [
+        "old/t016-fixed-persistence"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-270"
+      ],
+      "package": "experiments/e270-btc-persistence-source",
+      "title": "Declared BTC persistence source",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid_source_only"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-019"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-018"
+      ],
+      "result_ids": [
+        "R-041"
+      ],
+      "review_ids": [
+        "RV-039"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t018-source-recovery"
+      ],
+      "source_commits": [
+        "e638930f2fde8f5fd9b3aec264237ee44261507f"
+      ],
+      "remote_archive_branches": [
+        "old/t018-source-recovery"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-271"
+      ],
+      "package": "experiments/e271-fixed-model-persistence",
+      "title": "Fixed-model persistence on one admitted BTC day",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "valid_scoped_contradiction"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-019"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-016"
+      ],
+      "result_ids": [
+        "R-042"
+      ],
+      "review_ids": [
+        "RV-040"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t016-fixed-persistence"
+      ],
+      "source_commits": [
+        "d3b48b7906284fe6261e5693a0a227aa644fa166"
+      ],
+      "remote_archive_branches": [
+        "old/t016-fixed-persistence"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-272"
+      ],
+      "package": "experiments/e272-information-value-design",
+      "title": "Information-value estimand and discriminating next test",
+      "execution_statuses": [
+        "completed"
+      ],
+      "scientific_assessments": [
+        "review_pending"
+      ],
+      "priority": "P1",
+      "question_ids": [
+        "Q-006",
+        "Q-022",
+        "Q-023"
+      ],
+      "hypothesis_ids": [],
+      "task_ids": [
+        "T-012"
+      ],
+      "result_ids": [
+        "R-043"
+      ],
+      "review_ids": [
+        "RV-041"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t012-information-value-design"
+      ],
+      "source_commits": [
+        "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+      ],
+      "remote_archive_branches": [
+        "old/t012-information-value-design"
+      ]
+    },
+    {
+      "experiment_ids": [
+        "E-273"
+      ],
+      "package": "experiments/e273-book-washout",
+      "title": "BTC unknown-initial-book washout",
+      "execution_statuses": [
+        "reviewed_terminal_prefix"
+      ],
+      "scientific_assessments": [
+        "inconclusive_independently_reviewed"
+      ],
+      "priority": "P0",
+      "question_ids": [
+        "Q-001",
+        "Q-026"
+      ],
+      "hypothesis_ids": [
+        "H-027"
+      ],
+      "task_ids": [
+        "T-023",
+        "T-024"
+      ],
+      "result_ids": [
+        "R-044"
+      ],
+      "review_ids": [
+        "RV-042"
+      ],
+      "protocol_revisions": [
+        1
+      ],
+      "source_branches": [
+        "feat/t023-book-washout-mini"
+      ],
+      "source_commits": [
+        "6e3f98c33272ace1cbbbee6f0b046b7d0b318d77"
+      ],
+      "remote_archive_branches": [
+        "old/t023-book-washout-mini"
+      ]
+    }
+  ]
+}

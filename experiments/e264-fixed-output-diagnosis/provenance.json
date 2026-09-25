@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-264"
+  ],
+  "question_ids": [
+    "Q-019"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-016"
+  ],
+  "result_ids": [
+    "R-034"
+  ],
+  "review_ids": [
+    "RV-032"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [
+    "feat/t016-fixed-persistence"
+  ],
+  "source_commits": [
+    "d3b48b7906284fe6261e5693a0a227aa644fa166"
+  ],
+  "remote_archive_branches": [
+    "old/t016-fixed-persistence"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "figures/main.png",
+      "sha256": "80c90968f351d2550dbefe62bcf7d7af4bc10ba22cae9be922b373178cb9fe87",
+      "size_bytes": 111975
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "459fb31ab857568b68035089f363bf82fa4d19b6c32515e79f8022ae86941aae",
+      "size_bytes": 64517
+    },
+    {
+      "path": "result-paper.pdf",
+      "sha256": "fc37e21b4a6f201c5a0709a67d40699bbe91ba98d60767dc6664775a13919b9b",
+      "size_bytes": 446023
+    },
+    {
+      "path": "results/decompositions.csv",
+      "sha256": "271cc34c4e5e0de84fd9110fab1594ccaf39a0239991555d106e7f821b4ee9dd",
+      "size_bytes": 13422
+    },
+    {
+      "path": "results/figure-source.json",
+      "sha256": "e94e7b1f7363f505949d1834a75fec272e3799f1cbb9cf17a02039af98f64476",
+      "size_bytes": 610068
+    },
+    {
+      "path": "results/group-metrics.csv",
+      "sha256": "5e598a5104fef5951c64c349b4eb3abbf0c91e3230ec65f39982b29ee39b74ee",
+      "size_bytes": 23241
+    }
+  ]
+}

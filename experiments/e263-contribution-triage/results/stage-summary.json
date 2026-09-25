@@ -1,0 +1,125 @@
+{
+  "started": "2026-09-22T12:33:19.6331029+04:00",
+  "finished": "2026-09-22T12:57:49.0048934+04:00",
+  "wall_seconds": 1469.372,
+  "stages": [
+    {
+      "stage": "Scoped setup and accepted evidence",
+      "seconds": 401.302
+    },
+    {
+      "stage": "Candidate sources, checks and correction",
+      "seconds": 372.492
+    },
+    {
+      "stage": "Report, evidence map and independent review",
+      "seconds": 347.814
+    },
+    {
+      "stage": "Rendering and visual inspection",
+      "seconds": 165.965
+    },
+    {
+      "stage": "Code commits, preservation and sealing",
+      "seconds": 181.799
+    }
+  ],
+  "local_job_runtime_seconds": 19.96711719999439,
+  "local_job_cpu_seconds": 19.921875,
+  "resources_scope": "Bounded local jobs including the preserved failed assertion; excludes remote reasoning/web tools",
+  "cpu_affinity": [
+    8,
+    9
+  ],
+  "memory_limit_bytes": 8589934592,
+  "new_fits": 0,
+  "native_episodes": 0,
+  "market_acquisition": 0,
+  "seed_reserved": 20260919,
+  "random_draws": 0,
+  "terminal_receipts": [
+    {
+      "session": "drc-lob-t012-r9-checks",
+      "state": "terminated_after_completion",
+      "watchdog_seconds": 3600,
+      "exit_code": 0,
+      "log": "checks.log",
+      "resources": {
+        "runtime_seconds": 5.112718500000483,
+        "cpu_seconds": 5.1875,
+        "cpu_affinity": [
+          8,
+          9
+        ],
+        "job_memory_limit_bytes": 8589934592,
+        "peak_job_memory_bytes": 19951616,
+        "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+        "processes_in_job": 1,
+        "status": "completed",
+        "new_fits": 0,
+        "native_episodes": 0
+      }
+    },
+    {
+      "session": "drc-lob-t012-r9-render",
+      "state": "terminated_after_completion",
+      "watchdog_seconds": 3600,
+      "exit_code": 0,
+      "log": "render.log",
+      "resources": {
+        "runtime_seconds": 5.013206999996328,
+        "cpu_seconds": 4.875,
+        "cpu_affinity": [
+          8,
+          9
+        ],
+        "job_memory_limit_bytes": 8589934592,
+        "peak_job_memory_bytes": 260292608,
+        "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+        "processes_in_job": 9,
+        "status": "completed",
+        "fits": 0,
+        "native_episodes": 0,
+        "pages": 6
+      }
+    },
+    {
+      "session": "drc-lob-t012-r9-seal",
+      "state": "terminated_after_completion",
+      "watchdog_seconds": 3600,
+      "exit_code": 0,
+      "log": "seal.log",
+      "resources": {
+        "runtime_seconds": 4.592543099999602,
+        "cpu_seconds": 4.59375,
+        "cpu_affinity": [
+          8,
+          9
+        ],
+        "job_memory_limit_bytes": 8589934592,
+        "peak_job_memory_bytes": 57552896,
+        "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+        "processes_in_job": 7,
+        "status": "completed",
+        "new_fits": 0,
+        "native_episodes": 0
+      }
+    }
+  ],
+  "preserved_failed_attempt": {
+    "runtime_seconds": 5.248648599997978,
+    "cpu_seconds": 5.265625,
+    "cpu_affinity": [
+      8,
+      9
+    ],
+    "job_memory_limit_bytes": 8589934592,
+    "peak_job_memory_bytes": 21102592,
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "processes_in_job": 1,
+    "status": "failed",
+    "new_fits": 0,
+    "native_episodes": 0
+  },
+  "own_active_sessions": []
+}

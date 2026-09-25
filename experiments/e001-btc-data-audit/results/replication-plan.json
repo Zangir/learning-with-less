@@ -1,0 +1,64 @@
+{
+  "task": "T-001",
+  "scope": "Mandatory real-data replication/adaptation readiness; first-cycle implementation candidate, not preregistered empirical protocol",
+  "created_utc": "2026-09-19T15:09:16.061862+00:00",
+  "seed": 16029001,
+  "experiments": [
+    {
+      "id": "E016",
+      "source": "Q16",
+      "status": "blocked",
+      "completed_empirical_replication": false,
+      "blocking_requirements": [
+        "verified initial queue state",
+        "atomic event/trade semantics",
+        "exact quantity lattice and FIFO priority",
+        "predeclared probe/cancellation estimand"
+      ],
+      "retained_core": "volume-only versus count-augmented exact feasible fill outcomes"
+    },
+    {
+      "id": "E017",
+      "source": "Q17",
+      "status": "blocked",
+      "completed_empirical_replication": false,
+      "blocking_requirements": [
+        "certified causal quotes and clock",
+        "linear-perpetual estimand frozen",
+        "independent chronological day panel"
+      ],
+      "retained_core": "10-second direction forecast versus matched argmax/confidence/scheduling utility"
+    },
+    {
+      "id": "E018",
+      "source": "Q18",
+      "status": "blocked",
+      "completed_empirical_replication": false,
+      "blocking_requirements": [
+        "certified top-five state and clock",
+        "reconstructed feature contract documented",
+        "independent chronological day panel"
+      ],
+      "retained_core": "depth/history/freshness factorial; training-only 90th-percentile absolute-return tail target"
+    }
+  ],
+  "completed_checks": [
+    "original Q16 finite count probe, 1000 synthetic histories",
+    "original Q17 eight synthetic invariant groups",
+    "original Q18 32 synthetic fits and nonfinite-input rejection",
+    "real BTC first-hour acquisition and join audit",
+    "five new contract/split/replay-gate tests"
+  ],
+  "next_gate": "T-005 public checkpoint and causal clock repair investigation",
+  "data_limits": {
+    "approved_acquisition_bytes": 402653184,
+    "no_full_month_download": true
+  },
+  "prohibited_claims": [
+    "real-data Q16/Q17/Q18 completed",
+    "empty-start full book",
+    "participant identity equals person",
+    "row-wise independent temporal test samples",
+    "realized historical PnL from quote utility"
+  ]
+}

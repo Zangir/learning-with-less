@@ -1,0 +1,18 @@
+\begin{table}[h]\centering
+\caption{Controlled action-ambiguity (E-210): ranked probability score, primary decision cost,
+decision regret, and latent-mean reconstruction MSE by training size and family. Restricted
+summaries incur regret while matched coordinates are equal. Source:
+\texttt{experiments/results/e210\_finite.csv}.}
+\label{tab:e210}
+\begin{tabular}{llrrrr}
+\toprule
+$n_{\mathrm{train}}$ & family & RPS & primary cost & regret & latent MSE \\
+\midrule
+32 & universal & 0.201384 & 0.435500 & 0.010500 & 1.298229 \\
+32 & symmetric & 0.194937 & 0.425750 & 0.000750 & 1.250000 \\
+128 & universal & 0.196002 & 0.425656 & 0.000656 & 1.267059 \\
+128 & symmetric & 0.193729 & 0.425000 & 0.000000 & 1.250000 \\
+512 & universal & 0.194103 & 0.425000 & 0.000000 & 1.255075 \\
+512 & symmetric & 0.193440 & 0.425000 & 0.000000 & 1.250000 \\
+\bottomrule
+\end{tabular}\end{table}

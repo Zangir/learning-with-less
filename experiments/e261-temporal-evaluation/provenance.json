@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-261"
+  ],
+  "question_ids": [
+    "Q-019"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-016"
+  ],
+  "result_ids": [
+    "R-031"
+  ],
+  "review_ids": [
+    "RV-029"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [
+    "feat/t016-fixed-persistence"
+  ],
+  "source_commits": [
+    "d3b48b7906284fe6261e5693a0a227aa644fa166"
+  ],
+  "remote_archive_branches": [
+    "old/t016-fixed-persistence"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "result-paper.pdf",
+      "sha256": "f175490e8030511d6d132794212e7d541f6b525f299c326d1ff5840cdc5cc1cc",
+      "size_bytes": 320593
+    },
+    {
+      "path": "figures/main.png",
+      "sha256": "5e9aecf84b7a0626f86f261264833f069a405de48fe2f22ec6361759ef416038",
+      "size_bytes": 148426
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "6b52a725a75a89e45fe996ccfeabb1b638f4292f64a6ffb3546b80429aa2150e",
+      "size_bytes": 16130
+    },
+    {
+      "path": "results/interpretation.json",
+      "sha256": "6fab8056b52642558dba9b79b0af8ee0b6ba93c1a216bb9c0b7806b3841d365f",
+      "size_bytes": 5989
+    }
+  ]
+}

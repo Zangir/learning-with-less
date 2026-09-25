@@ -1,0 +1,56 @@
+\section{The matched information-intervention instrument}
+\label{sec:setup}
+
+\paragraph{Principle.} Every study in this paper is one intervention: fix the model
+family, the training budget, the train/validation/test date split, and the decision
+policy, then change only the information the learner is allowed to observe. Anything that
+would let a confound leak in, retuning per view, reusing a peeked date, or scoring a
+view on its own clock, is held constant by construction. The comparison is paired at
+the level of the event, so a difference is attributable to information, not to model
+capacity or to luck on an easy day.
+
+\paragraph{Data.} We use real Hyperliquid perpetual-futures observations. Q17 uses $30$
+admitted native on-change best-bid/offer contracts across BTC and ETH over $15$ paired
+calendar dates. Q18 uses $18$ admitted sampled-L2 receipt-clock contracts across BTC and
+ETH over $9$ dates. The Q16 reconstruction diagnostic uses seven monthly BTC breakout and
+rebound cohorts drawn from a certified development source. All feature construction,
+normalization, and target definitions are training-only and frozen before any test date is
+touched. A separate source-and-schema audit certifies event ordering and timing before an
+experiment is allowed to run, so a comparison is admitted only when its inputs are valid. Raw market dumps are never redistributed, and each package ships checksums and acquisition
+instructions instead.
+
+\paragraph{Views and predictors (Q16).} We compare three predictors that differ only in
+the information they encode. The \emph{coarse} predictor (C) sees an aggregate view. The
+\emph{augmented} predictor (P) adds machine-reconstructed estimates of hidden book
+summaries (queue sizes, depth imbalance, and near-touch depth in basis points). And the
+\emph{observed-rich} predictor (R) sees the true rich summaries. All three share the model
+family, the training budget, and the dates. We score a multiclass fill/adverse/no-move
+target with a half-Brier loss (multiclass Brier divided by two), and we anchor every
+learned arm against two reference baselines: a per-day \emph{uniform} prediction and a
+\emph{training-frequency} prediction. If reconstruction has decision value, P must beat C
+and clear the training-frequency reference.
+
+\paragraph{Policies and costs (Q17).} Frozen forecasts from six model families (a prior,
+logistic regression, gradient boosting, a multilayer perceptron, a random control, and an
+oracle) pass through three fixed decision policies: an argmax direction policy, a
+confidence-thresholded policy, and a scheduling policy over $12$-opportunity windows.
+Utility is measured in basis points per opportunity under an explicit execution model
+with a $100$ ms quote offset and a $5$ bps-per-side cost. The pre-registered joint gate
+requires a model to show both a predictive advantage \emph{and} a utility reversal across
+at least two policy families on six of eight paired dates before a forecast-to-decision
+improvement is declared.
+
+\paragraph{Factorial (Q18).} We cross book depth (one versus five levels), history
+(instantaneous versus a longer window), and update delay (a current versus a delayed
+view) and fit each cell with logistic regression, gradient boosting, and a multilayer
+perceptron. The pre-declared reading is a common crossing: a universal sufficiency
+threshold would make the same view win across both assets and all model families with
+simultaneous day-clustered intervals. We report the relative-loss gap of the full
+depth-plus-history view against the reduced view for every cell.
+
+\paragraph{Soundness.} None of the three studies is allowed an outcome-driven tweak: the
+plans are frozen before test dates are seen, warnings (for example neural fits that reach
+their iteration cap) are preserved rather than suppressed, and a failure to certify
+noninferiority is never reported as proof of insufficiency. The evidence we present is a
+set of scoped negatives and controlled mechanisms, and we label each one by exactly what
+it does and does not establish.

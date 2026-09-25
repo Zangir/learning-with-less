@@ -1,0 +1,47 @@
+\section{Q18 sufficiency factorial: protocol and full results}
+\label{app:q18}
+
+\paragraph{Design.} Q18 crosses three information axes, book depth (one versus five
+levels), history (instantaneous versus a longer window), and update delay (a current view
+versus a view delayed by $55$ seconds), and fits each cell with logistic regression,
+gradient boosting, and a multilayer perceptron on $18$ admitted sampled-L2 receipt-clock
+contracts across BTC and ETH over $9$ dates, for $120$ fits. The response is the
+relative-loss gap of the full depth-plus-history view against the reduced view. A positive
+gap favors the richer view. Normalization and feature transforms are training-only.
+
+\paragraph{No common crossing.} Table~\ref{tab:q18} lists every cell for both the pilot and
+transfer stages. A universal sufficiency threshold would place all transfer gaps on one side
+of zero with simultaneous intervals excluding it. Instead the gaps change sign across model,
+asset, and factor: on transfer dates BTC logistic regression gains $+0.077$ from depth while
+the BTC perceptron with a delayed view loses $-0.049$. ETH logistic regression gains $+0.104$
+from depth while ETH gradient boosting with a delayed view is slightly negative. Many
+simultaneous upper bounds sit on the opposite side of the point estimate, so the panel cannot
+reject ``no effect'' for a fixed rule.
+
+\input{sections/tables/tbl_q18}
+
+\paragraph{Optimizer diagnostic.} A separate check varies the neural optimizer budget to
+rule out a pure underfitting explanation. Shallow inputs fit BTC better while deeper inputs
+fit ETH better, at both $60$ and $600$ iterations. The asset-dependent direction survives the
+budget change, so it is not merely an artifact of an unconverged fit. Several neural cells
+did reach their iteration cap, and their warnings are preserved. Because a universal rule
+would require agreement across model families, no single neural cell can establish or rescue
+the result.
+
+\input{sections/tables/tbl_q18opt}
+
+Table~\ref{tab:q18opt} gives the optimizer diagnostic in full: shallow inputs fit BTC better
+(negative shallow-minus-deep) while deeper inputs fit ETH better (positive), at both budgets.
+Table~\ref{tab:q18daily} shows the per-date components of the transfer-stage gaps, and makes
+the instability concrete: within a single cell the daily gap changes sign across dates, so the
+cell-level average is an average over disagreement rather than a stable effect.
+
+\input{sections/tables/tbl_q18daily}
+
+\paragraph{Certified companion.} A stricter companion analysis on an independent depth panel
+requires an own-clock inferiority \emph{and} an inherited-clock noninferiority, on both assets
+and at least two model families, before certifying a clock-induced sufficiency change. It
+certifies the change in $0$ of $6$ asset--model cases and explicitly refuses to convert a
+failure-to-certify-noninferiority into a proof of insufficiency. The two analyses agree on the
+conclusion that matters here: no fixed observable configuration is universally sufficient, and
+the sufficiency question is conditional on model, asset, and timing.

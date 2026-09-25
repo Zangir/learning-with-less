@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-253"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid_P0_design_with_reviewed_amendment"
+  ],
+  "headline_result": "The design and source path were supported with an amendment requirement; it established readiness, not strategy value.",
+  "result_records": [
+    {
+      "result_id": "R-023",
+      "source_task_id": "T-016",
+      "experiment_id": "E-253",
+      "revision": 1,
+      "status": "needs_revision",
+      "assessment": "P0_source_and_design_supported_deterministic_amendment_required",
+      "execution_status": "completed",
+      "reported_at": "2026-09-21T23:17:51.345674+00:00",
+      "evidence_manifest_sha256": "d17f6f7aab3eccd89e0a9f0c5f4b527895620eadc267edc9cf0005cee36eee5c",
+      "review_ids": [
+        "RV-021"
+      ],
+      "summary": "Prospective breakout/rebound protocol separates descriptive L2 prediction from unresolved participant and executable strategy claims; P0 extraction readiness pending review.",
+      "decision_id": "D-033"
+    }
+  ]
+}

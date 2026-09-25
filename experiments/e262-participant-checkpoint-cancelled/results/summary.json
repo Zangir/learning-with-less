@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-262"
+  ],
+  "execution_statuses": [
+    "cancelled"
+  ],
+  "assessments": [
+    "no_execution_no_scientific_result"
+  ],
+  "headline_result": "No scientific result exists; the work continued under E265 source recovery instead.",
+  "result_records": []
+}

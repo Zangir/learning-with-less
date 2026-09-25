@@ -1,0 +1,72 @@
+{
+  "task": "T-006",
+  "seed": 16029001,
+  "scope": "Candidate-time coverage diagnostic on first 200000 original interleaved diff lines; no replay, model, or historical receipt-time certification",
+  "inspiration_commit": "7fd7616b8a3af5193ff9efe9d5b27e4bae7c3135",
+  "implementation_changes": [
+    "Exact decimal size lattice replaces float32 matching",
+    "Same frozen BTC prefix, full acquired hour trades/statuses only; adjacent hours unavailable",
+    "No broad unmatched-size trade fallback",
+    "No removal/demotion/sorting of inconsistent diff events",
+    "No cleaned clock or synthetic block labels"
+  ],
+  "input_manifest_sha256": "dd33442506739d9a59ad4059531f6bdd0f0d8cd92dae7cedd97446d6a19930b7",
+  "original_diff_lines": 200000,
+  "btc_diff_rows": 91868,
+  "trade_lines": 500408,
+  "btc_trade_rows": 101223,
+  "by_kind": {
+    "new": {
+      "rows": 45194,
+      "bounded": 45194,
+      "point_candidate": 45194,
+      "width_at_most_100ms": 45194
+    },
+    "remove": {
+      "rows": 44889,
+      "bounded": 44889,
+      "point_candidate": 44889,
+      "width_at_most_100ms": 44889
+    },
+    "update": {
+      "rows": 1785,
+      "bounded": 1777,
+      "point_candidate": 1777,
+      "width_at_most_100ms": 1777
+    }
+  },
+  "sources": {
+    "open_status": 45194,
+    "terminal_status": 43964,
+    "equal_multiplicity_trade_ordinal": 1777,
+    "zero_size_status": 925,
+    "missing_exact_size_trade": 8
+  },
+  "point_candidate_rows": 91860,
+  "point_candidate_rate": 0.9999129185352897,
+  "naive_point_candidate_rows": 90083,
+  "naive_point_candidate_rate": 0.9805699481865285,
+  "additional_point_candidates": 1777,
+  "remaining_clock_reversals": [
+    {
+      "previous_raw_line": 186649,
+      "current_raw_line": 186660,
+      "previous_kind": "remove",
+      "current_kind": "new",
+      "backward_ns": 182854823,
+      "previous_utc": "2025-12-01T00:01:27.621791702",
+      "current_utc": "2025-12-01T00:01:27.438936879"
+    }
+  ],
+  "raw_diff_order_preserved": true,
+  "initial_state_verified": false,
+  "event_clock_certified": false,
+  "receipt_clock_available": false,
+  "limitations": [
+    "Point candidate is a matching result, not independent timestamp ground truth",
+    "Equal-size multiplicity/ordinal join assumes stream correspondence; no adjacent-hour evidence",
+    "No full snapshot or within-block atomic order certification",
+    "Full-hour retrospective matching cannot establish live data availability"
+  ],
+  "seconds": 5.662305900012143
+}

@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "default_branch": "master",
+  "archive_namespace": "old/",
+  "branches": [
+    {
+      "local_branch": "feat/q18-hyperliquid-adapter",
+      "source_commit": "faa8aa47106dd7607fdf35e8a8cc7109f8764fe1",
+      "remote_archive_branch": "old/q18-hyperliquid-adapter",
+      "head_subject": "Implement native receipt-clock Q17 primary and temporal-transfer comparisons",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "faa8aa47106dd7607fdf35e8a8cc7109f8764fe1",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t008-data-certification",
+      "source_commit": "a8d6237d28f37a3b00d687585926eaf60e242aa2",
+      "remote_archive_branch": "old/t008-data-certification",
+      "head_subject": "Bind original offline estimands to participant source premises and bounded evidence",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "a8d6237d28f37a3b00d687585926eaf60e242aa2",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t009-q16-hyperliquid",
+      "source_commit": "fc5388a61c721748d3906540635de0f217337c21",
+      "remote_archive_branch": "old/t009-q16-hyperliquid",
+      "head_subject": "Add controlled Q16 observer and probe comparisons with conservation certificates",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "fc5388a61c721748d3906540635de0f217337c21",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t010-q17-hyperliquid",
+      "source_commit": "217dcedc98b248641a74f0c301cc24c4629f0cb7",
+      "remote_archive_branch": "old/t010-q17-hyperliquid",
+      "head_subject": "Apply reviewed earlier Q17 models to sealed conditional December decisions",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "217dcedc98b248641a74f0c301cc24c4629f0cb7",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t012-contribution-triage",
+      "source_commit": "797ffe1152076f66bf2dee39d94c15e285526770",
+      "remote_archive_branch": "old/t012-contribution-triage",
+      "head_subject": "Render and verify the remaining-contribution decision packet",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "797ffe1152076f66bf2dee39d94c15e285526770",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t012-controlled-fill-study",
+      "source_commit": "2afe44f809e6c17bb40069b1860995b891901f66",
+      "remote_archive_branch": "old/t012-controlled-fill-study",
+      "head_subject": "Render controlled fill evidence and preserve raw stage examples",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "2afe44f809e6c17bb40069b1860995b891901f66",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t012-information-value-design",
+      "source_commit": "521ef160c290c0ffdf0c3fc21e28ee257c391943",
+      "remote_archive_branch": "old/t012-information-value-design",
+      "head_subject": "Render and verify the conditional-information design packet",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "521ef160c290c0ffdf0c3fc21e28ee257c391943",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t012-mechanism",
+      "source_commit": "f48ff2d6828d3573b226764cc1af0b62f594bf3e",
+      "remote_archive_branch": "old/t012-mechanism",
+      "head_subject": "Render actual simulator traces and paired fill evidence",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "f48ff2d6828d3573b226764cc1af0b62f594bf3e",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t012-restricted-simulator",
+      "source_commit": "9b61af0592104876e8a2d26ac8ae2787282d4241",
+      "remote_archive_branch": "old/t012-restricted-simulator",
+      "head_subject": "Export restricted fill fixtures and render delivery evidence",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "9b61af0592104876e8a2d26ac8ae2787282d4241",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t012-shift-label-novelty",
+      "source_commit": "e1b65d48850189c47bb7fa241303a760a9d7a989",
+      "remote_archive_branch": "old/t012-shift-label-novelty",
+      "head_subject": "Render the label-cost evidence and scoped novelty report",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "e1b65d48850189c47bb7fa241303a760a9d7a989",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t016-breakout-rebound-p0",
+      "source_commit": "ec39b19cd6ec38d21aac03e26d9461d2c36afa0b",
+      "remote_archive_branch": "old/t016-breakout-rebound-p0",
+      "head_subject": "Implement deterministic breakout and rebound P0 extraction",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "ec39b19cd6ec38d21aac03e26d9461d2c36afa0b",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t016-fixed-later-period",
+      "source_commit": "33b4382facb2e0b8067b49c1c4c25f3c589f8d56",
+      "remote_archive_branch": "old/t016-fixed-later-period",
+      "head_subject": "Freeze and audit the four-date zero-fit temporal evaluation",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "33b4382facb2e0b8067b49c1c4c25f3c589f8d56",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t016-fixed-output-diagnosis",
+      "source_commit": "2cca8b92d48058d26eb6388fd520869bfa8a10fd",
+      "remote_archive_branch": "old/t016-fixed-output-diagnosis",
+      "head_subject": "Freeze and independently audit the seven-date saved-output diagnosis",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "2cca8b92d48058d26eb6388fd520869bfa8a10fd",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t016-fixed-persistence",
+      "source_commit": "d3b48b7906284fe6261e5693a0a227aa644fa166",
+      "remote_archive_branch": "old/t016-fixed-persistence",
+      "head_subject": "Add fixed February BTC persistence execution and strict sign audit",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "d3b48b7906284fe6261e5693a0a227aa644fa166",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t016-frozen-cpr-comparison",
+      "source_commit": "30fb8a00c199a2e74a98851d4292cf3b8b6819e6",
+      "remote_archive_branch": "old/t016-frozen-cpr-comparison",
+      "head_subject": "Execute the authorized 39-fit chronological development comparison",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "30fb8a00c199a2e74a98851d4292cf3b8b6819e6",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t016-p1-development-cohort",
+      "source_commit": "b884c67448c4a30d57e9ad77756bcb69a6bebe00",
+      "remote_archive_branch": "old/t016-p1-development-cohort",
+      "head_subject": "Extract and audit the seven-day BTC development cohort",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "b884c67448c4a30d57e9ad77756bcb69a6bebe00",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t018-source-recovery",
+      "source_commit": "e638930f2fde8f5fd9b3aec264237ee44261507f",
+      "remote_archive_branch": "old/t018-source-recovery",
+      "head_subject": "Package the fixed-date source evidence with reviewed rendering and continued resource accounting",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "e638930f2fde8f5fd9b3aec264237ee44261507f",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t019-q16-empirical",
+      "source_commit": "1162461281c79599cc7fe6ffea4d1ec71f177cdd",
+      "remote_archive_branch": "old/t019-q16-empirical",
+      "head_subject": "Invalidate Q16 cohorts with source or model contradictions",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "1162461281c79599cc7fe6ffea4d1ec71f177cdd",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t022-miro-size-repair",
+      "source_commit": "1f421e8260a4933305a6cdba0345c694d1f195f6",
+      "remote_archive_branch": "old/t022-miro-size-repair",
+      "head_subject": "Preserve native Miro graph identities across bounded SVG updates",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "1f421e8260a4933305a6cdba0345c694d1f195f6",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "feat/t023-book-washout-mini",
+      "source_commit": "6e3f98c33272ace1cbbbee6f0b046b7d0b318d77",
+      "remote_archive_branch": "old/t023-book-washout-mini",
+      "head_subject": "Add observed lifecycle coverage visualization",
+      "kind": "historical_experiment_branch",
+      "remote_verified_sha": "6e3f98c33272ace1cbbbee6f0b046b7d0b318d77",
+      "remote_verified": true
+    },
+    {
+      "local_branch": "master",
+      "source_commit": "ed62f2a4ccebc7ad559ba0c185954401d5311cb8",
+      "remote_archive_branch": "old/master-pre-curation",
+      "head_subject": "Ignore local reports, templates, secrets, data, and build outputs",
+      "kind": "pre_curation_default_branch",
+      "remote_verified_sha": "ed62f2a4ccebc7ad559ba0c185954401d5311cb8",
+      "remote_verified": true
+    }
+  ],
+  "archived_at": "2026-09-24T21:43:37.331409+00:00",
+  "remote": "origin",
+  "remote_verification": "All declared old/* refs resolved to their exact recorded source commits after fetch."
+}

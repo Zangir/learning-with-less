@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-272"
+  ],
+  "question_ids": [
+    "Q-006",
+    "Q-022",
+    "Q-023"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-012"
+  ],
+  "result_ids": [
+    "R-043"
+  ],
+  "review_ids": [
+    "RV-041"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [
+    "feat/t012-information-value-design"
+  ],
+  "source_commits": [
+    "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+  ],
+  "remote_archive_branches": [
+    "old/t012-information-value-design"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "figures/main.png",
+      "sha256": "58eed42e110b705e8d522111f189451e4d748df757f28575d12670019f82ee5c",
+      "size_bytes": 182653
+    },
+    {
+      "path": "figures/synthetic-witnesses.svg",
+      "sha256": "145579da088b37bcfc8fda1b204038e8e4a36518ae7b6e11044e95d497d466df",
+      "size_bytes": 44286
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "e7ea2b4e718ad31788b3a7fe28d9901897e9be5986e7098b732b31b6bdc9281f",
+      "size_bytes": 1965
+    },
+    {
+      "path": "result-paper.pdf",
+      "sha256": "21d958d34f245003a7730f8d450cd6cea1b65c59e0049c32f661d411985289a5",
+      "size_bytes": 342993
+    },
+    {
+      "path": "results/analytical-checks.json",
+      "sha256": "2789de582f8a72eaa5e64cc840ab5a232d8a928779a87167a97e263882c7fadf",
+      "size_bytes": 10496
+    },
+    {
+      "path": "results/next-test.md",
+      "sha256": "137a8534e400530280cee9165c943082d1c59ed9978cc1acb116e95491b0282d",
+      "size_bytes": 8715
+    },
+    {
+      "path": "results/stage-summary.json",
+      "sha256": "8d8bc5375cecca4175a0db58d245d6fd30d1b8fd794e83acf114ef16b406f6e1",
+      "size_bytes": 3568
+    }
+  ]
+}

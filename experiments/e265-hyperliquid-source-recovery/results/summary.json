@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-265"
+  ],
+  "execution_statuses": [
+    "source_candidate_found_pending_protocol_admission"
+  ],
+  "assessments": [
+    "source_location_resolved_candidate_not_yet_admitted"
+  ],
+  "headline_result": "Exact Q18 and Q17 source prerequisites were supported in scope; a qualified native Q16 source remained unavailable.",
+  "result_records": [
+    {
+      "result_id": "R-032",
+      "experiment_id": "E-265",
+      "source_task_id": "T-018",
+      "revision": 1,
+      "status": "partially_accepted",
+      "assessment": "exact_Q18_source_prerequisite_supported",
+      "execution_status": "partial_source_export_completed",
+      "reported_at": "2026-09-22T09:28:59.342266+00:00",
+      "evidence_manifest_sha256": "3a59a979ae8dd3b425fdaeb56bae2d2c70d98d179b413f106200b354adbe6a17",
+      "review_ids": [
+        "RV-030"
+      ],
+      "mandatory_empirical_goal_closed": false,
+      "q18_source_gate": {
+        "status": "supported_in_scope",
+        "decision_id": "D-045",
+        "review_id": "RV-030",
+        "sha256": "fdc28de718a73d423df2eeff36a381db8b3c2e687de17f53b5f6a929038c534d",
+        "consumer_protocol_sha256": "dee4a91b6b155b1f928979f19138149868a7030d06924cf75e368450ad23c499",
+        "contract_count": 18,
+        "model_results_accepted": false,
+        "conditions": [
+          "Consume exact18 contracts and frozen receipt protocol without silent substitution",
+          "Retain original source order, repeated identical event states, startup and gap/disconnect policies",
+          "Keep the exact same supported rows across delayed/depth/history comparisons within each asset",
+          "Keep own-observation normalization, training-only transformations and fixed date roles",
+          "Preserve sampled-L2/provider-clock and exploratory-selection qualifications",
+          "Obtain separate model/computational-result review; this source verdict accepts no fitted result"
+        ]
+      },
+      "publication_status": "combine_with_R036_after_model_review_and_figure"
+    },
+    {
+      "result_id": "R-038",
+      "experiment_id": "E-265",
+      "source_task_id": "T-018",
+      "revision": 2,
+      "status": "partially_accepted",
+      "assessment": "exact_Q17_source_prerequisite_supported",
+      "execution_status": "source_packet_completed_Q16_source_unavailable",
+      "reported_at": "2026-09-22T09:53:20.019885+00:00",
+      "evidence_manifest_sha256": "7dce850c4e7d2232874bdad5eb107798e62b0b39ef5fe70bb7eedef4aff615bf",
+      "review_ids": [
+        "RV-035"
+      ],
+      "mandatory_empirical_goal_closed": false,
+      "scope_note": "58 contracts include already reviewed Q18 subset; do not repeat or overwrite RV030. Q16 remains missing source evidence.",
+      "q17_source_gate": {
+        "status": "supported_in_scope",
+        "decision_id": "D-047",
+        "review_id": "RV-035",
+        "sha256": "09181c80223ff3fc194996de92366a22c6084d3939755ae783c7944503071bcb",
+        "contract_count": 30,
+        "consumer_protocol_sha256": "dbfed0b2a7776955bad9af8caadf4001ef005bc1a4e281f9edd75921857aa039",
+        "consumer_input_bindings_sha256": "e6c505cb04399f05519046284c940b56b18454c9a4e62f3969c0ad8206b69ac9",
+        "conditions": [
+          "Admits recorded native on-change BBO states and faithful provider receipt/event fields under the bound offline protocol.",
+          "Continuity means no recorded disconnect inside the chosen archive segment, subject to provider collection completeness. Absence of changes is not independent proof of exchange continuity.",
+          "Never cross recorded disconnects or extrapolate beyond first/last actual event and receipt support; all history, targets and schedules must remain supported.",
+          "Provider receipt is uncalibrated and is not strategy-specific historical availability; delay scenarios are uncalibrated quote scenarios.",
+          "Millisecond event ordering uses original capture-order/right-asof convention; no interior exchange action order is inferred.",
+          "NativeBBO source does not reinstate invalid January2026 sampledL2 or any prior scientific result.",
+          "Model features, transformations, cache projection, chronology, fitted results and interpretation require separate RV036 review."
+        ],
+        "model_results_accepted": false
+      }
+    }
+  ]
+}

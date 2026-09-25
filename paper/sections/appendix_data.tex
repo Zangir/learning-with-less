@@ -1,0 +1,40 @@
+\section{Data provenance, certification, and the one open endpoint}
+\label{app:data}
+
+\paragraph{Sources.} All three studies use real Hyperliquid perpetual-futures observations.
+Q17 draws on native on-change best-bid/offer contracts. Q18 draws on sampled-L2 receipt-clock
+snapshots. The Q16 reconstruction diagnostic draws on certified BTC breakout and rebound
+cohorts. Every experiment is gated by a source-and-schema audit that certifies event ordering
+and receipt timing before the experiment is admitted, so a comparison runs only on inputs
+whose validity has been checked. Raw market dumps are never redistributed. Each released
+package ships compact metrics, checksums, and acquisition instructions instead, and no
+committed path assumes access to the original development machine.
+
+\paragraph{Restricted-data policy.} Raw and event-level derivatives are held under the data
+provider's internal-analysis terms and are excluded from the release. Each package that
+depends on such data states so and ships a license-clean smoke fixture so that its entry
+point runs for anyone. Provider receipt time is uncalibrated against exchange time, and the
+sampled-L2 feed does not establish native queue priority. These are recorded as limitations
+next to every claim that could be affected.
+
+\paragraph{The open native-FIFO endpoint.} The strictest form of Q16, native-FIFO count
+tightening on a fully admitted order-lifecycle cohort, is not yet computed, and we state
+this rather than approximate it. We located the exact public source: an open December 2025
+Level-4 order-book archive of the Hyperliquid exchange totaling $195.3$ GB, covering BTC,
+ETH, and SOL, with $744$ hourly files per order archive, distributed with raw book diffs and
+trades. A bounded washout audit over $11$ complete hours covered $32{,}633{,}820$ events and
+observed $11{,}328$ legacy order identifiers, of which $148$ were still first seen in hour
+$10$. Observed-lifecycle coverage reached $99.92985\%$, but true live-book completeness at the
+start of the window is unidentified. Because a valid native-FIFO test requires a certified
+initial book state, we do not claim the endpoint. The decision-relevance conclusion for Q16
+does not depend on it: it rests on the reconstruction diagnostic (Appendix~\ref{app:recon}),
+which is computed on admitted data.
+
+\paragraph{Provenance records.} Table~\ref{tab:prov} lists the state result identifiers, the
+independent review identifiers, and the source commit for the six load-bearing packages. Each
+result was accepted through an independent review before entering the programme, and the
+reviews are what let us label a package as a valid negative, an inconclusive run, or a blocked
+endpoint rather than asserting the status ourselves. Every package's full record, task
+identifiers, protocol revisions, archived implementation branches, and artifact hashes, ships in its \texttt{provenance.json}.
+
+\input{sections/tables/tbl_prov}

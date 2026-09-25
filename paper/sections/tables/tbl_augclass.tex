@@ -1,0 +1,19 @@
+\begin{table}[h]\centering
+\caption{August breakout cohort ($n=691$): per-class predicted probability ($q$) and per-class
+half-Brier loss ($\ell$) for each method, with total loss. Classes are fill (F), adverse (A),
+and no-move (N). Source: \texttt{experiments/results/e264\_figure\_source.json}.}
+\label{tab:augclass}
+\begin{tabular}{lrrrrrrr}
+\toprule
+method & $q_F$ & $q_A$ & $q_N$ & $\ell_F$ & $\ell_A$ & $\ell_N$ & total \\
+\midrule
+C & 0.367583 & 0.231548 & 0.400868 & 0.375428 & 0.680592 & 0.142871 & 0.352863 \\
+P & 0.367583 & 0.231548 & 0.400868 & 0.400633 & 0.688576 & 0.125261 & 0.356918 \\
+R & 0.367583 & 0.231548 & 0.400868 & 0.440539 & 0.708046 & 0.112043 & 0.370796 \\
+onehot-F & 0.367583 & 0.231548 & 0.400868 & 0.000000 & 1.000000 & 1.000000 & 0.632417 \\
+onehot-A & 0.367583 & 0.231548 & 0.400868 & 1.000000 & 0.000000 & 1.000000 & 0.768452 \\
+onehot-N & 0.367583 & 0.231548 & 0.400868 & 1.000000 & 1.000000 & 0.000000 & 0.599132 \\
+uniform & 0.367583 & 0.231548 & 0.400868 & 0.333333 & 0.333333 & 0.333333 & 0.333333 \\
+train-frequency & 0.367583 & 0.231548 & 0.400868 & 0.366264 & 0.578116 & 0.176634 & 0.339301 \\
+\bottomrule
+\end{tabular}\end{table}

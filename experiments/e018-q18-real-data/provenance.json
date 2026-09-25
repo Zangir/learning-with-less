@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-018",
+    "E-268"
+  ],
+  "question_ids": [
+    "Q-001"
+  ],
+  "hypothesis_ids": [
+    "H-003"
+  ],
+  "task_ids": [
+    "T-001",
+    "T-011"
+  ],
+  "result_ids": [
+    "R-008",
+    "R-010",
+    "R-017",
+    "R-019",
+    "R-036"
+  ],
+  "review_ids": [
+    "RV-004",
+    "RV-006",
+    "RV-013",
+    "RV-015",
+    "RV-017",
+    "RV-034"
+  ],
+  "protocol_revisions": [
+    3,
+    1
+  ],
+  "source_branches": [
+    "feat/q18-hyperliquid-adapter"
+  ],
+  "source_commits": [
+    "faa8aa47106dd7607fdf35e8a8cc7109f8764fe1"
+  ],
+  "remote_archive_branches": [
+    "old/q18-hyperliquid-adapter"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "explanation-paper.pdf",
+      "sha256": "b53495d017ada77c7825472628ae1946d5318970d1175cfc80ba64a38fc27abc",
+      "size_bytes": 895181
+    },
+    {
+      "path": "original-three-papers-explained.pdf",
+      "sha256": "c53a58761f5d9edc26d52c3b9482b5dd600712a86386273a82653331578dc322",
+      "size_bytes": 92652
+    },
+    {
+      "path": "result-paper.pdf",
+      "sha256": "5cbb703e9720dc74bd08cdd28635ebe4eec78b131ede33046864e164c7354e69",
+      "size_bytes": 93675
+    },
+    {
+      "path": "figures/main.png",
+      "sha256": "7260cd408f5254b4db422dd57df97a7d78f8d3004faa3322a5ed79116cb5f070",
+      "size_bytes": 291233
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "4eef32690071b62a0cf171f04a8c326e2933db2b4f8d669a6e6b9a2ac1e0c2b8",
+      "size_bytes": 4327506
+    },
+    {
+      "path": "results/contrasts.csv",
+      "sha256": "3d04a5575b42cc12b13dc35fdb37da95952b71a4f26f8f9f8352b4e0e2b8420c",
+      "size_bytes": 2595
+    },
+    {
+      "path": "results/figure-data.json",
+      "sha256": "3ad31c1d73ac54dc1e45fb744c37662c6989966baf2c2df30f0cfde25add0c3c",
+      "size_bytes": 27880
+    }
+  ]
+}

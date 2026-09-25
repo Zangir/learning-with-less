@@ -1,0 +1,30 @@
+{
+  "completed": true,
+  "learned_fit_invocations": 24,
+  "bundles": [
+    "zero-128",
+    "zero-512",
+    "informative-128",
+    "informative-512"
+  ],
+  "outcomes": 2816,
+  "prediction_rows": 5632,
+  "probability_outputs_per_row": 15,
+  "test_pools": 3,
+  "selection_used_to_choose": false,
+  "test_used_to_tune": false,
+  "training_sizes_nested": true,
+  "learned_downstream": false,
+  "zero_fit_identity_controls": [
+    "distribution_y=direct_compiled_y",
+    "distribution_h=direct_soft_h"
+  ],
+  "supervision": "Y-only main comparison; H-supervised diagnostic separate; rich benchmark current H only",
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "independent episode",
+  "intervals_conditional_on_training": true,
+  "seconds": 1.2869535999998334,
+  "finished_at": "2026-09-22T04:46:04.581122+00:00",
+  "validated_rows_sha256": "96647bbf93a8aa071084deb6752f7e0f1427f8aa66967a95d58c4302c5adf680",
+  "predictions_sha256": "a124a5393138dfb80c6e44633bf9705ffdcd3155f77b86b24aa07c8be7e0113d"
+}

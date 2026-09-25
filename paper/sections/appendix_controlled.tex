@@ -1,0 +1,33 @@
+\section{Controlled-mechanism results}
+\label{app:controlled}
+
+The controlled studies isolate the mechanism behind the real-data negatives in settings where
+the hidden state and the optimal action are known, so a null cannot be blamed on market noise.
+
+\paragraph{Action-relevant ambiguity (E-210).} Table~\ref{tab:e210} varies the training size
+and the label family. Restricted summaries incur a decision regret (for example $0.075$ at the
+smallest universal setting) that shrinks with data, while the matched direct and
+posterior-restoration coordinates are equal, so no restoration-specific advantage appears. The
+latent-mean reconstruction MSE moves independently of the decision cost: recovering the latent
+mean better does not lower the decision cost, which is the controlled analogue of the Q16
+market result.
+
+\input{sections/tables/tbl_e210}
+
+\paragraph{Point versus distributional fill prediction (E-258).} Table~\ref{tab:e258} compares a
+direct predictor, a point-reconstruction predictor, and a distributional-reconstruction
+predictor across conditions and training sizes. Hidden-queue uncertainty matters, the
+point-reconstruction predictor is clearly worse, but the direct and distributional predictors
+coincide at $512$ draws and the direct-compiled predictor matches the distributional one
+exactly, so reconstruction carries no isolated advantage over predicting the decision directly.
+
+\input{sections/tables/tbl_e258}
+
+\paragraph{Fixed-model persistence (E-271).} Table~\ref{tab:e271} reports the persistence check
+on one admitted BTC day. The strict joint condition is contradicted: raw and favorable-class
+contrasts are positive while the fixed-class contrast is $-0.01337$, and a uniform predictor
+beats every learned breakout arm on observed-event loss. One source-exposed day cannot support a
+population claim, but it is consistent with the reconstruction and sufficiency negatives: the
+richer, learned arm does not persist as the better decision.
+
+\input{sections/tables/tbl_e271}

@@ -1,0 +1,839 @@
+\begin{thebibliography}{135}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Allen et~al.(2024)Allen, Koh, Segers, and Ziegel]{allen2024tail}
+Sam Allen, Jonathan Koh, Johan Segers, and Johanna Ziegel.
+\newblock {Tail calibration of probabilistic forecasts}.
+\newblock \emph{Journal of the American Statistical Association}, 2024.
+
+\bibitem[Ampountolas(2023)]{ampountolas2023comparative}
+Apostolos Ampountolas.
+\newblock {Comparative Analysis of Machine Learning, Hybrid, and Deep Learning
+  Forecasting Models Evidence from European Financial Markets and Bitcoins}.
+\newblock \emph{Forecasting}, 2023.
+
+\bibitem[Arroyo et~al.(2023)Arroyo, Cartea, Moreno-Pino, and
+  Zohren]{alvaro2023deep}
+Alvaro Arroyo, Alvaro Cartea, Fernando Moreno-Pino, and Stefan Zohren.
+\newblock {Deep Attentive Survival Analysis in Limit Order Books: Estimating
+  Fill Probabilities with Convolutional-Transformers}.
+\newblock \emph{Quantitative Finance}, 2023.
+
+\bibitem[Backhouse et~al.(2025)Backhouse, Li, Foerster, Calinescu, and
+  Zohren]{backhouse2025painting}
+Alfred Backhouse, Kang Li, Jakob Foerster, Anisoara Calinescu, and Stefan
+  Zohren.
+\newblock {Painting the market: generative diffusion models for financial limit
+  order book simulation and forecasting}.
+\newblock \emph{arXiv preprint arXiv:2509.05107}, 2025.
+
+\bibitem[Bahamou et~al.(2019)Bahamou, Doumergue, and Donnat]{bahamou2019hawkes}
+Achraf Bahamou, Maud Doumergue, and Philippe Donnat.
+\newblock {Hawkes processes for credit indices time series analysis: How random
+  are trades arrival times?}
+\newblock \emph{arXiv preprint arXiv:1902.03714}, 2019.
+
+\bibitem[Baldacci \& Bergault(2021)Baldacci and Bergault]{baldacci2021optimal}
+Bastien Baldacci and Philippe Bergault.
+\newblock {Optimal incentives in a limit order book: a SPDE control approach}.
+\newblock \emph{Market Microstructure and Liquidity}, 2021.
+
+\bibitem[Bateni et~al.(2026)Bateni, Hadizadeh, Hajiaghayi, JafariRaviz, and
+  Taherijam]{bateni2026optimal}
+MohammadHossein Bateni, Zahra Hadizadeh, MohammadTaghi Hajiaghayi, Mahdi
+  JafariRaviz, and Shayan Taherijam.
+\newblock {Optimal Rates for Agentic Networked Information Aggregation}.
+\newblock \emph{arXiv preprint arXiv:2609.05318}, 2026.
+
+\bibitem[Bechler \& Ludkovski(2017)Bechler and Ludkovski]{bechler2017order}
+Kyle Bechler and Michael Ludkovski.
+\newblock {Order Flows and Limit Order Book Resiliency on the Meso-Scale}.
+\newblock \emph{Market Microstructure and Liquidity}, 2017.
+
+\bibitem[Bechler \& Ludkovski(2014)Bechler and Ludkovski]{bechler2014optimal}
+Kyle Bechler and Mike Ludkovski.
+\newblock {Optimal Execution with Dynamic Order Flow Imbalance}.
+\newblock \emph{SIAM Journal on Financial Mathematics}, 2014.
+
+\bibitem[Beykirch et~al.(2022)Beykirch, Janke, and
+  Steinke]{beykirch2022bidding}
+Mario Beykirch, Tim Janke, and Florian Steinke.
+\newblock {Bidding and Scheduling in Energy Markets: Which Probabilistic
+  Forecast Do We Need?}
+\newblock In \emph{2022 17th International Conference on Probabilistic Methods
+  Applied to Power Systems (PMAPS)}, 2022.
+
+\bibitem[Bouallegue et~al.(2015)Bouallegue, Pinson, and
+  Friederichs]{bouallegue2015quantile}
+Zied~Ben Bouallegue, Pierre Pinson, and Petra Friederichs.
+\newblock {Quantile forecast discrimination ability and value}.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society}, 2015.
+
+\bibitem[Briola et~al.(2024{\natexlab{a}})Briola, Bartolucci, and
+  Aste]{briola2024deep}
+Antonio Briola, Silvia Bartolucci, and Tomaso Aste.
+\newblock {Deep Limit Order Book Forecasting}.
+\newblock \emph{arXiv preprint arXiv:2403.09267}, 2024{\natexlab{a}}.
+
+\bibitem[Briola et~al.(2024{\natexlab{b}})Briola, Bartolucci, and
+  Aste]{briola2024hlob}
+Antonio Briola, Silvia Bartolucci, and Tomaso Aste.
+\newblock {HLOB -- Information Persistence and Structure in Limit Order Books}.
+\newblock \emph{Expert Systems with Applications}, 2024{\natexlab{b}}.
+
+\bibitem[Brokmann et~al.(2014)Brokmann, Serie, Kockelkoren, and
+  Bouchaud]{brokmann2014slow}
+X.~Brokmann, E.~Serie, J.~Kockelkoren, and J.~P. Bouchaud.
+\newblock {Slow decay of impact in equity markets}.
+\newblock \emph{Market Microstructure and Liquidity}, 2014.
+
+\bibitem[Cao et~al.(2022)Cao, El-Laham, Trinh, Vyetrenko, and
+  Liu]{cao2022dslob}
+Defu Cao, Yousef El-Laham, Loc Trinh, Svitlana Vyetrenko, and Yan Liu.
+\newblock {DSLOB: A Synthetic Limit Order Book Dataset for Benchmarking
+  Forecasting Algorithms under Distributional Shift}.
+\newblock \emph{arXiv preprint arXiv:2211.11513}, 2022.
+
+\bibitem[Cao \& Xu(2025)Cao and Xu]{cao2025end}
+Tingwei Cao and Yan Xu.
+\newblock {An End-to-End Approach for Microgrid Probabilistic Forecasting and
+  Robust Operation via Decision-focused Learning}.
+\newblock \emph{arXiv preprint arXiv:2512.12755}, 2025.
+
+\bibitem[Catt(2026)]{maurice2026forecastability}
+Peter~Maurice Catt.
+\newblock {Forecastability as an Information-Theoretic Limit on Prediction}.
+\newblock \emph{arXiv preprint arXiv:2603.27074}, 2026.
+
+\bibitem[Cestari et~al.(2023)Cestari, Barchi, Busetto, Marazzina, and
+  Formentin]{cestari2023hawkes}
+Raffaele~Giuseppe Cestari, Filippo Barchi, Riccardo Busetto, Daniele Marazzina,
+  and Simone Formentin.
+\newblock {Hawkes-based cryptocurrency forecasting via Limit Order Book data}.
+\newblock \emph{arXiv preprint arXiv:2312.16190}, 2023.
+
+\bibitem[Cetin \& Waelbroeck(2020)Cetin and Waelbroeck]{cetin2020informed}
+Umut Cetin and Henri Waelbroeck.
+\newblock {Informed trading, limit order book and implementation shortfall:
+  equilibrium and asymptotics}.
+\newblock \emph{SSRN Electronic Journal}, 2020.
+
+\bibitem[Ceyhan et~al.(2017)Ceyhan, Kurt, Sahin, and
+  Derinkuyu]{ceyhan2017empirical}
+Gokhan Ceyhan, Nermin~Elif Kurt, H.~Bahadir Sahin, and Kursad Derinkuyu.
+\newblock {Empirical comparison of three models for determining market clearing
+  prices in Turkish day-ahead electricity market}.
+\newblock In \emph{2017 14th International Conference on the European Energy
+  Market (EEM)}, 2017.
+
+\bibitem[Chavez-Casillas et~al.(2024)Chavez-Casillas, Figueroa-Lopez, Yu, and
+  Zhang]{chavezcasillas2024adaptive}
+Jonathan Chavez-Casillas, Jose~E. Figueroa-Lopez, Chuyi Yu, and Yi~Zhang.
+\newblock {Adaptive Optimal Market Making Strategies with Inventory Liquidation
+  Cos}.
+\newblock \emph{arXiv preprint arXiv:2405.11444}, 2024.
+
+\bibitem[Chavez-Casillas \& Figueroa-Lopez(2014)Chavez-Casillas and
+  Figueroa-Lopez]{chavezcasillas2014one}
+Jonathan~A. Chavez-Casillas and Jose~E. Figueroa-Lopez.
+\newblock {One-level limit order book models with memory and variable spread}.
+\newblock \emph{arXiv preprint arXiv:1407.5684}, 2014.
+
+\bibitem[Chen et~al.(2025)Chen, Shao, Salim, and Xue]{chen2025aster}
+Shulun Chen, Wei Shao, Flora~D. Salim, and Hao Xue.
+\newblock {ASTER: Adaptive Spatio-Temporal Early Decision Model for Dynamic
+  Resource Allocation}.
+\newblock \emph{arXiv preprint arXiv:2506.17929}, 2025.
+
+\bibitem[Cheng et~al.(2026)Cheng, Liu, and Long]{pu2026polybench}
+Pu~Cheng, Juncheng Liu, and Yunshen Long.
+\newblock {PolyBench: Benchmarking LLM Forecasting and Trading Capabilities on
+  Live Prediction Market Data}.
+\newblock \emph{arXiv preprint arXiv:2604.14199}, 2026.
+
+\bibitem[Cont \& Larrard(2012)Cont and Larrard]{cont2012order}
+Rama Cont and Adrien~De Larrard.
+\newblock {Order book dynamics in liquid markets: limit theorems and diffusion
+  approximations}.
+\newblock \emph{arXiv preprint arXiv:1202.6412}, 2012.
+
+\bibitem[Cont \& Mueller(2019)Cont and Mueller]{cont2019stochastic}
+Rama Cont and Marvin~S. Mueller.
+\newblock {A stochastic partial differential equation model for limit order
+  book dynamics}.
+\newblock \emph{SIAM Journal on Financial Mathematics}, 2019.
+
+\bibitem[Cont et~al.(2010)Cont, Kukanov, and Stoikov]{rama2010price}
+Rama Cont, Arseniy Kukanov, and Sasha Stoikov.
+\newblock {The Price Impact of Order Book Events}.
+\newblock \emph{Journal of Financial Econometrics}, 2010.
+
+\bibitem[Cornell et~al.(2023)Cornell, Dinh, and
+  Pourmousavi]{cornell2023probabilistic}
+Cameron Cornell, Nam~Trong Dinh, and S.~Ali Pourmousavi.
+\newblock {A probabilistic forecast methodology for volatile electricity prices
+  in the Australian National Electricity Market}.
+\newblock \emph{International Journal of Forecasting}, 2023.
+
+\bibitem[Crisostomo \& Couso(2018)Crisostomo and
+  Couso]{crisostomo2018financial}
+Ricardo Crisostomo and Lorena Couso.
+\newblock {Financial density forecasts: A comprehensive comparison of
+  risk-neutral and historical schemes}.
+\newblock \emph{Journal of Forecasting}, 2018.
+
+\bibitem[Curato et~al.(2014)Curato, Gatheral, and Lillo]{curato2014optimal}
+Gianbiagio Curato, Jim Gatheral, and Fabrizio Lillo.
+\newblock {Optimal execution with nonlinear transient market impact}.
+\newblock \emph{Quantitative Finance}, 2014.
+
+\bibitem[Dalen(2026)]{dalen2026happens}
+Shaw Dalen.
+\newblock {What Happens When Institutional Liquidity Enters Prediction Markets:
+  Identification, Measurement, and a Synthetic Proof of Concept}.
+\newblock \emph{arXiv preprint arXiv:2604.10005}, 2026.
+
+\bibitem[Dimitriadis et~al.(2023)Dimitriadis, Gneiting, Jordan, and
+  Vogel]{timo2023evaluating}
+Timo Dimitriadis, Tilmann Gneiting, Alexander~I. Jordan, and Peter Vogel.
+\newblock {Evaluating Probabilistic Classifiers: The Triptych}.
+\newblock \emph{International Journal of Forecasting}, 2023.
+
+\bibitem[Dorpinghaus et~al.(2015)Dorpinghaus, Roldan, Neri, Meyr, and
+  Julicher]{dorpinghaus2015information}
+Meik Dorpinghaus, Edgar Roldan, Izaak Neri, Heinrich Meyr, and Frank Julicher.
+\newblock {An Information Theoretic Analysis of Sequential Decision-Making}.
+\newblock In \emph{2017 IEEE International Symposium on Information Theory
+  (ISIT)}, 2015.
+
+\bibitem[Drame(2020)]{drame2020limit}
+Mouhamad Drame.
+\newblock {Limit Order Book (LOB) shape modeling in presence of heterogeneously
+  informed market participants}.
+\newblock \emph{Market Microstructure and Liquidity}, 2020.
+
+\bibitem[Dubach(2026)]{dubach2026anatomy}
+Philipp~D. Dubach.
+\newblock {The Anatomy of a Decentralized Prediction Market: Microstructure
+  Evidence from the Polymarket Order Book}.
+\newblock \emph{arXiv preprint arXiv:2604.24366}, 2026.
+
+\bibitem[Dudik et~al.(2014)Dudik, Frongillo, and Vaughan]{dudik2014market}
+Miroslav Dudik, Rafael Frongillo, and Jennifer~Wortman Vaughan.
+\newblock {Market Making with Decreasing Utility for Information}.
+\newblock \emph{arXiv preprint arXiv:1407.8161}, 2014.
+
+\bibitem[Dwarakanath et~al.(2024)Dwarakanath, Balch, and
+  Vyetrenko]{dwarakanath2024abides}
+Kshama Dwarakanath, Tucker Balch, and Svitlana Vyetrenko.
+\newblock {ABIDES-Economist: Agent-Based Simulator of Economic Systems with
+  Learning Agents}.
+\newblock \emph{arXiv preprint arXiv:2402.09563}, 2024.
+
+\bibitem[Ehm et~al.(2015)Ehm, Gneiting, Jordan, and
+  Kruger]{werner2015quantiles}
+Werner Ehm, Tilmann Gneiting, Alexander Jordan, and Fabian Kruger.
+\newblock {Of Quantiles and Expectiles: Consistent Scoring Functions, Choquet
+  Representations, and Forecast Rankings}.
+\newblock \emph{Journal of the Royal Statistical Society Series B: Statistical
+  Methodology}, 2015.
+
+\bibitem[Falezza(2026)]{falezza2026when}
+Alessandro Falezza.
+\newblock {When Forecast Accuracy Fails: Rank Correlation and Decision Quality
+  in Multi-Market Battery Storage Optimization}.
+\newblock \emph{arXiv preprint arXiv:2604.12082}, 2026.
+
+\bibitem[Fang \& Slepaczuk(2026)Fang and Slepaczuk]{fang2026volatility}
+Xinyue Fang and Robert Slepaczuk.
+\newblock {Volatility Forecasting and Return Prediction under Market Regimes:
+  Evidence from High-Frequency Chinese Equity Data}.
+\newblock \emph{arXiv preprint arXiv:2606.09478}, 2026.
+
+\bibitem[Gao \& Deng(2014)Gao and Deng]{gao2014hydrodynamic}
+Xuefeng Gao and S.~J. Deng.
+\newblock {Hydrodynamic limit of order book dynamics}.
+\newblock \emph{Probability in the Engineering and Informational Sciences},
+  2014.
+
+\bibitem[Garg et~al.(2026)Garg, Yaswanth, Mishra, Kumaran, Sharma, and
+  Uniyal]{garg2026monodense}
+Lakshya Garg, Sai Yaswanth, Deep~Narayan Mishra, Karthik Kumaran, Anupriya
+  Sharma, and Mayank Uniyal.
+\newblock {Monodense Deep Neural Model for Determining Item Price Elasticity}.
+\newblock In \emph{2026 International Conference on Advances in Artificial
+  Intelligence and Machine Learning (AAIML)}, 2026.
+
+\bibitem[Genewein \& Braun(2013)Genewein and Braun]{genewein2013abstraction}
+Tim Genewein and Daniel~A. Braun.
+\newblock {Abstraction in decision-makers with limited information processing
+  capabilities}.
+\newblock \emph{arXiv preprint arXiv:1312.4353}, 2013.
+
+\bibitem[Gordon(2022)]{gordon2022information}
+Cameron Gordon.
+\newblock {The Information Bottleneck Principle in Corporate Hierarchies}.
+\newblock \emph{arXiv preprint arXiv:2210.14861}, 2022.
+
+\bibitem[Gort et~al.(2022)Gort, Liu, Sun, Gao, Chen, and Wang]{gort2022deep}
+Berend Jelmer~Dirk Gort, Xiao-Yang Liu, Xinghang Sun, Jiechao Gao, Shuaiyu
+  Chen, and Christina~Dan Wang.
+\newblock {Deep Reinforcement Learning for Cryptocurrency Trading: Practical
+  Approach to Address Backtest Overfitting}.
+\newblock \emph{arXiv preprint arXiv:2209.05559}, 2022.
+
+\bibitem[Gould et~al.(2015)Gould, Porter, and Howison]{gould2015quasi}
+Martin~D. Gould, Mason~A. Porter, and Sam~D. Howison.
+\newblock {Quasi-Centralized Limit Order Books}.
+\newblock \emph{Quantitative Finance}, 2015.
+
+\bibitem[Graziani et~al.(2019)Graziani, Rosner, Adams, and
+  Machete]{graziani2019probabilistic}
+Carlo Graziani, Robert Rosner, Jennifer~M. Adams, and Reason~L. Machete.
+\newblock {Probabilistic Recalibration of Forecasts}.
+\newblock \emph{International Journal of Forecasting}, 2019.
+
+\bibitem[Gu et~al.(2026)Gu, Kagan, Sun, Wu, and Xu]{anri2026when}
+Anri Gu, Nicole Kagan, Alec Sun, Jibang Wu, and Haifeng Xu.
+\newblock {When do prophets profit in prediction markets?}
+\newblock \emph{arXiv preprint arXiv:2607.06166}, 2026.
+
+\bibitem[Guo et~al.(2015)Guo, Ruan, and Zhu]{guo2015dynamics}
+Xin Guo, Zhao Ruan, and Lingjiong Zhu.
+\newblock {Dynamics of Order Positions and Related Queues in a Limit Order
+  Book}.
+\newblock \emph{arXiv preprint arXiv:1505.04810}, 2015.
+
+\bibitem[He et~al.(2023)He, Zheng, and Yang]{he2023integrating}
+Jiafa He, Cong Zheng, and Can Yang.
+\newblock {Integrating Tick-level Data and Periodical Signal for High-frequency
+  Market Making}.
+\newblock \emph{arXiv preprint arXiv:2306.17179}, 2023.
+
+\bibitem[Hiremath \& Hiremath(2026)Hiremath and Hiremath]{hiremath2026early}
+Prakul~Sunil Hiremath and Vruksha~Arun Hiremath.
+\newblock {Early Detection of Latent Microstructure Regimes in Limit Order
+  Books}.
+\newblock \emph{arXiv preprint arXiv:2604.20949}, 2026.
+
+\bibitem[Hirsch \& Ziel(2026)Hirsch and Ziel]{hirsch2026probabilistic}
+Simon Hirsch and Florian Ziel.
+\newblock {Probabilistic Forecasting for Day-ahead Electricity Prices, Battery
+  Trading Strategies and the Economic Evaluation of Predictive Accuracy}.
+\newblock \emph{arXiv preprint arXiv:2604.19580}, 2026.
+
+\bibitem[Hong et~al.(2026)Hong, Zheng, Lilley, Zohren, and
+  Zilberman]{xinpeng2026network}
+Xinpeng Hong, Changgang Zheng, Joshua Lilley, Stefan Zohren, and Noa Zilberman.
+\newblock {In-Network Market Prediction Using Machine Learning and Limit Order
+  Books}.
+\newblock \emph{arXiv preprint arXiv:2608.02424}, 2026.
+
+\bibitem[Hu \& Zhang(2025)Hu and Zhang]{hu2025stochastic}
+Chen Hu and Kouxiao Zhang.
+\newblock {Stochastic Price Dynamics in Response to Order Flow Imbalance:
+  Evidence from CSI 300 Index Futures}.
+\newblock \emph{arXiv preprint arXiv:2505.17388}, 2025.
+
+\bibitem[Huang et~al.(2019)Huang, Pulido, Rosenbaum, Saliba, and
+  Sfendourakis]{huang2019glosten}
+Weibing Huang, Sergio Pulido, Mathieu Rosenbaum, Pamela Saliba, and Emmanouil
+  Sfendourakis.
+\newblock {From Glosten-Milgrom to the whole limit order book and applications
+  to financial regulation}.
+\newblock \emph{SSRN Electronic Journal}, 2019.
+
+\bibitem[Hubacek \& Sir(2020)Hubacek and Sir]{hubacek2020beating}
+Ondrej Hubacek and Gustav Sir.
+\newblock {Beating the market with a bad predictive model}.
+\newblock \emph{International Journal of Forecasting}, 2020.
+
+\bibitem[ichi Maskawa(2007)]{maskawa2007correlation}
+Jun ichi Maskawa.
+\newblock {Correlation of coming limit price with order book in stock markets}.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications}, 2007.
+
+\bibitem[Ishikawa \& Nakata(2021)Ishikawa and Nakata]{ishikawa2021online}
+Koya Ishikawa and Kazuhide Nakata.
+\newblock {Online Trading Models with Deep Reinforcement Learning in the Forex
+  Market Considering Transaction Costs}.
+\newblock \emph{arXiv preprint arXiv:2106.03035}, 2021.
+
+\bibitem[Islam et~al.(2024)Islam, Karmacharya, Sue, and Fox]{islam2024large}
+Md~Khairul Islam, Ayush Karmacharya, Timothy Sue, and Judy Fox.
+\newblock {Large Language Models for Financial Aid in Financial Time-series
+  Forecasting}.
+\newblock In \emph{2024 IEEE International Conference on Big Data (BigData)},
+  2024.
+
+\bibitem[Islam \& Wasi(2023)Islam and Wasi]{islam2023optimizing}
+MD~Shafikul Islam and Azmine~Toushik Wasi.
+\newblock {Optimizing Inventory Routing: A Decision-Focused Learning Approach
+  using Neural Networks}.
+\newblock \emph{arXiv preprint arXiv:2311.00983}, 2023.
+
+\bibitem[Janke \& Steinke(2020)Janke and Steinke]{janke2020probabilistic}
+Tim Janke and Florian Steinke.
+\newblock {Probabilistic multivariate electricity price forecasting using
+  implicit generative ensemble post-processing}.
+\newblock In \emph{2020 International Conference on Probabilistic Methods
+  Applied to Power Systems (PMAPS)}, 2020.
+
+\bibitem[Jensen et~al.(2021)Jensen, Pourpouneh, Nielsen, and
+  Ross]{jensen2021homogenous}
+Johannes~Rude Jensen, Mohsen Pourpouneh, Kurt Nielsen, and Omri Ross.
+\newblock {The Homogenous Properties of Automated Market Makers}.
+\newblock \emph{arXiv preprint arXiv:2105.02782}, 2021.
+
+\bibitem[Jung \& Lee(2024)Jung and Lee]{jung2024attention}
+Jiwon Jung and Kiseop Lee.
+\newblock {Attention-Based Reading, Highlighting, and Forecasting of the Limit
+  Order Book}.
+\newblock \emph{Quantitative Finance}, 2024.
+
+\bibitem[Kath \& Ziel(2018)Kath and Ziel]{kath2018value}
+Christopher Kath and Florian Ziel.
+\newblock {The value of forecasts: Quantifying the economic gains of accurate
+  quarter-hourly electricity price forecasts}.
+\newblock \emph{Energy Economics}, 2018.
+
+\bibitem[Kato(2009)]{kato2009optimal}
+Takashi Kato.
+\newblock {An Optimal Execution Problem with Market Impact}.
+\newblock \emph{Finance and Stochastics}, 2009.
+
+\bibitem[Kato(2014)]{kato2014vwap}
+Takashi Kato.
+\newblock {VWAP Execution as an Optimal Strategy}.
+\newblock \emph{JSIAM Letters}, 2014.
+
+\bibitem[Koshiyama \& Firoozye(2019)Koshiyama and
+  Firoozye]{koshiyama2019avoiding}
+Adriano Koshiyama and Nick Firoozye.
+\newblock {Avoiding Backtesting Overfitting by Covariance-Penalties: an
+  empirical investigation of the ordinary and total least squares cases}.
+\newblock \emph{SSRN Electronic Journal}, 2019.
+
+\bibitem[Krause et~al.(2021)Krause, Jungblut, and Guhr]{krause2021two}
+Sebastian~M. Krause, Edgar Jungblut, and Thomas Guhr.
+\newblock {Two Price Regimes in Limit Order Books: Liquidity Cushion and
+  Fragmented Distant Field}.
+\newblock \emph{Journal of Statistical Mechanics: Theory and Experiment}, 2021.
+
+\bibitem[Kurt et~al.(2018)Kurt, Sahin, and Derinkuyu]{kurt2018adaptive}
+Nermin~Elif Kurt, H.~Bahadir Sahin, and Kursad Derinkuyu.
+\newblock {An Adaptive Tabu Search Algorithm for Market Clearing Problem in
+  Turkish Day-Ahead Market}.
+\newblock In \emph{2018 15th International Conference on the European Energy
+  Market (EEM)}, 2018.
+
+\bibitem[Langnau \& Punchev(2011)Langnau and Punchev]{langnau2011stochastic}
+Alex Langnau and Yanko Punchev.
+\newblock {Stochastic Price Dynamics Implied By the Limit Order Book}.
+\newblock \emph{arXiv preprint arXiv:1105.4789}, 2011.
+
+\bibitem[Le(2026)]{le2026decomposing}
+Nam~Anh Le.
+\newblock {Decomposing Crowd Wisdom: Domain-Specific Calibration Dynamics in
+  Prediction Markets}.
+\newblock \emph{arXiv preprint arXiv:2602.19520}, 2026.
+
+\bibitem[Lemhadri(2018)]{lemhadri2018market}
+Ismael Lemhadri.
+\newblock {Market Impact in a Latent Order Book}.
+\newblock \emph{arXiv preprint arXiv:1802.06101}, 2018.
+
+\bibitem[Libman et~al.(2021)Libman, Haber, and Schaps]{libman2021forecasting}
+Daniel Libman, Simi Haber, and Mary Schaps.
+\newblock {Forecasting Quoted Depth With the Limit Order Book}.
+\newblock \emph{Frontiers in Artificial Intelligence}, 2021.
+
+\bibitem[Lipton et~al.(2013)Lipton, Pesavento, and
+  Sotiropoulos]{lipton2013trade}
+Alexander Lipton, Umberto Pesavento, and Michael~G Sotiropoulos.
+\newblock {Trade arrival dynamics and quote imbalance in a limit order book}.
+\newblock \emph{arXiv preprint arXiv:1312.0514}, 2013.
+
+\bibitem[Lokin \& Yu(2024)Lokin and Yu]{lokin2024fill}
+Felix Lokin and Fenghui Yu.
+\newblock {Fill Probabilities in a Limit Order Book with State-Dependent
+  Stochastic Order Flows}.
+\newblock \emph{arXiv preprint arXiv:2403.02572}, 2024.
+
+\bibitem[Loveday et~al.(2023)Loveday, Taggart, and Khanarmuei]{loveday2023user}
+Nicholas Loveday, Robert Taggart, and Mohammadreza Khanarmuei.
+\newblock {A User-Focused Approach to Evaluating Probabilistic and Categorical
+  Forecasts}.
+\newblock \emph{Weather and Forecasting}, 2023.
+
+\bibitem[Low et~al.(2015)Low, Maier-Paape, and Platen]{low2015correctness}
+Robert Low, Stanislaus Maier-Paape, and Andreas Platen.
+\newblock {Correctness of Backtest Engines}.
+\newblock \emph{The Journal of Investment Strategies}, 2015.
+
+\bibitem[Lucchese et~al.(2022)Lucchese, Pakkanen, and
+  Veraart]{lorenzo2022short}
+Lorenzo Lucchese, Mikko Pakkanen, and Almut Veraart.
+\newblock {The Short-Term Predictability of Returns in Order Book Markets: a
+  Deep Learning Perspective}.
+\newblock \emph{International Journal of Forecasting}, 2022.
+
+\bibitem[Maciejowska et~al.(2025)Maciejowska, Lipiecki, and
+  Uniejewski]{maciejowska2025statistical}
+Katarzyna Maciejowska, Arkadiusz Lipiecki, and Bartosz Uniejewski.
+\newblock {Statistical and economic evaluation of forecasts in electricity
+  markets: beyond RMSE and MAE}.
+\newblock \emph{Energy Conversion and Management}, 2025.
+
+\bibitem[Maier-Paape \& Platen(2014)Maier-Paape and
+  Platen]{maierpaape2014backtest}
+Stanislaus Maier-Paape and Andreas Platen.
+\newblock {Backtest of Trading Systems on Candle Charts}.
+\newblock \emph{arXiv preprint arXiv:1412.5558}, 2014.
+
+\bibitem[Malyshkin \& Bakhramov(2016)Malyshkin and
+  Bakhramov]{malyshkin2016market}
+Vladislav~Gennadievich Malyshkin and Ray Bakhramov.
+\newblock {Market Dynamics vs. Statistics: Limit Order Book Example}.
+\newblock \emph{arXiv preprint arXiv:1603.05313}, 2016.
+
+\bibitem[Nagy et~al.(2025)Nagy, Frey, Li, Sarkar, Vyetrenko, Zohren, Calinescu,
+  and Foerster]{nagy2025lob}
+Peer Nagy, Sascha Frey, Kang Li, Bidipta Sarkar, Svitlana Vyetrenko, Stefan
+  Zohren, Ani Calinescu, and Jakob Foerster.
+\newblock {LOB-Bench: Benchmarking Generative AI for Finance -- an Application
+  to Limit Order Book Data}.
+\newblock \emph{arXiv preprint arXiv:2502.09172}, 2025.
+
+\bibitem[Nousi et~al.(2018)Nousi, Tsantekidis, Passalis, Ntakaris, Kanniainen,
+  Tefas, Gabbouj, and Iosifidis]{nousi2018machine}
+Paraskevi Nousi, Avraam Tsantekidis, Nikolaos Passalis, Adamantios Ntakaris,
+  Juho Kanniainen, Anastasios Tefas, Moncef Gabbouj, and Alexandros Iosifidis.
+\newblock {Machine Learning for Forecasting Mid Price Movement using Limit
+  Order Book Data}.
+\newblock \emph{arXiv preprint arXiv:1809.07861}, 2018.
+
+\bibitem[Ntakaris et~al.(2017)Ntakaris, Magris, Kanniainen, Gabbouj, and
+  Iosifidis]{ntakaris2017benchmark}
+Adamantios Ntakaris, Martin Magris, Juho Kanniainen, Moncef Gabbouj, and
+  Alexandros Iosifidis.
+\newblock {Benchmark Dataset for Mid-Price Forecasting of Limit Order Book Data
+  with Machine Learning Methods}.
+\newblock \emph{Journal of Forecasting}, 2017.
+
+\bibitem[Pham et~al.(2026)Pham, Nguyen, and Thi]{pham2026algoxpert}
+The~Anh Pham, Bao~Chan Nguyen, and Nguyet~Nguyen Thi.
+\newblock {AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol
+  for Mitigating Overfitting in Quantitative Strategies}.
+\newblock \emph{arXiv preprint arXiv:2603.09219}, 2026.
+
+\bibitem[Pontes \& Benjannet(2021)Pontes and Benjannet]{pontes2021contextual}
+Elvys~Linhares Pontes and Mohamed Benjannet.
+\newblock {Contextual Sentence Analysis for the Sentiment Prediction on
+  Financial Data}.
+\newblock In \emph{2021 IEEE International Conference on Big Data (Big Data)},
+  2021.
+
+\bibitem[Raeth \& Ludwig(2025)Raeth and Ludwig]{raeth2025forecast}
+Kornelius Raeth and Nicole Ludwig.
+\newblock {Forecast Skill Is Not Decision Skill: Evidence from
+  Weather-Dependent Decision Tasks}.
+\newblock \emph{arXiv preprint arXiv:2512.14779}, 2025.
+
+\bibitem[Raftery(2014)]{raftery2014use}
+Adrian~E. Raftery.
+\newblock {Use and Communication of Probabilistic Forecasts}.
+\newblock \emph{Statistical Analysis and Data Mining: The ASA Data Science
+  Journal}, 2014.
+
+\bibitem[Rosenzweig(2019)]{rosenzweig2019conservation}
+Jan Rosenzweig.
+\newblock {Conservation Laws in a Limit Order Book}.
+\newblock \emph{arXiv preprint arXiv:1910.09202}, 2019.
+
+\bibitem[Said et~al.(2018)Said, Ayed, Husson, and Abergel]{said2018market}
+Emilio Said, Ahmed Bel~Hadj Ayed, Alexandre Husson, and Frederic Abergel.
+\newblock {Market Impact: A Systematic Study of Limit Orders}.
+\newblock \emph{Market Microstructure and Liquidity}, 2018.
+
+\bibitem[Samuel(2020)]{samuel2020information}
+Jim Samuel.
+\newblock {Information Token Driven Machine Learning for Electronic Markets:
+  Performance Effects in Behavioral Financial Big Data Analytics}.
+\newblock \emph{Journal of Information Systems and Technology Management},
+  2020.
+
+\bibitem[Schnurch \& Wagner(2019)Schnurch and Wagner]{schnurch2019machine}
+Simon Schnurch and Andreas Wagner.
+\newblock {Machine Learning on EPEX Order Books: Insights and Forecasts}.
+\newblock \emph{arXiv preprint arXiv:1906.06248}, 2019.
+
+\bibitem[Silvestri et~al.(2023)Silvestri, Berden, Mandi, Mahmutogullar, Amos,
+  Guns, and Lombardi]{silvestri2023score}
+Mattia Silvestri, Senne Berden, Jayanta Mandi, Ali~Irfan Mahmutogullar, Brandon
+  Amos, Tias Guns, and Michele Lombardi.
+\newblock {Score Function Gradient Estimation to Widen the Applicability of
+  Decision-Focused Learning}.
+\newblock \emph{Journal of Artificial Intelligence Research}, 2023.
+
+\bibitem[Sirignano(2016)]{sirignano2016deep}
+Justin Sirignano.
+\newblock {Deep Learning for Limit Order Books}.
+\newblock \emph{Quantitative Finance}, 2016.
+
+\bibitem[Solozobov(2026)]{solozobov2026evidence}
+Oleg Solozobov.
+\newblock {Evidence Sufficiency Under Delayed Ground Truth: Proxy Monitoring
+  for Risk Decision Systems}.
+\newblock \emph{arXiv preprint arXiv:2604.15740}, 2026.
+
+\bibitem[Storkey et~al.(2012)Storkey, Millin, and Geras]{storkey2012isoelastic}
+Amos Storkey, Jono Millin, and Krzysztof Geras.
+\newblock {Isoelastic Agents and Wealth Updates in Machine Learning Markets}.
+\newblock \emph{arXiv preprint arXiv:1206.6443}, 2012.
+
+\bibitem[Su et~al.(2021)Su, Sun, Li, and Yuan]{su2021price}
+Yuhan Su, Zeyu Sun, Jiarong Li, and Xianghui Yuan.
+\newblock {The Price Impact of Generalized Order Flow Imbalance}.
+\newblock \emph{arXiv preprint arXiv:2112.02947}, 2021.
+
+\bibitem[Sun \& Lyuu(2022)Sun and Lyuu]{sun2022backtesting}
+Ao~Sun and Yuh-Dauh Lyuu.
+\newblock {Backtesting Trading Strategies with GAN To Avoid Overfitting}.
+\newblock \emph{arXiv preprint arXiv:2209.04895}, 2022.
+
+\bibitem[Taggart(2021)]{taggart2021point}
+Robert~J. Taggart.
+\newblock {Point forecasting and forecast evaluation with generalized Huber
+  loss}.
+\newblock \emph{Electronic Journal of Statistics}, 2021.
+
+\bibitem[Tankov \& Tinsi(2021)Tankov and Tinsi]{tankov2021decision}
+Peter Tankov and Laura Tinsi.
+\newblock {Decision making with dynamic probabilistic forecasts}.
+\newblock \emph{arXiv preprint arXiv:2106.16047}, 2021.
+
+\bibitem[Theodosopoulos(2004)]{theodosopoulos2004uncertainty}
+Ted Theodosopoulos.
+\newblock {Uncertainty relations in models of market microstructure}.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications}, 2004.
+
+\bibitem[Toke(2013)]{toke2013order}
+Ioane~Muni Toke.
+\newblock {The order book as a queueing system: average depth and influence of
+  the size of limit orders}.
+\newblock \emph{Quantitative Finance}, 2013.
+
+\bibitem[Toke \& Yoshida(2016)Toke and Yoshida]{toke2016modelling}
+Ioane~Muni Toke and Nakahiro Yoshida.
+\newblock {Modelling intensities of order flows in a limit order book}.
+\newblock \emph{Quantitative Finance}, 2016.
+
+\bibitem[Toth \& Scalas(2007)Toth and Scalas]{toth2007value}
+Bence Toth and Enrico Scalas.
+\newblock {The value of information in financial markets: An agent-based
+  simulation}.
+\newblock \emph{arXiv preprint arXiv:0712.2687}, 2007.
+
+\bibitem[Tsagaris(2008)]{tsagaris2008statistical}
+Theodoros Tsagaris.
+\newblock {Statistical Arbitrage and Optimal Trading with Transaction Costs in
+  Futures Markets}.
+\newblock \emph{arXiv preprint arXiv:0801.3348}, 2008.
+
+\bibitem[Vyetrenko \& Xu(2019)Vyetrenko and Xu]{vyetrenko2019risk}
+Svitlana Vyetrenko and Shaojie Xu.
+\newblock {Risk-Sensitive Compact Decision Trees for Autonomous Execution in
+  Presence of Simulated Market Response}.
+\newblock \emph{arXiv preprint arXiv:1906.02312}, 2019.
+
+\bibitem[Walid et~al.(2025)Walid, Ye, Ji, Ezzat, Miles, and
+  Jiang]{walid2025economic}
+Khaled~Bin Walid, Feng Ye, Jiaxiang Ji, Ahmed~Aziz Ezzat, Travis Miles, and
+  Yazhou~Leo Jiang.
+\newblock {Economic and Reliability Value of Improved Offshore Wind Forecasting
+  in Bulk Power Grid Operation: A Case Study of The New York Power Grid}.
+\newblock \emph{arXiv preprint arXiv:2512.21754}, 2025.
+
+\bibitem[Walsh(2026)]{walsh2026support}
+Mark Walsh.
+\newblock {Support sufficiency as action-sufficient compression: a single-cycle
+  rate-regret formulation}.
+\newblock \emph{arXiv preprint arXiv:2606.09858}, 2026.
+
+\bibitem[Wang et~al.(2022)Wang, Wang, and Ziegel]{wang2022e}
+Qiuqi Wang, Ruodu Wang, and Johanna Ziegel.
+\newblock {E-backtesting}.
+\newblock \emph{arXiv preprint arXiv:2209.00991}, 2022.
+
+\bibitem[Wang et~al.(2025)Wang, Xu, Gao, Zhang, Huang, Sun, and
+  Zhang]{wang2025fintsbridge}
+Yanlong Wang, Jian Xu, Tiantian Gao, Hongkang Zhang, Shao-Lun Huang,
+  Danny~Dongning Sun, and Xiao-Ping Zhang.
+\newblock {FinTSBridge: A New Evaluation Suite for Real-world Financial
+  Prediction with Advanced Time Series Models}.
+\newblock \emph{arXiv preprint arXiv:2503.06928}, 2025.
+
+\bibitem[Weinberger(2009)]{weinberger2009pragmatic}
+Edward~D. Weinberger.
+\newblock {Pragmatic Information Rates, Generalizations of the Kelly Criterion,
+  and Financial Market Efficiency}.
+\newblock \emph{arXiv preprint arXiv:0903.2243}, 2009.
+
+\bibitem[Wilder et~al.(2018)Wilder, Dilkina, and Tambe]{wilder2018melding}
+Bryan Wilder, Bistra Dilkina, and Milind Tambe.
+\newblock {Melding the Data-Decisions Pipeline: Decision-Focused Learning for
+  Combinatorial Optimization}.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, 2018.
+
+\bibitem[Wilinski \& Kanniainen(2025)Wilinski and
+  Kanniainen]{wilinski2025agent}
+Mateusz Wilinski and Juho Kanniainen.
+\newblock {Agent-based model of information diffusion in the limit order book
+  trading}.
+\newblock \emph{arXiv preprint arXiv:2508.20672}, 2025.
+
+\bibitem[Wu(2025)]{wu2025limit}
+Yao Wu.
+\newblock {Limit Order Book Dynamics in Matching Markets: Microstructure,
+  Spread, and Execution Slippage}.
+\newblock \emph{arXiv preprint arXiv:2511.20606}, 2025.
+
+\bibitem[Xie et~al.(2023)Xie, Bai, and Ma]{xie2023optimal}
+Rui Xie, Shuyang Bai, and Ping Ma.
+\newblock {Optimal Sampling Designs for Multi-dimensional Streaming Time Series
+  with Application to Power Grid Sensor Data}.
+\newblock \emph{The Annals of Applied Statistics}, 2023.
+
+\bibitem[Xu et~al.(2016)Xu, Chen, Xiong, Zhang, Zhou, and Stanley]{xu2016limit}
+Hai-Chuan Xu, Wei Chen, Xiong Xiong, Wei Zhang, Wei-Xing Zhou, and H~Eugene
+  Stanley.
+\newblock {Limit-order book resiliency after effective market orders: Spread,
+  depth and intensity}.
+\newblock \emph{Journal of Statistical Mechanics: Theory and Experiment}, 2016.
+
+\bibitem[Xu et~al.(2019)Xu, Gould, and Howison]{ke2019multi}
+Ke~Xu, Martin~D. Gould, and Sam~D. Howison.
+\newblock {Multi-Level Order-Flow Imbalance in a Limit Order Book}.
+\newblock \emph{Market Microstructure and Liquidity}, 2019.
+
+\bibitem[Yamada et~al.(2022)Yamada, Pertsch, Gunjal, and Lim]{yamada2022task}
+Jun Yamada, Karl Pertsch, Anisha Gunjal, and Joseph~J. Lim.
+\newblock {Task-Induced Representation Learning}.
+\newblock \emph{arXiv preprint arXiv:2204.11827}, 2022.
+
+\bibitem[Yang(2021)]{yang2021forecasting}
+Parley~Ruogu Yang.
+\newblock {Forecasting high-frequency financial time series: an adaptive
+  learning approach with the order book data}.
+\newblock \emph{arXiv preprint arXiv:2103.00264}, 2021.
+
+\bibitem[Yao \& Zheng(2026)Yao and Zheng]{junyi2026beyond}
+Junyi Yao and Zihao Zheng.
+\newblock {Beyond Agent Architecture: Execution Assumptions and Reproducibility
+  in LLM-Based Trading Systems}.
+\newblock \emph{arXiv preprint arXiv:2606.08285}, 2026.
+
+\bibitem[Ye et~al.(2026)Ye, Amin, and Ozdaglar]{ye2026learning}
+Yuhan Ye, Saurabh Amin, and Asuman Ozdaglar.
+\newblock {Learning Decision-Sufficient Representations for Linear
+  Optimization}.
+\newblock \emph{arXiv preprint arXiv:2603.18551}, 2026.
+
+\bibitem[Yoon \& Kim(2026)Yoon and Kim]{yoon2026finite}
+Hyung-Jin Yoon and Hunmin Kim.
+\newblock {Finite Reliability Representations: Noise-Calibrated Belief-Space
+  Covers for Reliable Decision-Making}.
+\newblock \emph{arXiv preprint arXiv:2607.04019}, 2026.
+
+\bibitem[Zahedzadeh \& Bahrak(2026)Zahedzadeh and
+  Bahrak]{zahedzadeh2026sufficiency}
+Ali Zahedzadeh and Behnam Bahrak.
+\newblock {The Sufficiency-Conciseness Trade-off in LLM Self-Explanation from
+  an Information Bottleneck Perspective}.
+\newblock In \emph{Proceedings of the Language Resources and Evaluation
+  Conference}, 2026.
+
+\bibitem[Zeng et~al.(2023)Zeng, Kaur, Siddagangappa, Rahimi, Balch, and
+  Veloso]{zeng2023financial}
+Zhen Zeng, Rachneet Kaur, Suchetha Siddagangappa, Saba Rahimi, Tucker Balch,
+  and Manuela Veloso.
+\newblock {Financial Time Series Forecasting using CNN and Transformer}.
+\newblock \emph{arXiv preprint arXiv:2304.04912}, 2023.
+
+\bibitem[Zenil \& Delahaye(2010)Zenil and Delahaye]{zenil2010algorithmic}
+Hector Zenil and Jean-Paul Delahaye.
+\newblock {An algorithmic information-theoretic approach to the behaviour of
+  financial markets}.
+\newblock \emph{Journal of Economic Surveys}, 2010.
+
+\bibitem[Zhang et~al.(2026{\natexlab{a}})Zhang, Li, Peng, and
+  Chen]{fan2026when}
+Fan Zhang, Zhen Li, Sijia Peng, and Yu~Chen.
+\newblock {When Alpha Disappears: A One-Switch Benchmark for Decision-Time
+  Leakage in Financial Backtests}.
+\newblock \emph{arXiv preprint arXiv:2605.23959}, 2026{\natexlab{a}}.
+
+\bibitem[Zhang et~al.(2018{\natexlab{a}})Zhang, Luo, Yang, and
+  Liu]{zhang2018benchmarking}
+Qiang Zhang, Rui Luo, Yaodong Yang, and Yuanyuan Liu.
+\newblock {Benchmarking Deep Sequential Models on Volatility Predictions for
+  Financial Time Series}.
+\newblock \emph{arXiv preprint arXiv:1811.03711}, 2018{\natexlab{a}}.
+
+\bibitem[Zhang et~al.(2026{\natexlab{b}})Zhang, Ma, Cheng, Li, and
+  Duan]{yanzhi2026m}
+Yanzhi Zhang, Yu~Ma, Yilin Cheng, Jian Li, and Yitong Duan.
+\newblock {M3: A State-Event Generative Foundation Model for Market
+  Microstructure Dynamics}.
+\newblock \emph{arXiv preprint arXiv:2608.19227}, 2026{\natexlab{b}}.
+
+\bibitem[Zhang et~al.(2018{\natexlab{b}})Zhang, Zohren, and
+  Roberts]{zhang2018bdlob}
+Zihao Zhang, Stefan Zohren, and Stephen Roberts.
+\newblock {BDLOB: Bayesian Deep Convolutional Neural Networks for Limit Order
+  Books}.
+\newblock \emph{arXiv preprint arXiv:1811.10041}, 2018{\natexlab{b}}.
+
+\bibitem[Zhang et~al.(2018{\natexlab{c}})Zhang, Zohren, and
+  Roberts]{zihao2018deeplob}
+Zihao Zhang, Stefan Zohren, and Stephen Roberts.
+\newblock {DeepLOB: Deep Convolutional Neural Networks for Limit Order Books}.
+\newblock \emph{IEEE Transactions on Signal Processing}, 2018{\natexlab{c}}.
+
+\bibitem[Zhang et~al.(2021)Zhang, Lim, and Zohren]{zihao2021deep}
+Zihao Zhang, Bryan Lim, and Stefan Zohren.
+\newblock {Deep Learning for Market by Order Data}.
+\newblock \emph{Applied Mathematical Finance}, 2021.
+
+\bibitem[Zheng et~al.(2012)Zheng, Moulines, and Abergel]{zheng2012price}
+Ban Zheng, Eric Moulines, and Frederic Abergel.
+\newblock {Price Jump Prediction in Limit Order Book}.
+\newblock \emph{SSRN Electronic Journal}, 2012.
+
+\bibitem[Zhong et~al.(2025)Zhong, Lin, and Yang]{zhong2025representation}
+Muyao Zhong, Yushi Lin, and Peng Yang.
+\newblock {Representation Learning of Limit Order Book: A Comprehensive Study
+  and Benchmarking}.
+\newblock \emph{arXiv preprint arXiv:2505.02139}, 2025.
+
+\bibitem[Zhou et~al.(2024)Zhou, Huang, Li, Jiang, Zheng, Cheng, and
+  Lin]{zhou2024decision}
+Hao Zhou, Rongxiao Huang, Shaoming Li, Guibin Jiang, Jiaqi Zheng, Bing Cheng,
+  and Wei Lin.
+\newblock {Decision Focused Causal Learning for Direct Counterfactual Marketing
+  Optimization}.
+\newblock In \emph{Proceedings of the 30th ACM SIGKDD Conference on Knowledge
+  Discovery and Data Mining}, 2024.
+
+\bibitem[Ziegel et~al.(2017)Ziegel, Kruger, Jordan, and Fasciati]{f2017murphy}
+Johanna~F. Ziegel, Fabian Kruger, Alexander Jordan, and Fernando Fasciati.
+\newblock {Murphy Diagrams: Forecast Evaluation of Expected Shortfall}.
+\newblock \emph{arXiv preprint arXiv:1705.04537}, 2017.
+
+\end{thebibliography}

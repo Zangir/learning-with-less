@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-264"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "The descriptive diagnosis was accepted and localized how aggregation and class mix affected the apparent benefit.",
+  "result_records": [
+    {
+      "result_id": "R-034",
+      "experiment_id": "E-264",
+      "source_task_id": "T-016",
+      "revision": 1,
+      "status": "accepted",
+      "assessment": "valid_descriptive_diagnosis",
+      "execution_status": "completed",
+      "reported_at": "2026-09-22T09:28:59.342266+00:00",
+      "evidence_manifest_sha256": "71b725d72171f98ea51e7dc9a221f817a20416d1c07a916b13aa0b3e2655f7b4",
+      "review_ids": [
+        "RV-032"
+      ],
+      "mandatory_empirical_goal_closed": false,
+      "accepted_at": "2026-09-22T10:46:55.281615+00:00",
+      "decision_id": "D-052"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-018",
+    "E-268"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "hour00_and_full_day_limited_descriptive_negatives_accepted_mandatory_empirical_open",
+    "valid"
+  ],
+  "headline_result": "The exploratory adaptation completed 120 fits. No fixed common crossing supported a universal depth/history/delay benefit; effects were heterogeneous and asset-dependent.",
+  "result_records": [
+    {
+      "result_id": "R-008",
+      "experiment_id": "E-018",
+      "experiment_ids": [
+        "E-018"
+      ],
+      "source_task_id": "T-011",
+      "reported_at": "2026-09-21T16:10:02.478375+04:00",
+      "revision": 1,
+      "evidence_manifest_sha256": "e3b308f897d5e5b4cb4a4dfe9b4f34fa83e8c0ee6910abfd7ac5b9959776e8a8",
+      "summary": "Q18 rebuilt common-view and training-only pipeline supported; guard/schema integration requires correction.",
+      "assessment": "valid_in_software_scope",
+      "limitations": [
+        "Missing source feature builder prevents exact feature reproduction.",
+        "10.5-second shared guard versus 10-second task guard must be reconciled explicitly.",
+        "No real Hyperliquid result or statistical noninferiority."
+      ],
+      "review_ids": [
+        "RV-004"
+      ],
+      "code_commit": "3e50a8f3141b23ee3e19da7441c3b658ecf83949",
+      "accepted_at": "2026-09-21T17:15:38.686485+04:00",
+      "decision_ids": [
+        "D-011"
+      ],
+      "status": "accepted_in_scope"
+    },
+    {
+      "result_id": "R-010",
+      "experiment_id": "E-018",
+      "protocol_revision": 2,
+      "source_task_id": "T-011",
+      "reported_at": "2026-09-21T17:44:41.506018+04:00",
+      "revision": 2,
+      "status": "accepted_in_scope",
+      "assessment": "valid_in_declared_scope",
+      "execution_status": "completed_in_exploratory_scope",
+      "code_commit": "731786e72ab2bb4724ef23ca04a5b0528e83cb93",
+      "summary": "Reviewed mixed depth/history contrasts in one sampled BTC evaluation hour; no useful general benefit, noninferiority or original-primary success established.",
+      "limitations": [
+        "Third-party archive with claimed, unauthenticated Hyperliquid origin.",
+        "One asset, one evaluation hour/date; serial dependence; no cross-asset primary or noninferiority.",
+        "Rebuilt feature representation and exchange-time sampled-state adaptation; not mandatory December1 participant-linked replication.",
+        "No scientific acceptance from author internal audit."
+      ],
+      "review_ids": [
+        "RV-006"
+      ],
+      "results_sha256": "54ff2ea6b4ba21573317b7cb60ee3a4bc1198f863d27d9fb256e35da940d3d34",
+      "elapsed_seconds": 6.608745399978943,
+      "artifact_revisions": [
+        {
+          "revision": 1,
+          "scope": "Numerical core frozen while final report was in preparation."
+        }
+      ],
+      "evidence_manifest_sha256": "c32db93d1e2ca0f80379a6b76ad99ff40cbabd9bdc3bca7a55929b8fabbfcb24",
+      "core_unchanged_from_revision": 1,
+      "accepted_at": "2026-09-21T14:15:26.698836+00:00",
+      "decision_ids": [
+        "D-016"
+      ]
+    },
+    {
+      "result_id": "R-017",
+      "experiment_id": "E-018",
+      "protocol_revision": 3,
+      "source_task_id": "T-011",
+      "reported_at": "2026-09-21T15:08:26.639993+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_limited_descriptive_negative",
+      "execution_status": "completed_qualified_hour00_scope",
+      "evidence_manifest_sha256": "34fccc1ac0561df7d77ea7c799441e2c535edac2b8d80b6c75053e279aa5aea8",
+      "code_commit": "92017a0251110243728adf1e48c1cb929281196f",
+      "review_ids": [
+        "RV-015"
+      ],
+      "summary": "Author reports failed descriptive cross-asset freshness gate in32 fixed fits; independent model-result review pending. Original strict panel and full-day scope separate.",
+      "limitations": [
+        "Source-quality-informed post-acquisition startup exclusion; third-party archive claiming Hyperliquid provenance.",
+        "Always-alert prior threshold equality requires qualified cost interpretation.",
+        "December conditional predictions excluded from primary metrics; mandatory participant-linked empirical objective remains open.",
+        "No estimatorweights retained; independentprobability regeneration fromfittedweights notperformed. Never-alert constant-action comparison is reviewerpost-run diagnostic,notnewgate."
+      ],
+      "accepted_at": "2026-09-21T15:25:58.756738+00:00"
+    },
+    {
+      "result_id": "R-019",
+      "experiment_id": "E-018",
+      "protocol_revision": 3,
+      "source_task_id": "T-011",
+      "reported_at": "2026-09-21T15:46:14.826936+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_limited_descriptive_negative",
+      "execution_status": "completed",
+      "evidence_manifest_sha256": "2dfcfe31e677a751355b18b123e11e155884f309f493a52821c63bf6340a2877",
+      "code_commit": "92017a0251110243728adf1e48c1cb929281196f",
+      "review_ids": [
+        "RV-017"
+      ],
+      "summary": "Independently accepted RV017: failed fixed descriptive freshness criterion in exact RV013 full-day adaptation, including absolute constant-action baselines. Mandatory original real-data outcome remains open.",
+      "mandatory_participant_empirical_admission": false,
+      "accepted_at": "2026-09-21T21:03:00.609641+00:00",
+      "publication_correction_status": "verified_complete"
+    },
+    {
+      "result_id": "R-036",
+      "experiment_id": "E-268",
+      "source_task_id": "T-011",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_exploratory_adaptation_with_pilot_negative",
+      "execution_status": "computational_packet_completed",
+      "evidence_manifest_sha256": "c507bf77f6d5a2bbb4b0cac666c586187fe159f96ba99282b72b2bfad0fcea4f",
+      "review_ids": [
+        "RV-034"
+      ],
+      "source_review_id": "RV-030",
+      "presentation_status": "accepted_static_pdf_and_main_figure",
+      "fits_completed": 120,
+      "job_elapsed_seconds": 182.1619237,
+      "mandatory_empirical_goal_closed": true,
+      "scope_note": "Source gate accepted under D045 for exact exploratory receipt-clock adaptation; computational/model and presentation review pending.",
+      "source_gate": {
+        "status": "supported_in_scope",
+        "decision_id": "D-045",
+        "review_id": "RV-030",
+        "sha256": "fdc28de718a73d423df2eeff36a381db8b3c2e687de17f53b5f6a929038c534d",
+        "consumer_protocol_sha256": "dee4a91b6b155b1f928979f19138149868a7030d06924cf75e368450ad23c499",
+        "contract_count": 18,
+        "model_results_accepted": false,
+        "conditions": [
+          "Consume exact18 contracts and frozen receipt protocol without silent substitution",
+          "Retain original source order, repeated identical event states, startup and gap/disconnect policies",
+          "Keep the exact same supported rows across delayed/depth/history comparisons within each asset",
+          "Keep own-observation normalization, training-only transformations and fixed date roles",
+          "Preserve sampled-L2/provider-clock and exploratory-selection qualifications",
+          "Obtain separate model/computational-result review; this source verdict accepts no fitted result"
+        ]
+      },
+      "presentation_manifest_sha256": "87f72974a747c461e73919787df3e5236f79017675d3f0d70e3b76f3797ea09a",
+      "author_runtime_breakdown_seconds": {
+        "per_fit_sum": 164.8,
+        "fitting_stage": 175.456,
+        "full_job": 182.162,
+        "source": "additive author presentation; independent verification pending"
+      },
+      "acceptance_decision_id": "D-048",
+      "accepted_at": "2026-09-22T10:12:33.929978+00:00",
+      "interactive_validation": "Embedded data verified; live HTML interaction untested due URL policy.",
+      "completion_decision_id": "D-049"
+    }
+  ]
+}

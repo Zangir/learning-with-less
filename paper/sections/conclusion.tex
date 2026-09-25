@@ -1,0 +1,18 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We asked whether more granular and more accurately reconstructed market information buys
+better decisions, and across three matched studies on real Hyperliquid data the answer was
+no. Reconstructing hidden book structure left the decision signal no better and often worse, on $691$ August breakout events the reconstruction-augmented predictor was $0.00405$
+half-Brier worse than the coarse predictor and $0.01762$ worse than a book-free frequency
+baseline. The best forecaster was not the best decider: a perceptron won macro-F1 by
+$0.142$ (BTC) and $0.097$ (ETH) yet every learned policy lost money at $5$ bps per side,
+and $0$ of $8$ protocol contrasts passed the joint gate. And no fixed depth, history, or
+delay was universally sufficient: the effect changed sign across $120$ fits.
+
+The through line is that information value lives at the decision, is small there, and is
+easily undone by the policy and cost layer, so that is where it should be measured. The
+reusable contribution is the matched information-intervention protocol and a released,
+laptop-reproducible programme of thirty honestly labeled experiment packages. Learning with less
+is often not a compromise. On these questions it was indistinguishable from, or better
+than, learning with more \citep{ye2026learning, falezza2026when}.

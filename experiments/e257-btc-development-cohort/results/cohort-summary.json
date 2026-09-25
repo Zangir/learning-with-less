@@ -1,0 +1,1363 @@
+{
+  "utc": "2026-09-22T02:32:54.349794+00:00",
+  "operation": "D035:T016:P1-development-cohort",
+  "protocol_sha256": "9017958555471c87c1c572233682506d1c69a03353bb9ad6b514b18827b31702",
+  "dates": [
+    "2025-01-01",
+    "2025-02-01",
+    "2025-03-01",
+    "2025-04-01",
+    "2025-05-01",
+    "2025-06-01",
+    "2025-07-01"
+  ],
+  "counts": [
+    {
+      "date": "2025-01-01",
+      "role": "auxiliary_warmup",
+      "family": "breakout",
+      "raw_candidates": 289,
+      "recorded": 239,
+      "rejected": 50,
+      "rejection_reasons": {
+        "used_slot": 33,
+        "feature:stale_asof": 15,
+        "cooldown": 2
+      },
+      "censored": 1,
+      "censor_reasons": {
+        "stale_asof": 1
+      },
+      "classes": {
+        "F": 62,
+        "A": 36,
+        "N": 140
+      },
+      "matched_rows": 238,
+      "matched_classes": {
+        "N": 140,
+        "F": 62,
+        "A": 36
+      },
+      "readiness_exclusions": {
+        "future_support:stale_asof": 1
+      }
+    },
+    {
+      "date": "2025-01-01",
+      "role": "auxiliary_warmup",
+      "family": "rebound",
+      "raw_candidates": 218,
+      "recorded": 180,
+      "rejected": 38,
+      "rejection_reasons": {
+        "used_slot": 28,
+        "cooldown": 1,
+        "feature:stale_asof": 9
+      },
+      "censored": 3,
+      "censor_reasons": {
+        "outside_retained_support": 1,
+        "stale_asof": 2
+      },
+      "classes": {
+        "F": 14,
+        "A": 65,
+        "N": 98
+      },
+      "matched_rows": 177,
+      "matched_classes": {
+        "N": 98,
+        "A": 65,
+        "F": 14
+      },
+      "readiness_exclusions": {
+        "future_support:outside_retained_support": 1,
+        "future_support:stale_asof": 2
+      }
+    },
+    {
+      "date": "2025-02-01",
+      "role": "downstream_train",
+      "family": "breakout",
+      "raw_candidates": 335,
+      "recorded": 283,
+      "rejected": 52,
+      "rejection_reasons": {
+        "used_slot": 42,
+        "feature:stale_asof": 8,
+        "cooldown": 2
+      },
+      "censored": 1,
+      "censor_reasons": {
+        "stale_asof": 1
+      },
+      "classes": {
+        "F": 91,
+        "A": 31,
+        "N": 160
+      },
+      "matched_rows": 282,
+      "matched_classes": {
+        "N": 160,
+        "A": 31,
+        "F": 91
+      },
+      "readiness_exclusions": {
+        "future_support:stale_asof": 1
+      }
+    },
+    {
+      "date": "2025-02-01",
+      "role": "downstream_train",
+      "family": "rebound",
+      "raw_candidates": 297,
+      "recorded": 255,
+      "rejected": 42,
+      "rejection_reasons": {
+        "used_slot": 25,
+        "feature:stale_asof": 15,
+        "cooldown": 2
+      },
+      "censored": 1,
+      "censor_reasons": {
+        "stale_asof": 1
+      },
+      "classes": {
+        "F": 10,
+        "A": 110,
+        "N": 134
+      },
+      "matched_rows": 254,
+      "matched_classes": {
+        "A": 110,
+        "N": 134,
+        "F": 10
+      },
+      "readiness_exclusions": {
+        "future_support:stale_asof": 1
+      }
+    },
+    {
+      "date": "2025-03-01",
+      "role": "downstream_train",
+      "family": "breakout",
+      "raw_candidates": 517,
+      "recorded": 398,
+      "rejected": 119,
+      "rejection_reasons": {
+        "cooldown": 3,
+        "used_slot": 74,
+        "feature:stale_asof": 42
+      },
+      "censored": 5,
+      "censor_reasons": {
+        "stale_asof": 3,
+        "outside_retained_support": 2
+      },
+      "classes": {
+        "F": 139,
+        "A": 56,
+        "N": 198
+      },
+      "matched_rows": 393,
+      "matched_classes": {
+        "N": 198,
+        "F": 139,
+        "A": 56
+      },
+      "readiness_exclusions": {
+        "future_support:stale_asof": 3,
+        "future_support:outside_retained_support": 2
+      }
+    },
+    {
+      "date": "2025-03-01",
+      "role": "downstream_train",
+      "family": "rebound",
+      "raw_candidates": 449,
+      "recorded": 347,
+      "rejected": 102,
+      "rejection_reasons": {
+        "used_slot": 72,
+        "feature:stale_asof": 28,
+        "cooldown": 2
+      },
+      "censored": 4,
+      "censor_reasons": {
+        "outside_retained_support": 3,
+        "stale_asof": 1
+      },
+      "classes": {
+        "F": 34,
+        "A": 166,
+        "N": 143
+      },
+      "matched_rows": 343,
+      "matched_classes": {
+        "N": 143,
+        "A": 166,
+        "F": 34
+      },
+      "readiness_exclusions": {
+        "future_support:outside_retained_support": 3,
+        "future_support:stale_asof": 1
+      }
+    },
+    {
+      "date": "2025-04-01",
+      "role": "selection",
+      "family": "breakout",
+      "raw_candidates": 723,
+      "recorded": 571,
+      "rejected": 152,
+      "rejection_reasons": {
+        "used_slot": 142,
+        "cooldown": 10
+      },
+      "censored": 2,
+      "censor_reasons": {
+        "stale_asof": 1,
+        "outside_retained_support": 1
+      },
+      "classes": {
+        "F": 182,
+        "A": 107,
+        "N": 280
+      },
+      "matched_rows": 569,
+      "matched_classes": {
+        "N": 280,
+        "F": 182,
+        "A": 107
+      },
+      "readiness_exclusions": {
+        "future_support:stale_asof": 1,
+        "future_support:outside_retained_support": 1
+      }
+    },
+    {
+      "date": "2025-04-01",
+      "role": "selection",
+      "family": "rebound",
+      "raw_candidates": 581,
+      "recorded": 477,
+      "rejected": 104,
+      "rejection_reasons": {
+        "used_slot": 98,
+        "feature:stale_asof": 1,
+        "cooldown": 5
+      },
+      "censored": 2,
+      "censor_reasons": {
+        "outside_retained_support": 2
+      },
+      "classes": {
+        "F": 46,
+        "A": 219,
+        "N": 210
+      },
+      "matched_rows": 475,
+      "matched_classes": {
+        "N": 210,
+        "F": 46,
+        "A": 219
+      },
+      "readiness_exclusions": {
+        "future_support:outside_retained_support": 2
+      }
+    },
+    {
+      "date": "2025-05-01",
+      "role": "descriptive_evaluation",
+      "family": "breakout",
+      "raw_candidates": 440,
+      "recorded": 373,
+      "rejected": 67,
+      "rejection_reasons": {
+        "used_slot": 65,
+        "cooldown": 2
+      },
+      "censored": 1,
+      "censor_reasons": {
+        "outside_retained_support": 1
+      },
+      "classes": {
+        "F": 103,
+        "A": 61,
+        "N": 208
+      },
+      "matched_rows": 372,
+      "matched_classes": {
+        "A": 61,
+        "N": 208,
+        "F": 103
+      },
+      "readiness_exclusions": {
+        "future_support:outside_retained_support": 1
+      }
+    },
+    {
+      "date": "2025-05-01",
+      "role": "descriptive_evaluation",
+      "family": "rebound",
+      "raw_candidates": 373,
+      "recorded": 318,
+      "rejected": 55,
+      "rejection_reasons": {
+        "used_slot": 54,
+        "cooldown": 1
+      },
+      "censored": 1,
+      "censor_reasons": {
+        "segment_change": 1
+      },
+      "classes": {
+        "F": 24,
+        "A": 130,
+        "N": 163
+      },
+      "matched_rows": 317,
+      "matched_classes": {
+        "N": 163,
+        "F": 24,
+        "A": 130
+      },
+      "readiness_exclusions": {
+        "future_support:segment_change": 1
+      }
+    },
+    {
+      "date": "2025-06-01",
+      "role": "descriptive_evaluation",
+      "family": "breakout",
+      "raw_candidates": 165,
+      "recorded": 155,
+      "rejected": 10,
+      "rejection_reasons": {
+        "used_slot": 9,
+        "cooldown": 1
+      },
+      "censored": 0,
+      "censor_reasons": {},
+      "classes": {
+        "F": 30,
+        "A": 13,
+        "N": 112
+      },
+      "matched_rows": 155,
+      "matched_classes": {
+        "F": 30,
+        "N": 112,
+        "A": 13
+      },
+      "readiness_exclusions": {}
+    },
+    {
+      "date": "2025-06-01",
+      "role": "descriptive_evaluation",
+      "family": "rebound",
+      "raw_candidates": 132,
+      "recorded": 122,
+      "rejected": 10,
+      "rejection_reasons": {
+        "used_slot": 10
+      },
+      "censored": 0,
+      "censor_reasons": {},
+      "classes": {
+        "F": 2,
+        "A": 38,
+        "N": 82
+      },
+      "matched_rows": 122,
+      "matched_classes": {
+        "N": 82,
+        "A": 38,
+        "F": 2
+      },
+      "readiness_exclusions": {}
+    },
+    {
+      "date": "2025-07-01",
+      "role": "descriptive_evaluation",
+      "family": "breakout",
+      "raw_candidates": 290,
+      "recorded": 247,
+      "rejected": 43,
+      "rejection_reasons": {
+        "used_slot": 39,
+        "cooldown": 4
+      },
+      "censored": 0,
+      "censor_reasons": {},
+      "classes": {
+        "F": 58,
+        "A": 37,
+        "N": 152
+      },
+      "matched_rows": 247,
+      "matched_classes": {
+        "N": 152,
+        "A": 37,
+        "F": 58
+      },
+      "readiness_exclusions": {}
+    },
+    {
+      "date": "2025-07-01",
+      "role": "descriptive_evaluation",
+      "family": "rebound",
+      "raw_candidates": 223,
+      "recorded": 195,
+      "rejected": 28,
+      "rejection_reasons": {
+        "used_slot": 27,
+        "cooldown": 1
+      },
+      "censored": 0,
+      "censor_reasons": {},
+      "classes": {
+        "F": 7,
+        "A": 84,
+        "N": 104
+      },
+      "matched_rows": 195,
+      "matched_classes": {
+        "N": 104,
+        "A": 84,
+        "F": 7
+      },
+      "readiness_exclusions": {}
+    }
+  ],
+  "days": [
+    {
+      "date": "2025-01-01",
+      "counts": [
+        {
+          "date": "2025-01-01",
+          "role": "auxiliary_warmup",
+          "family": "breakout",
+          "raw_candidates": 289,
+          "recorded": 239,
+          "rejected": 50,
+          "rejection_reasons": {
+            "used_slot": 33,
+            "feature:stale_asof": 15,
+            "cooldown": 2
+          },
+          "censored": 1,
+          "censor_reasons": {
+            "stale_asof": 1
+          },
+          "classes": {
+            "F": 62,
+            "A": 36,
+            "N": 140
+          },
+          "matched_rows": 238,
+          "matched_classes": {
+            "N": 140,
+            "F": 62,
+            "A": 36
+          },
+          "readiness_exclusions": {
+            "future_support:stale_asof": 1
+          }
+        },
+        {
+          "date": "2025-01-01",
+          "role": "auxiliary_warmup",
+          "family": "rebound",
+          "raw_candidates": 218,
+          "recorded": 180,
+          "rejected": 38,
+          "rejection_reasons": {
+            "used_slot": 28,
+            "cooldown": 1,
+            "feature:stale_asof": 9
+          },
+          "censored": 3,
+          "censor_reasons": {
+            "outside_retained_support": 1,
+            "stale_asof": 2
+          },
+          "classes": {
+            "F": 14,
+            "A": 65,
+            "N": 98
+          },
+          "matched_rows": 177,
+          "matched_classes": {
+            "N": 98,
+            "A": 65,
+            "F": 14
+          },
+          "readiness_exclusions": {
+            "future_support:outside_retained_support": 1,
+            "future_support:stale_asof": 2
+          }
+        }
+      ],
+      "availability": {
+        "support_reason_codes": [
+          "supported",
+          "outside_retained_support",
+          "stale_asof"
+        ],
+        "blocked_reason_codes": [
+          "not_blocked",
+          "level:outside_retained_support",
+          "level:range_below_4epsilon",
+          "level:stale_asof",
+          "trigger:outside_retained_support",
+          "trigger:segment_change",
+          "trigger:stale_asof"
+        ],
+        "same_row_projection_checks": 86128,
+        "source_rows": 150679,
+        "grid_cuts": 86370,
+        "valid_grid_cuts": 86128,
+        "invalid_grid_by_reason": {
+          "outside_retained_support": 139,
+          "stale_asof": 103
+        },
+        "blocked_cut_counts": {
+          "level:outside_retained_support": 4230,
+          "level:range_below_4epsilon": 46260,
+          "trigger:stale_asof": 62,
+          "level:stale_asof": 6000,
+          "trigger:outside_retained_support": 64,
+          "trigger:segment_change": 1193
+        },
+        "level_counts": {
+          "outside_retained_support": 71,
+          "range_below_4epsilon": 771,
+          "valid": 498,
+          "stale_asof": 100
+        },
+        "original_segments": 70,
+        "retained_segments": 70,
+        "first_event_ns": 1735689630239000000,
+        "last_event_ns": 1735775999543000000,
+        "retained_endpoint_exclusive_ns": 1735775999543000001
+      },
+      "checks": {
+        "prefix": {
+          "nominal_second": 43200,
+          "watermark_ns": 1735732799809000000,
+          "common_finalized_cut_ns": 1735732799000000000,
+          "causal_records_equal": true,
+          "completed_horizon_labels_equal": true,
+          "labels_compared": 131,
+          "unfinished_tail_label_changes": 0
+        },
+        "same_row_projections": 86128,
+        "all_event_histories_indexed_exactly": true,
+        "all_views_finite": true,
+        "shared_X_equals_R_prefix": true,
+        "no_future_cut_in_X": true,
+        "label_oracle_and_support_match": true,
+        "event_state_unchanged_after_labels": true,
+        "X_hash_in_event_order": "930627a148d2be092694d1149486788098b4e5769c82805c0ef177e554f5ebd2",
+        "Z_hash_in_event_order": "a2b1ccd3a65161f600b80d144ee1423d0e484318960f6f053ab75e43941c70e6",
+        "auxiliary_target_hash_in_event_order": "a0084771ce7c04787866b36c47ffc6bf8be530c6251a33c482e1a79427595904",
+        "auxiliary_deduplicated_cuts": 419,
+        "zero_predictive_fits": true
+      },
+      "dependency_max": 1735775364000000000,
+      "aux_count": 419
+    },
+    {
+      "date": "2025-02-01",
+      "counts": [
+        {
+          "date": "2025-02-01",
+          "role": "downstream_train",
+          "family": "breakout",
+          "raw_candidates": 335,
+          "recorded": 283,
+          "rejected": 52,
+          "rejection_reasons": {
+            "used_slot": 42,
+            "feature:stale_asof": 8,
+            "cooldown": 2
+          },
+          "censored": 1,
+          "censor_reasons": {
+            "stale_asof": 1
+          },
+          "classes": {
+            "F": 91,
+            "A": 31,
+            "N": 160
+          },
+          "matched_rows": 282,
+          "matched_classes": {
+            "N": 160,
+            "A": 31,
+            "F": 91
+          },
+          "readiness_exclusions": {
+            "future_support:stale_asof": 1
+          }
+        },
+        {
+          "date": "2025-02-01",
+          "role": "downstream_train",
+          "family": "rebound",
+          "raw_candidates": 297,
+          "recorded": 255,
+          "rejected": 42,
+          "rejection_reasons": {
+            "used_slot": 25,
+            "feature:stale_asof": 15,
+            "cooldown": 2
+          },
+          "censored": 1,
+          "censor_reasons": {
+            "stale_asof": 1
+          },
+          "classes": {
+            "F": 10,
+            "A": 110,
+            "N": 134
+          },
+          "matched_rows": 254,
+          "matched_classes": {
+            "A": 110,
+            "N": 134,
+            "F": 10
+          },
+          "readiness_exclusions": {
+            "future_support:stale_asof": 1
+          }
+        }
+      ],
+      "availability": {
+        "support_reason_codes": [
+          "supported",
+          "outside_retained_support",
+          "stale_asof"
+        ],
+        "blocked_reason_codes": [
+          "not_blocked",
+          "level:outside_retained_support",
+          "level:range_below_4epsilon",
+          "level:stale_asof",
+          "trigger:outside_retained_support",
+          "trigger:segment_change",
+          "trigger:stale_asof"
+        ],
+        "same_row_projection_checks": 86310,
+        "source_rows": 153768,
+        "grid_cuts": 86370,
+        "valid_grid_cuts": 86310,
+        "invalid_grid_by_reason": {
+          "outside_retained_support": 20,
+          "stale_asof": 40
+        },
+        "blocked_cut_counts": {
+          "level:outside_retained_support": 630,
+          "level:range_below_4epsilon": 50760,
+          "trigger:stale_asof": 42,
+          "level:stale_asof": 2400,
+          "trigger:outside_retained_support": 3,
+          "trigger:segment_change": 56
+        },
+        "level_counts": {
+          "outside_retained_support": 11,
+          "range_below_4epsilon": 846,
+          "valid": 543,
+          "stale_asof": 40
+        },
+        "original_segments": 10,
+        "retained_segments": 10,
+        "first_event_ns": 1738368030179000000,
+        "last_event_ns": 1738454399445000000,
+        "retained_endpoint_exclusive_ns": 1738454399445000001
+      },
+      "checks": {
+        "prefix": {
+          "nominal_second": 43200,
+          "watermark_ns": 1738411199956000000,
+          "common_finalized_cut_ns": 1738411199000000000,
+          "causal_records_equal": true,
+          "completed_horizon_labels_equal": true,
+          "labels_compared": 171,
+          "unfinished_tail_label_changes": 0
+        },
+        "same_row_projections": 86310,
+        "all_event_histories_indexed_exactly": true,
+        "all_views_finite": true,
+        "shared_X_equals_R_prefix": true,
+        "no_future_cut_in_X": true,
+        "label_oracle_and_support_match": true,
+        "event_state_unchanged_after_labels": true,
+        "X_hash_in_event_order": "dc0c4b56e9b783089aea09a4910e91d4a728fca0475ac4bfadb522e481e81385",
+        "Z_hash_in_event_order": "fd0865a7c1c39e2bac4966f5b221f7a0e27f2831e644aa6f3b121368f1a7cf62",
+        "auxiliary_target_hash_in_event_order": "81aff3bda8d69f4460988fd5c08232812e1a18d4fffc2c6c86362bd8072de0d4",
+        "auxiliary_deduplicated_cuts": 538,
+        "zero_predictive_fits": true
+      },
+      "dependency_max": 1738454143000000000,
+      "aux_count": 538
+    },
+    {
+      "date": "2025-03-01",
+      "counts": [
+        {
+          "date": "2025-03-01",
+          "role": "downstream_train",
+          "family": "breakout",
+          "raw_candidates": 517,
+          "recorded": 398,
+          "rejected": 119,
+          "rejection_reasons": {
+            "cooldown": 3,
+            "used_slot": 74,
+            "feature:stale_asof": 42
+          },
+          "censored": 5,
+          "censor_reasons": {
+            "stale_asof": 3,
+            "outside_retained_support": 2
+          },
+          "classes": {
+            "F": 139,
+            "A": 56,
+            "N": 198
+          },
+          "matched_rows": 393,
+          "matched_classes": {
+            "N": 198,
+            "F": 139,
+            "A": 56
+          },
+          "readiness_exclusions": {
+            "future_support:stale_asof": 3,
+            "future_support:outside_retained_support": 2
+          }
+        },
+        {
+          "date": "2025-03-01",
+          "role": "downstream_train",
+          "family": "rebound",
+          "raw_candidates": 449,
+          "recorded": 347,
+          "rejected": 102,
+          "rejection_reasons": {
+            "used_slot": 72,
+            "feature:stale_asof": 28,
+            "cooldown": 2
+          },
+          "censored": 4,
+          "censor_reasons": {
+            "outside_retained_support": 3,
+            "stale_asof": 1
+          },
+          "classes": {
+            "F": 34,
+            "A": 166,
+            "N": 143
+          },
+          "matched_rows": 343,
+          "matched_classes": {
+            "N": 143,
+            "A": 166,
+            "F": 34
+          },
+          "readiness_exclusions": {
+            "future_support:outside_retained_support": 3,
+            "future_support:stale_asof": 1
+          }
+        }
+      ],
+      "availability": {
+        "support_reason_codes": [
+          "supported",
+          "outside_retained_support",
+          "stale_asof"
+        ],
+        "blocked_reason_codes": [
+          "not_blocked",
+          "level:outside_retained_support",
+          "level:range_below_4epsilon",
+          "level:stale_asof",
+          "trigger:outside_retained_support",
+          "trigger:segment_change",
+          "trigger:stale_asof"
+        ],
+        "same_row_projection_checks": 85860,
+        "source_rows": 152727,
+        "grid_cuts": 86370,
+        "valid_grid_cuts": 85860,
+        "invalid_grid_by_reason": {
+          "outside_retained_support": 398,
+          "stale_asof": 112
+        },
+        "blocked_cut_counts": {
+          "level:outside_retained_support": 10350,
+          "level:range_below_4epsilon": 24840,
+          "trigger:outside_retained_support": 315,
+          "trigger:segment_change": 5255,
+          "level:stale_asof": 6660,
+          "trigger:stale_asof": 110
+        },
+        "level_counts": {
+          "outside_retained_support": 173,
+          "valid": 742,
+          "range_below_4epsilon": 414,
+          "stale_asof": 111
+        },
+        "original_segments": 172,
+        "retained_segments": 172,
+        "first_event_ns": 1740787230256000000,
+        "last_event_ns": 1740873599789000000,
+        "retained_endpoint_exclusive_ns": 1740873599789000001
+      },
+      "checks": {
+        "prefix": {
+          "nominal_second": 43200,
+          "watermark_ns": 1740830399959000000,
+          "common_finalized_cut_ns": 1740830399000000000,
+          "causal_records_equal": true,
+          "completed_horizon_labels_equal": true,
+          "labels_compared": 382,
+          "unfinished_tail_label_changes": 0
+        },
+        "same_row_projections": 85860,
+        "all_event_histories_indexed_exactly": true,
+        "all_views_finite": true,
+        "shared_X_equals_R_prefix": true,
+        "no_future_cut_in_X": true,
+        "label_oracle_and_support_match": true,
+        "event_state_unchanged_after_labels": true,
+        "X_hash_in_event_order": "8fabd44f3fcecd7782879a3a8083e1a86c52f76eff9c17b4a153c5c051b3f2ad",
+        "Z_hash_in_event_order": "c8d0ec0934fc6f80e29314d900bede5a5eb189855a59455152771242f3c3919e",
+        "auxiliary_target_hash_in_event_order": "593c8e3292785b32b81080f3224f0655f83bab33119046335c4bf20d26e19ec4",
+        "auxiliary_deduplicated_cuts": 745,
+        "zero_predictive_fits": true
+      },
+      "dependency_max": 1740873375000000000,
+      "aux_count": 745
+    },
+    {
+      "date": "2025-04-01",
+      "counts": [
+        {
+          "date": "2025-04-01",
+          "role": "selection",
+          "family": "breakout",
+          "raw_candidates": 723,
+          "recorded": 571,
+          "rejected": 152,
+          "rejection_reasons": {
+            "used_slot": 142,
+            "cooldown": 10
+          },
+          "censored": 2,
+          "censor_reasons": {
+            "stale_asof": 1,
+            "outside_retained_support": 1
+          },
+          "classes": {
+            "F": 182,
+            "A": 107,
+            "N": 280
+          },
+          "matched_rows": 569,
+          "matched_classes": {
+            "N": 280,
+            "F": 182,
+            "A": 107
+          },
+          "readiness_exclusions": {
+            "future_support:stale_asof": 1,
+            "future_support:outside_retained_support": 1
+          }
+        },
+        {
+          "date": "2025-04-01",
+          "role": "selection",
+          "family": "rebound",
+          "raw_candidates": 581,
+          "recorded": 477,
+          "rejected": 104,
+          "rejection_reasons": {
+            "used_slot": 98,
+            "feature:stale_asof": 1,
+            "cooldown": 5
+          },
+          "censored": 2,
+          "censor_reasons": {
+            "outside_retained_support": 2
+          },
+          "classes": {
+            "F": 46,
+            "A": 219,
+            "N": 210
+          },
+          "matched_rows": 475,
+          "matched_classes": {
+            "N": 210,
+            "F": 46,
+            "A": 219
+          },
+          "readiness_exclusions": {
+            "future_support:outside_retained_support": 2
+          }
+        }
+      ],
+      "availability": {
+        "support_reason_codes": [
+          "supported",
+          "outside_retained_support",
+          "stale_asof"
+        ],
+        "blocked_reason_codes": [
+          "not_blocked",
+          "level:outside_retained_support",
+          "level:range_below_4epsilon",
+          "level:stale_asof",
+          "trigger:outside_retained_support",
+          "trigger:segment_change",
+          "trigger:stale_asof"
+        ],
+        "same_row_projection_checks": 86201,
+        "source_rows": 155006,
+        "grid_cuts": 86370,
+        "valid_grid_cuts": 86201,
+        "invalid_grid_by_reason": {
+          "outside_retained_support": 165,
+          "stale_asof": 4
+        },
+        "blocked_cut_counts": {
+          "level:outside_retained_support": 2490,
+          "level:range_below_4epsilon": 32760,
+          "trigger:outside_retained_support": 55,
+          "trigger:segment_change": 695,
+          "trigger:stale_asof": 4,
+          "level:stale_asof": 240
+        },
+        "level_counts": {
+          "outside_retained_support": 42,
+          "valid": 848,
+          "range_below_4epsilon": 546,
+          "stale_asof": 4
+        },
+        "original_segments": 49,
+        "retained_segments": 49,
+        "first_event_ns": 1743465660596000000,
+        "last_event_ns": 1743551999642000000,
+        "retained_endpoint_exclusive_ns": 1743551999642000001
+      },
+      "checks": {
+        "prefix": {
+          "nominal_second": 43200,
+          "watermark_ns": 1743508799824000000,
+          "common_finalized_cut_ns": 1743508799000000000,
+          "causal_records_equal": true,
+          "completed_horizon_labels_equal": true,
+          "labels_compared": 368,
+          "unfinished_tail_label_changes": 0
+        },
+        "same_row_projections": 86201,
+        "all_event_histories_indexed_exactly": true,
+        "all_views_finite": true,
+        "shared_X_equals_R_prefix": true,
+        "no_future_cut_in_X": true,
+        "label_oracle_and_support_match": true,
+        "event_state_unchanged_after_labels": true,
+        "X_hash_in_event_order": "dea54687e54f40f010b0c87316ddad3532668dbe1050e3ec69ea8ff0c9e52d0c",
+        "Z_hash_in_event_order": "143d091444893937a15bb7851e75bf26fa684450ce1a000abf7b83131967a648",
+        "auxiliary_target_hash_in_event_order": "2c7d158d66ad5d46c26e41e3863c0a3eb8a29b1e022263fbb780b8515001e47a",
+        "auxiliary_deduplicated_cuts": 1048,
+        "zero_predictive_fits": true
+      },
+      "dependency_max": 1743551200000000000,
+      "aux_count": 1048
+    },
+    {
+      "date": "2025-05-01",
+      "counts": [
+        {
+          "date": "2025-05-01",
+          "role": "descriptive_evaluation",
+          "family": "breakout",
+          "raw_candidates": 440,
+          "recorded": 373,
+          "rejected": 67,
+          "rejection_reasons": {
+            "used_slot": 65,
+            "cooldown": 2
+          },
+          "censored": 1,
+          "censor_reasons": {
+            "outside_retained_support": 1
+          },
+          "classes": {
+            "F": 103,
+            "A": 61,
+            "N": 208
+          },
+          "matched_rows": 372,
+          "matched_classes": {
+            "A": 61,
+            "N": 208,
+            "F": 103
+          },
+          "readiness_exclusions": {
+            "future_support:outside_retained_support": 1
+          }
+        },
+        {
+          "date": "2025-05-01",
+          "role": "descriptive_evaluation",
+          "family": "rebound",
+          "raw_candidates": 373,
+          "recorded": 318,
+          "rejected": 55,
+          "rejection_reasons": {
+            "used_slot": 54,
+            "cooldown": 1
+          },
+          "censored": 1,
+          "censor_reasons": {
+            "segment_change": 1
+          },
+          "classes": {
+            "F": 24,
+            "A": 130,
+            "N": 163
+          },
+          "matched_rows": 317,
+          "matched_classes": {
+            "N": 163,
+            "F": 24,
+            "A": 130
+          },
+          "readiness_exclusions": {
+            "future_support:segment_change": 1
+          }
+        }
+      ],
+      "availability": {
+        "support_reason_codes": [
+          "supported",
+          "outside_retained_support"
+        ],
+        "blocked_reason_codes": [
+          "not_blocked",
+          "level:outside_retained_support",
+          "level:range_below_4epsilon",
+          "level:segment_change",
+          "trigger:outside_retained_support",
+          "trigger:segment_change"
+        ],
+        "same_row_projection_checks": 86314,
+        "source_rows": 155019,
+        "grid_cuts": 86370,
+        "valid_grid_cuts": 86314,
+        "invalid_grid_by_reason": {
+          "outside_retained_support": 56
+        },
+        "blocked_cut_counts": {
+          "level:outside_retained_support": 1650,
+          "level:range_below_4epsilon": 47700,
+          "trigger:outside_retained_support": 31,
+          "trigger:segment_change": 583,
+          "level:segment_change": 120
+        },
+        "level_counts": {
+          "outside_retained_support": 28,
+          "valid": 615,
+          "range_below_4epsilon": 795,
+          "segment_change": 2
+        },
+        "original_segments": 30,
+        "retained_segments": 30,
+        "first_event_ns": 1746057630425000000,
+        "last_event_ns": 1746143999295000000,
+        "retained_endpoint_exclusive_ns": 1746143999295000001
+      },
+      "checks": {
+        "prefix": {
+          "nominal_second": 43200,
+          "watermark_ns": 1746100799882000000,
+          "common_finalized_cut_ns": 1746100799000000000,
+          "causal_records_equal": true,
+          "completed_horizon_labels_equal": true,
+          "labels_compared": 241,
+          "unfinished_tail_label_changes": 0
+        },
+        "same_row_projections": 86314,
+        "all_event_histories_indexed_exactly": true,
+        "all_views_finite": true,
+        "shared_X_equals_R_prefix": true,
+        "no_future_cut_in_X": true,
+        "label_oracle_and_support_match": true,
+        "event_state_unchanged_after_labels": true,
+        "X_hash_in_event_order": "c6723d896d013e9990645534b31b886c0689a9a7047d3888e06da609d2b2036a",
+        "Z_hash_in_event_order": "cbe7f2512322e954bfea0fb19d4ae1533d506bd8e1e5d2f642f49d38df93643c",
+        "auxiliary_target_hash_in_event_order": "b3e85857aa49552eccc0fbb49658459bf7335ff8f86b329a64d8d8fad1cfb246",
+        "auxiliary_deduplicated_cuts": 691,
+        "zero_predictive_fits": true
+      },
+      "dependency_max": 1746143211000000000,
+      "aux_count": 691
+    },
+    {
+      "date": "2025-06-01",
+      "counts": [
+        {
+          "date": "2025-06-01",
+          "role": "descriptive_evaluation",
+          "family": "breakout",
+          "raw_candidates": 165,
+          "recorded": 155,
+          "rejected": 10,
+          "rejection_reasons": {
+            "used_slot": 9,
+            "cooldown": 1
+          },
+          "censored": 0,
+          "censor_reasons": {},
+          "classes": {
+            "F": 30,
+            "A": 13,
+            "N": 112
+          },
+          "matched_rows": 155,
+          "matched_classes": {
+            "F": 30,
+            "N": 112,
+            "A": 13
+          },
+          "readiness_exclusions": {}
+        },
+        {
+          "date": "2025-06-01",
+          "role": "descriptive_evaluation",
+          "family": "rebound",
+          "raw_candidates": 132,
+          "recorded": 122,
+          "rejected": 10,
+          "rejection_reasons": {
+            "used_slot": 10
+          },
+          "censored": 0,
+          "censor_reasons": {},
+          "classes": {
+            "F": 2,
+            "A": 38,
+            "N": 82
+          },
+          "matched_rows": 122,
+          "matched_classes": {
+            "N": 82,
+            "A": 38,
+            "F": 2
+          },
+          "readiness_exclusions": {}
+        }
+      ],
+      "availability": {
+        "support_reason_codes": [
+          "supported",
+          "outside_retained_support",
+          "stale_asof"
+        ],
+        "blocked_reason_codes": [
+          "not_blocked",
+          "level:outside_retained_support",
+          "level:range_below_4epsilon",
+          "level:stale_asof",
+          "trigger:outside_retained_support",
+          "trigger:segment_change"
+        ],
+        "same_row_projection_checks": 85963,
+        "source_rows": 156032,
+        "grid_cuts": 86370,
+        "valid_grid_cuts": 85963,
+        "invalid_grid_by_reason": {
+          "outside_retained_support": 403,
+          "stale_asof": 4
+        },
+        "blocked_cut_counts": {
+          "level:outside_retained_support": 1410,
+          "level:range_below_4epsilon": 64020,
+          "level:stale_asof": 240,
+          "trigger:outside_retained_support": 9,
+          "trigger:segment_change": 167
+        },
+        "level_counts": {
+          "outside_retained_support": 24,
+          "valid": 345,
+          "range_below_4epsilon": 1067,
+          "stale_asof": 4
+        },
+        "original_segments": 18,
+        "retained_segments": 18,
+        "first_event_ns": 1748736030439000000,
+        "last_event_ns": 1748822399524000000,
+        "retained_endpoint_exclusive_ns": 1748822399524000001
+      },
+      "checks": {
+        "prefix": {
+          "nominal_second": 43200,
+          "watermark_ns": 1748779199626000000,
+          "common_finalized_cut_ns": 1748779199000000000,
+          "causal_records_equal": true,
+          "completed_horizon_labels_equal": true,
+          "labels_compared": 101,
+          "unfinished_tail_label_changes": 0
+        },
+        "same_row_projections": 85963,
+        "all_event_histories_indexed_exactly": true,
+        "all_views_finite": true,
+        "shared_X_equals_R_prefix": true,
+        "no_future_cut_in_X": true,
+        "label_oracle_and_support_match": true,
+        "event_state_unchanged_after_labels": true,
+        "X_hash_in_event_order": "eca6891d1547c4e5e28ad0de23832b29d32a0f32be06798e7b632c4c5f655fea",
+        "Z_hash_in_event_order": "b16ce6302452c68db9340d1dffdcda10131c6f9df154c7f75c8582477a14692c",
+        "auxiliary_target_hash_in_event_order": "e7ca3cf474a0dbc21fdd55dcb62d2cfc2160f8e344ccc837029e4549f4a63722",
+        "auxiliary_deduplicated_cuts": 277,
+        "zero_predictive_fits": true
+      },
+      "dependency_max": 1748822374000000000,
+      "aux_count": 277
+    },
+    {
+      "date": "2025-07-01",
+      "counts": [
+        {
+          "date": "2025-07-01",
+          "role": "descriptive_evaluation",
+          "family": "breakout",
+          "raw_candidates": 290,
+          "recorded": 247,
+          "rejected": 43,
+          "rejection_reasons": {
+            "used_slot": 39,
+            "cooldown": 4
+          },
+          "censored": 0,
+          "censor_reasons": {},
+          "classes": {
+            "F": 58,
+            "A": 37,
+            "N": 152
+          },
+          "matched_rows": 247,
+          "matched_classes": {
+            "N": 152,
+            "A": 37,
+            "F": 58
+          },
+          "readiness_exclusions": {}
+        },
+        {
+          "date": "2025-07-01",
+          "role": "descriptive_evaluation",
+          "family": "rebound",
+          "raw_candidates": 223,
+          "recorded": 195,
+          "rejected": 28,
+          "rejection_reasons": {
+            "used_slot": 27,
+            "cooldown": 1
+          },
+          "censored": 0,
+          "censor_reasons": {},
+          "classes": {
+            "F": 7,
+            "A": 84,
+            "N": 104
+          },
+          "matched_rows": 195,
+          "matched_classes": {
+            "N": 104,
+            "A": 84,
+            "F": 7
+          },
+          "readiness_exclusions": {}
+        }
+      ],
+      "availability": {
+        "support_reason_codes": [
+          "supported",
+          "outside_retained_support",
+          "stale_asof"
+        ],
+        "blocked_reason_codes": [
+          "not_blocked",
+          "level:outside_retained_support",
+          "level:range_below_4epsilon",
+          "level:stale_asof",
+          "trigger:outside_retained_support",
+          "trigger:segment_change"
+        ],
+        "same_row_projection_checks": 86318,
+        "source_rows": 158534,
+        "grid_cuts": 86370,
+        "valid_grid_cuts": 86318,
+        "invalid_grid_by_reason": {
+          "outside_retained_support": 51,
+          "stale_asof": 1
+        },
+        "blocked_cut_counts": {
+          "level:outside_retained_support": 1110,
+          "level:range_below_4epsilon": 58680,
+          "trigger:outside_retained_support": 11,
+          "trigger:segment_change": 182,
+          "level:stale_asof": 60
+        },
+        "level_counts": {
+          "outside_retained_support": 19,
+          "range_below_4epsilon": 978,
+          "valid": 442,
+          "stale_asof": 1
+        },
+        "original_segments": 18,
+        "retained_segments": 18,
+        "first_event_ns": 1751328030175000000,
+        "last_event_ns": 1751414399610000000,
+        "retained_endpoint_exclusive_ns": 1751414399610000001
+      },
+      "checks": {
+        "prefix": {
+          "nominal_second": 43200,
+          "watermark_ns": 1751371199588000000,
+          "common_finalized_cut_ns": 1751371199000000000,
+          "causal_records_equal": true,
+          "completed_horizon_labels_equal": true,
+          "labels_compared": 101,
+          "unfinished_tail_label_changes": 0
+        },
+        "same_row_projections": 86318,
+        "all_event_histories_indexed_exactly": true,
+        "all_views_finite": true,
+        "shared_X_equals_R_prefix": true,
+        "no_future_cut_in_X": true,
+        "label_oracle_and_support_match": true,
+        "event_state_unchanged_after_labels": true,
+        "X_hash_in_event_order": "aef4b2ca7a7f11e9ec94730454e9f856f09e49dd5fe70ead12f2f186d9c17f07",
+        "Z_hash_in_event_order": "9d58e19990a5630d76316a9a14b32d59e997bb2ada5ea0a339cdb5f267d98464",
+        "auxiliary_target_hash_in_event_order": "1878b8bcbfc94db3338d8828674cf6ce6840ea5e953cb2cf940bddabb7ae46f7",
+        "auxiliary_deduplicated_cuts": 442,
+        "zero_predictive_fits": true
+      },
+      "dependency_max": 1751414261000000000,
+      "aux_count": 442
+    }
+  ],
+  "total_recorded": 4160,
+  "total_labeled": 4139,
+  "total_censored": 21,
+  "predictive_fits": 0,
+  "P_and_L_computed": false,
+  "interpretation": "Descriptive sampled-label feasibility and matched data readiness only"
+}

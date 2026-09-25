@@ -1,0 +1,106 @@
+{
+  "assignment": "E272",
+  "decision": "D058:T012:information-value-next-test",
+  "task": "T-012",
+  "revision": "r10",
+  "status": "completed_design_no_go_for_current_paper_and_immediate_empirical_test",
+  "started": "2026-09-22T20:54:26.5030507+04:00",
+  "completed": "2026-09-22T21:20:55.7327330+04:00",
+  "elapsed_seconds": 1589.2296823,
+  "phases": [
+    {
+      "name": "Setup, scoped evidence and primary research",
+      "start": "2026-09-22T20:54:26.5030507+04:00",
+      "end": "2026-09-22T21:01:55.1935525+04:00",
+      "seconds": 448.691
+    },
+    {
+      "name": "Estimand, alternatives, analytical checks and next-test design",
+      "start": "2026-09-22T21:01:55.1935525+04:00",
+      "end": "2026-09-22T21:05:26.4186150+04:00",
+      "seconds": 211.225
+    },
+    {
+      "name": "Report, source ledger, rendering and self-review",
+      "start": "2026-09-22T21:05:26.4186150+04:00",
+      "end": "2026-09-22T21:18:22.0422135+04:00",
+      "seconds": 775.624
+    },
+    {
+      "name": "Commits, preservation verification and final seal",
+      "start": "2026-09-22T21:18:22.0422135+04:00",
+      "end": "2026-09-22T21:20:55.7327330+04:00",
+      "seconds": 153.691
+    }
+  ],
+  "jobs": [
+    {
+      "path": "attempts/checks-01/checks-resource.json",
+      "wall_seconds": 27.875777799999923,
+      "cpu_seconds": 5.078125,
+      "peak_job_memory_bytes": 21098496,
+      "status": "completed"
+    },
+    {
+      "path": "attempts/render-01/render-resource.json",
+      "wall_seconds": 4.1671743000042625,
+      "cpu_seconds": 3.796875,
+      "peak_job_memory_bytes": 244527104,
+      "status": "completed"
+    },
+    {
+      "path": "attempts/render-02/render-resource.json",
+      "wall_seconds": 3.7142419000010705,
+      "cpu_seconds": 3.65625,
+      "peak_job_memory_bytes": 244764672,
+      "status": "completed"
+    },
+    {
+      "path": "checks-resource.json",
+      "wall_seconds": 4.22058740000648,
+      "cpu_seconds": 4.265625,
+      "peak_job_memory_bytes": 21532672,
+      "status": "completed"
+    },
+    {
+      "path": "render-resource.json",
+      "wall_seconds": 3.801410100000794,
+      "cpu_seconds": 3.828125,
+      "peak_job_memory_bytes": 244518912,
+      "status": "completed"
+    },
+    {
+      "path": "seal-resource.json",
+      "wall_seconds": 4.322945100007928,
+      "cpu_seconds": 4.359375,
+      "peak_job_memory_bytes": 58359808,
+      "status": "completed"
+    }
+  ],
+  "total_recorded_job_wall_seconds": 48.10213660002046,
+  "total_recorded_cpu_seconds": 24.984375,
+  "maximum_peak_job_memory_bytes": 244764672.0,
+  "previous_files_unchanged": 7262,
+  "pdf_pages": 5,
+  "new_fits": 0,
+  "empirical_scoring": 0,
+  "source_replay": 0,
+  "market_acquisition": 0,
+  "native_episodes": 0,
+  "subagents": 0,
+  "push_or_publication": false,
+  "branch": "feat/t012-information-value-design",
+  "commits": [
+    "cd5512b19ba6a867bb50e0138b999d7f11646a11",
+    "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+  ],
+  "tmux_sessions": [
+    "drc-lob-t012-r10-checks",
+    "drc-lob-t012-r10-render",
+    "drc-lob-t012-r10-seal"
+  ],
+  "all_task_sessions_terminated": true,
+  "test_scope": "Exact synthetic laws, AST parsing, source/member hashes, unchanged prior artifacts, code-copy equality, LaTeX compile, all-page visual inspection, git diff --check",
+  "remaining": "Independent review and conditional-law/temporal/exposure feasibility; no empirical execution released",
+  "browser_interaction_verified": false
+}

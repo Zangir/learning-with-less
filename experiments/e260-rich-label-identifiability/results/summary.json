@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-260"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "No distinct advantage over matched direct prediction was found for the tested candidate.",
+  "result_records": [
+    {
+      "result_id": "R-030",
+      "title": "Rich-label adaptation novelty and identification limits",
+      "experiment_id": "E-260",
+      "protocol_revision": 1,
+      "source_task_id": "T-012",
+      "reported_at": "2026-09-22T07:28:27.671148+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_scoped_novelty_negative",
+      "artifact_manifest_sha256": "fc88f6062ce906ba19b0694e0dace043018f153b30746f0a404378ba1c2d9d2e",
+      "summary": "Reviewed R030/RV028: the tested rich-label reconstruction candidate has no distinct advantage over equally informed direct prediction. Information acquisition remains a conditional question. Next: triage genuinely different candidates in the remaining architecture; no new model fits.",
+      "limitations": [
+        "R030 / RV028 / D041. Local finite identification and matched-control result; targeted literature coverage, no universal impossibility, market-cost estimate or established ICLR contribution. Original participant-linked Q16/Q17/Q18 remain open."
+      ],
+      "review_ids": [
+        "RV-028"
+      ],
+      "job_refs": [
+        {
+          "at": "2026-09-22T10:50:04.378129+04:00",
+          "created_or_used": [
+            "drc-lob-t012-r8-exact",
+            "drc-lob-t012-r8-report"
+          ],
+          "all_owned_sessions_absent": true,
+          "other_sessions_untouched": true,
+          "exact_exit": 0,
+          "render_exit": 0,
+          "watchdog_seconds": 3600
+        }
+      ],
+      "job_observed_at": "2026-09-22T10:50:04.378129+04:00",
+      "accepted_at": "2026-09-22T08:31:20.155374+00:00",
+      "decision_id": "D-041"
+    }
+  ]
+}

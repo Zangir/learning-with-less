@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-270"
+  ],
+  "question_ids": [
+    "Q-019"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-018"
+  ],
+  "result_ids": [
+    "R-041"
+  ],
+  "review_ids": [
+    "RV-039"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [
+    "feat/t018-source-recovery"
+  ],
+  "source_commits": [
+    "e638930f2fde8f5fd9b3aec264237ee44261507f"
+  ],
+  "remote_archive_branches": [
+    "old/t018-source-recovery"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "result-paper.pdf",
+      "sha256": "adee3fbea0c62a7c08692eed56f7bc91ba86df350f4b1d98450939736bc4e142",
+      "size_bytes": 72091
+    },
+    {
+      "path": "figures/main.png",
+      "sha256": "acca966b822a57234318438cfbfea9790f4184370d71de7f46e9031ae0fe4337",
+      "size_bytes": 45196
+    }
+  ]
+}

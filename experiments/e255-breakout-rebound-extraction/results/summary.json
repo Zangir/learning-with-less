@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-255"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "Twenty-one recorded events remained from 24 raw candidates. No labels were fit and no performance claim was made.",
+  "result_records": [
+    {
+      "result_id": "R-025",
+      "title": "Label-blind breakout and rebound extraction feasibility",
+      "experiment_id": "E-255",
+      "protocol_revision": 2,
+      "source_task_id": "T-016",
+      "reported_at": "2026-09-22T01:19:35.433753+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_bounded_feasibility",
+      "artifact_manifest_sha256": "0d4ea9391a2a04ae015ac6314f06ac1dd37454524d0b85b86f8ca3ee9bb199bd",
+      "summary": "Author reports21 recorded events from24 raw candidates in one fixed hour; deterministic freeze, source bounds and causal prefix checks await independent review. No labels, fitting or performance claims.",
+      "limitations": [
+        "Author evidence only until independent assessment; original mandatory replications remain open."
+      ],
+      "review_ids": [
+        "RV-023"
+      ],
+      "job_refs": [
+        {
+          "session": "drc-lob-t016-p0",
+          "stage": "p0",
+          "status": "completed",
+          "started_utc": "2026-09-22T00:30:05.680926+00:00",
+          "finished_utc": "2026-09-22T00:30:07.749969+00:00",
+          "elapsed_seconds": 2.063,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 103903232,
+          "timeout_seconds": 3600,
+          "commands": [
+            {
+              "stage": "fixtures-integrity-extraction",
+              "exit_code": 0,
+              "seconds": 2.063
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-render",
+          "stage": "render",
+          "status": "completed",
+          "started_utc": "2026-09-22T00:36:10.780957+00:00",
+          "finished_utc": "2026-09-22T00:36:18.800573+00:00",
+          "elapsed_seconds": 8.031,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 504508416,
+          "timeout_seconds": 3600,
+          "commands": [
+            {
+              "stage": "build-report",
+              "exit_code": 0,
+              "seconds": 0.75
+            },
+            {
+              "stage": "xelatex-pass1",
+              "exit_code": 0,
+              "seconds": 2.187
+            },
+            {
+              "stage": "xelatex-pass2",
+              "exit_code": 0,
+              "seconds": 2.141
+            },
+            {
+              "stage": "copy-pdf",
+              "exit_code": 0,
+              "seconds": 0.078
+            },
+            {
+              "stage": "render-pages",
+              "exit_code": 0,
+              "seconds": 2.016
+            },
+            {
+              "stage": "verify-report",
+              "exit_code": 0,
+              "seconds": 0.859
+            }
+          ]
+        }
+      ],
+      "accepted_at": "2026-09-22T02:22:18.712676+00:00",
+      "decision_id": "D-035"
+    }
+  ]
+}

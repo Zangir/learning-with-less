@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-210"
+  ],
+  "question_ids": [
+    "Q-009"
+  ],
+  "hypothesis_ids": [
+    "H-010"
+  ],
+  "task_ids": [
+    "T-012"
+  ],
+  "result_ids": [
+    "R-009",
+    "R-014"
+  ],
+  "review_ids": [
+    "RV-005",
+    "RV-010"
+  ],
+  "protocol_revisions": [
+    2
+  ],
+  "source_branches": [
+    "feat/t012-information-value-design"
+  ],
+  "source_commits": [
+    "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+  ],
+  "remote_archive_branches": [
+    "old/t012-information-value-design"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "result-paper.pdf",
+      "sha256": "08f1775b311f0f4aa9d5451df58380d57511f7e2644e9c74edd54eae82961eb5",
+      "size_bytes": 589681
+    },
+    {
+      "path": "figures/main.png",
+      "sha256": "6d74877da3ff78c688bc0ec031b7f506242554ddb8f3cf1b618a5382ed6b83eb",
+      "size_bytes": 354513
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "7152a9e9fa066033f4cbabba64b4105f441b0861ca62d6e33a5a23deb45f46f3",
+      "size_bytes": 4306695
+    },
+    {
+      "path": "results/finite-summary.csv",
+      "sha256": "82ecf45ed2a790b8436f184ba4c68792c5825c7e7edbdce3380c14a4f63ded72",
+      "size_bytes": 1356
+    },
+    {
+      "path": "results/paired-differences.csv",
+      "sha256": "bc15ed70048c44fe9507a03ac1aaf31f8ac594f885d937b54f1277be7689a54a",
+      "size_bytes": 980
+    }
+  ]
+}

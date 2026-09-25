@@ -1,0 +1,24 @@
+\begin{table}[h]\centering
+\caption{Q17 absolute performance by model family. Utility in basis points per
+opportunity (argmax, confidence) or per 12-opportunity window (scheduling) at 5 bps per
+side. Source: \texttt{experiments/results/q17\_figure\_data.json}.}
+\label{tab:q17abs}
+\begin{tabular}{llrrrr}
+\toprule
+asset & model & macro-F1 & argmax & confidence & scheduling \\
+\midrule
+BTC & prior & 0.167633 & -10.143430 & 0.000000 & -0.087832 \\
+BTC & logistic & 0.361085 & -9.741636 & 0.000000 & 0.680911 \\
+BTC & hist\_gb & 0.486577 & -8.034500 & 0.000000 & 0.531820 \\
+BTC & mlp & 0.503188 & -7.619262 & 0.000000 & 0.706872 \\
+BTC & random & 0.318313 & -6.772006 & 0.000000 & -0.080510 \\
+BTC & oracle & 1.000000 & -5.673321 & 0.000000 & 1.997775 \\
+ETH & prior & 0.171960 & -10.455921 & 0.000000 & -0.108507 \\
+ETH & logistic & 0.352168 & -9.956131 & 0.000000 & 0.903621 \\
+ETH & hist\_gb & 0.371520 & -9.559819 & 0.000000 & 0.797432 \\
+ETH & mlp & 0.449249 & -8.154412 & 0.000000 & 0.832678 \\
+ETH & random & 0.319194 & -6.992946 & 0.000000 & -0.080479 \\
+ETH & oracle & 1.000000 & -5.461902 & 0.000000 & 2.752498 \\
+\bottomrule
+\end{tabular}
+\end{table}

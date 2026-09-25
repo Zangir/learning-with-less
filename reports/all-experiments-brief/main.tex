@@ -1,0 +1,250 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=18mm,top=18mm,bottom=20mm,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{DejaVu Sans Mono}[Scale=0.82]
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{booktabs,longtable,tabularx,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\definecolor{navy}{HTML}{11243A}
+\definecolor{blue}{HTML}{245B78}
+\definecolor{teal}{HTML}{087F7B}
+\definecolor{ink}{HTML}{17222B}
+\definecolor{muted}{HTML}{5F6B73}
+\definecolor{paper}{HTML}{F7F4EE}
+\definecolor{statusgreen}{HTML}{087F5B}
+\definecolor{statusamber}{HTML}{A26012}
+\definecolor{statusred}{HTML}{A33A3A}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=teal,pdfauthor={LOB Research Programme},pdftitle={Thirty experiments in the LOB programme}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.47em}
+\setlist[itemize]{leftmargin=1.3em,itemsep=0.2em,topsep=0.3em}
+\titleformat{\section}{\sffamily\Large\bfseries\color{navy}}{}{0pt}{}[\vspace{-0.35em}\color{teal}\rule{\linewidth}{0.6pt}]
+\titleformat{\subsection}{\sffamily\normalsize\bfseries\color{blue}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{1.7em}{0.7em}
+\titlespacing*{\subsection}{0pt}{1.2em}{0.25em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\footnotesize LOB research programme}
+\fancyhead[R]{\sffamily\footnotesize Revision 187}
+\fancyfoot[C]{\sffamily\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+\emergencystretch=2em
+\setcounter{tocdepth}{1}
+\begin{document}
+\begin{titlepage}
+\pagecolor{navy}\color{white}
+\vspace*{20mm}
+{\sffamily\bfseries\fontsize{31}{35}\selectfont Thirty experiments in the\\LOB programme\par}
+\vspace{7mm}
+{\sffamily\fontsize{15}{19}\selectfont What was tried, what went in, what came out,\\and what can be claimed\par}
+\vspace{18mm}
+\colorbox{teal}{\parbox{0.87\textwidth}{\color{white}\sffamily\bfseries\large Evidence map at research state revision 187}}\par
+\vspace{14mm}
+{\large\raggedright
+The programme tests whether richer or reconstructed limit-order-book information improves forecasts and decisions over matched direct baselines. Its strongest evidence is a set of carefully scoped negatives, diagnostic mechanisms, and source-validity boundaries.\par}
+\vfill
+{\sffamily\small Generated 25 September 2026\\Real Hyperliquid adaptations, controlled mechanisms, and 30 curated experiment packages}
+\end{titlepage}
+\nopagecolor\color{ink}
+\tableofcontents
+\clearpage
+Evidence frozen at research state revision 187; report generated 25 September 2026.\par
+\section{Executive view}
+The programme asks when information hidden by a coarse limit-order-book view is worth reconstructing, and whether that reconstruction improves prediction or decisions over a strong direct learner. The engineering work produced three kinds of evidence: real Hyperliquid adaptations, controlled simulator studies, and validity/source checks that determine whether a scientific comparison is even admissible.\par
+The clearest results are mostly disciplined negatives. Q17 completed on native Hyperliquid BBO data, but better forecast scores did not satisfy the predeclared cross-asset policy-ranking reversal. Q18 completed a receipt-clock depth/history/delay study, but neither ablation produced a consistent freshness crossing. Q16's software and conditional checks are sound, but no eligible real-data episode was admitted, so its mandatory empirical question remains open. In controlled simulation, hidden-queue uncertainty mattered, yet a matched direct predictor equalled the uncertainty-preserving reconstruction at 512 training draws. On sampled BTC L2, an early rich-depth breakout advantage disappeared on later dates. The book-washout pilot showed fast disclosure of inherited orders but remained incomplete after 11 hours.\par
+\subsection{How status words are used}
+\begin{itemize}
+\item \textbf{Valid negative}: the declared test completed and the criterion failed. This is a scientific result within the declared scope.
+\item \textbf{Valid limited/diagnostic}: the computation is correct, but it establishes readiness, feasibility, or a narrow mechanism rather than the headline empirical claim.
+\item \textbf{Invalid or unadmitted input}: the source failed a prerequisite. No outcome from that source counts as evidence for the target claim.
+\item \textbf{Inconclusive}: the observed prefix is valid, but the required decision horizon or denominator is missing.
+\item \textbf{Cancelled/preparation only}: no empirical result was produced.
+\end{itemize}
+\clearpage
+\section*{One-page status table}
+\addcontentsline{toc}{section}{One-page status table}
+{\small Each row states the strongest claim supported at revision 187. ``Negative'' means a completed test failed its declared criterion; it does not mean invalid data.}\par\vspace{0.6em}
+\begin{minipage}[t]{0.485\textwidth}
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\sffamily}p{0.11\linewidth}>{\raggedright\arraybackslash}X@{}}
+E001 & {\bfseries\color{statusgreen} Valid audit}\\[-1pt] & Real BTC first-hour integrity; no replication claim.\\[3pt]
+Q16 & {\bfseries\color{statusamber} Blocked}\\[-1pt] & Finite checks pass; zero eligible real episodes.\\[3pt]
+Q17 & {\bfseries\color{statusgreen} Complete negative}\\[-1pt] & Forecast gain; required policy reversal absent.\\[3pt]
+Q18 & {\bfseries\color{statusgreen} Exploratory negative}\\[-1pt] & Depth/history crossing criterion absent.\\[3pt]
+E002 & {\bfseries\color{statusgreen} Valid diagnostic}\\[-1pt] & Anchor coverage improved; causal clock open.\\[3pt]
+E200 & {\bfseries\color{statusamber} Limited/open}\\[-1pt] & Event-clock route valid; full window open.\\[3pt]
+E201 & {\bfseries\color{statusamber} Limited/open}\\[-1pt] & Initial state and FIFO remain uncertified.\\[3pt]
+E202 & {\bfseries\color{statusamber} Limited/open}\\[-1pt] & Bounded blocks feasible; primary panel open.\\[3pt]
+E203 & {\bfseries\color{statusamber} Limited/open}\\[-1pt] & Paired-view contract scoped; real panel open.\\[3pt]
+E204 & {\bfseries\color{statusamber} Limited/open}\\[-1pt] & Conditional labels; native fills not admitted.\\[3pt]
+E205 & {\bfseries\color{statusgreen} Valid negative}\\[-1pt] & Unmodified ABIDES unsuitable unrestricted.\\[3pt]
+E210 & {\bfseries\color{statusgreen} Valid synthetic}\\[-1pt] & Ambiguity matters; no unique reconstruction gain.\\[3pt]
+E253 & {\bfseries\color{statusgreen} Valid design}\\[-1pt] & Protocol fixed; no performance result.\\[3pt]
+E254 & {\bfseries\color{statusgreen} Identity negative}\\[-1pt] & One restoration candidate equals direct method.\\[3pt]
+E255 & {\bfseries\color{statusgreen} Valid feasibility}\\[-1pt] & 21 label-blind opportunities in fixed hour.\\[3pt]
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\textwidth}
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\sffamily}p{0.11\linewidth}>{\raggedright\arraybackslash}X@{}}
+E256 & {\bfseries\color{statusgreen} Valid readiness}\\[-1pt] & Restricted repaired simulator passes contract.\\[3pt]
+E257 & {\bfseries\color{statusgreen} Data ready}\\[-1pt] & 4,139 labels; zero predictive fits.\\[3pt]
+E258 & {\bfseries\color{statusgreen} Equivalence negative}\\[-1pt] & Direct = distributional at 512 draws.\\[3pt]
+E259 & {\bfseries\color{statusgreen} Valid mixed}\\[-1pt] & Rich depth helped only exposed breakout dates.\\[3pt]
+E260 & {\bfseries\color{statusgreen} Novelty negative}\\[-1pt] & No distinct matched reconstruction contribution.\\[3pt]
+E261 & {\bfseries\color{statusgreen} Temporal negative}\\[-1pt] & Earlier rich-depth advantage did not persist.\\[3pt]
+E262 & {\bfseries\color{statusred} Cancelled}\\[-1pt] & No execution and no scientific result.\\[3pt]
+E263 & {\bfseries\color{statusgreen} Triage negative}\\[-1pt] & Three candidates rejected as paper contributions.\\[3pt]
+E264 & {\bfseries\color{statusgreen} Valid diagnosis}\\[-1pt] & Reversal mostly class-conditional.\\[3pt]
+E265 & {\bfseries\color{statusamber} Partial source}\\[-1pt] & Q17/Q18 admitted; Q16 unavailable.\\[3pt]
+E269 & {\bfseries\color{statusamber} Preparation only}\\[-1pt] & No eligible retained post-November day.\\[3pt]
+E270 & {\bfseries\color{statusamber} Source only}\\[-1pt] & One February BTC day conditionally admitted.\\[3pt]
+E271 & {\bfseries\color{statusgreen} Scoped contradiction}\\[-1pt] & Strict persistence conjunction failed.\\[3pt]
+E272 & {\bfseries\color{statusamber} Review pending}\\[-1pt] & Analytical design; no empirical run.\\[3pt]
+E273 & {\bfseries\color{statusamber} Inconclusive}\\[-1pt] & Valid 11-hour prefix; decision horizon unmet.\\[3pt]
+\end{tabularx}
+\end{minipage}
+\vfill
+{\footnotesize\color{muted} C = coarse view; P = predicted rich summaries; R = observed richer view. Package-level manifests remain authoritative.}
+\clearpage
+\section{Mandatory Q16-Q18 programme}
+\subsection{E001 -- BTC provenance, schema, timing, and replay audit}
+\textbf{Idea, input, method.} This prerequisite checked whether the available BTC material could support the original Q16-Q18 logic at all. It combined fresh synthetic source checks with a bounded integrity and schema audit of the first real BTC hour, inspecting fields, ordering, timing candidates, and replay assumptions before treating the dump as a market experiment.\par
+\textbf{Output, result, status.} The packet is a valid bounded audit, not a replication. It confirmed useful structure in one development hour but left the initial book, the observation clock, and untouched chronological evaluation uncertified. The correct conclusion is "data engineering can proceed under explicit conditions," not "Q16-Q18 worked on real data."\par
+\subsection{Q16 -- finite queue ambiguity and real-data completion (E016 + E266)}
+\textbf{Idea, input, method.} Q16 asks whether order-count information shrinks the set of feasible queue states and changes a hypothetical order's execution. Engineers built an exact finite observer/probe model, added cancellation and prefix/conservation checks, applied it to conditional atomic order histories, and then prepared a corrected real-data execution packet for an admitted Hyperliquid source.\par
+\textbf{Output, result, status.} The controlled machinery is valid, but the real empirical goal is unfinished. The conditional primary found \textbf{0/961} count-tightened cases; a post-run completion found \textbf{0/962}. A same-anchor extension yielded \textbf{979 exact, 21 censored, 0 unresolved} cases and three positive executions, still with zero count tightening. The final software correction passed \textbf{85 tests}, but \textbf{0 empirical episodes} were admitted because a qualified native source was absent. This is a valid conditional negative plus a blocked empirical replication, not evidence that counts never matter.\par
+\subsection{Q17 -- forecast quality versus decision utility (E017 + E267)}
+\textbf{Idea, input, method.} Q17 tested whether model rankings by forecast quality can disagree with rankings by a quote-decision utility. The final adaptation used \textbf{30 native Hyperliquid BBO asset/date contracts}, provider receipt and exchange-event clocks, July-September training, October validation, eight November-June test dates, and later transfer dates. Logistic, histogram-boosting, and MLP streams were fit under frozen policies; \textbf{22 fitted streams} completed.\par
+\textbf{Output, result, status.} The predeclared eight-contrast joint reversal rule failed. MLP minus logistic macro-F1 was \textbf{+0.14210 BTC} and \textbf{+0.09708 ETH}; primary argmax utility differences were also positive at \textbf{+2.12237} and \textbf{+1.80172 bps/opportunity}. Confidence policies tied at zero utility, while scheduling differences were \textbf{+0.02596 BTC} and \textbf{-0.07094 ETH} with intervals spanning zero. Thus forecasting improved, but the required cross-asset reversal did not appear. This is a completed, independently checked scoped negative, not equivalence and not realized-profit evidence.\par
+\subsection{Q18 -- depth, history, and delayed-view factorial (E018 + E268)}
+\textbf{Idea, input, method.} Q18 asked whether deeper levels or longer history retain useful predictive value when observations are delayed. The final exploratory adaptation used \textbf{18 admitted sampled-L2 contracts}, receipt-clock observations and targets, BTC and ETH, logistic/HGB/MLP models, depth and history ablations, a 55-second cached-view delay, and \textbf{120 fitted estimators} spanning pilot, optimizer, and three-date transfer stages.\par
+\textbf{Output, result, status.} The fixed pilot crossing criterion was not met: depth directions were \textbf{[0, 0, 0, -1]} across asset/learner cells and history directions were \textbf{[0, 0, 0, 0]}. Among 24 later directional contrasts, only \textbf{2} met the 1\% margin and \textbf{6} met 2\%; three selected dates cannot support a population noninferiority claim. Absolute losses also showed that a relative ablation gain need not beat the training-prior baseline. This is a completed exploratory negative for the frozen criterion, not proof that depth or history is universally useless.\par
+\subsection{E002 -- existing-hour clock-anchor diagnostic}
+\textbf{Idea, input, method.} This diagnostic tried to align event updates with plausible point timestamps inside one existing BTC hour. It applied an offline matching rule to the same \textbf{91,868} diff events and compared coverage before and after broadening the candidate anchors.\par
+\textbf{Output, result, status.} Candidate matches rose from \textbf{90,083 to 91,860}, adding \textbf{1,777} anchors. Eight updates remained unmatched and one retained ordering inversion measured \textbf{182.854823 ms}. The result is valid offline feasibility evidence, but offline matching does not prove that the information was causally available at decision time.\par
+\subsection{E200 -- causal event-clock and availability certificate}
+\textbf{Idea, input, method.} E200 separated exchange-event time, provider receipt time, and downstream availability. Historical and live sampled-state routes were replayed with trigger-aware prefixes so that a feature could be admitted only when its supporting message was actually available under the declared clock.\par
+\textbf{Output, result, status.} Independent review reproduced \textbf{eight unmatched decrements}, prefix-ordering behavior, and inherited/zero-size lifecycle limits. The route is useful in a limited diagnostic scope, but no complete Q16-Q18 window was certified and provider receipt time remains uncalibrated as strategy availability. The broader certificate is open.\par
+\subsection{E201 -- initial state and historical matching-rule certificate}
+\textbf{Idea, input, method.} E201 asked whether a starting book plus archived changes identifies a valid historical order path. It compared sampled snapshots, lifecycle transitions, and matching assumptions, while explicitly separating aggregate state agreement from order-level FIFO and participant truth.\par
+\textbf{Output, result, status.} Snapshot-compatible routes were constructed, but agreement with sampled states does not certify a unique hidden path, FIFO priority, receipt chronology, or counterfactual fills. The limited engineering result is valid; the initial-state and native matching certificate required for Q16 remains open.\par
+\subsection{E202 -- chronological day blocks and data-budget feasibility}
+\textbf{Idea, input, method.} E202 mapped which contiguous day/hour blocks could be consumed without crossing recorded gaps, unsupported endpoints, or storage/transfer limits. It tied each proposed block to the same clock, startup, and segment rules used by the downstream experiments.\par
+\textbf{Output, result, status.} Bounded historical and live routes were shown to be operationally possible, and exact limited input subsets were documented. However, the full primary panels and all their causal support were not certified. This is a valid planning and feasibility result, with the broader objective still open.\par
+\subsection{E203 -- paired causal coarse/rich observation contract}
+\textbf{Idea, input, method.} This experiment specified how coarse and rich views must be paired: identical decision cutoff, target, support, and event population, with richer fields withheld rather than allowing different rows or future-supported selection to leak into one arm.\par
+\textbf{Output, result, status.} The contract works for the scoped sampled routes and prevents several easy comparison errors. It does not authenticate exchange completeness or identify a unique order-level path, and a fully admitted real coarse/rich paired panel remains unavailable. The result is a valid limited contract, not a model comparison.\par
+\subsection{E204 -- observed-order labels and execution-model feasibility}
+\textbf{Idea, input, method.} E204 examined whether observed orders can supply queue/fill labels for downstream execution questions. It separated recorded lifecycle evidence from hypothetical inserted-order outcomes and required explicit source, ownership, cutoff, and censoring rules.\par
+\textbf{Output, result, status.} Conditional label routes were documented, but sampled snapshots could not certify native FIFO or counterfactual fills. No participant-linked real execution panel was admitted. The feasibility analysis is valid, while the headline empirical execution-model objective remains open.\par
+\section{Controlled mechanisms, strategy extraction, and matched comparisons}
+\subsection{E205 -- simulator selection and mechanism validation}
+\textbf{Idea, input, method.} E205 selected pinned ABIDES as a restricted diagnostic engine and exercised real kernel/exchange paths for multi-unit insertions, cancellations, FIFO matching, partial fills, and modifications. Five primary episodes, replays, and holdout prefixes produced \textbf{12 native runs}; a matched pair kept the aggregate depth path fixed while changing which hidden order was cancelled.\par
+\textbf{Output, result, status.} The matched coarse path \textbf{3, 6, 9, 6, 2} produced probe fills \textbf{3 versus 1}, proving action-relevant ambiguity. The audit also exposed two native defects: non-head modification corrupts queue identity and incoming history overstates matched volume. Postflight validation recorded \textbf{386/394 passing checks}, with the eight failures explained by those defects. The accepted outcome is a valid negative: unmodified ABIDES is unsuitable as an unrestricted rich-label generator, though useful in a narrow diagnostic scope.\par
+\subsection{E210 -- controlled simulation of action-relevant ambiguity}
+\textbf{Idea, input, method.} This synthetic control studied a known binary law in which different hidden states can share a coarse observation but imply different actions. Direct posterior prediction, restricted summaries, and reconstruction-style representations were compared under the same information and known response law.\par
+\textbf{Output, result, status.} The calibrated binary mean and the posterior decision control coincide; a restricted summary incurs \textbf{0.075 regret}, while apparent noisy-label gains reduce to known-noise denoising or symmetry. The result is valid in its synthetic scope: ambiguity can matter, but it did not isolate a restoration-specific advantage.\par
+\subsection{E253 -- breakout/rebound protocol and claim-specific feasibility}
+\textbf{Idea, input, method.} E253 translated the strategy catalogue's priority breakout/rebound ideas into a prospective protocol: minute-frozen levels, label-blind opportunity extraction, causal histories, cooldown/state rules, future-support censoring, and separate claims for descriptive prediction, participant information, and executable strategy value.\par
+\textbf{Output, result, status.} Review accepted the design after a deterministic "record-only consumes state" amendment. The package establishes a reproducible question and prevents descriptive sampled-L2 evidence from being promoted into a participant or profit claim. It is a valid design result with no predictive-performance outcome.\par
+\subsection{E254 -- direct/restoration matched-method identity}
+\textbf{Idea, input, method.} E254 asked whether one proposed reconstruction pipeline was genuinely different from direct learning. For a fixed retrospective monotone robust-loss candidate, the structured computation was algebraically compiled into a direct predictor with matched inputs, supervision, objective, and output.\par
+\textbf{Output, result, status.} The compiled methods were exactly identical for the declared candidate, so the candidate cannot support an exclusive reconstruction contribution. This is a valid candidate-specific identity negative; it does not prove that every latent-variable or distributional method can be compiled away.\par
+\subsection{E255 -- label-blind breakout/rebound extraction audit}
+\textbf{Idea, input, method.} The amended E253 extractor was run on the fixed BTC hour 1 May 2025. It consumed \textbf{6,426 rows}, built minute-frozen support/resistance levels, checked 61-cut histories, and applied slot/cooldown state before any future label or model was inspected.\par
+\textbf{Output, result, status.} From \textbf{24 raw candidates}, it recorded \textbf{21 opportunities: 10 breakout and 11 rebound}; two were rejected by consumed slots and one by cooldown. All 21 happened to have full retrospective ten-cut support. This is valid extraction feasibility only: no labels, fitting, accuracy, P\&L, or strategy advantage was claimed.\par
+\subsection{E256 -- restricted simulator repair and delivered-feed validation}
+\textbf{Idea, input, method.} E256 applied two explicit local repairs to pinned ABIDES, restricted the allowed operations, and forced anonymous depth plus own-order information to reach a participant through the actual kernel. Replays, prefixes, private-ID relabeling, delivery cutoffs, and an independent ledger checker tested the observation boundary.\par
+\textbf{Output, result, status.} The frozen suite completed \textbf{32 engine runs and 2,052 comparisons} with zero repaired-engine/delivery failures; \textbf{554} supplemental boundary comparisons also passed. Two indistinguishable delivered histories still led to fills \textbf{3 versus 1}. The accepted result is bounded mechanism readiness and non-identifiability, not recoverability, market realism, or learner performance.\par
+\subsection{E257 -- fixed labels and seven-date BTC cohort audit}
+\textbf{Idea, input, method.} E257 expanded the label-blind protocol to seven exposed BTC sampled-L2 dates, producing matched breakout/rebound histories, ten-cut F/A/N outcomes, censored cases, and the three planned views: coarse C, predicted-summary P, and observed-rich R.\par
+\textbf{Output, result, status.} The frozen cohort contained \textbf{4,160 opportunities}, \textbf{4,139 labels}, and \textbf{21 censored events}. Independent review reproduced sources, events, labels, and feature alignment. This is a valid data-readiness result with zero predictive fits; counts alone say nothing about strategy quality.\par
+\subsection{E258 -- point versus distributional fill prediction}
+\textbf{Idea, input, method.} E258 used the repaired native simulator to compare a point queue reconstruction, a distribution over hidden queues, and matched direct fill prediction. The known finite law generated \textbf{2,816 statistical episodes} plus exhaustive support diagnostics; the complete run used \textbf{3,212 native executions, 652,510 checks, and 24 fit invocations}.\par
+\textbf{Output, result, status.} At \textbf{512 training episodes}, ordinary direct prediction and outcome-supervised distributional reconstruction were exactly equal in every visible cell and made identical decisions at all five thresholds. Rich queue labels improved finite prediction, but an equally supervised direct soft-target control matched that benefit. An unobservable conditional shift harmed both cue-dependent methods. This is a valid equivalence negative for reconstruction-specific advantage, while confirming that uncertainty itself can matter.\par
+\subsection{E259 -- frozen 39-fit BTC coarse/predicted/rich comparison}
+\textbf{Idea, input, method.} E259 fit \textbf{39 frozen models} on the seven-date cohort: C used 446 coarse inputs, P added seven predicted depth summaries, and R added 1,464 observed extra-depth coordinates. Selection used April; May-July were already exposed descriptive evaluation dates with identical events and labels across arms.\par
+\textbf{Output, result, status.} On breakout, equal-day half-Brier was \textbf{C 0.27818, P 0.27212, R 0.26354}, versus frequency \textbf{0.27443}; R was best. On rebound it was \textbf{C 0.28531, P 0.28372, R 0.28881}, while frequency won at \textbf{0.27053}. The mixed result is valid but descriptive: observed depth helped breakout on three dates, whereas no learned rebound arm beat the simple frequency reference.\par
+\subsection{E260 -- rich-label adaptation novelty and identifiability challenge}
+\textbf{Idea, input, method.} E260 combined exact finite-law analysis with targeted literature review to ask whether rich hidden-state labels give reconstruction a unique adaptation advantage after an invisible conditional shift. It compared equally informed direct soft targets, structured counts, label-acquisition costs, and response-kernel identification.\par
+\textbf{Output, result, status.} No distinct reconstruction contribution survived. The indistinguishable-world example gives a minimax excess-Brier lower bound of \textbf{0.0081} without target labels, while \textbf{656 exact direct/structured count-kernel equalities} show that the tested rich-label update can be compiled into a matched direct learner. Zero new fits were run. This is a valid scoped novelty negative; information acquisition may still be useful, but requires real access/cost evidence and a distinct method.\par
+\subsection{E261 -- fixed-model August-November temporal evaluation}
+\textbf{Idea, input, method.} E261 froze the E259 models and performed zero-fit evaluation on four later BTC dates, retaining the original feature transforms, event rules, equal-day primary, pooled-event sensitivity, and frequency/uniform references.\par
+\textbf{Output, result, status.} Across \textbf{3,384 recorded and 3,382 scored events}, the earlier rich-depth breakout advantage disappeared. Equal-day breakout losses were \textbf{C 0.28486, P 0.28604, R 0.28804, frequency 0.28771}; pooled, every learned arm lost to frequency. Rebound frequency also won both aggregates. This is a valid temporal negative, not proof that depth has no information.\par
+\subsection{E262 -- mandatory participant checkpoint}
+\textbf{Idea, input, method.} E262 was intended to perform a bounded follow-up on participant holdings, supplying the participant-linked checkpoint that sampled aggregate books cannot provide.\par
+\textbf{Output, result, status.} The experiment was cancelled before execution. It produced no result and must not appear as a failed hypothesis test. Its value is bookkeeping: the missing participant-evidence dependency remains explicit.\par
+\subsection{E263 -- contribution triage across the remaining architecture}
+\textbf{Idea, input, method.} E263 challenged three residual paper directions: robustness to known observation operators, constrained valid-path generation, and selective risk/fallback. It compared each proposed mechanism with close primary prior art and used accepted E261 outputs for bounded arithmetic stress tests, without new model fitting.\par
+\textbf{Output, result, status.} All three candidates were rejected as current paper contributions because none supplied a distinct algorithm, theorem, or established empirical phenomenon beyond existing work. The negative is valid and useful: the mechanisms may remain engineering components, but they should not be sold as the ICLR contribution without a new discriminator.\par
+\subsection{E264 -- fixed-output diagnosis of reconstruction and prediction}
+\textbf{Idea, input, method.} E264 read only frozen May-November predictions and labels, using zero fits or new inference, to separate changes in class mixture from changes in class-conditional model loss. It retained \textbf{4,790 scored events} and the original earlier/later weighting schemes.\par
+\textbf{Output, result, status.} Breakout R-minus-C changed from \textbf{-0.014638} in May-July to \textbf{+0.003179} in August-November under equal-day weighting; after fixed-class-mixture standardization it still changed from \textbf{-0.011565 to +0.009808}. Class composition explains much of R's absolute loss change, but less of its deterioration relative to C; the comparative reversal is mainly class-conditional. This is a valid diagnosis, not a causal explanation.\par
+\section{Source closure, persistence, and the next decision}
+\subsection{E265 -- recover and admit real Hyperliquid inputs}
+\textbf{Idea, input, method.} E265 searched retained holdings for exact source contracts that could be admitted without silently changing the Q16-Q18 protocols. It bound hashes, clocks, segment rules, consumer protocols, and provider limitations before any fitted result could count.\par
+\textbf{Output, result, status.} The source gate admitted an \textbf{18-contract Q18} sampled-L2 subset and a \textbf{30-contract Q17} native-BBO subset; the broader packet contained 58 contracts including the already reviewed Q18 subset. No qualified Q16 order-level source was found. This is a partial source result: it enables Q17/Q18 and documents why Q16 remains blocked, but it is not itself a model finding.\par
+\subsection{E269 -- prospective fixed-model persistence preparation}
+\textbf{Idea, input, method.} E269 froze a rule to select the earliest retained full-day BTC sampled-L2 date after 1 November 2025, preserving prior exclusions and fixed E259/E261 models. It inspected only the bounded retained catalogue and metadata, without opening outcomes or fitting anything.\par
+\textbf{Output, result, status.} The inventory contained \textbf{12 acquisition day indexes and 11 normalized BTC dates}, but no eligible retained date under the rule; January 2026 had a known inversion and the December dates were already excluded. No source, labels, predictions, or scores were selected. This is valid preparation/source-feasibility evidence, not a negative persistence result.\par
+\subsection{E270 -- one declared BTC persistence source}
+\textbf{Idea, input, method.} E270 supplied a separately declared source after E269's null selection: the retained Hyperliquid BTC sampled-L2 day \textbf{1 February 2026}, with exact bytes, event-time consumer rules, gaps, freshness, and prior-exposure qualifications.\par
+\textbf{Output, result, status.} The day was accepted only as a source for the unchanged persistence protocol. It does not establish receipt-time availability, exchange completeness, native L4/FIFO, or an untouched holdout. This is a valid source-only result; scientific scoring occurs in E271.\par
+\subsection{E271 -- fixed-model persistence on one admitted BTC day}
+\textbf{Idea, input, method.} E271 applied the frozen C/P/R models to the admitted 1 February 2026 day with zero refits. The strict breakout claim required R-minus-C loss to be positive in three views: raw events, a fixed training-class mixture, and favorable-class events.\par
+\textbf{Output, result, status.} All components were evaluable over \textbf{880 breakout} and \textbf{865 rebound} events. Breakout R-minus-C was \textbf{+0.000582 raw}, \textbf{-0.013367 under the frozen class mixture}, and \textbf{+0.016674 given favorable events}. The negative middle component contradicts the strict conjunction. This is a complete scoped scientific negative for that day, not a population test or profit claim.\par
+\subsection{E272 -- information-value estimand and discriminating next test}
+\textbf{Idea, input, method.} E272 proposed a conditional frozen-score estimand to separate information value from model/reconstruction quality and designed the smallest next test that could distinguish the remaining claims.\par
+\textbf{Output, result, status.} No empirical run was authorized or performed. The analytical packet argues for a scoped no-go on an immediate real-data information claim, but its exact identities and source attribution were still awaiting review at revision 187. It is a review-pending design, not accepted evidence.\par
+\subsection{E273 -- BTC unknown-initial-book washout mini-experiment}
+\textbf{Idea, input, method.} E273 replayed real December BTC order diffs from an empty book. A first-seen \nolinkurl{new} order was known from birth; an order first seen through \nolinkurl{update} or \nolinkurl{remove} was treated as inherited from the unknown initial state. The planned decision required 24 hours of warm-up followed by 24 hours with no newly revealed inherited orders.\par
+\textbf{Output, result, status.} The independently reviewed prefix processed \textbf{11 complete hours and 32,633,820 events}, discovering \textbf{11,328 inherited order IDs}; \textbf{148} were still first revealed in the eleventh hour. Among all IDs that appeared, observed-lifecycle coverage reached \textbf{99.929849\%}, with zero transition anomalies, but the true fraction of the full live book known is unidentifiable. The 48-hour decision was not reached. This is valid real-data prefix evidence and an inconclusive experiment, not a pass or failure of the washout hypothesis.\par
+\section{Cross-experiment interpretation}
+Five patterns survive the individual qualifications. First, better intermediate reconstruction or forecast scores do not automatically improve the decision that matters: Q17, E258, and the BTC strategy chain all show why the downstream comparator must be explicit. Second, hidden queue uncertainty can be decision-relevant even when exact hidden-state recovery is impossible; E205/E256 establish the ambiguity and E258 shows that direct prediction can preserve the relevant uncertainty. Third, strong-looking development gains are fragile: E259's rich-depth breakout result reversed in E261 and stayed reversed after E264's class-mix control. Fourth, valid negative results are productive: Q17, Q18, E260, E261, E263, and E271 eliminate specific claims without implying universal impossibility. Fifth, validity engineering is part of the science: Q16 remains open because the required source was not admitted, while E273 remains inconclusive because the planned horizon was not completed.\par
+The current evidence therefore favors a paper framed around \textbf{when richer information changes a decision under matched direct controls}, rather than around reconstruction quality alone. A credible next empirical contribution needs a newly admitted information channel, a predeclared decision estimand, matched supervision/compute, and an evaluation period that is both chronologically supported and not selected from its outcomes.\par
+\section{Artifact map}
+\begingroup\footnotesize\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}p{0.72\textwidth}p{0.23\textwidth}@{}}
+\toprule\textbf{Canonical package path} & \textbf{State evidence}\\\midrule\endfirsthead
+\toprule\textbf{Canonical package path} & \textbf{State evidence}\\\midrule\endhead
+\nolinkurl{experiments/e001-btc-data-provenance-schema-timing-and-replay-audit/} & R001 / RV001\\
+\nolinkurl{experiments/e016-q16-real-data/} & R006, R013, R015, R016, R035, R039\\
+\nolinkurl{experiments/e017-q17-real-data/} & R007, R011, R018, R037 / RV036\\
+\nolinkurl{experiments/e018-q18-real-data/} & R008, R010, R017, R019, R036 / RV034\\
+\nolinkurl{experiments/e002-existing-hour-clock-anchor-feasibility-diagnostic/} & R003 / RV002\\
+\nolinkurl{experiments/e200-causal-event-clock-and-availability-certificate/} & R005, R012\\
+\nolinkurl{experiments/e201-initial-state-and-historical-matching-rule-certificate/} & R005, R012\\
+\nolinkurl{experiments/e202-chronological-day-blocks-and-data-budget-feasibility/} & R005, R012\\
+\nolinkurl{experiments/e203-paired-causal-coarse-rich-observation-contract/} & R005, R012\\
+\nolinkurl{experiments/e204-observed-order-labels-and-execution-model-feasibility/} & R005, R012\\
+\nolinkurl{experiments/e205-simulator-selection-and-mechanism-validation/} & R009, R024 / RV022\\
+\nolinkurl{experiments/e210-controlled-simulation-of-action-relevant-ambiguity/} & R009, R014\\
+\nolinkurl{experiments/e253-breakout-rebound-protocol-and-claim-specific-feasibility/} & R023 / RV021\\
+\nolinkurl{experiments/e254-shared-computation-concrete-algorithm-or-matched-method-identity/} & R022 / RV020\\
+\nolinkurl{experiments/e255-label-blind-breakout-rebound-extraction-audit/} & R025 / RV023\\
+\nolinkurl{experiments/e256-restricted-simulator-repair-and-delivered-feed-validation/} & R026 / RV024\\
+\nolinkurl{experiments/e257-fixed-labels-and-seven-date-btc-development-cohort-audit/} & R027 / RV025\\
+\nolinkurl{experiments/e258-controlled-fill-prediction-point-versus-distributional-reconstruction/} & R028 / RV026\\
+\nolinkurl{experiments/e259-frozen39-fit-btc-coarse-predicted-rich-development-comparison/} & R029 / RV027\\
+\nolinkurl{experiments/e260-rich-label-adaptation-novelty-and-identifiability-challenge/} & R030 / RV028\\
+\nolinkurl{experiments/e261-fixed-model-btc-august-november-temporal-evaluation/} & R031 / RV029\\
+\nolinkurl{experiments/e262-mandatory-participant-checkpoint-bounded-holdings-follow-up/} & No result; cancelled\\
+\nolinkurl{experiments/e263-contribution-triage-across-the-remaining-architecture/} & R033 / RV031\\
+\nolinkurl{experiments/e264-fixed-output-diagnosis-of-reconstruction-and-prediction/} & R034 / RV032\\
+\nolinkurl{experiments/e265-recover-and-admit-real-hyperliquid-inputs/} & R032, R038 / RV030, RV035\\
+\nolinkurl{experiments/e269-prepare-one-prospective-fixed-model-persistence-check/} & R040 / RV038\\
+\nolinkurl{experiments/e270-supply-one-declared-btc-persistence-source/} & R041 / RV039\\
+\nolinkurl{experiments/e271-fixed-model-persistence-on-one-admitted-btc-day/} & R042 / RV040\\
+\nolinkurl{experiments/e272-information-value-estimand-and-discriminating-next-test/} & R043 / RV041 pending\\
+\nolinkurl{experiments/e273-btc-unknown-initial-book-washout-mini-experiment/} & R044 / RV042\\
+\bottomrule\end{longtable}\endgroup
+\section{Evidence boundary}
+This report is a narrative index of revision 187, not a replacement for the package manifests. Numbers are drawn from accepted or explicitly pending state records and their frozen reports. "Hyperliquid" identifies the declared source/adaptation; provider archives are not independently attested exchange histories, and project shorthand "L4" is not a universal market-data standard. Raw dumps, private manuscripts, messaging receipts, and internal coordinator state are intentionally outside the curated repository.\par\end{document}

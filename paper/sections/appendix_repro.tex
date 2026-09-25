@@ -1,0 +1,37 @@
+\section{Reproducibility}
+\label{app:repro}
+
+\paragraph{Environment.} All experiments run on a laptop-class machine: macOS, CPU or Apple
+MPS only, no CUDA, no large-scale training. Models are small by design (linear, gradient
+boosting, and a compact multilayer perceptron), and the full suite fits within a modest time
+budget. Randomness is controlled with fixed seeds. Where a noise axis is declared (training
+seeds, item bootstrap, or a fixed grid), the corresponding uncertainty is reported rather
+than a single point.
+
+\paragraph{Entry points.} Each package exposes the shortest truthful entry point (\texttt{run.py})
+and a frozen configuration. A license-clean smoke fixture lets every package run end to end
+without the restricted raw data, so the code path is verifiable by anyone. The full result
+requires the acquisition steps recorded in each package's provenance file. Numbers that appear
+in this paper are regenerated from the staged result files under
+\texttt{experiments/results/}, and every table in the appendix is emitted directly from those
+files so that a printed value always equals a source value. An anonymized copy of the full
+programme, its results, and this paper is available for review at
+\url{https://anonymous.4open.science/r/learning-with-less}.
+
+\paragraph{Checklist.}
+\begin{itemize}[leftmargin=1.4em]
+\item \textbf{Data.} Sources named with identifiers and checksums. Raw dumps excluded. Restricted terms disclosed. Smoke fixtures license-clean.
+\item \textbf{Splits.} Train/validation/test dates fixed before any test date is scored. Feature construction and normalization training-only.
+\item \textbf{Models.} Families and budgets shared across information views. Neural
+ iteration caps recorded, warnings preserved.
+\item \textbf{Evaluation.} Metrics and decision policies pre-registered. Joint gates frozen. No outcome-driven tweaks. Failure-to-certify never reported as proof of the opposite.
+\item \textbf{Artifacts.} Compact results, figures, provenance, and scientific-status labels
+ released per package. Figures regenerate from result files only.
+\end{itemize}
+
+\paragraph{Scope statement.} The released evidence supports the scoped negatives and the
+controlled mechanisms exactly as labeled. It does not support claims of live-trading
+profitability, calibrated latency, native queue priority, or generalization beyond the venues,
+horizons, and assets tested. The one open endpoint (native-FIFO count tightening on a fully
+admitted cohort) is flagged with its exact source so that it can be completed rather than
+assumed.

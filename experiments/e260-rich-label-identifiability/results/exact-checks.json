@@ -1,0 +1,178 @@
+{
+  "scope": "Exact arithmetic, not fitted or simulated results",
+  "reserved_seed": 20260919,
+  "random_draws": 0,
+  "fits": 0,
+  "native_episodes": 0,
+  "cells": [
+    {
+      "c": 0,
+      "z": 0,
+      "source": {
+        "exact": "31/100",
+        "value": 0.31
+      },
+      "shifted": {
+        "exact": "49/100",
+        "value": 0.49
+      },
+      "minimax": {
+        "exact": "2/5",
+        "value": 0.4
+      }
+    },
+    {
+      "c": 0,
+      "z": 1,
+      "source": {
+        "exact": "79/100",
+        "value": 0.79
+      },
+      "shifted": {
+        "exact": "61/100",
+        "value": 0.61
+      },
+      "minimax": {
+        "exact": "7/10",
+        "value": 0.7
+      }
+    },
+    {
+      "c": 1,
+      "z": 0,
+      "source": {
+        "exact": "49/100",
+        "value": 0.49
+      },
+      "shifted": {
+        "exact": "31/100",
+        "value": 0.31
+      },
+      "minimax": {
+        "exact": "2/5",
+        "value": 0.4
+      }
+    },
+    {
+      "c": 1,
+      "z": 1,
+      "source": {
+        "exact": "61/100",
+        "value": 0.61
+      },
+      "shifted": {
+        "exact": "79/100",
+        "value": 0.79
+      },
+      "minimax": {
+        "exact": "7/10",
+        "value": 0.7
+      }
+    }
+  ],
+  "bayes_brier": {
+    "exact": "2169/10000",
+    "value": 0.2169
+  },
+  "no_label_minimax_excess": {
+    "exact": "81/10000",
+    "value": 0.0081
+  },
+  "no_label_minimax_brier": {
+    "exact": "9/40",
+    "value": 0.225
+  },
+  "frozen_ideal_predictor_shift_brier": {
+    "exact": "2493/10000",
+    "value": 0.2493
+  },
+  "variance_comparators": [
+    {
+      "e": {
+        "exact": "1/10",
+        "value": 0.1
+      },
+      "h_variance_times_n": {
+        "exact": "1/25",
+        "value": 0.04
+      },
+      "y_variance_times_n": {
+        "exact": "211/400",
+        "value": 0.5275
+      },
+      "raw_estimator_cost_ratio": {
+        "exact": "211/16",
+        "value": 13.1875
+      }
+    },
+    {
+      "e": {
+        "exact": "2/5",
+        "value": 0.4
+      },
+      "h_variance_times_n": {
+        "exact": "1/25",
+        "value": 0.04
+      },
+      "y_variance_times_n": {
+        "exact": "271/400",
+        "value": 0.6775
+      },
+      "raw_estimator_cost_ratio": {
+        "exact": "271/16",
+        "value": 16.9375
+      }
+    }
+  ],
+  "rank_extension": {
+    "q_plus": [
+      {
+        "exact": "103/300",
+        "value": 0.3433333333333333
+      },
+      {
+        "exact": "29/150",
+        "value": 0.19333333333333333
+      },
+      {
+        "exact": "139/300",
+        "value": 0.4633333333333333
+      }
+    ],
+    "q_minus": [
+      {
+        "exact": "97/300",
+        "value": 0.3233333333333333
+      },
+      {
+        "exact": "71/150",
+        "value": 0.47333333333333333
+      },
+      {
+        "exact": "61/300",
+        "value": 0.20333333333333334
+      }
+    ],
+    "old_probability": {
+      "exact": "9/20",
+      "value": 0.45
+    },
+    "new_plus": {
+      "exact": "283/500",
+      "value": 0.566
+    },
+    "new_minus": {
+      "exact": "367/500",
+      "value": 0.734
+    },
+    "new_context_minimax_excess": {
+      "exact": "441/62500",
+      "value": 0.007056
+    },
+    "two_context_determinant": {
+      "exact": "21/50",
+      "value": 0.42
+    }
+  },
+  "compiled_direct_equalities": 656
+}

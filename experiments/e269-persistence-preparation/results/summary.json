@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-269"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid_preparation_only"
+  ],
+  "headline_result": "No eligible retained full-day date was found, so execution remained disabled and no scores were produced.",
+  "result_records": [
+    {
+      "result_id": "R-040",
+      "experiment_id": "E-269",
+      "source_task_id": "T-016",
+      "revision": 1,
+      "status": "accepted",
+      "assessment": "valid_bounded_unavailable_source_preparation",
+      "execution_status": "completed",
+      "reported_at": "2026-09-22T11:44:26.544152+00:00",
+      "evidence_manifest_sha256": "6e286cf52b1f55ce53caf71d1826bff7f4d6e9c6544bca7e0bca98c1b83ce2ba",
+      "review_ids": [
+        "RV-038"
+      ],
+      "new_scientific_result": false,
+      "mandatory_empirical_goal_closed": false,
+      "summary": "Frozen preparation reports no eligible retained full-day BTC sampled-L2 date in its bounded inventory. No selected source/date, new labels, inference, fits, acquisition or scores; execution remains disabled.",
+      "accepted_at": "2026-09-22T12:47:21.775543+00:00",
+      "decision_id": "D-053",
+      "scope_note": "Named inventory only; later alternative archive names exist but are not admitted retained payloads. No empirical persistence verdict or source admission."
+    }
+  ]
+}

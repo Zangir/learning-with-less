@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-272"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "review_pending"
+  ],
+  "headline_result": "The author proposed a scoped no-go for an immediate contribution claim; the analytical packet remained review-pending and no empirical execution occurred.",
+  "result_records": [
+    {
+      "result_id": "R-043",
+      "experiment_id": "E-272",
+      "protocol_revision": 1,
+      "source_task_id": "T-012",
+      "revision": 1,
+      "status": "review_pending",
+      "assessment": "unreviewed_analytical_design",
+      "execution_status": "completed",
+      "reported_at": "2026-09-22T17:59:10.926125+00:00",
+      "evidence_manifest_sha256": "612ce9cd8273126a626844bb4e48a7f3d8cf91aa6cec85a4e96938ba2d8a41c2",
+      "review_ids": [
+        "RV-041"
+      ],
+      "mandatory_empirical_goal_closed": false,
+      "summary": "Author proposes a known conditional frozen-score information diagnostic and scoped no-go for a current contribution or immediate real-data information claim. Exact synthetic identities and source attribution require independent review; no empirical execution occurred.",
+      "new_empirical_results": false,
+      "empirical_execution_authorized": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+\section{Threats to validity}
+\label{app:threats}
+
+We enumerate the threats to each conclusion and the design choice that addresses it, so a
+reviewer can check that the negatives are not artifacts.
+
+\paragraph{Outcome shopping.} The central threat to any negative is that the analyst kept
+searching until the result appeared. We freeze every plan, model families, budgets, splits,
+policies, and gates, before test dates are read, and we forbid outcome-driven tweaks. A
+failure to certify an effect is recorded as such and never reported as proof of the opposite.
+The soundness of a negative depends on this, and it is enforced by construction rather than by
+assertion.
+
+\paragraph{Model capacity confound.} A view could look uninformative only because the model was
+too weak to use it. We hold the model family and budget constant across views and compare views
+within each family, and in Q18 we add an optimizer diagnostic that varies the neural budget. The
+asset-dependent direction survives the budget change, so the sufficiency negative is not a pure
+underfitting artifact. Neural cells that hit their iteration cap are flagged and never used as
+the sole basis for a claim.
+
+\paragraph{Metric and policy dependence.} A decision negative could reflect one unlucky metric
+or policy. Q17 uses three policies and sweeps cost and latency scenarios. The argmax negative is
+absolute (even the oracle loses), the confidence policy abstains, and the scheduling policy
+straddles zero across scenarios. The conclusion is stable across the policy set, not a single
+strategy.
+
+\paragraph{Aggregation artifacts.} An aggregate over heterogeneous cohorts can manufacture or
+hide an effect. We report gaps under a fixed weighting against explicit baselines and decompose
+each gap into mixture and within-class terms (Appendix~\ref{app:extended}). The mixture term
+carries the earlier apparent depth advantage, which is why we do not report a single aggregate.
+
+\paragraph{Data realism.} Uncalibrated receipt time, sampled-L2 depth, and quote-based utility
+limit external validity: Q17 is a decision-utility statement, not realized profitability, and
+Q18's small date panel rejects a simple rule rather than proving depth never helps. We state
+these limits next to each claim and withhold any claim whose inputs are not certified, most
+visibly the native-FIFO Q16 endpoint.
+
+\paragraph{Generalization.} The negatives are scoped to the venues, horizons, and assets tested.
+We do not claim they transfer to other markets, and the released protocol is exactly what a
+reader would rerun to test transfer elsewhere.

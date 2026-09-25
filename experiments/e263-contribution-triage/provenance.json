@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-263"
+  ],
+  "question_ids": [
+    "Q-002",
+    "Q-003"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-012"
+  ],
+  "result_ids": [
+    "R-033"
+  ],
+  "review_ids": [
+    "RV-031"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [
+    "feat/t012-information-value-design"
+  ],
+  "source_commits": [
+    "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+  ],
+  "remote_archive_branches": [
+    "old/t012-information-value-design"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "figures/main.png",
+      "sha256": "da90de77064200a84a08f328ce6cd6e338735b07cfe0c49936fc074f940dc0ff",
+      "size_bytes": 181391
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "6919a469760b2bbcef9c5e0568f3f2474cad3c80072add3eb3e17478503197d6",
+      "size_bytes": 4307563
+    },
+    {
+      "path": "result-paper.pdf",
+      "sha256": "f40a3ad7386b16b411a0c56606bf4108530270aadfd257547024d278322d3740",
+      "size_bytes": 309084
+    },
+    {
+      "path": "results/atlas-observation-operator-candidate.md",
+      "sha256": "37872b01ded633d76218d221e51e1a41e4486f0b5c75552c7397ffbf12eb9214",
+      "size_bytes": 14530
+    },
+    {
+      "path": "results/delta-path-generation-candidate.md",
+      "sha256": "dec1bd4781361acaba8cefde8b1a781032338e051866244084b79b224c9a2b53",
+      "size_bytes": 17511
+    },
+    {
+      "path": "results/echo-censoring-risk-candidate.md",
+      "sha256": "c6dccbe19d0f8bd886a6ab8f50660661911f2fe21230cc1c1b1095b45bdca856",
+      "size_bytes": 16321
+    },
+    {
+      "path": "results/stage-summary.json",
+      "sha256": "c89a6b1678f6deb2d90c1b5c33b1f3029f835d344af76f55f13327a28966a9d2",
+      "size_bytes": 3614
+    }
+  ]
+}

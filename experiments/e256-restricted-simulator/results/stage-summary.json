@@ -1,0 +1,127 @@
+{
+  "episodes": 11,
+  "primary_actions": 80,
+  "primary_feed_packets": 80,
+  "rejected_requests": 18,
+  "matched_trades": 22,
+  "checks": 2052,
+  "patched_or_delivery_failures": 0,
+  "upstream_control_failures": 5,
+  "replay_pairs": 11,
+  "causal_prefixes": 7,
+  "engine_runs": 32,
+  "legacy_probe_fills": [
+    3,
+    1
+  ],
+  "coverage": [
+    {
+      "episode": "diagnostic_nonhead",
+      "split": "diagnostic",
+      "seed": 20263001,
+      "actions": 3,
+      "rejected": 0,
+      "matches": 0,
+      "feed_packets": 3
+    },
+    {
+      "episode": "diagnostic_single_partial",
+      "split": "diagnostic",
+      "seed": 20263002,
+      "actions": 2,
+      "rejected": 0,
+      "matches": 1,
+      "feed_packets": 2
+    },
+    {
+      "episode": "diagnostic_multi_match",
+      "split": "diagnostic",
+      "seed": 20263003,
+      "actions": 3,
+      "rejected": 0,
+      "matches": 2,
+      "feed_packets": 3
+    },
+    {
+      "episode": "diagnostic_rejections",
+      "split": "diagnostic",
+      "seed": 20263004,
+      "actions": 20,
+      "rejected": 14,
+      "matches": 2,
+      "feed_packets": 20
+    },
+    {
+      "episode": "legacy_cancel_ahead",
+      "split": "diagnostic",
+      "seed": 20263010,
+      "actions": 5,
+      "rejected": 0,
+      "matches": 2,
+      "feed_packets": 5,
+      "probe_fill_by_503": 3
+    },
+    {
+      "episode": "legacy_cancel_behind",
+      "split": "diagnostic",
+      "seed": 20263011,
+      "actions": 5,
+      "rejected": 0,
+      "matches": 2,
+      "feed_packets": 5,
+      "probe_fill_by_503": 1
+    },
+    {
+      "episode": "seeded_development_20261001",
+      "split": "generation_development",
+      "seed": 20261001,
+      "actions": 8,
+      "rejected": 1,
+      "matches": 2,
+      "feed_packets": 8,
+      "probe_fill_by_503": 4
+    },
+    {
+      "episode": "seeded_development_20261002",
+      "split": "generation_development",
+      "seed": 20261002,
+      "actions": 8,
+      "rejected": 0,
+      "matches": 2,
+      "feed_packets": 8,
+      "probe_fill_by_503": 2
+    },
+    {
+      "episode": "seeded_check_20262001",
+      "split": "generation_check",
+      "seed": 20262001,
+      "actions": 8,
+      "rejected": 1,
+      "matches": 3,
+      "feed_packets": 8,
+      "probe_fill_by_503": 3
+    },
+    {
+      "episode": "seeded_check_20262002",
+      "split": "generation_check",
+      "seed": 20262002,
+      "actions": 9,
+      "rejected": 1,
+      "matches": 3,
+      "feed_packets": 9,
+      "probe_fill_by_503": 4
+    },
+    {
+      "episode": "seeded_check_20262002_relabel",
+      "split": "metamorphic_check",
+      "seed": 20262003,
+      "actions": 9,
+      "rejected": 1,
+      "matches": 3,
+      "feed_packets": 9,
+      "probe_fill_by_503": 4
+    }
+  ],
+  "feature_rows": 7,
+  "actual_engine": "locally patched ABIDES; upstream retained separately"
+}

@@ -1,0 +1,9 @@
+asset,metric,mean,lower,upper,negative_dates,criterion_passed,unit
+BTC,macro_f1,0.14210287516846323,0.03952924941781477,0.2446765009191117,0,True,macro-F1
+BTC,argmax,2.1223746265846986,0.29274394642164747,3.9520053067477496,0,False,bps per opportunity
+BTC,confidence,0.0,0.0,0.0,0,False,bps per opportunity
+BTC,scheduling,0.025961148377350043,-0.10227802128160436,0.15420031803630446,4,False,bps per complete 12-opportunity window
+ETH,macro_f1,0.0970807845038915,0.006887584888298576,0.18727398411948443,1,False,macro-F1
+ETH,argmax,1.8017181496024628,0.09667134995587312,3.5067649492490522,1,False,bps per opportunity
+ETH,confidence,0.0,0.0,0.0,0,False,bps per opportunity
+ETH,scheduling,-0.07094336874789833,-0.524662328285422,0.3827755907896253,4,False,bps per complete 12-opportunity window

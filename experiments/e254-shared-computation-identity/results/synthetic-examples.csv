@@ -1,0 +1,4 @@
+history_index,initial_ahead_units,event_labels,service_units_t0_to_t4
+0,1,T T T Cb,0 0 1 2 2
+1,1,T T Cb T,0 0 1 1 2
+2,1,T Cb T T,0 0 0 1 2

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-256"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "The two local repairs and delivery cutoffs were supported; identical delivered inputs still produced fills of 3 versus 1.",
+  "result_records": [
+    {
+      "result_id": "R-026",
+      "title": "Restricted simulator repair and delivered observations",
+      "experiment_id": "E-256",
+      "protocol_revision": 1,
+      "source_task_id": "T-012",
+      "reported_at": "2026-09-22T03:21:53.629309+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_bounded_readiness",
+      "artifact_manifest_sha256": "2d82c71c2a5a2f04524ab235b9c7e415ffc8308386d67e63841522efa9df80ad",
+      "summary": "Restricted simulator readiness accepted: independent reconstruction supports the two local native repairs and actual participant-delivery cutoffs. Identical delivered inputs can still lead to fills3 versus1. This is ambiguity, not recoverability. Next: a frozen controlled study comparing direct prediction, point reconstruction and uncertainty-preserving reconstruction.",
+      "limitations": [
+        "R026 / RV024 / D036. Finite recorded-capture reconstruction; no fresh reviewer engine rerun, complete history certification, adversarial exchange, market realism or learner result. Seven examples are exposed fixtures. Original real Q16/Q17/Q18 remain open."
+      ],
+      "review_ids": [
+        "RV-024"
+      ],
+      "job_refs": [
+        {
+          "name": "drc-lob-t012-r6-suite",
+          "running": false,
+          "final_exit": 0,
+          "timeout_seconds": 3600
+        },
+        {
+          "name": "drc-lob-t012-r6-report",
+          "running": false,
+          "final_exit": 0,
+          "timeout_seconds": 3600
+        }
+      ],
+      "job_observed_at": "2026-09-22T06:49:31.745812+04:00",
+      "accepted_at": "2026-09-22T04:30:09.066965+00:00",
+      "decision_id": "D-036"
+    }
+  ]
+}

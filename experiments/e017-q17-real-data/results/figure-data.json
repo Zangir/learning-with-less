@@ -1,0 +1,322 @@
+{
+  "primary": [
+    {
+      "asset": "BTC",
+      "metric": "macro_f1",
+      "mean": 0.14210287516846323,
+      "lower": 0.03952924941781477,
+      "upper": 0.2446765009191117,
+      "bootstrap_lower": 0.08391711912229617,
+      "bootstrap_upper": 0.21183850315359362,
+      "t_radius": 0.10257362575064846,
+      "day_values": [
+        0.2234765780330759,
+        0.07220916075974365,
+        0.2654243515189065,
+        0.0768911025766904,
+        0.08939420376555895,
+        0.08885239317804233,
+        0.19492594423866338,
+        0.1256492672770248
+      ],
+      "negative_dates": 0,
+      "criterion_passed": true
+    },
+    {
+      "asset": "BTC",
+      "metric": "argmax",
+      "mean": 2.1223746265846986,
+      "lower": 0.29274394642164747,
+      "upper": 3.9520053067477496,
+      "bootstrap_lower": 1.0370315907182965,
+      "bootstrap_upper": 3.343057156746899,
+      "t_radius": 1.829630680163051,
+      "day_values": [
+        3.6781494765768947,
+        0.8127732479333769,
+        4.110094849761773,
+        0.7843426310148054,
+        1.1177469399099706,
+        1.3973497662134875,
+        3.1925369220450976,
+        1.8860031792221825
+      ],
+      "negative_dates": 0,
+      "criterion_passed": false
+    },
+    {
+      "asset": "BTC",
+      "metric": "confidence",
+      "mean": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "bootstrap_lower": 0.0,
+      "bootstrap_upper": 0.0,
+      "t_radius": 0.0,
+      "day_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "negative_dates": 0,
+      "criterion_passed": false
+    },
+    {
+      "asset": "BTC",
+      "metric": "scheduling",
+      "mean": 0.025961148377350043,
+      "lower": -0.10227802128160436,
+      "upper": 0.15420031803630446,
+      "bootstrap_lower": -0.025459387342963838,
+      "bootstrap_upper": 0.12814106002759387,
+      "t_radius": 0.1282391696589544,
+      "day_values": [
+        -0.02083040092237609,
+        0.0165749133625529,
+        0.0023833288586651014,
+        -0.022571900209686246,
+        0.24952182172644843,
+        0.04276434384042638,
+        -0.04083640295535362,
+        -0.019316516681876506
+      ],
+      "negative_dates": 4,
+      "criterion_passed": false
+    },
+    {
+      "asset": "ETH",
+      "metric": "macro_f1",
+      "mean": 0.0970807845038915,
+      "lower": 0.006887584888298576,
+      "upper": 0.18727398411948443,
+      "bootstrap_lower": 0.040482830337739535,
+      "bootstrap_upper": 0.162231102340262,
+      "t_radius": 0.09019319961559293,
+      "day_values": [
+        -0.0012034282059945611,
+        0.073972669637627,
+        0.19091528521378087,
+        0.0608072101022894,
+        0.08658177492798913,
+        0.08044276150862062,
+        0.1964688531280312,
+        0.08866114971878836
+      ],
+      "negative_dates": 1,
+      "criterion_passed": false
+    },
+    {
+      "asset": "ETH",
+      "metric": "argmax",
+      "mean": 1.8017181496024628,
+      "lower": 0.09667134995587312,
+      "upper": 3.5067649492490522,
+      "bootstrap_lower": 0.7644523932772997,
+      "bootstrap_upper": 3.030008960435175,
+      "t_radius": 1.7050467996465897,
+      "day_values": [
+        -0.006813391378374334,
+        1.054545137152445,
+        3.0213146614581667,
+        1.323808562681144,
+        1.360772547279037,
+        1.97800356276195,
+        4.070462755248186,
+        1.6116513616171488
+      ],
+      "negative_dates": 1,
+      "criterion_passed": false
+    },
+    {
+      "asset": "ETH",
+      "metric": "confidence",
+      "mean": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "bootstrap_lower": 0.0,
+      "bootstrap_upper": 0.0,
+      "t_radius": 0.0,
+      "day_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "negative_dates": 0,
+      "criterion_passed": false
+    },
+    {
+      "asset": "ETH",
+      "metric": "scheduling",
+      "mean": -0.07094336874789833,
+      "lower": -0.524662328285422,
+      "upper": 0.3827755907896253,
+      "bootstrap_lower": -0.4125065548965418,
+      "bootstrap_upper": 0.15452020453860574,
+      "t_radius": 0.45371895953752367,
+      "day_values": [
+        0.16888499213986063,
+        0.22532868794291472,
+        0.13335249227587243,
+        -0.7584614112177084,
+        -0.36236699902315783,
+        -0.04240680277867681,
+        -0.029724204549423594,
+        0.09784629522713217
+      ],
+      "negative_dates": 4,
+      "criterion_passed": false
+    }
+  ],
+  "units": {
+    "macro_f1": "score",
+    "argmax": "bps per opportunity",
+    "confidence": "bps per opportunity",
+    "scheduling": "bps per complete 12-opportunity window"
+  },
+  "later_ranges": [
+    {
+      "asset": "BTC",
+      "policy": "argmax",
+      "minimum": 0.0016867577393418372,
+      "maximum": 4.3954967818715955,
+      "opposite": 0,
+      "cells": 54,
+      "f1": 0.17993554428546674
+    },
+    {
+      "asset": "BTC",
+      "policy": "fixed_confidence",
+      "minimum": -1.7187890913598025,
+      "maximum": 0.0576825223815657,
+      "opposite": 45,
+      "cells": 54,
+      "f1": 0.17993554428546674
+    },
+    {
+      "asset": "ETH",
+      "policy": "argmax",
+      "minimum": 0.02787869926354153,
+      "maximum": 5.293203620530546,
+      "opposite": 0,
+      "cells": 54,
+      "f1": 0.1584938751647065
+    },
+    {
+      "asset": "ETH",
+      "policy": "fixed_confidence",
+      "minimum": -0.7974189763053682,
+      "maximum": 0.0039430730414719345,
+      "opposite": 48,
+      "cells": 54,
+      "f1": 0.1584938751647065
+    }
+  ],
+  "absolute": [
+    {
+      "asset": "BTC",
+      "model": "prior",
+      "macro_f1": 0.16763342964219094,
+      "argmax": -10.143430116049936,
+      "confidence": 0.0,
+      "scheduling": -0.08783225458596836
+    },
+    {
+      "asset": "BTC",
+      "model": "logistic",
+      "macro_f1": 0.3610852308552849,
+      "argmax": -9.741636335152702,
+      "confidence": 0.0,
+      "scheduling": 0.680910833914759
+    },
+    {
+      "asset": "BTC",
+      "model": "hist_gb",
+      "macro_f1": 0.48657744961277927,
+      "argmax": -8.034500249304553,
+      "confidence": 0.0,
+      "scheduling": 0.5318202067575748
+    },
+    {
+      "asset": "BTC",
+      "model": "mlp",
+      "macro_f1": 0.5031881060237481,
+      "argmax": -7.6192617085680014,
+      "confidence": 0.0,
+      "scheduling": 0.7068719822921091
+    },
+    {
+      "asset": "BTC",
+      "model": "random",
+      "macro_f1": 0.31831302208489237,
+      "argmax": -6.772006163603784,
+      "confidence": 0.0,
+      "scheduling": -0.08050964678914213
+    },
+    {
+      "asset": "BTC",
+      "model": "oracle",
+      "macro_f1": 1.0,
+      "argmax": -5.673320520832407,
+      "confidence": 0.0,
+      "scheduling": 1.9977745825294293
+    },
+    {
+      "asset": "ETH",
+      "model": "prior",
+      "macro_f1": 0.17195954436236016,
+      "argmax": -10.45592149584527,
+      "confidence": 0.0,
+      "scheduling": -0.10850737009882068
+    },
+    {
+      "asset": "ETH",
+      "model": "logistic",
+      "macro_f1": 0.35216771819516823,
+      "argmax": -9.95613052153398,
+      "confidence": 0.0,
+      "scheduling": 0.9036212854421002
+    },
+    {
+      "asset": "ETH",
+      "model": "hist_gb",
+      "macro_f1": 0.37151998623733773,
+      "argmax": -9.559818974230554,
+      "confidence": 0.0,
+      "scheduling": 0.7974315644957601
+    },
+    {
+      "asset": "ETH",
+      "model": "mlp",
+      "macro_f1": 0.44924850269905975,
+      "argmax": -8.154412371931517,
+      "confidence": 0.0,
+      "scheduling": 0.8326779166942021
+    },
+    {
+      "asset": "ETH",
+      "model": "random",
+      "macro_f1": 0.31919400448917706,
+      "argmax": -6.992945543937097,
+      "confidence": 0.0,
+      "scheduling": -0.08047891194724915
+    },
+    {
+      "asset": "ETH",
+      "model": "oracle",
+      "macro_f1": 1.0,
+      "argmax": -5.461902049334345,
+      "confidence": 0.0,
+      "scheduling": 2.75249817019423
+    }
+  ]
+}

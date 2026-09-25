@@ -1,0 +1,37 @@
+\section{Notation, metrics, and definitions}
+\label{app:notation}
+
+\paragraph{Predictors.} \emph{Coarse (C)} sees an aggregate order-book view. \emph{Augmented
+(P)} adds machine-reconstructed estimates of hidden book summaries (queue sizes, depth
+imbalance, near-touch depth in basis points) to the coarse view. \emph{Observed-rich (R)} sees
+the true rich summaries. All three share the model family, training budget, and dates. Only the
+observed information differs.
+
+\paragraph{Targets.} The reconstruction study scores a three-class target, fill (F), adverse
+(A), no-move (N), with a half-Brier loss, defined as the multiclass Brier score divided by
+two so that a uniform three-class prediction has a fixed reference value. Q17 discretizes a
+short-horizon mid-quote move into up/down/flat and reports macro-F1. Q18 reports a relative-loss
+gap, the fractional change in loss of the full depth-plus-history view against a reduced view.
+
+\paragraph{Baselines.} The \emph{uniform} baseline predicts each class with equal probability
+per day. The \emph{training-frequency} baseline predicts the training class mix and ignores the
+current book. It is the key reference, because a predictor that cannot beat it has extracted no
+usable book information. The \emph{oracle} in Q17 has access to the realized label and bounds
+the best achievable decision utility under the policy and cost model.
+
+\paragraph{Policies (Q17).} The \emph{argmax} policy acts on the highest-probability direction. The \emph{confidence} policy acts only above a fixed probability threshold and otherwise
+abstains. The \emph{scheduling} policy allocates activity across a $12$-opportunity window.
+Utility is in basis points per opportunity (argmax, confidence) or per window (scheduling), at
+a $5$ bps-per-side cost and a $100$ ms quote-offset latency.
+
+\paragraph{Gates.} Q17's joint gate requires a predictive advantage and a utility reversal
+across at least two policy families on six of eight paired dates. Q18's certified companion
+requires own-clock inferiority and inherited-clock noninferiority on both assets and at least
+two model families. Both gates are frozen before test dates are read.
+
+\paragraph{Per-class detail.} Table~\ref{tab:augclassreb} gives the August rebound cohort's
+per-class breakdown, the companion to Table~\ref{tab:augclass}. The same pattern holds, the
+augmented and rich predictors move the predicted probabilities but not the decision-relevant
+losses.
+
+\input{sections/tables/tbl_augclassreb}

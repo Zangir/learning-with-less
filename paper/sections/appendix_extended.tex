@@ -1,0 +1,50 @@
+\section{Extended results and protocol}
+\label{app:extended}
+
+\paragraph{All reconstruction contrasts.} Table~\ref{tab:reconcontrasts} reports every
+pairwise loss contrast in the Q16 reconstruction study, across the breakout and rebound
+families, the May--July and August--November cohort groups, and both the equal-day and pooled
+weightings, in raw and standardized form. The pattern that the main text summarizes is
+visible throughout the table. The augmented-minus-coarse (P$-$C) and rich-minus-coarse
+(R$-$C) contrasts are small and frequently positive, so augmentation and rich inputs lose.
+The predictor-minus-frequency contrasts show that no learned arm reliably beats the
+book-free baseline. The frequency-minus-uniform contrast confirms that the
+training-frequency baseline is itself a strong reference. The rich-minus-augmented (R$-$P)
+contrast is small in every cell. This is why reconstruction quality does not translate into
+a decision: the observed-rich predictor and its reconstruction do not separate at the
+decision even where the reconstruction is accurate.
+
+\input{sections/tables/tbl_reconcontrasts}
+
+\paragraph{Q17 cost/latency sensitivity.} Table~\ref{tab:q17ranges} reports, for each asset
+and policy, the utility range swept across fixed later-date cost and latency scenarios,
+together with the number of cells whose sign opposes the point estimate. The argmax policy is
+consistently negative in absolute terms, the confidence policy collapses to abstention, and
+the scheduling policy straddles zero with many opposing cells. The negative therefore does not
+depend on a single chosen cost point. It is stable across the scenario sweep, which is the
+reason we report ranges rather than a tuned scenario.
+
+\input{sections/tables/tbl_q17ranges}
+
+\paragraph{Mixture-versus-within decomposition.} Table~\ref{tab:decomp} decomposes each
+reconstruction loss gap into a class-mixture term (driven by differences in realized class
+frequencies across cohorts) and a within-class term (driven by per-class loss differences).
+The mixture term carries most of any apparent movement, which is exactly why an aggregate over
+heterogeneous cohorts can manufacture a depth ``advantage'' that vanishes under a fixed
+weighting: the aggregate is confounded by the changing class mix, not by information. The
+within-class terms, which isolate genuine predictive change, are small and do not favor the
+augmented or rich predictors.
+
+\input{sections/tables/tbl_decomp}
+
+\paragraph{Protocol in pseudocode.} The matched intervention is deliberately simple, and its
+value is in what it forbids. For each study we (1) freeze the model family, training budget,
+and calendar split before any test date is read. (2) construct features and normalization on
+the training portion only. (3) enumerate the information views to compare, changing nothing
+else between them. (4) fit each view under the shared budget, preserving convergence warnings;
+(5) evaluate every view on the identical held-out events, paired at the event level. (6) score
+against a fixed metric and, for decisions, a fixed policy and explicit cost model. And (7)
+apply the pre-registered gate without any outcome-driven adjustment. A failure to certify an
+effect is recorded as such and never reported as evidence of the opposite effect. This is the
+whole instrument, and the negatives in this paper are what it returns when it is not allowed
+to shop for an outcome.

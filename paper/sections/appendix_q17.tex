@@ -1,0 +1,53 @@
+\section{Q17 forecast-to-decision study: protocol and full results}
+\label{app:q17}
+
+\paragraph{Data and features.} Q17 uses $30$ admitted native on-change best-bid/offer
+contracts across BTC and ETH over $15$ paired calendar dates. Features are past-only quote
+statistics computed on the receipt clock. The target is the sign of a short-horizon
+mid-quote move discretized into up/down/flat. Feature construction and normalization are
+fit on the training portion only and frozen before any test date is scored. Six model
+families produce frozen forecasts: a class-prior baseline, logistic regression, gradient
+boosting, a multilayer perceptron, a random control, and an oracle with access to the
+realized label.
+
+\paragraph{Policies and utility.} Each frozen forecast passes through three fixed policies.
+The \emph{argmax} policy takes the highest-probability direction. The \emph{confidence}
+policy acts only above a fixed probability threshold and otherwise abstains. The
+\emph{scheduling} policy allocates activity across a $12$-opportunity window. Utility is
+computed with inverse-contract price arithmetic and scenario fees at a $5$ bps-per-side
+cost and a $100$ ms quote-offset latency. Utility uses quote endpoints and assumed costs. It does not observe realized fills, funding, or endogenous impact, so it is a decision
+utility, not a realized profit.
+
+\paragraph{Joint gate.} A forecast-to-decision improvement is declared only when a model
+shows both a predictive advantage and a utility reversal across at least two policy families
+on six of eight paired dates. Table~\ref{tab:q17primary} reports the four primary contrasts
+per asset (one macro-F1 and three utility contrasts). No contrast passes: the BTC macro-F1
+gain is significant, but the confidence and scheduling contrasts fail, and all four ETH
+contrasts fail. The confidence policy collapses to zero utility (abstain) for every learned
+model, and the scheduling contrast is negative on four of eight dates for both assets.
+
+\input{sections/tables/tbl_q17_primary}
+
+\input{sections/tables/tbl_q17_abs}
+
+\input{sections/tables/tbl_q17days}
+
+Table~\ref{tab:q17days} gives the per-date macro-F1 advantage: the BTC gain is positive on all
+eight dates (hence the significant contrast), while the ETH gain is negative on one date, which
+is why the ETH predictive contrast is weaker even though its mean is positive.
+
+\paragraph{Absolute performance.} Table~\ref{tab:q17abs} gives the absolute macro-F1 and
+per-policy utility for every model family. The ordering by macro-F1 (oracle $>$ mlp $>$
+hist\_gb $>$ logistic $>$ random $>$ prior) does not match the ordering by argmax utility,
+and every learned argmax utility is negative. The oracle's own argmax utility is negative
+($-5.67$ BTC, $-5.46$ ETH), which bounds how much the cost layer alone removes: even a
+perfect direction forecast trades at a loss under this policy and cost model. This is the
+quantitative core of the section: the forecasting leaderboard and the decision leaderboard
+are different orderings, and the gap is large enough to invert the deployment choice.
+
+\paragraph{Sensitivity across later dates.} A frozen follow-up sweeps fixed cost and latency
+scenarios on additional dates without changing the gate. The per-policy utility ranges
+remain policy-dependent and continue to straddle zero for the confidence and scheduling
+families, so the negative is not an artifact of one cost assumption. We report ranges rather
+than a single tuned scenario precisely to avoid selecting the cost point that would flip the
+conclusion.

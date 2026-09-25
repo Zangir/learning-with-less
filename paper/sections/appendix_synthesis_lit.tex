@@ -1,0 +1,61 @@
+\section{Extended discussion of related literature}
+\label{app:extlit}
+
+This appendix expands the six clusters of Section~\ref{sec:related_work} and states, cluster
+by cluster, what the prior line establishes and where our matched measurement adds evidence.
+
+\paragraph{Predictive modeling of the book.} The dominant line treats the limit order book as
+an input to a predictor and asks how much signal a model can extract, from convolutional and
+recurrent architectures \citep{sirignano2016deep, zihao2018deeplob, nousi2018machine,
+zhang2018bdlob} through attention and persistence-aware designs \citep{jung2024attention,
+briola2024hlob, lorenzo2022short, briola2024deep} to generative and foundation models
+\citep{yanzhi2026m, zihao2021deep, backhouse2025painting} and representation-learning
+surveys and benchmarks \citep{zhong2025representation, ntakaris2017benchmark, nagy2025lob,
+cao2022dslob}. This line reports predictive scores. Our studies hold the model fixed and
+report the decision, which is why an improvement that this line would count as progress can
+be a null or a loss in our measurement.
+
+\paragraph{Order-flow structure, queues, and impact.} A second line models the mechanics by
+which book detail could carry decision value: multi-level and generalized order-flow imbalance
+\citep{ke2019multi, rama2010price, su2021price, hu2025stochastic, lipton2013trade}, queue and
+order-position dynamics \citep{guo2015dynamics, cont2012order, toke2013order, toke2016modelling,
+cont2019stochastic}, resiliency and depth after events \citep{bechler2017order, xu2016limit,
+krause2021two}, and price impact of orders and flow \citep{said2018market, brokmann2014slow,
+lemhadri2018market, huang2019glosten}. These establish that finer structure is informative in
+a statistical sense. Our Q16 and Q18 test whether that information changes a decision and find
+that on real data it usually does not.
+
+\paragraph{Fill probability and execution.} Work on fill probability and execution supplies the
+concrete channel through which queues matter: survival and state-dependent fill models
+\citep{alvaro2023deep, lokin2024fill, guo2015dynamics} and optimal-execution and
+market-making theory \citep{kato2014vwap, kato2009optimal, curato2014optimal, bechler2014optimal,
+chavezcasillas2024adaptive, baldacci2021optimal}. Our finite-queue analysis confirms the channel
+exists but is rare, and the reconstruction diagnostic shows recovering the queue does not move
+the fill/adverse/no-move decision.
+
+\paragraph{Forecast value versus decision value.} The line closest to our thesis documents that
+accuracy and decision quality diverge: rank-correlation breakdowns \citep{falezza2026when,
+raeth2025forecast}, economic-value gaps beyond error metrics \citep{maciejowska2025statistical,
+kath2018value, hirsch2026probabilistic, walid2025economic}, decision-focused learning
+\citep{wilder2018melding, zhou2024decision, silvestri2023score, islam2023optimizing,
+tankov2021decision}, and information-driven trading value \citep{samuel2020information}. Proper
+guarantees exist under matched rules and liquidity \citep{anri2026when, dubach2026anatomy}. Q17
+supplies the market measurement with a frozen joint gate.
+
+\paragraph{Forecast evaluation and calibration.} Tools that evaluate forecasts across decision
+thresholds \citep{f2017murphy, timo2023evaluating, werner2015quantiles, taggart2021point,
+allen2024tail, bouallegue2015quantile} and calibration and communication of probabilistic
+forecasts \citep{graziani2019probabilistic, loveday2023user, raftery2014use, crisostomo2018financial}
+already argue that a single score is a weak decision surrogate. We quantify the resulting
+disagreement in basis points under an explicit policy and cost model.
+
+\paragraph{Benchmarks, leakage, sufficiency, and simulators.} Recent benchmark and audit work
+targets decision-time leakage and execution realism \citep{fan2026when, junyi2026beyond,
+pu2026polybench, wang2025fintsbridge}, backtest correctness and overfitting
+\citep{low2015correctness, koshiyama2019avoiding, pham2026algoxpert, sun2022backtesting,
+maierpaape2014backtest}, and agent-based simulators for counterfactual evaluation
+\citep{dwarakanath2024abides, vyetrenko2019risk}. On the theory side, decision-sufficient
+representations and information-theoretic limits bound what any observable can buy
+\citep{ye2026learning, walsh2026support, maurice2026forecastability, yoon2026finite}. Our
+released programme operationalizes this stance with matched interventions, frozen gates, source
+certification, and honest status labels.

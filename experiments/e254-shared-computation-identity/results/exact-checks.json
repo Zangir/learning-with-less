@@ -1,0 +1,114 @@
+{
+  "fixtures": [
+    {
+      "fixture": "primary",
+      "histories": 11,
+      "lower": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "upper": [
+        0,
+        0,
+        1,
+        2,
+        3
+      ],
+      "unpruned_lower": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nodes": 24,
+      "edges": 45,
+      "viable_nodes": 13
+    },
+    {
+      "fixture": "forced_trades",
+      "histories": 1,
+      "lower": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "upper": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "unpruned_lower": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "nodes": 10,
+      "edges": 12,
+      "viable_nodes": 4
+    },
+    {
+      "fixture": "single_path",
+      "histories": 1,
+      "lower": [
+        0,
+        0,
+        1
+      ],
+      "upper": [
+        0,
+        0,
+        1
+      ],
+      "unpruned_lower": [
+        0,
+        0,
+        0
+      ],
+      "nodes": 7,
+      "edges": 9,
+      "viable_nodes": 3
+    },
+    {
+      "fixture": "all_cancellations",
+      "histories": 3,
+      "lower": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "upper": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unpruned_lower": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "nodes": 12,
+      "edges": 18,
+      "viable_nodes": 6
+    },
+    {
+      "fixture": "empty_support",
+      "empty_support_rejected": true
+    }
+  ],
+  "primary_queries_checked": 135,
+  "exact_ties_checked": 2,
+  "all_checks_passed": true,
+  "fitted_experiment": false,
+  "benchmark": false,
+  "stochastic_process": false
+}

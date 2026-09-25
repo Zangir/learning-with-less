@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-002"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "Candidate coverage rose from 90,083 to 91,860, adding 1,777 candidates.",
+  "result_records": [
+    {
+      "result_id": "R-003",
+      "experiment_id": "E-002",
+      "protocol_revision": 1,
+      "source_task_id": "T-006",
+      "reported_at": "2026-09-19T19:15:49.946919+04:00",
+      "summary": "Offline point-timestamp candidates rise from90083 to91860 on the same91868 BTC diff events;1777additional candidates.",
+      "limitations": [
+        "8unmatched updates",
+        "1retained182.854823ms inversion",
+        "Full-hour offline matching not proof of causal availability",
+        "Initial state uncertified"
+      ],
+      "revision": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "task": "T-016",
+  "experiment": "E-253",
+  "operation": "D031:T016:breakout-rebound-protocol",
+  "status": "engineer deliverable complete; coordinator scientific acceptance pending",
+  "completed_utc": "2026-09-21T22:35:06.264761+00:00",
+  "elapsed_seconds": 1010.1,
+  "base_and_final_commit": "ed62f2a4ccebc7ad559ba0c185954401d5311cb8",
+  "git_status": "clean; no code changes/commits/push",
+  "pdf_pages": 9,
+  "all_checks_passed": true,
+  "tmux_created_or_used": [
+    "drc-lob-t016-report"
+  ],
+  "owned_sessions_remaining": [],
+  "final_render_seconds": 8.0,
+  "final_peak_job_bytes": 457474048,
+  "training_or_outcome_computation": false,
+  "market_data_acquisition": false,
+  "evidence_scope": "qualitative feasibility/source audit and prospective protocol",
+  "unresolved": [
+    "participant-rich pairing and original Q16/Q17/Q18 gates",
+    "validated execution/cost/latency",
+    "exposure-certified confirmatory holdout",
+    "new P0/P1 event/label implementation and review"
+  ]
+}

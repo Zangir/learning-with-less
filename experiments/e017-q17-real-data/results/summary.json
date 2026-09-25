@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-017",
+    "E-267"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "hour00_valid_descriptive_negative_mandatory_empirical_open",
+    "valid"
+  ],
+  "headline_result": "The scoped empirical adaptation completed 22 fits. Its joint forecast/decision ranking-reversal rule had zero passing model families.",
+  "result_records": [
+    {
+      "result_id": "R-007",
+      "experiment_id": "E-017",
+      "experiment_ids": [
+        "E-017"
+      ],
+      "source_task_id": "T-010",
+      "reported_at": "2026-09-21T16:10:02.478375+04:00",
+      "revision": 1,
+      "evidence_manifest_sha256": "c854263d0e2e2154f95bd2b439803e4f3ecafdf28146f9fd01d09748b9d935fc",
+      "summary": "Q17 original negative preserved and declared linear causal pipeline supported in synthetic software checks.",
+      "assessment": "valid_in_software_scope",
+      "limitations": [
+        "No real fit or faithful pinned-runtime completion.",
+        "Affirmative producer mapping remains unagreed.",
+        "Single asset cannot overturn original joint primary; quote utility is not realized profit."
+      ],
+      "review_ids": [
+        "RV-004"
+      ],
+      "code_commit": "2fdebd1c51c2bfb5a9be72c4bd0f58c81d7cd435",
+      "accepted_at": "2026-09-21T17:15:38.686485+04:00",
+      "decision_ids": [
+        "D-011"
+      ],
+      "status": "accepted_in_scope"
+    },
+    {
+      "result_id": "R-011",
+      "experiment_id": "E-017",
+      "protocol_revision": 2,
+      "source_task_id": "T-010",
+      "reported_at": "2026-09-21T17:49:22.174888+04:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_in_declared_scope",
+      "execution_status": "completed_in_exploratory_scope",
+      "evidence_manifest_sha256": "79d1c8b6e789a427f209793fa8a879a48a5a1b276ea441af3d3fbaceb6275083",
+      "code_commit": "476914b1fe8c377203752329eb2af79aa9bcb085",
+      "summary": "Reviewed sampled BTC pilot: MLP macro-F1 advantage absent; scheduling loss alone does not establish original forecast/decision ranking reversal.",
+      "limitations": [
+        "Third-party archive provenance not authenticated; retrospective future-support/freshness conditioning.",
+        "One asset,one evaluation hour/date; no original two-asset/eight-date inference.",
+        "Quote cashflow adaptation, not observed fills or realized profit; exchange-time shifts not measured network latency.",
+        "Pinned direct packages with disclosed interpreter/platform differences.",
+        "Mandatory December1 participant-linked objective remains open."
+      ],
+      "review_ids": [
+        "RV-007"
+      ],
+      "reported_elapsed_seconds": 2.774,
+      "accepted_at": "2026-09-21T14:15:26.698836+00:00",
+      "decision_ids": [
+        "D-016"
+      ]
+    },
+    {
+      "result_id": "R-018",
+      "experiment_id": "E-017",
+      "protocol_revision": 3,
+      "source_task_id": "T-010",
+      "reported_at": "2026-09-21T15:13:17.575427+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_limited_descriptive_negative",
+      "execution_status": "completed_qualified_hour00_and_conditional_scopes",
+      "evidence_manifest_sha256": "0fab2234e5a26d931996936c13beffbe83b047220c9750d9945ba139ef308050",
+      "code_commit": "217dcedc98b248641a74f0c301cc24c4629f0cb7",
+      "review_ids": [
+        "RV-016"
+      ],
+      "summary": "Author reports failed joint forecasting/utility criterion across eight fixed periods and two assets; independent review pending. Full-day not_evaluable and conditional December empirical admission false.",
+      "limitations": [
+        "Source-quality-informed post-acquisition adaptation, not untouched confirmation.",
+        "Eight serial market periods; sample independence unestablished. Nominal100ms is an archive shift.",
+        "December16decisions/1window remain conditional and future-closure dependent."
+      ],
+      "accepted_at": "2026-09-21T15:38:46.636745+00:00"
+    },
+    {
+      "result_id": "R-037",
+      "experiment_id": "E-267",
+      "source_task_id": "T-011",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_completed_scoped_empirical_adaptation",
+      "execution_status": "computational_packet_completed",
+      "reported_at": "2026-09-22T09:53:20.019885+00:00",
+      "evidence_manifest_sha256": "24151bb40f2da2705dcfb32b52ce115429827d6b4527520b978dbcc98aa292dc",
+      "review_ids": [
+        "RV-036"
+      ],
+      "source_review_id": "RV-035",
+      "presentation_status": "accepted_v2_static_report_and_figure",
+      "fits_completed_author_report": 22,
+      "job_elapsed_seconds_author_report": 53.496,
+      "mandatory_empirical_goal_closed": true,
+      "presentation_manifest_sha256": "7b6b31d427df45830d14ce761799f6e359436eccb13697a750c64ac2ac796b53",
+      "source_gate": {
+        "status": "supported_in_scope",
+        "decision_id": "D-047",
+        "review_id": "RV-035",
+        "sha256": "09181c80223ff3fc194996de92366a22c6084d3939755ae783c7944503071bcb",
+        "contract_count": 30,
+        "consumer_protocol_sha256": "dbfed0b2a7776955bad9af8caadf4001ef005bc1a4e281f9edd75921857aa039",
+        "consumer_input_bindings_sha256": "e6c505cb04399f05519046284c940b56b18454c9a4e62f3969c0ad8206b69ac9",
+        "conditions": [
+          "Admits recorded native on-change BBO states and faithful provider receipt/event fields under the bound offline protocol.",
+          "Continuity means no recorded disconnect inside the chosen archive segment, subject to provider collection completeness. Absence of changes is not independent proof of exchange continuity.",
+          "Never cross recorded disconnects or extrapolate beyond first/last actual event and receipt support; all history, targets and schedules must remain supported.",
+          "Provider receipt is uncalibrated and is not strategy-specific historical availability; delay scenarios are uncalibrated quote scenarios.",
+          "Millisecond event ordering uses original capture-order/right-asof convention; no interior exchange action order is inferred.",
+          "NativeBBO source does not reinstate invalid January2026 sampledL2 or any prior scientific result.",
+          "Model features, transformations, cache projection, chronology, fitted results and interpretation require separate RV036 review."
+        ],
+        "model_results_accepted": false
+      },
+      "presentation_history": [
+        {
+          "sha256": "0cf5f191b14e689394768f667cda092bcec975b9bbcbdc628874055c6c2c388b",
+          "status": "units_correction_requested_v1_preserved"
+        }
+      ],
+      "accepted_at": "2026-09-22T10:25:30.686781+00:00",
+      "acceptance_decision_id": "D-050",
+      "completion_decision_id": "D-050",
+      "author_runtime_breakdown_seconds": {
+        "full_job": 53.496,
+        "orchestration": 45.762,
+        "fit_calls": 27.692,
+        "source": "verified final RV036 report"
+      }
+    }
+  ]
+}

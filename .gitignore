@@ -1,0 +1,61 @@
+# Local project instructions
+AGENTS.md
+
+# Local course reports and source templates
+/report-templates/
+/ready-reports/
+/reports/*
+!/reports/all-experiments-brief/
+!/reports/all-experiments-brief/**
+/output/
+/literature reviews/
+
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/
+
+# Local environments and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+.venv/
+venv/
+
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local datasets and experiment outputs
+/data/
+/datasets/
+/checkpoints/
+/runs/
+/wandb/
+/mlruns/
+/research-artifacts/
+/research-control/
+
+# Private local context and source snapshots
+/anon experiments/
+/tmp/
+/LOCAL_CONTEXT.md
+/context-manifest.json
+/ICLR 2025 - Imputation for prediction.pdf
+
+# LaTeX build files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.xdv
+_rendered/
+**/_rendered/

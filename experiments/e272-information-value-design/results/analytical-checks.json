@@ -1,0 +1,502 @@
+{
+  "scope": "Exact synthetic finite laws; no data extraction, fitting or empirical scoring",
+  "reserved_seed": 20260919,
+  "random_draws": 0,
+  "cases": [
+    {
+      "name": "Redundant depth; coarse learner is imperfect",
+      "law": [
+        {
+          "x": 0,
+          "z": 0,
+          "y": 0,
+          "p": {
+            "exact": "1/2",
+            "value": 0.5
+          }
+        },
+        {
+          "x": 1,
+          "z": 1,
+          "y": 1,
+          "p": {
+            "exact": "1/2",
+            "value": 0.5
+          }
+        }
+      ],
+      "oracle_information_value": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "score_information_value": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "coarse_risk": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "rich_risk": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "rich_minus_coarse": {
+        "exact": "-1/4",
+        "value": -0.25
+      },
+      "coarse_regret": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "rich_regret": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "conditional_replacement": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "marginal_replacement": {
+        "exact": "1/2",
+        "value": 0.5
+      },
+      "score_variance": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "information_lower_bound": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "decomposition_verified": true,
+      "covariance_identity_verified": true
+    },
+    {
+      "name": "Deterministic XOR feature; no new information",
+      "law": [
+        {
+          "x": [
+            0,
+            0
+          ],
+          "z": 0,
+          "y": 0,
+          "p": {
+            "exact": "1/4",
+            "value": 0.25
+          }
+        },
+        {
+          "x": [
+            0,
+            1
+          ],
+          "z": 1,
+          "y": 1,
+          "p": {
+            "exact": "1/4",
+            "value": 0.25
+          }
+        },
+        {
+          "x": [
+            1,
+            0
+          ],
+          "z": 1,
+          "y": 1,
+          "p": {
+            "exact": "1/4",
+            "value": 0.25
+          }
+        },
+        {
+          "x": [
+            1,
+            1
+          ],
+          "z": 0,
+          "y": 0,
+          "p": {
+            "exact": "1/4",
+            "value": 0.25
+          }
+        }
+      ],
+      "oracle_information_value": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "score_information_value": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "coarse_risk": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "rich_risk": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "rich_minus_coarse": {
+        "exact": "-1/4",
+        "value": -0.25
+      },
+      "coarse_regret": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "rich_regret": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "conditional_replacement": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "marginal_replacement": {
+        "exact": "1/2",
+        "value": 0.5
+      },
+      "score_variance": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "information_lower_bound": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "decomposition_verified": true,
+      "covariance_identity_verified": true
+    },
+    {
+      "name": "True information; correct rich score",
+      "law": [
+        {
+          "x": 0,
+          "z": 0,
+          "y": 0,
+          "p": {
+            "exact": "1/3",
+            "value": 0.3333333333333333
+          }
+        },
+        {
+          "x": 0,
+          "z": 1,
+          "y": 1,
+          "p": {
+            "exact": "1/3",
+            "value": 0.3333333333333333
+          }
+        },
+        {
+          "x": 0,
+          "z": 2,
+          "y": 2,
+          "p": {
+            "exact": "1/3",
+            "value": 0.3333333333333333
+          }
+        }
+      ],
+      "oracle_information_value": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "score_information_value": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "coarse_risk": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "rich_risk": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "rich_minus_coarse": {
+        "exact": "-1/3",
+        "value": -0.3333333333333333
+      },
+      "coarse_regret": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "rich_regret": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "conditional_replacement": {
+        "exact": "2/3",
+        "value": 0.6666666666666666
+      },
+      "marginal_replacement": {
+        "exact": "2/3",
+        "value": 0.6666666666666666
+      },
+      "score_variance": {
+        "exact": "2/3",
+        "value": 0.6666666666666666
+      },
+      "information_lower_bound": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "decomposition_verified": true,
+      "covariance_identity_verified": true
+    },
+    {
+      "name": "True information; rich score ignores it",
+      "law": [
+        {
+          "x": 0,
+          "z": 0,
+          "y": 0,
+          "p": {
+            "exact": "1/3",
+            "value": 0.3333333333333333
+          }
+        },
+        {
+          "x": 0,
+          "z": 1,
+          "y": 1,
+          "p": {
+            "exact": "1/3",
+            "value": 0.3333333333333333
+          }
+        },
+        {
+          "x": 0,
+          "z": 2,
+          "y": 2,
+          "p": {
+            "exact": "1/3",
+            "value": 0.3333333333333333
+          }
+        }
+      ],
+      "oracle_information_value": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "score_information_value": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "coarse_risk": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "rich_risk": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "rich_minus_coarse": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "coarse_regret": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "rich_regret": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "conditional_replacement": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "marginal_replacement": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "score_variance": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "information_lower_bound": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "decomposition_verified": true,
+      "covariance_identity_verified": true
+    },
+    {
+      "name": "True information; rich score uses it wrongly",
+      "law": [
+        {
+          "x": 0,
+          "z": 0,
+          "y": 0,
+          "p": {
+            "exact": "1/3",
+            "value": 0.3333333333333333
+          }
+        },
+        {
+          "x": 0,
+          "z": 1,
+          "y": 1,
+          "p": {
+            "exact": "1/3",
+            "value": 0.3333333333333333
+          }
+        },
+        {
+          "x": 0,
+          "z": 2,
+          "y": 2,
+          "p": {
+            "exact": "1/3",
+            "value": 0.3333333333333333
+          }
+        }
+      ],
+      "oracle_information_value": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "score_information_value": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "coarse_risk": {
+        "exact": "1/3",
+        "value": 0.3333333333333333
+      },
+      "rich_risk": {
+        "exact": "1",
+        "value": 1.0
+      },
+      "rich_minus_coarse": {
+        "exact": "2/3",
+        "value": 0.6666666666666666
+      },
+      "coarse_regret": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "rich_regret": {
+        "exact": "1",
+        "value": 1.0
+      },
+      "conditional_replacement": {
+        "exact": "-1/3",
+        "value": -0.3333333333333333
+      },
+      "marginal_replacement": {
+        "exact": "-1/3",
+        "value": -0.3333333333333333
+      },
+      "score_variance": {
+        "exact": "2/3",
+        "value": 0.6666666666666666
+      },
+      "information_lower_bound": {
+        "exact": "1/12",
+        "value": 0.08333333333333333
+      },
+      "decomposition_verified": true,
+      "covariance_identity_verified": true
+    }
+  ],
+  "approximate_sampler_null": {
+    "total_variation": {
+      "exact": "1/8",
+      "value": 0.125
+    },
+    "false_positive_contrast": {
+      "exact": "1/8",
+      "value": 0.125
+    },
+    "bias_adjusted_lower_bound": {
+      "exact": "0",
+      "value": 0.0
+    }
+  },
+  "shift_counterexample": {
+    "common_source": [
+      [
+        0,
+        0,
+        {
+          "exact": "1/2",
+          "value": 0.5
+        }
+      ],
+      [
+        1,
+        1,
+        {
+          "exact": "1/2",
+          "value": 0.5
+        }
+      ]
+    ],
+    "prior_only": [
+      [
+        0,
+        0,
+        {
+          "exact": "3/4",
+          "value": 0.75
+        }
+      ],
+      [
+        1,
+        1,
+        {
+          "exact": "1/4",
+          "value": 0.25
+        }
+      ]
+    ],
+    "changed_conditional": [
+      [
+        1,
+        0,
+        {
+          "exact": "3/4",
+          "value": 0.75
+        }
+      ],
+      [
+        0,
+        1,
+        {
+          "exact": "1/4",
+          "value": 0.25
+        }
+      ]
+    ],
+    "identical_fixed_score_risks": [
+      {
+        "exact": "3/16",
+        "value": 0.1875
+      },
+      {
+        "exact": "3/16",
+        "value": 0.1875
+      }
+    ],
+    "conditional_losses": [
+      {
+        "exact": "1/16",
+        "value": 0.0625
+      },
+      {
+        "exact": "9/16",
+        "value": 0.5625
+      }
+    ]
+  },
+  "new_fits": 0,
+  "empirical_scoring": 0,
+  "native_episodes": 0
+}

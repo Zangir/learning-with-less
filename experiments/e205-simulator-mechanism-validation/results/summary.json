@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-205"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "Matched coarse paths produced different probe fills, while native modification/history defects were identified and repaired in later work.",
+  "result_records": [
+    {
+      "result_id": "R-009",
+      "experiment_id": "E-210",
+      "experiment_ids": [
+        "E-205",
+        "E-210"
+      ],
+      "source_task_id": "T-012",
+      "reported_at": "2026-09-21T16:10:02.478375+04:00",
+      "revision": 1,
+      "evidence_manifest_sha256": "480e4c325953c4e45b516c01280a121f53d58cc8a14db88d4e94358716d6929c",
+      "summary": "Calibrated binary mean equals posterior decision control; noisy-label finite-sample gain is known-noise denoising.",
+      "assessment": "valid_in_synthetic_scope",
+      "limitations": [
+        "Controlled synthetic experiment only, no market/novelty claim.",
+        "Binary population controls are algebraic identities, not independently learned methods.",
+        "Finite self-distillation vector is copied, not learned; matched-supervision direct learner is next.",
+        "Decision intervals at n120 and n480 include zero; preserve finite-sample uncertainty."
+      ],
+      "review_ids": [
+        "RV-005"
+      ],
+      "code_commit": "90e3d848ce81fb590f8ddf20b44bbd921268784e",
+      "accepted_at": "2026-09-21T17:15:38.686485+04:00",
+      "decision_ids": [
+        "D-011"
+      ],
+      "status": "accepted_in_scope"
+    },
+    {
+      "result_id": "R-024",
+      "title": "Source-versioned simulator suitability and hidden queue contrast",
+      "experiment_id": "E-205",
+      "protocol_revision": 2,
+      "source_task_id": "T-012",
+      "reported_at": "2026-09-22T01:19:35.433753+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_scoped_negative",
+      "artifact_manifest_sha256": "0114f93fa6fb0a61c5e01b1cf21c2ca0f61c38b82f457188ce239e6b2d2b62fd",
+      "summary": "Author reports reproducible actual-engine rich/coarse traces, matched coarse paths with differing probe fills, and native modification/history defects. Suitability and postflight evidence repair await independent review.",
+      "limitations": [
+        "Author evidence only until independent assessment; original mandatory replications remain open."
+      ],
+      "review_ids": [
+        "RV-022"
+      ],
+      "job_refs": [
+        {
+          "host_id": "local",
+          "scheduler": "tmux/Windows Job",
+          "job_id": "drc-lob-t012-r5-source",
+          "last_observed_state": "exited",
+          "observed_at": "2026-09-22T00:37:11.696168+00:00",
+          "exit_details": {
+            "name": "drc-lob-t012-r5-source",
+            "state": "exited",
+            "exit": 0
+          }
+        },
+        {
+          "host_id": "local",
+          "scheduler": "tmux/Windows Job",
+          "job_id": "drc-lob-t012-r5-engine",
+          "last_observed_state": "exited",
+          "observed_at": "2026-09-22T00:37:11.696168+00:00",
+          "exit_details": {
+            "name": "drc-lob-t012-r5-engine",
+            "state": "exited",
+            "exit": 1
+          }
+        },
+        {
+          "host_id": "local",
+          "scheduler": "tmux/Windows Job",
+          "job_id": "drc-lob-t012-r5-render",
+          "last_observed_state": "exited",
+          "observed_at": "2026-09-22T00:37:11.696168+00:00",
+          "exit_details": {
+            "name": "drc-lob-t012-r5-render",
+            "state": "exited",
+            "initial_layout_exit": 1,
+            "final_exit": 0
+          }
+        }
+      ],
+      "accepted_at": "2026-09-22T02:22:18.712676+00:00",
+      "decision_id": "D-034"
+    }
+  ]
+}

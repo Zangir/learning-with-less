@@ -1,0 +1,77 @@
+\begin{longtable}{lllrrrr}
+\caption{Controlled fill-prediction (E-258), selection role: Brier, log loss, calibration
+error, and rank MSE by condition, training size, and predictor. Direct and distributional
+predictors coincide at 512 draws; reconstruction shows no isolated advantage. Source:
+\texttt{experiments/results/e258\_metrics.csv}.}
+\label{tab:e258}\\
+\toprule
+condition & size & model & Brier & log loss & ECE & rank MSE \\
+\midrule
+\endfirsthead
+\toprule
+condition & size & model & Brier & log loss & ECE & rank MSE \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+informative & 128 & unconditional\_y & 0.236403 & 0.665809 & 0.063582 & -- \\
+informative & 128 & direct\_y & 0.218317 & 0.627603 & 0.063981 & -- \\
+informative & 128 & point\_y & 0.272500 & 0.756857 & 0.205469 & 0.562500 \\
+informative & 128 & distribution\_y & 0.218936 & 0.628852 & 0.065705 & 0.557968 \\
+informative & 128 & direct\_compiled\_y & 0.218936 & 0.628852 & 0.065705 & -- \\
+informative & 128 & current\_rich\_y & 0.145427 & 0.468343 & 0.135528 & -- \\
+informative & 128 & distribution\_h & 0.213186 & 0.613884 & 0.060247 & 0.548696 \\
+informative & 128 & point\_mean\_h & 0.272500 & 0.756857 & 0.205469 & 0.562500 \\
+informative & 128 & direct\_soft\_h & 0.213186 & 0.613884 & 0.060247 & -- \\
+informative & 128 & known\_mean\_point & 0.272500 & 0.756857 & 0.205469 & 0.562500 \\
+informative & 128 & exact\_coarse\_current & 0.216287 & 0.620818 & 0.073906 & -- \\
+informative & 128 & exact\_coarse\_source & 0.216287 & 0.620818 & 0.073906 & -- \\
+informative & 128 & exact\_rich & 0.128750 & 0.420450 & 0.012500 & -- \\
+informative & 128 & context\_only & 0.233359 & 0.658356 & 0.085156 & -- \\
+informative & 128 & exact\_unconditional & 0.239219 & 0.671521 & 0.082813 & -- \\
+informative & 512 & unconditional\_y & 0.237339 & 0.667713 & 0.070556 & -- \\
+informative & 512 & direct\_y & 0.210430 & 0.608710 & 0.054102 & -- \\
+informative & 512 & point\_y & 0.272500 & 0.756857 & 0.205469 & 0.562500 \\
+informative & 512 & distribution\_y & 0.210430 & 0.608710 & 0.054102 & 0.546351 \\
+informative & 512 & direct\_compiled\_y & 0.210430 & 0.608710 & 0.054102 & -- \\
+informative & 512 & current\_rich\_y & 0.129540 & 0.422807 & 0.041310 & -- \\
+informative & 512 & distribution\_h & 0.214822 & 0.617609 & 0.076785 & 0.550128 \\
+informative & 512 & point\_mean\_h & 0.272500 & 0.756857 & 0.205469 & 0.562500 \\
+informative & 512 & direct\_soft\_h & 0.214822 & 0.617609 & 0.076785 & -- \\
+informative & 512 & known\_mean\_point & 0.272500 & 0.756857 & 0.205469 & 0.562500 \\
+informative & 512 & exact\_coarse\_current & 0.216287 & 0.620818 & 0.073906 & -- \\
+informative & 512 & exact\_coarse\_source & 0.216287 & 0.620818 & 0.073906 & -- \\
+informative & 512 & exact\_rich & 0.128750 & 0.420450 & 0.012500 & -- \\
+informative & 512 & context\_only & 0.233359 & 0.658356 & 0.085156 & -- \\
+informative & 512 & exact\_unconditional & 0.239219 & 0.671521 & 0.082813 & -- \\
+zero & 128 & unconditional\_y & 0.260971 & 0.716023 & 0.107332 & -- \\
+zero & 128 & direct\_y & 0.233780 & 0.660119 & 0.099132 & -- \\
+zero & 128 & point\_y & 0.227187 & 0.658831 & 0.111719 & 0.460938 \\
+zero & 128 & distribution\_y & 0.233780 & 0.660119 & 0.099132 & 0.540339 \\
+zero & 128 & direct\_compiled\_y & 0.233780 & 0.660119 & 0.099132 & -- \\
+zero & 128 & current\_rich\_y & 0.141311 & 0.449890 & 0.092970 & -- \\
+zero & 128 & distribution\_h & 0.219565 & 0.630344 & 0.074597 & 0.485886 \\
+zero & 128 & point\_mean\_h & 0.227187 & 0.658831 & 0.111719 & 0.460938 \\
+zero & 128 & direct\_soft\_h & 0.219565 & 0.630344 & 0.074597 & -- \\
+zero & 128 & known\_mean\_point & 0.227187 & 0.658831 & 0.111719 & 0.460938 \\
+zero & 128 & exact\_coarse\_current & 0.216172 & 0.623795 & 0.038281 & -- \\
+zero & 128 & exact\_coarse\_source & 0.216172 & 0.623795 & 0.038281 & -- \\
+zero & 128 & exact\_rich & 0.125098 & 0.411581 & 0.034766 & -- \\
+zero & 128 & context\_only & 0.216172 & 0.623795 & 0.038281 & -- \\
+zero & 128 & exact\_unconditional & 0.250156 & 0.693469 & 0.026562 & -- \\
+zero & 512 & unconditional\_y & 0.251807 & 0.696824 & 0.048547 & -- \\
+zero & 512 & direct\_y & 0.219139 & 0.629516 & 0.062349 & -- \\
+zero & 512 & point\_y & 0.227187 & 0.658831 & 0.111719 & 0.460938 \\
+zero & 512 & distribution\_y & 0.219139 & 0.629516 & 0.062349 & 0.475028 \\
+zero & 512 & direct\_compiled\_y & 0.219139 & 0.629516 & 0.062349 & -- \\
+zero & 512 & current\_rich\_y & 0.130753 & 0.428611 & 0.098630 & -- \\
+zero & 512 & distribution\_h & 0.216958 & 0.625334 & 0.041112 & 0.466307 \\
+zero & 512 & point\_mean\_h & 0.227187 & 0.658831 & 0.111719 & 0.460938 \\
+zero & 512 & direct\_soft\_h & 0.216958 & 0.625334 & 0.041112 & -- \\
+zero & 512 & known\_mean\_point & 0.227187 & 0.658831 & 0.111719 & 0.460938 \\
+zero & 512 & exact\_coarse\_current & 0.216172 & 0.623795 & 0.038281 & -- \\
+zero & 512 & exact\_coarse\_source & 0.216172 & 0.623795 & 0.038281 & -- \\
+zero & 512 & exact\_rich & 0.125098 & 0.411581 & 0.034766 & -- \\
+zero & 512 & context\_only & 0.216172 & 0.623795 & 0.038281 & -- \\
+zero & 512 & exact\_unconditional & 0.250156 & 0.693469 & 0.026562 & -- \\
+\end{longtable}

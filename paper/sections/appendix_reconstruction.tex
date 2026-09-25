@@ -1,0 +1,60 @@
+\section{Q16 reconstruction study: full results}
+\label{app:recon}
+
+This appendix expands Section~\ref{sec:q16}. The reconstruction study compares three
+predictors that differ only in the information they encode, coarse (C), reconstruction
+augmented (P), and observed rich (R), against two reference baselines (a per-day uniform
+prediction and a training-frequency prediction), scoring a three-class fill/adverse/no-move
+target with half-Brier loss (multiclass Brier divided by two). All arms share the model
+family, the training budget, and the calendar dates. Only the observed information differs.
+
+\paragraph{Per-date losses.} Table~\ref{tab:recon} lists every predictor's half-Brier loss
+for each monthly cohort, together with the two decision-relevant gaps: P$-$C (does
+augmenting with reconstructed structure beat the coarse view?) and P$-$frequency (does it
+beat a book-free baseline?). On the August breakout cohort ($n=691$) the augmented predictor P
+scores a half-Brier loss of $0.35692$, against the coarse predictor's $0.35286$ and the
+training-frequency baseline's $0.33930$. The gap to coarse is $+0.00405$ and the gap to
+frequency is $+0.01762$: the augmented predictor is worse on both comparisons. The pattern is not confined to August. Across the
+breakout cohorts the augmented predictor fails to beat the training-frequency baseline on
+the majority of dates, and the observed-rich predictor R does no better, confirming that
+the failure is about the decision target rather than about reconstruction error.
+
+\input{sections/tables/tbl_recon}
+
+\paragraph{Decomposition.} A post-hoc decomposition separates each loss gap into a
+class-mixture term (differences in the realized class frequencies across cohorts) and a
+within-class term (differences in per-class loss). The earlier aggregate that had appeared
+to favor rich depth is localized to the class-mixture term and to equal-versus-pooled
+day weighting. Under event weighting, no learned breakout arm beats the training-frequency
+reference. This is why we report the gap under a fixed weighting and against an explicit
+baseline rather than as a single aggregate number: the aggregate is exactly where the
+artifact hid.
+
+\paragraph{Per-class breakdown of the headline cohort.} Table~\ref{tab:augclass} opens the
+August cohort by class. The augmented predictor P and the observed-rich predictor R shift the
+predicted class probabilities toward the recovered structure, but the per-class losses do not
+improve over the coarse predictor C on the classes that matter for the decision. The total loss
+rises accordingly. The one-hot rows confirm that the target is genuinely three-way and that no
+single class dominates the loss, so the null is not an artifact of a degenerate label.
+
+\input{sections/tables/tbl_augclass}
+
+\paragraph{Controlled mechanism.} The synthetic control of Section~\ref{sec:q16} places the
+same question in a setting with a known hidden state and a known optimal action. Restricted
+summaries incur $0.075$ decision regret relative to the full-information optimum, but a
+matched direct predictor and a posterior-restoration predictor produce equal decision
+coordinates, and at $512$ training draws their outputs coincide. The lesson transfers: when
+the decision does not require the hidden structure, reconstructing it spends capacity
+without changing the action, and when a conditional shift is invisible in the observation
+marginal it harms both approaches equally. Reconstruction is therefore neither a free lunch
+nor a targeted fix. It is orthogonal to the decision unless the decision needs precisely the
+recovered coordinate.
+
+\paragraph{Finite-queue special case.} The constructed finite FIFO analysis isolates the
+narrowest version of the original Q16 question: can the displayed \emph{count} of resting
+orders narrow which fills are feasible beyond what aggregate volume already implies? Over
+$1000$ enumerated histories, aggregate volume leaves $59$ ambiguous and adding counts leaves
+$19$. Counts strictly narrow the feasible outcome in $40$ histories. The tightening is real
+but rare, and on the admitted native Hyperliquid cohort the same tightening was not observed
+($0$ of $961$ primary. $0$ of $962$ in a postrun completion check), consistent with the
+reconstruction diagnostic: the extra information exists but seldom changes the decision.

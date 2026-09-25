@@ -1,0 +1,18 @@
+\begin{table}[h]\centering
+\caption{August rebound cohort ($n=668$): per-class predicted probability and per-class
+half-Brier loss by method. Source: \texttt{experiments/results/e264\_figure\_source.json}.}
+\label{tab:augclassreb}
+\begin{tabular}{lrrrrrrr}
+\toprule
+method & $q_F$ & $q_A$ & $q_N$ & $\ell_F$ & $\ell_A$ & $\ell_N$ & total \\
+\midrule
+C & 0.089820 & 0.534431 & 0.375749 & 0.727097 & 0.282014 & 0.251431 & 0.310500 \\
+P & 0.089820 & 0.534431 & 0.375749 & 0.727468 & 0.289412 & 0.239786 & 0.310111 \\
+R & 0.089820 & 0.534431 & 0.375749 & 0.759518 & 0.331935 & 0.234081 & 0.333572 \\
+onehot-F & 0.089820 & 0.534431 & 0.375749 & 0.000000 & 1.000000 & 1.000000 & 0.910180 \\
+onehot-A & 0.089820 & 0.534431 & 0.375749 & 1.000000 & 0.000000 & 1.000000 & 0.465569 \\
+onehot-N & 0.089820 & 0.534431 & 0.375749 & 1.000000 & 1.000000 & 0.000000 & 0.624251 \\
+uniform & 0.089820 & 0.534431 & 0.375749 & 0.333333 & 0.333333 & 0.333333 & 0.333333 \\
+train-frequency & 0.089820 & 0.534431 & 0.375749 & 0.643522 & 0.254912 & 0.253237 & 0.289188 \\
+\bottomrule
+\end{tabular}\end{table}

@@ -1,0 +1,16 @@
+\begin{table}[h]\centering
+\caption{Q17 later-date sensitivity: utility range across fixed cost/latency scenarios per
+asset and policy, with the count of cells whose sign opposes the point estimate. Source:
+\texttt{experiments/results/q17\_figure\_data.json}.}
+\label{tab:q17ranges}
+\begin{tabular}{llrrrrr}
+\toprule
+asset & policy & min & max & opposite & cells & macro-F1 \\
+\midrule
+BTC & argmax & 0.0017 & 4.3955 & 0 & 54 & 0.1799 \\
+BTC & fixed\_confidence & -1.7188 & 0.0577 & 45 & 54 & 0.1799 \\
+ETH & argmax & 0.0279 & 5.2932 & 0 & 54 & 0.1585 \\
+ETH & fixed\_confidence & -0.7974 & 0.0039 & 48 & 54 & 0.1585 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-258"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "Hidden-queue uncertainty mattered, but reconstruction had no isolated advantage; at 512 draws direct and distribution-Y outputs coincided.",
+  "result_records": [
+    {
+      "result_id": "R-028",
+      "title": "Controlled fill uncertainty and matched direct prediction",
+      "experiment_id": "E-258",
+      "protocol_revision": 1,
+      "source_task_id": "T-012",
+      "reported_at": "2026-09-22T05:26:57.624488+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_scoped_equivalence_negative",
+      "artifact_manifest_sha256": "01b4100644fc03291ac9cc69caa808854ee0ffddb68bc75065e56593edab5057",
+      "summary": "Reviewed controlled result: hidden-queue uncertainty matters, but reconstruction shows no isolated advantage over matched direct prediction. At512 training draws direct and distribution-Y outputs coincide. A conditional shift invisible in the observation marginal harms both. Next: prior-art and identifiability analysis of limited rich-label adaptation before another empirical sweep.",
+      "limitations": [
+        "R028 / RV026 / D038. Synthetic finite supplied-kernel law; one training pool per condition, nested sizes and conditional intervals. No market realism, reconstruction novelty, profit or original Q16/Q17/Q18 completion. Exact shifted-law references are not learned adaptation."
+      ],
+      "review_ids": [
+        "RV-026"
+      ],
+      "job_refs": [
+        {
+          "name": "drc-lob-t012-r7-study",
+          "running": false,
+          "final_exit": 0,
+          "watchdog_seconds": 3600
+        },
+        {
+          "name": "drc-lob-t012-r7-report",
+          "running": false,
+          "final_exit": 0,
+          "watchdog_seconds": 3600
+        }
+      ],
+      "job_observed_at": "2026-09-22T08:56:14.297857+04:00",
+      "accepted_at": "2026-09-22T06:29:20.843612+00:00",
+      "decision_id": "D-038"
+    }
+  ]
+}

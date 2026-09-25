@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-259"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "Observed depth improved the fitted coarse breakout arm on all three dates; every learned rebound arm lost to the frequency baseline.",
+  "result_records": [
+    {
+      "result_id": "R-029",
+      "title": "Frozen39-fit BTC coarse/predicted/rich development comparison",
+      "experiment_id": "E-259",
+      "protocol_revision": 1,
+      "source_task_id": "T-016",
+      "reported_at": "2026-09-22T05:26:57.624488+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_descriptive_mixed_result",
+      "artifact_manifest_sha256": "9b803d7598f20f8e3e17291de769731806175ec7c4088373090834a0020b8bb0",
+      "summary": "Reviewed BTC result: observed depth improves the fitted coarse breakout arm on all three exposed dates. Every learned rebound arm loses to the training-frequency baseline. Learned summaries provide smaller, aggregation-sensitive gains. Next: zero-fit evaluation of the fixed selected models on all four retained August–November dates, with prior exposure disclosed.",
+      "limitations": [
+        "R029 / RV027 / D039. Seven exposed sampled-L2 source dates; three descriptive evaluation dates. P adds no new test-time information. No receipt-latency, counterfactual fill, profit, generalization or ICLR novelty claim. Mandatory participant-linked Q16/Q17/Q18 remain open."
+      ],
+      "review_ids": [
+        "RV-027"
+      ],
+      "job_refs": [
+        {
+          "session": "drc-lob-t016-p2-dependencies",
+          "stage": "p2-dependencies",
+          "status": "completed",
+          "started_utc": "2026-09-22T04:33:25.685987+00:00",
+          "finished_utc": "2026-09-22T04:34:09.503182+00:00",
+          "elapsed_seconds": 43.813,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 107438080,
+          "timeout_seconds": 3600,
+          "aggregate_cpu_seconds": 17.484375,
+          "commands": [
+            {
+              "stage": "install-pinned-runtime",
+              "exit_code": 0,
+              "seconds": 43.813
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-p2-preflight",
+          "stage": "p2-preflight",
+          "status": "completed",
+          "started_utc": "2026-09-22T04:42:41.960365+00:00",
+          "finished_utc": "2026-09-22T04:42:54.951303+00:00",
+          "elapsed_seconds": 12.985,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 457019392,
+          "timeout_seconds": 3600,
+          "aggregate_cpu_seconds": 11.875,
+          "commands": [
+            {
+              "stage": "fixtures-integrity-prepare-freeze",
+              "exit_code": 0,
+              "seconds": 12.985
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-p2-comparison",
+          "stage": "p2-comparison",
+          "status": "completed",
+          "started_utc": "2026-09-22T04:43:04.064715+00:00",
+          "finished_utc": "2026-09-22T04:48:36.316465+00:00",
+          "elapsed_seconds": 332.266,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 602910720,
+          "timeout_seconds": 3600,
+          "aggregate_cpu_seconds": 380.0,
+          "commands": [
+            {
+              "stage": "frozen-39-fit-comparison",
+              "exit_code": 0,
+              "seconds": 332.266
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-p2-audit",
+          "stage": "p2-audit",
+          "status": "completed",
+          "started_utc": "2026-09-22T04:49:59.117755+00:00",
+          "finished_utc": "2026-09-22T04:50:01.700610+00:00",
+          "elapsed_seconds": 2.578,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 256655360,
+          "timeout_seconds": 3600,
+          "aggregate_cpu_seconds": 1.625,
+          "commands": [
+            {
+              "stage": "independent-saved-output-audit",
+              "exit_code": 0,
+              "seconds": 2.578
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-p2-render",
+          "stage": "p2-render",
+          "status": "completed",
+          "started_utc": "2026-09-22T04:55:08.856576+00:00",
+          "finished_utc": "2026-09-22T04:55:09.896933+00:00",
+          "elapsed_seconds": 1.047,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 53678080,
+          "timeout_seconds": 3600,
+          "aggregate_cpu_seconds": 0.953125,
+          "commands": [
+            {
+              "stage": "verify-final-seven-page-pdf",
+              "exit_code": 0,
+              "seconds": 1.047
+            }
+          ]
+        }
+      ],
+      "job_observed_at": "2026-09-22T04:55:46.085305+00:00",
+      "accepted_at": "2026-09-22T06:29:20.843612+00:00",
+      "decision_id": "D-039"
+    }
+  ]
+}

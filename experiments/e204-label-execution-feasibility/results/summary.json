@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-204"
+  ],
+  "execution_statuses": [
+    "running"
+  ],
+  "assessments": [
+    "valid_in_limited_scope_broader_objective_open"
+  ],
+  "headline_result": "Observed-order feasibility was supported only in a limited route; native FIFO and counterfactual execution were not admitted.",
+  "result_records": [
+    {
+      "result_id": "R-005",
+      "experiment_ids": [
+        "E-200",
+        "E-201",
+        "E-202",
+        "E-203",
+        "E-204"
+      ],
+      "source_task_id": "T-008",
+      "reported_at": "2026-09-21T16:10:02.478375+04:00",
+      "revision": 1,
+      "evidence_manifest_sha256": "efba8426b13af1820b7308f3578a39ca38a4e030bc0ee69f10ab5a350cf389d8",
+      "summary": "Independent review reproduced eight unmatched decrements, trigger-aware prefix ordering and inherited/zero-size lifecycle limitations; no real window certified.",
+      "assessment": "valid_in_diagnostic_scope",
+      "limitations": [
+        "No Q16/Q17/Q18 replay window certified; this does not show the dump is irreparable.",
+        "Historical example trigger code is illustrative, not authenticated historical consensus.",
+        "Canonical experiment-ID crosswalk and task-specific horizons require versioned correction before reuse.",
+        "Author maker mismatch count was not independently recomputed."
+      ],
+      "review_ids": [
+        "RV-003"
+      ],
+      "code_commit": "f86f0bdf3daf41599582f6bd2d3a97547964c7ef",
+      "accepted_at": "2026-09-21T17:15:38.686485+04:00",
+      "decision_ids": [
+        "D-011"
+      ],
+      "status": "accepted_in_scope"
+    },
+    {
+      "result_id": "R-012",
+      "experiment_ids": [
+        "E-200",
+        "E-201",
+        "E-202",
+        "E-203",
+        "E-204"
+      ],
+      "protocol_revision": 2,
+      "source_task_id": "T-008",
+      "reported_at": "2026-09-21T13:58:40.929298+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_in_declared_scope",
+      "execution_status": "completed_scoped_engineering_handoff",
+      "evidence_manifest_sha256": "e234b2342c53cf01c9857231d6c413abc8ac1e3223122e9f12547df93f772d4a",
+      "code_commit": "f20c8eaf7b2b98faeae00584491f204175228aeb",
+      "review_ids": [
+        "RV-008"
+      ],
+      "reported_wall_seconds": 2183.149115,
+      "summary": "Reviewed historical and live sampled-state routes supported; December1 reconstruction conditional and Q16 inventory unadmitted for native FIFO/counterfactual execution.",
+      "limitations": [
+        "Snapshot agreement does not certify FIFO, unique hidden path, historical receipt time or counterfactual fills.",
+        "Historical panel is an integrity-bound third-party archive, not authenticated exchange export.",
+        "Q16 atomic groups and count-anchor selection require explicit model assumptions and leakage review.",
+        "Executed versus committed code differences and live CRLF accounting erratum are disclosed and require review.",
+        "Mandatory participant-linked replications and original two-asset/eight-day primary remain open."
+      ],
+      "accepted_at": "2026-09-21T14:15:26.698836+00:00",
+      "decision_ids": [
+        "D-016"
+      ]
+    }
+  ]
+}

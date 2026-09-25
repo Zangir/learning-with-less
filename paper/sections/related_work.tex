@@ -1,0 +1,64 @@
+\section{Related work}
+\label{sec:related_work}
+
+\paragraph{Deep learning from the limit order book.} A large line predicts short-horizon
+price moves directly from book states, from early convolutional and recurrent models
+\citep{sirignano2016deep, zihao2018deeplob, zhang2018bdlob, nousi2018machine,
+zheng2012price} through attention and information-persistence architectures
+\citep{jung2024attention, briola2024hlob, lorenzo2022short} to generative and foundation
+models of microstructure \citep{yanzhi2026m, xinpeng2026network, zihao2021deep} and to
+representation-learning surveys and benchmarks of the book itself
+\citep{zhong2025representation, ntakaris2017benchmark, briola2024deep}. This line asks how
+well a model can predict. It holds the information fixed and varies the model. We invert
+that: we hold the model fixed and vary the information, and we read the effect at a
+decision rather than at a forecasting score.
+
+\paragraph{Order-flow structure and queues.} A parallel line engineers ever finer views of
+the book: multi-level and generalized order-flow imbalance
+\citep{ke2019multi, rama2010price, su2021price, hu2025stochastic, bechler2014optimal}, the
+dynamics of order positions and queues \citep{guo2015dynamics, cont2012order, toke2013order,
+lipton2013trade}, and depth forecasting from the book \citep{libman2021forecasting}. These
+works establish that finer structure carries statistical information. Our Q16 and Q18 ask
+the next question, whether recovering that structure or paying for more of it changes a
+decision, and find that on real data it usually does not.
+
+\paragraph{Fill probability, queue position, and execution.} Whether an order fills, and at
+what cost, has been modeled with survival analysis and state-dependent order flow
+\citep{alvaro2023deep, lokin2024fill} and embedded in optimal-execution and market-impact
+theory \citep{kato2014vwap, kato2009optimal, curato2014optimal, said2018market,
+brokmann2014slow, lemhadri2018market, bechler2017order}. These give the mechanisms by which
+book detail \emph{could} matter for a decision. Our finite-queue analysis (Section
+\ref{sec:q16}) confirms the mechanism exists but is rare, and our reconstruction diagnostic
+shows that recovering the hidden queue does not improve the fill/adverse/no-move decision.
+
+\paragraph{Forecast quality versus decision value.} The gap between a good forecast and a
+good decision is documented across domains: rank correlation between accuracy and decision
+quality breaks down \citep{falezza2026when, raeth2025forecast}, statistical accuracy is a
+weak proxy for economic value in electricity and energy markets
+\citep{maciejowska2025statistical, kath2018value}, and decision-focused learning trains to
+the decision precisely because training to the forecast is insufficient
+\citep{wilder2018melding, zhou2024decision, silvestri2023score, tankov2021decision,
+samuel2020information}. Proper-betting guarantees do exist under matched scoring rules and
+liquidity conditions \citep{anri2026when}. Our Q17 supplies the matched market measurement
+this line calls for: a frozen joint gate on real perpetual-futures data where the forecast
+winner is not the decision winner.
+
+\paragraph{Forecast evaluation and calibration.} Tools that evaluate forecasts across
+decision thresholds, Murphy diagrams, the Triptych, consistent scoring functions, and
+calibration diagnostics \citep{f2017murphy, timo2023evaluating, werner2015quantiles,
+graziani2019probabilistic, loveday2023user, taggart2021point, allen2024tail,
+bouallegue2015quantile}, already warn that one accuracy number hides decision-relevant
+disagreement. We take the warning literally and measure the disagreement in basis points
+under an explicit policy and cost model.
+
+\paragraph{Benchmarks, leakage, and representation sufficiency.} Recent benchmarks probe
+decision-time leakage and execution realism in learned trading
+\citep{fan2026when, junyi2026beyond, nagy2025lob, cao2022dslob}, backtest correctness and
+overfitting \citep{low2015correctness, koshiyama2019avoiding, pham2026algoxpert}, and
+agent-based simulators for counterfactual evaluation \citep{dwarakanath2024abides,
+backhouse2025painting}. On the theory side, decision-sufficient representations preserve the
+optimal action rather than the input \citep{ye2026learning, walsh2026support}, and
+information-theoretic limits bound what any predictor can extract
+\citep{maurice2026forecastability}. Our released programme operationalizes this stance:
+matched interventions, frozen gates, source certification, and honest status labels, so a
+scoped negative is trustworthy rather than an artifact of leakage or a peeked date.

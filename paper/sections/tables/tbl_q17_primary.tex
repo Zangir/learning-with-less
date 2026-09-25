@@ -1,0 +1,20 @@
+\begin{table}[h]\centering
+\caption{Q17 primary contrasts (MLP minus logistic) with bootstrap intervals over eight
+paired dates. Source: \texttt{experiments/results/q17\_primary\_contrasts.csv}. No
+contrast passes the joint gate.}
+\label{tab:q17primary}
+\begin{tabular}{llrrrr}
+\toprule
+asset & metric & mean & 95\% interval & neg. dates & passed \\
+\midrule
+BTC & macro\_f1 & 0.142103 & [0.039529, 0.244677] & 0 & \checkmark \\
+BTC & argmax & 2.122375 & [0.292744, 3.952005] & 0 & $\times$ \\
+BTC & confidence & 0.000000 & [0.000000, 0.000000] & 0 & $\times$ \\
+BTC & scheduling & 0.025961 & [-0.102278, 0.154200] & 4 & $\times$ \\
+ETH & macro\_f1 & 0.097081 & [0.006888, 0.187274] & 1 & $\times$ \\
+ETH & argmax & 1.801718 & [0.096671, 3.506765] & 1 & $\times$ \\
+ETH & confidence & 0.000000 & [0.000000, 0.000000] & 0 & $\times$ \\
+ETH & scheduling & -0.070943 & [-0.524662, 0.382776] & 4 & $\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-016",
+    "E-266"
+  ],
+  "execution_statuses": [
+    "completed",
+    "blocked_on_source_admission_and_bounded_acquisition"
+  ],
+  "assessments": [
+    "conditional_and_controlled_evidence_accepted_empirical_goal_open",
+    "source_candidate_found_empirical_result_not_computed"
+  ],
+  "headline_result": "Reviewed conditional and controlled evidence plus a corrected implementation checkpoint. No qualified native empirical cohort was admitted for the mandatory real-data endpoint.",
+  "result_records": [
+    {
+      "result_id": "R-006",
+      "experiment_id": "E-016",
+      "experiment_ids": [
+        "E-016"
+      ],
+      "source_task_id": "T-009",
+      "reported_at": "2026-09-21T16:10:02.478375+04:00",
+      "revision": 1,
+      "evidence_manifest_sha256": "867e48506057e3c36969ceec602384d20c08c8209f6e2600f79a736dd6561a99",
+      "summary": "Exact finite Q16 parity and tested cancellation extension supported; real cohort/scalable integration remains open.",
+      "assessment": "valid_in_software_scope",
+      "limitations": [
+        "No real Hyperliquid replication.",
+        "Selection and physical zero-size normalization need explicit upstream evidence.",
+        "Enumeration cap and shared interface need complete-outcome engineering."
+      ],
+      "review_ids": [
+        "RV-004"
+      ],
+      "code_commit": "44c768c466cd92e610168fa53abbea53ec5a23b7",
+      "accepted_at": "2026-09-21T17:15:38.686485+04:00",
+      "decision_ids": [
+        "D-011"
+      ],
+      "status": "accepted_in_scope"
+    },
+    {
+      "result_id": "R-013",
+      "experiment_id": "E-016",
+      "protocol_revision": 2,
+      "source_task_id": "T-009",
+      "reported_at": "2026-09-21T14:15:26.698836+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_in_software_and_conditional_scope",
+      "execution_status": "completed_in_conditional_scope",
+      "evidence_manifest_sha256": "15b69f1893d444a663e321fc9312f5cdd3d78ea47751a627bdde4b7fb94774e9",
+      "code_commit": "4f3620571eedb262d76a2558e0e05f9f47888a91",
+      "review_ids": [
+        "RV-009"
+      ],
+      "summary": "Reviewed conditional Q16: 0/961 primary count tightening; separate postrun completion 0/962; 38 censored, three positive executions, zero admitted empirical episodes.",
+      "limitations": [
+        "Short overlapping development cohort under rich atomic A/C/T observations; no population or market-wide no-value conclusion.",
+        "Initial completeness, within-group order, activation/priority, execution grouping and latent legal size domain remain premises.",
+        "Observed resting residual probe differs from source protected unit and from inserted hypothetical order; empirical goal remains incomplete."
+      ],
+      "accepted_at": "2026-09-21T14:41:30.763177+00:00",
+      "decision_id": "D-020"
+    },
+    {
+      "result_id": "R-015",
+      "experiment_id": "E-016",
+      "protocol_revision": 3,
+      "source_task_id": "T-009",
+      "reported_at": "2026-09-21T14:46:38.569626+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_additive_conditional_extension",
+      "execution_status": "completed_in_conditional_scope",
+      "evidence_manifest_sha256": "06116c5a239f82daed3edd00277a3434c42c065060c9d5d08a853fdc10547c35",
+      "code_commit": "5f018edf500fdb279877585e4d638707ed5bf2cd",
+      "review_ids": [
+        "RV-012"
+      ],
+      "summary": "Reviewed same1000anchor observation extension:979exact/21censored/0unresolved,0count tightening,threepositive executions,zeroempirical admission; earlierprimary/computational stages preserved.",
+      "limitations": [
+        "Overlapping conditional development cohort; no independent sample, native execution certificate or broad count-value claim.",
+        "Initial completeness/interior source order/activation/priority/grouping/legal domain remain premises."
+      ],
+      "accepted_at": "2026-09-21T15:02:38.228565+00:00"
+    },
+    {
+      "result_id": "R-016",
+      "experiment_id": "E-016",
+      "protocol_revision": 4,
+      "source_task_id": "T-009",
+      "reported_at": "2026-09-21T15:02:38.228565+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_conditional_finite_model_with_publication_qualification",
+      "execution_status": "completed_controlled_scope",
+      "evidence_manifest_sha256": "b49dc5d945ff7c984b4c0c095622549f047469c3d4243cc81a009bf569c67682",
+      "code_commit": "fc5388a61c721748d3906540635de0f217337c21",
+      "review_ids": [
+        "RV-014"
+      ],
+      "summary": "Author reports controlled observer/probe/prefix comparisons and conservation explanations for conditional zero-tightening; exact checks reported, independent assessment pending.",
+      "limitations": [
+        "Development controls and conditional real-history witnesses; no empirical promotion or reconstruction-specific novelty established.",
+        "The13 cases lacking these sufficient certificates are not proved to require richer reasoning; originalnecessitywording is excluded fromacceptedclaim andpublicationrepairpending."
+      ],
+      "accepted_at": "2026-09-21T15:25:58.756738+00:00",
+      "publication_correction_status": "verified_complete"
+    },
+    {
+      "result_id": "R-035",
+      "experiment_id": "E-266",
+      "source_task_id": "T-019",
+      "revision": 1,
+      "status": "changes_requested",
+      "assessment": "software_checkpoint_readiness_blocked_interim_independent_reproductions",
+      "execution_status": "recoverable_source_blocked_checkpoint",
+      "evidence_manifest_sha256": "9d691c5d7f59499a37f6441bc633ffa41f740d1d34d4e6a1226d6bf36675fc14",
+      "review_ids": [
+        "RV-033"
+      ],
+      "admitted_empirical_episodes": 0,
+      "mandatory_empirical_goal_closed": false,
+      "correction_decision_id": "D-044"
+    },
+    {
+      "result_id": "R-039",
+      "experiment_id": "E-266",
+      "source_task_id": "T-019",
+      "revision": 2,
+      "status": "accepted_in_scope",
+      "assessment": "supported_software_protocol_corrections_only",
+      "execution_status": "software_packet_completed_source_still_absent",
+      "evidence_manifest_sha256": "293d0582a21d9ea69456333e578f6791dc424889904b0e970484d89a80f3a9cb",
+      "review_ids": [
+        "RV-037"
+      ],
+      "supersedes_for_software_readiness": "R-035",
+      "decision_id": "D-044",
+      "tests_passed_author_report": 85,
+      "empirical_episodes": 0,
+      "mandatory_empirical_goal_closed": false,
+      "acceptance_decision_id": "D-046",
+      "accepted_at": "2026-09-22T10:07:30.912588+00:00"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-271"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid_scoped_contradiction"
+  ],
+  "headline_result": "The strict joint persistence condition was contradicted: raw and favorable-class contrasts were positive, fixed-class contrast was -0.01337, and uniform beat every learned breakout arm on observed-event loss.",
+  "result_records": [
+    {
+      "result_id": "R-042",
+      "experiment_id": "E-271",
+      "protocol_revision": 1,
+      "source_task_id": "T-016",
+      "revision": 1,
+      "status": "accepted",
+      "assessment": "valid_day_specific_contradiction",
+      "execution_status": "completed",
+      "reported_at": "2026-09-22T15:50:17.752060+00:00",
+      "evidence_manifest_sha256": "d00223c9c733da20a6da6ecf9e7f70a04dbd55d456ee72abbfad396a578da86b",
+      "review_ids": [
+        "RV-040"
+      ],
+      "mandatory_empirical_goal_closed": false,
+      "summary": "The strict joint breakout persistence condition is contradicted on BTC2026-02-01 because the fixed-class contrast is negative while raw and favorable-class contrasts are positive. Uniform beats all learned breakout arms on observed-event loss; no general information-value or deployment conclusion.",
+      "author_reported_values": {
+        "raw_R_minus_C": 0.0005820301388752499,
+        "fixed_class_R_minus_C": -0.013366812943067808,
+        "F_conditional_R_minus_C": 0.01667371464428991,
+        "breakout_n": 880,
+        "rebound_n": 865,
+        "new_fits": 0
+      },
+      "large_artifact_storage": "Exact hash-bound original files; coordinator copy partial.",
+      "accepted_at": "2026-09-22T16:52:13.100632+00:00",
+      "acceptance_decision_id": "D-057",
+      "completion_decision_id": "D-057",
+      "limitations": [
+        "One previously source-exposed date, not pristine holdout",
+        "Hypothetical event time; no calibrated receipt availability or exchange completeness",
+        "Fixed learned predictors are not Bayes information bounds",
+        "Artificial retrospective fixed-class mixture is not deployment-risk correction",
+        "No significance, population persistence, causal, trading-profit or native-L4 claim"
+      ]
+    }
+  ]
+}

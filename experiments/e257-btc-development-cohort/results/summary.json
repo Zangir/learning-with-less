@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-257"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid"
+  ],
+  "headline_result": "4,160 opportunities yielded 4,139 sampled labels and 21 censored events.",
+  "result_records": [
+    {
+      "result_id": "R-027",
+      "title": "Fixed P1 labels and seven-date matched BTC cohort",
+      "experiment_id": "E-257",
+      "protocol_revision": 1,
+      "source_task_id": "T-016",
+      "reported_at": "2026-09-22T03:21:53.629309+00:00",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_bounded_readiness",
+      "artifact_manifest_sha256": "15e90836cc3d4a6086b1c359331c66cf303ce95e37295dd3e3546ffac42b9d64",
+      "summary": "P1 data-readiness accepted:4160 BTC opportunities yield4139 sampled outcome labels and21 censored events. Independent review reproduced source, events, labels and matched features. Counts are not strategy performance. Next: exactly39 frozen development fits comparing coarse, predicted-depth and true-depth inputs; three exposed evaluation dates support descriptive results only.",
+      "limitations": [
+        "R027 / RV025 / D037. Zero predictive fits in the accepted cohort packet. Seven exposed sampled-L2 BTC dates and archive event time; no receipt latency, counterfactual fills, costs or profit. No optional two refits or confidence intervals authorized. Mandatory real Q16/Q17/Q18 remain open."
+      ],
+      "review_ids": [
+        "RV-025"
+      ],
+      "job_refs": [
+        {
+          "session": "drc-lob-t016-p1-cohort",
+          "stage": "p1-cohort",
+          "status": "completed",
+          "started_utc": "2026-09-22T02:31:30.509764+00:00",
+          "finished_utc": "2026-09-22T02:32:56.609509+00:00",
+          "elapsed_seconds": 86.094,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 1039704064,
+          "timeout_seconds": 3600,
+          "commands": [
+            {
+              "stage": "fixtures-integrity-may-hour-seven-days",
+              "exit_code": 0,
+              "seconds": 86.094
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-p1-audit",
+          "stage": "p1-audit",
+          "status": "completed",
+          "started_utc": "2026-09-22T02:37:51.816987+00:00",
+          "finished_utc": "2026-09-22T02:38:19.690821+00:00",
+          "elapsed_seconds": 27.875,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 129048576,
+          "timeout_seconds": 3600,
+          "commands": [
+            {
+              "stage": "independent-saved-cohort-audit",
+              "exit_code": 0,
+              "seconds": 27.875
+            }
+          ]
+        },
+        {
+          "session": "drc-lob-t016-p1-render",
+          "stage": "p1-render",
+          "status": "completed",
+          "started_utc": "2026-09-22T02:42:51.063244+00:00",
+          "finished_utc": "2026-09-22T02:43:00.685693+00:00",
+          "elapsed_seconds": 9.625,
+          "logical_cpus": [
+            16,
+            17
+          ],
+          "aggregate_memory_limit_bytes": 8589934592,
+          "peak_job_memory_bytes": 504070144,
+          "timeout_seconds": 3600,
+          "commands": [
+            {
+              "stage": "build-report",
+              "exit_code": 0,
+              "seconds": 1.188
+            },
+            {
+              "stage": "xelatex-pass1",
+              "exit_code": 0,
+              "seconds": 2.375
+            },
+            {
+              "stage": "xelatex-pass2",
+              "exit_code": 0,
+              "seconds": 2.218
+            },
+            {
+              "stage": "copy-pdf",
+              "exit_code": 0,
+              "seconds": 0.079
+            },
+            {
+              "stage": "render-pages",
+              "exit_code": 0,
+              "seconds": 2.734
+            },
+            {
+              "stage": "verify-report",
+              "exit_code": 0,
+              "seconds": 1.031
+            }
+          ]
+        }
+      ],
+      "accepted_at": "2026-09-22T04:30:09.066965+00:00",
+      "decision_id": "D-037"
+    }
+  ]
+}

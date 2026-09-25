@@ -1,0 +1,75 @@
+"""Prospective definitions; model settings are proposals and execute zero fits."""
+from t016_p1.features import X_NAMES, Z_NAMES, TARGET_NAMES, AUX_INPUT_NAMES, RAW_BOOK_FIELDS
+
+DATES = [f'2025-{month:02d}-01' for month in range(1, 8)]
+ROLES = dict(zip(DATES, ['auxiliary_warmup', 'downstream_train', 'downstream_train',
+                       'selection', 'descriptive_evaluation', 'descriptive_evaluation', 'descriptive_evaluation']))
+P0_SHA = '07613fea21abfb4fb58ce33e2be54cafde66ec9938ae7c08944561e08aa55405'
+INDEX_SHA = '96f87a60ca40fbb67673d1c158e42538d2bd91a67ed10428d8a33d5b7e124dcf'
+
+
+def specification(contracts):
+    menu = [dict(id='logistic-C0.1', model='multinomial_logistic', C=.1),
+            dict(id='logistic-C1', model='multinomial_logistic', C=1)]
+    menu += [dict(id=f'hgb-leaf{leaf}-l2{l2}', model='histogram_gradient_boosting',
+                  max_leaf_nodes=leaf, l2_regularization=l2) for leaf in (7, 15) for l2 in (1, 0)]
+    return {
+        'id': 'T016-E257-P1-development-cohort-v1', 'seed': 20260919,
+        'scope': 'Exactly seven exposed BTC full days; labels/readiness only; zero predictive fits',
+        'contracts': contracts, 'dates': DATES, 'roles': ROLES, 'asset': 'BTC',
+        'restriction_utc': '[00:00:30,24:00:00)', 'index_sha256': INDEX_SHA,
+        'accepted_p0_protocol_sha256': P0_SHA,
+        'engine_sha256': '9f59f145f3b91314247d4cba6a916a800f3a2ba53a7d76312c3310026c191dbd',
+        'opportunity_population': 'Unchanged accepted engine; recorded-only slots/cooldown, exact10s passes; all61past feature cuts and minute-frozen60cut levels',
+        'label': {'horizon_cuts': list(range(1,11)), 'origin': 'frozen decision midpoint',
+            'oriented_movement': 'v*(future_mid2-decision_mid2)', 'F': 'movement >=2*epsilon2',
+            'A': 'movement <=-epsilon2', 'N': 'neither threshold on all10supported cuts',
+            'ordering': 'earliest sampled threshold hit; simultaneous hit is invariant failure',
+            'arithmetic': 'exact integers/Fraction in doubled units8',
+            'support': 'All10cuts same retained segment, BBO valid and age<=1.5s, even after early hit; future depth completeness not required',
+            'censored': 'label and first-hit metadata null; first unsupported reason/cut saved; state never refunded'},
+        'storage': {'cut_table': 'one compressed raw top-five table per day indexed by cut_index; source row index/ordinal/time/age and segment retained',
+            'event_history': 'contiguous61cut indices ending at decision, plus60levelcut indices; no duplicated feature histories',
+            'labels': 'separate table with all10future source references/midpoints; never supplied to X',
+            'source_join': '(date/source_id,source_ordinal), never cross-day ordinal or physical-line joins'},
+        'schema': {'dtype': 'float64', 'cut_raw_book_fields': RAW_BOOK_FIELDS, 'X': X_NAMES,
+            'Z_extra_history': Z_NAMES, 'R': X_NAMES+Z_NAMES, 'P': X_NAMES+['predicted.'+x for x in TARGET_NAMES],
+            'auxiliary_inputs': AUX_INPUT_NAMES, 'auxiliary_targets': TARGET_NAMES,
+            'ordering': 'oldest to current cuts; bid then ask; extra levels2to5; price,size,count',
+            'transform': 'prices10000*(price/decision_mid-1); sizes log1p(BTC); counts log1p(count); age seconds',
+            'returns': '10000*(current_mid/lag_mid-1); population std of60one-second returns in bps',
+            'level_distance': '10000*(decision_mid-level)/decision_mid; frozen epsilon in bps',
+            'freshness': '1-current_source_age_ns/1500000000',
+            'aux_targets': 'current Qb,Qa summedBTClevels2to5; Nb,Na correspondingcounts; log1p first4; raw(Qb-Qa)/(Qb+Qa); positive size-weighted outward distancebps'},
+        'population': {'downstream': 'same ordered complete-support and purge-eligible event IDs/labels for C/P/R; January excluded from downstream fit',
+            'auxiliary': 'all recorded past-eligible event decision cuts pooled/deduplicated across families before future support; no family/side/level fields in auxiliary inputs',
+            'class_adequacy': 'all F/A/N in each family training pool and April selection, reported per day; absent support -> not evaluable, never change population'},
+        'purging': {'dependency_interval': 'closed union of nominal[anchor-60,t+10] and all actual source_event_ns referenced by level/history/label',
+            'partition_containment': 'full interval inside assigned UTC month partition; no borrowing another day/contract',
+            'embargo': 'later block dependency_min minus earlier observed block max dependency_end >=130s; otherwise reject later readiness row, retaining original event/label',
+            'auxiliary_interval': 'past/current source and nominal[t-60,t], no future labels or masks',
+            'no_class_adaptive_exclusions': True},
+        'future_comparison_proposal': {'status': 'executable configuration/readiness only, no fitting authorized',
+            'class_order': ['F','A','N'], 'menu': menu, 'sample_weight': '1 for every training event; no class weights',
+            'numerical_scaling': 'training-only populationmean/std ddof0; zero std=>1; no fitted preprocessing now',
+            'logistic': {'solver':'lbfgs','fit_intercept':True,'max_iter':1000,'tol':1e-8,'penalty':'l2'},
+            'hgb': {'max_iter':100,'learning_rate':.05,'min_samples_leaf':20,'early_stopping':False,'max_bins':255},
+            'selection': 'once on April equal-day half-scaledmulticlassBrier; exact ties use menu order; no postselectionrefit',
+            'failure': 'missing classes/nonfinite/convergence or resource failure -> not evaluable; no hidden retries/alternative config',
+            'constants': ['onehot-F','onehot-A','onehot-N','uniform','train-only frequencies'],
+            'auxiliary_folds': [{'train':['2025-01-01'],'predict':['2025-02-01']},
+                {'train':['2025-01-01','2025-02-01'],'predict':['2025-03-01']},
+                {'train':['2025-01-01','2025-02-01','2025-03-01'],'predict':DATES[3:]}],
+            'auxiliary_model': {'model':'multioutput_ridge','alpha':1,'fits_shared_across_families':3},
+            'L1': 'inverse every fold target scaler: common_prediction=fold_mean+fold_scale*standardized_prediction; remain log1p Q/N and raw imbalance/bps; downstreamscaler fitFebruaryMarchonly',
+            'L2': {'alignment':'exacteventIDs/classorder/sharedX; floatatol=rtol=1e-12',
+                'no_fit_check_now':'synthetic coefficient embedding, current schemas/columns and actual row alignment; no fitted model exists',
+                'future_embedding':'zero addeddepth logisticcoefficients or remap frozen coarse tree featureindices into richlayout; maxprobabilitydifference1e-10 ontrain/April',
+                'future_optional_diagnostics':'two constrained rich-layout C=1logistic refits (one/family); maxprobabilitydiff1e-6 and traininglossdiff1e-8; charge2extra fits',
+                'limitation':'finite learner/optimizer sanity, not Bayes ceiling or global boosting optimum'},
+            'budget': {'downstream_fits':36,'auxiliary_fits':3,'base_total':39,'optional_diagnostic_fits':2,'optional_total':41,'executed_fits':0},
+            'descriptive_reporting':'per-day scoresMayJuneJuly only after authorization; no confirmatory CI from3exposed dates',
+            'improvement_sign':'Brier(C)-Brier(R); positive favorsR',
+            'confirmatory_inference':'not specified/authorized here; previous bootstrap and40-training-day heuristic not adopted'},
+        'original_gates': 'Q16/Q17/Q18 and E230/E232 participant gates, profit/execution and restoration claims remain separate; no P&L',
+    }

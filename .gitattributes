@@ -1,0 +1,5 @@
+# Preserve imported research artifacts byte-for-byte. Their trailing spaces are
+# either intentional Markdown hard breaks or part of generated HTML/SVG output.
+experiments/**/experiment.md whitespace=-trailing-space
+experiments/**/interactive-explanation.html whitespace=-trailing-space
+experiments/**/figures/*.svg whitespace=-trailing-space

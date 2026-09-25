@@ -1,0 +1,101 @@
+{
+  "seed": 20260919,
+  "engine_runs": 12,
+  "recorded_exchange_actions": 24,
+  "checks": 220,
+  "failed_checks": [
+    {
+      "episode": "development_lifecycle",
+      "sequence": 3,
+      "name": "native_incoming_history_matches_executions",
+      "observed": 8,
+      "expected": 6,
+      "passed": false
+    },
+    {
+      "episode": "development_lifecycle",
+      "sequence": 6,
+      "name": "native_incoming_history_matches_executions",
+      "observed": 4,
+      "expected": 3,
+      "passed": false
+    },
+    {
+      "episode": "development_price_priority",
+      "sequence": 2,
+      "name": "native_incoming_history_matches_executions",
+      "observed": 6,
+      "expected": 4,
+      "passed": false
+    },
+    {
+      "episode": "diagnostic_nonhead_modify",
+      "sequence": 2,
+      "name": "visible_volume_conservation",
+      "observed": 5,
+      "expected": 6,
+      "passed": false
+    },
+    {
+      "episode": "diagnostic_nonhead_modify",
+      "sequence": 2,
+      "name": "unique_live_order_ids",
+      "observed": 1,
+      "expected": 2,
+      "passed": false
+    },
+    {
+      "episode": "diagnostic_nonhead_modify",
+      "sequence": 2,
+      "name": "per_order_lifecycle_conservation",
+      "observed": {
+        "102": {
+          "quantity": 3,
+          "participant": 2,
+          "price": 10000,
+          "side": "bid"
+        }
+      },
+      "expected": {
+        "101": {
+          "quantity": 4,
+          "participant": 1,
+          "price": 10000,
+          "side": "bid"
+        },
+        "102": {
+          "quantity": 2,
+          "participant": 2,
+          "price": 10000,
+          "side": "bid"
+        }
+      },
+      "passed": false
+    },
+    {
+      "episode": "holdout_cancel_ahead",
+      "sequence": 4,
+      "name": "native_incoming_history_matches_executions",
+      "observed": 5,
+      "expected": 4,
+      "passed": false
+    },
+    {
+      "episode": "holdout_cancel_behind",
+      "sequence": 4,
+      "name": "native_incoming_history_matches_executions",
+      "observed": 5,
+      "expected": 4,
+      "passed": false
+    }
+  ],
+  "deterministic_replay": true,
+  "causal_prefix": true,
+  "identical_coarse_paths": true,
+  "probe_fills": [
+    3,
+    1
+  ],
+  "runtime_seconds": 0.08966659999896365,
+  "learned_model_fitted": false
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-017",
+    "E-267"
+  ],
+  "question_ids": [
+    "Q-001"
+  ],
+  "hypothesis_ids": [
+    "H-002"
+  ],
+  "task_ids": [
+    "T-001",
+    "T-010",
+    "T-011"
+  ],
+  "result_ids": [
+    "R-007",
+    "R-011",
+    "R-018",
+    "R-037"
+  ],
+  "review_ids": [
+    "RV-004",
+    "RV-007",
+    "RV-013",
+    "RV-016",
+    "RV-036"
+  ],
+  "protocol_revisions": [
+    3,
+    1
+  ],
+  "source_branches": [
+    "feat/q18-hyperliquid-adapter",
+    "feat/t010-q17-hyperliquid"
+  ],
+  "source_commits": [
+    "217dcedc98b248641a74f0c301cc24c4629f0cb7",
+    "faa8aa47106dd7607fdf35e8a8cc7109f8764fe1"
+  ],
+  "remote_archive_branches": [
+    "old/q18-hyperliquid-adapter",
+    "old/t010-q17-hyperliquid"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "explanation-paper.pdf",
+      "sha256": "b53495d017ada77c7825472628ae1946d5318970d1175cfc80ba64a38fc27abc",
+      "size_bytes": 895181
+    },
+    {
+      "path": "original-three-papers-explained.pdf",
+      "sha256": "c53a58761f5d9edc26d52c3b9482b5dd600712a86386273a82653331578dc322",
+      "size_bytes": 92652
+    },
+    {
+      "path": "result-paper.pdf",
+      "sha256": "8cec999a696c15f3861a580f580f54796bcb6c780268209d1e5a5c222c26c8e1",
+      "size_bytes": 91171
+    },
+    {
+      "path": "figures/main.png",
+      "sha256": "fec1d466b59a1ea48f797426b0f5d47cf85ca49e1c6cbf88a5a37a583bc618bf",
+      "size_bytes": 203561
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "14be65ec11b49f639db6858f6cff42de1e42ce6d3a080465c8467b643ef52718",
+      "size_bytes": 4393701
+    },
+    {
+      "path": "results/primary-contrasts.csv",
+      "sha256": "a5c6077df1ab056aef1ae10348e196cf65cadc3a31ca76e4e14f6c16f7172a8d",
+      "size_bytes": 803
+    },
+    {
+      "path": "results/transfer-scenarios.csv",
+      "sha256": "022442ee55725897db6c0bb537da620d67c899c65322ea2c2faad2d9b4036a7b",
+      "size_bytes": 30125
+    },
+    {
+      "path": "results/figure-data.json",
+      "sha256": "304091051b2a6ec7ab7a0f421d4f46e80946c019b740bf4d2622d5e6dacd1ec4",
+      "size_bytes": 8286
+    }
+  ]
+}

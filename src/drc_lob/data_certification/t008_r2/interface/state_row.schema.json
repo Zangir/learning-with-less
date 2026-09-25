@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "admission_evidence_ns": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "ask_counts": {
+      "items": {
+        "minimum": 1,
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "ask_prices_units8": {
+      "items": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "ask_sizes_units8": {
+      "items": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "asset": {
+      "enum": [
+        "BTC",
+        "ETH",
+        "SOL"
+      ]
+    },
+    "bid_counts": {
+      "items": {
+        "minimum": 1,
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "bid_prices_units8": {
+      "items": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "bid_sizes_units8": {
+      "items": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "event_ns": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "release_ns": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "source_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "source_ordinal": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "source_id",
+    "asset",
+    "source_ordinal",
+    "event_ns",
+    "release_ns",
+    "admission_evidence_ns",
+    "bid_prices_units8",
+    "bid_sizes_units8",
+    "bid_counts",
+    "ask_prices_units8",
+    "ask_sizes_units8",
+    "ask_counts"
+  ],
+  "title": "T-008 sampled state row v2",
+  "type": "object"
+}

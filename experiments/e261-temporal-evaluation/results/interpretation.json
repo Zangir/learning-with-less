@@ -1,0 +1,53 @@
+{
+  "lead": "**The fixed four-date evaluation completed with zero new fits. The earlier aggregate breakout advantage from observed depth did not persist.** All four required dates passed the consumer extraction and saved-object inference path. There are 3,384 recorded events, 3,382 scored events and two censored records; no date was replaced or left unavailable. Independent source, feature, probability and arithmetic checks passed. The measured outcome is a descriptive temporal reversal and a persistent aggregate absolute-reference weakness for rebound.",
+  "result": "For breakout, C is best among the three learned arms under both frozen summaries: equal-day C-P is **-0.00117480** and C-R is **-0.00317903**. R beats C in October and November but loses in August and September; P beats C only in November. C and P beat training frequency under the equal-day mean, while R does not. **Under pooled-event weighting, every breakout learned arm loses to training frequency.** This is a disclosed aggregation sensitivity, not a reason to select a different preferred endpoint. For rebound, P beats C on all four dates and in both aggregates, but the fixed frequency reference has the lowest aggregate score. It beats C and P in August–October; November C and P improve on it. R loses to frequency on all four dates and is worse than C in aggregate. August breakout is especially weak: uniform half-Brier 1/3 beats all three learned arms and the training-frequency reference.",
+  "comparison_to_prior": "The accepted May–July result remains separate: breakout equal-day C/P/R/frequency was **0.27818 / 0.27212 / 0.26354 / 0.27443**. R beat C on all three earlier dates, with C-R **+0.01463815**, compared with **-0.00317903** on these four later dates. P likewise moves from C-P **+0.00606319** to **-0.00117480**. No seven-date pooled score is used to hide this reversal. The earlier rebound frequency score 0.27053 was better than every learned arm on all three earlier dates. The later negative-control family retains that aggregate weakness, while its November C/P exception is explicitly preserved.",
+  "auxiliary": "Across all **3,384 past-eligible decision cuts**, the unchanged auxiliary has lower pooled reconstruction RMSE than its frozen Jan–March target-mean reference in **six of seven coordinates**. Bid outward distance, Db, is worse on every later date. **530 of 3,384 rows (15.66%)** have at least one checked range violation, compared with 105 of 1,410 (7.45%) in the separately reported earlier May–July packet. Every prediction is finite, and no violating value is clipped or removed. This descriptive difference does not establish a calibrated temporal trend.",
+  "reconstruction_rows": [
+    [
+      "log1p_Qb",
+      "1.00411",
+      "1.21828",
+      "0.80562"
+    ],
+    [
+      "log1p_Qa",
+      "1.03242",
+      "1.26344",
+      "0.82565"
+    ],
+    [
+      "log1p_Nb",
+      "0.99616",
+      "1.10411",
+      "0.75828"
+    ],
+    [
+      "log1p_Na",
+      "0.97394",
+      "1.09668",
+      "0.73805"
+    ],
+    [
+      "depth_imbalance",
+      "0.53915",
+      "0.79377",
+      "0.41602"
+    ],
+    [
+      "Db_bps",
+      "0.55379",
+      "0.48079",
+      "0.45146"
+    ],
+    [
+      "Da_bps",
+      "0.44008",
+      "0.47180",
+      "0.35606"
+    ]
+  ],
+  "example": "The August rebound example occurs at **00:02:02 UTC**, event `de21b62d8c4367c8c87fcd16832aaf2b0a06b4b2a658631f266f3479cf856ea8`. Source ordinal 441 supplies the current observation at 00:02:01.487, giving an as-of age of **0.513 seconds**. Its current seven coarse coordinates are `[-1.77241,1.77241,0.00424,0.25822,0.69315,0.69315,0.513]`: bid/ask price deviations in basis points, log1p bid/ask sizes, log1p bid/ask counts and age. The decision midpoint is **115,661.5** and epsilon is **11.56975**. At the first future cut the midpoint is **115,643.5**; the upward-oriented movement of -18 crosses the adverse boundary. All ten future cuts remain supported, so the label is A. The frozen P classifier produces F/A/N probabilities `[0.00458877, 0.80969269, 0.18571854]`, with half-Brier **0.03536465** on this single event. The exact source/provenance hashes and all ten future references are retained. This example illustrates the predefined calculation and is not evidence of a favorable strategy.",
+  "audit": "All **75 preflight tests** passed before extraction, including the six selected models’ accepted May–July replay. The independent audit passed **19,273,415 assertions** in **53.890 seconds**. It independently replayed **631,227 normalized source rows**, all four 86,370-cut grids, 3,384 recorded feature rows and **30,456 downstream probability coordinates** (3,384 events times three arms times three classes), with bitwise agreement. Auxiliary standardized/common predictions also agree bitwise. There were no blocked fit attempts in evaluation or audit, no nonfinite predictions and no failed date. All bound complete-file inputs remained unchanged after consumption. Assertion counts are engineering checks, not additional statistical observations.",
+  "limits": "Four previously inspected monthly snapshots support this fixed temporal comparison only. Unequal event counts matter: the November breakout day has 104 scored rows versus 691 in August, yet receives the same primary date weight. November rebound has only two F labels. Dependence, class mix, source sampling and finite-model behavior limit broader claims. At evaluation P is a deterministic function of X given the frozen training history, so it adds no new test-time information; its scores concern representation and privileged training under finite learners. R contains real extra-depth observations, but a worse fitted R score does not show that depth lacks information or identify a Bayes limit. No trading utility, execution validity, participant-linked information, confidence interval or scientific-goal closure is established."
+}

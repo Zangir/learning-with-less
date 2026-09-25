@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-204"
+  ],
+  "question_ids": [
+    "Q-017",
+    "Q-019",
+    "Q-020"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-008"
+  ],
+  "result_ids": [
+    "R-005",
+    "R-012"
+  ],
+  "review_ids": [
+    "RV-003",
+    "RV-008"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [
+    "feat/t008-data-certification"
+  ],
+  "source_commits": [
+    "a8d6237d28f37a3b00d687585926eaf60e242aa2"
+  ],
+  "remote_archive_branches": [
+    "old/t008-data-certification"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": []
+}

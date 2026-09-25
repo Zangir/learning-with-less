@@ -1,0 +1,59 @@
+{
+  "protocol_sha256": "6676e90eeec4e10c529edbbb04dc2853a612e1a697418d9f26bcfb155f612712",
+  "stages": {
+    "r2_primary": {
+      "selected": 1000,
+      "dispositions": {
+        "scored": 961,
+        "censored": 38,
+        "unresolved": 1
+      },
+      "certificates": {
+        "no_labelled_trades": 929,
+        "chronological_shielding_only": 5,
+        "aggregate_singleton_with_trades": 20,
+        "requires_richer_sequence_reasoning": 7
+      },
+      "signed_delta_count_hidden": {
+        "proved_ambiguous": 241,
+        "not_decided_by_maximum_witness": 720
+      }
+    },
+    "r2_computational_completion": {
+      "selected": 1000,
+      "dispositions": {
+        "scored": 962,
+        "censored": 38
+      },
+      "certificates": {
+        "no_labelled_trades": 929,
+        "chronological_shielding_only": 5,
+        "aggregate_singleton_with_trades": 20,
+        "requires_richer_sequence_reasoning": 8
+      },
+      "signed_delta_count_hidden": {
+        "proved_ambiguous": 242,
+        "not_decided_by_maximum_witness": 720
+      }
+    },
+    "r3_observation_extension": {
+      "selected": 1000,
+      "dispositions": {
+        "scored": 979,
+        "censored": 21
+      },
+      "certificates": {
+        "no_labelled_trades": 941,
+        "requires_richer_sequence_reasoning": 13,
+        "chronological_shielding_only": 5,
+        "aggregate_singleton_with_trades": 20
+      },
+      "signed_delta_count_hidden": {
+        "proved_ambiguous": 259,
+        "not_decided_by_maximum_witness": 720
+      }
+    }
+  },
+  "interpretation": "Sufficient certificates on retained development evidence. Coarsening ambiguity follows from two feasible witnesses; no masked count inference or empirical admission.",
+  "elapsed_seconds": 0.4007540170023276
+}

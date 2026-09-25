@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-269"
+  ],
+  "question_ids": [
+    "Q-019"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-016"
+  ],
+  "result_ids": [
+    "R-040"
+  ],
+  "review_ids": [
+    "RV-038"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [
+    "feat/t016-fixed-persistence"
+  ],
+  "source_commits": [
+    "d3b48b7906284fe6261e5693a0a227aa644fa166"
+  ],
+  "remote_archive_branches": [
+    "old/t016-fixed-persistence"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "result-paper.pdf",
+      "sha256": "9d8edc5f985c5febbed0c9387926ea081f49d2560e988e349b298866d117eb1f",
+      "size_bytes": 172470
+    },
+    {
+      "path": "figures/main.png",
+      "sha256": "5f2430e76ab4f8377cca4fdd2146a842d1f9781623c5cb32c1fbe87a3cd5ae7b",
+      "size_bytes": 93302
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "5f3988ac6c50b7c5eba5bbee6638b534db3408160d32571da6dc0f3efc0156e4",
+      "size_bytes": 4821
+    },
+    {
+      "path": "results/stage-summary.json",
+      "sha256": "deadd9507849808de80da2ee9b2bc8909a122e388ba01203953cbea86a3bb6ef",
+      "size_bytes": 1059
+    }
+  ]
+}

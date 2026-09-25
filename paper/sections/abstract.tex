@@ -1,0 +1,18 @@
+\begin{abstract}
+Financial market feeds are sold on the premise that finer granularity and richer
+reconstruction of hidden structure buy better predictions and better decisions. We test
+that premise on real Hyperliquid data through three matched studies with one instrument:
+hold the model, the training budget, the evaluation dates, and the decision policy fixed,
+then vary only the information the learner sees. The studies ask whether reconstructing
+hidden order-book structure improves the decision signal (Q16), whether forecast-quality
+rankings survive translation into executable decisions (Q17), and whether any fixed book
+depth, history, or delay is universally sufficient (Q18). The answers agree and they are
+negative. On 691 August 2025 breakout events, every hidden summary was reconstructed more
+accurately than a frozen baseline, yet the reconstruction-augmented predictor was $0.00405$
+half-Brier worse than the matched coarse predictor and $0.01762$ worse than a
+training-frequency baseline. A multilayer perceptron beat logistic regression on macro-F1
+by $0.142$ (BTC) and $0.097$ (ETH), but every learned policy lost money at $5$ basis points
+per side, and none of the eight contrasts passed the joint gate. And no depth, history, or
+delay setting produced a common cross-asset benefit across $120$ fits. Better intermediate
+information is not better decisions.
+\end{abstract}

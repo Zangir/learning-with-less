@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-254"
+  ],
+  "question_ids": [
+    "Q-002",
+    "Q-016",
+    "Q-025"
+  ],
+  "hypothesis_ids": [],
+  "task_ids": [
+    "T-012"
+  ],
+  "result_ids": [
+    "R-022"
+  ],
+  "review_ids": [
+    "RV-020"
+  ],
+  "protocol_revisions": [
+    1
+  ],
+  "source_branches": [
+    "feat/t012-information-value-design"
+  ],
+  "source_commits": [
+    "521ef160c290c0ffdf0c3fc21e28ee257c391943"
+  ],
+  "remote_archive_branches": [
+    "old/t012-information-value-design"
+  ],
+  "raw_data_committed": false,
+  "artifact_files": [
+    {
+      "path": "figures/main.png",
+      "sha256": "1bcc76bd09869593c919bff8194ae5c854e307a2c3a0aa00ff721a8596b2f738",
+      "size_bytes": 228446
+    },
+    {
+      "path": "interactive-explanation.html",
+      "sha256": "f0f5515a16cab175fb2a855d2599bd97a3e95abe68fba37b3bfff74e23501d24",
+      "size_bytes": 24449
+    },
+    {
+      "path": "result-paper.pdf",
+      "sha256": "48fd03678dc29d3c83579d73b031244217be3318178023604ac80bcfaca6d196",
+      "size_bytes": 487360
+    },
+    {
+      "path": "results/candidate-spec.md",
+      "sha256": "05ab838fc28c184fdb6471643458c689baafbc439027ca69a7ac53c0e7471f00",
+      "size_bytes": 9157
+    },
+    {
+      "path": "results/exact-checks.json",
+      "sha256": "5aa2a92142146f2685744c114ef7b736a13ecca8bd69e2571acca11fb5c3b14c",
+      "size_bytes": 1778
+    },
+    {
+      "path": "results/primary-queries.csv",
+      "sha256": "817f9129070c9abb8842a0fa1238a7b1805999953db2f11a0c31c923a9e52cab",
+      "size_bytes": 4339
+    },
+    {
+      "path": "results/synthetic-examples.csv",
+      "sha256": "1a04ac54c0f47be9b4e9f20bb371900b3c0ab874dd9e01dce4499a619e5e6ab0",
+      "size_bytes": 143
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "family": "breakout",
+    "pair": "C-P",
+    "status": "evaluable",
+    "positive_favors": "P",
+    "per_day": {
+      "2025-02-01": {
+        "n": 282,
+        "mean_difference": 0.0017371134605056314
+      },
+      "2025-03-01": {
+        "n": 393,
+        "mean_difference": -0.00042279663716495477
+      },
+      "2025-04-01": {
+        "n": 569,
+        "mean_difference": 0.005698206246622827
+      },
+      "2025-05-01": {
+        "n": 372,
+        "mean_difference": 0.0018583970775595056
+      },
+      "2025-06-01": {
+        "n": 155,
+        "mean_difference": 0.0138786644740512
+      },
+      "2025-07-01": {
+        "n": 247,
+        "mean_difference": 0.0024525160969148933
+      }
+    },
+    "interpretation": "Paired descriptive differences; no population confidence interval"
+  },
+  {
+    "family": "breakout",
+    "pair": "C-R",
+    "status": "evaluable",
+    "positive_favors": "R",
+    "per_day": {
+      "2025-02-01": {
+        "n": 282,
+        "mean_difference": 0.015453697175179073
+      },
+      "2025-03-01": {
+        "n": 393,
+        "mean_difference": 0.017591261712633543
+      },
+      "2025-04-01": {
+        "n": 569,
+        "mean_difference": 0.007066494725381178
+      },
+      "2025-05-01": {
+        "n": 372,
+        "mean_difference": 0.008306153268387578
+      },
+      "2025-06-01": {
+        "n": 155,
+        "mean_difference": 0.024122464390361007
+      },
+      "2025-07-01": {
+        "n": 247,
+        "mean_difference": 0.011485843556564871
+      }
+    },
+    "interpretation": "Paired descriptive differences; no population confidence interval"
+  },
+  {
+    "family": "breakout",
+    "pair": "P-R",
+    "status": "evaluable",
+    "positive_favors": "R",
+    "per_day": {
+      "2025-02-01": {
+        "n": 282,
+        "mean_difference": 0.013716583714673443
+      },
+      "2025-03-01": {
+        "n": 393,
+        "mean_difference": 0.018014058349798495
+      },
+      "2025-04-01": {
+        "n": 569,
+        "mean_difference": 0.001368288478758351
+      },
+      "2025-05-01": {
+        "n": 372,
+        "mean_difference": 0.006447756190828072
+      },
+      "2025-06-01": {
+        "n": 155,
+        "mean_difference": 0.010243799916309807
+      },
+      "2025-07-01": {
+        "n": 247,
+        "mean_difference": 0.009033327459649979
+      }
+    },
+    "interpretation": "Paired descriptive differences; no population confidence interval"
+  },
+  {
+    "family": "rebound",
+    "pair": "C-P",
+    "status": "evaluable",
+    "positive_favors": "P",
+    "per_day": {
+      "2025-02-01": {
+        "n": 254,
+        "mean_difference": 0.0009862347282971978
+      },
+      "2025-03-01": {
+        "n": 343,
+        "mean_difference": -0.00048044952808221113
+      },
+      "2025-04-01": {
+        "n": 475,
+        "mean_difference": 0.0031968835519712285
+      },
+      "2025-05-01": {
+        "n": 317,
+        "mean_difference": 0.00766509180350239
+      },
+      "2025-06-01": {
+        "n": 122,
+        "mean_difference": 0.000653972428485866
+      },
+      "2025-07-01": {
+        "n": 195,
+        "mean_difference": -0.0035674275610185044
+      }
+    },
+    "interpretation": "Paired descriptive differences; no population confidence interval"
+  },
+  {
+    "family": "rebound",
+    "pair": "C-R",
+    "status": "evaluable",
+    "positive_favors": "R",
+    "per_day": {
+      "2025-02-01": {
+        "n": 254,
+        "mean_difference": 0.019056364942568835
+      },
+      "2025-03-01": {
+        "n": 343,
+        "mean_difference": 0.01918890721273275
+      },
+      "2025-04-01": {
+        "n": 475,
+        "mean_difference": 0.012702210696533399
+      },
+      "2025-05-01": {
+        "n": 317,
+        "mean_difference": -0.002303715214458031
+      },
+      "2025-06-01": {
+        "n": 122,
+        "mean_difference": 0.0001804074956189479
+      },
+      "2025-07-01": {
+        "n": 195,
+        "mean_difference": -0.008392322156485011
+      }
+    },
+    "interpretation": "Paired descriptive differences; no population confidence interval"
+  },
+  {
+    "family": "rebound",
+    "pair": "P-R",
+    "status": "evaluable",
+    "positive_favors": "R",
+    "per_day": {
+      "2025-02-01": {
+        "n": 254,
+        "mean_difference": 0.01807013021427163
+      },
+      "2025-03-01": {
+        "n": 343,
+        "mean_difference": 0.01966935674081496
+      },
+      "2025-04-01": {
+        "n": 475,
+        "mean_difference": 0.00950532714456217
+      },
+      "2025-05-01": {
+        "n": 317,
+        "mean_difference": -0.009968807017960421
+      },
+      "2025-06-01": {
+        "n": 122,
+        "mean_difference": -0.0004735649328669172
+      },
+      "2025-07-01": {
+        "n": 195,
+        "mean_difference": -0.004824894595466505
+      }
+    },
+    "interpretation": "Paired descriptive differences; no population confidence interval"
+  }
+]

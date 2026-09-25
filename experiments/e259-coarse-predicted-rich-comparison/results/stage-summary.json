@@ -1,0 +1,113 @@
+{
+  "utc": "2026-09-22T04:48:36.030459+00:00",
+  "operation": "D037:T016:frozen-CPR-comparison",
+  "status": "complete_evaluable",
+  "actual_predictive_fits": 39,
+  "auxiliary_fits": 3,
+  "downstream_fits": 36,
+  "optional_refits": 0,
+  "candidate_count": 36,
+  "failed_candidates": [],
+  "unattempted_fit_ids": [],
+  "selected": {
+    "breakout-C": {
+      "status": "evaluable",
+      "selected": "hgb-leaf7-l21",
+      "selection_scores": {
+        "logistic-C0.1": 0.4264939351099134,
+        "logistic-C1": 0.5240818535024598,
+        "hgb-leaf7-l21": 0.321190648532915,
+        "hgb-leaf7-l20": 0.32717235740554007,
+        "hgb-leaf15-l21": 0.3325956813001687,
+        "hgb-leaf15-l20": 0.3461892453691487
+      },
+      "rule": "Full frozen menu required; minimum April half-Brier; exact ties menu order",
+      "selection_rows": 569,
+      "refit": false
+    },
+    "breakout-P": {
+      "status": "evaluable",
+      "selected": "hgb-leaf7-l21",
+      "selection_scores": {
+        "logistic-C0.1": 0.42419865201867984,
+        "logistic-C1": 0.5181443351485021,
+        "hgb-leaf7-l21": 0.31549244228629225,
+        "hgb-leaf7-l20": 0.32153728621046385,
+        "hgb-leaf15-l21": 0.33011220864630414,
+        "hgb-leaf15-l20": 0.3435621948017638
+      },
+      "rule": "Full frozen menu required; minimum April half-Brier; exact ties menu order",
+      "selection_rows": 569,
+      "refit": false
+    },
+    "breakout-R": {
+      "status": "evaluable",
+      "selected": "hgb-leaf7-l21",
+      "selection_scores": {
+        "logistic-C0.1": 0.4669577160223622,
+        "logistic-C1": 0.5000032157689732,
+        "hgb-leaf7-l21": 0.31412415380753383,
+        "hgb-leaf7-l20": 0.3149186409314898,
+        "hgb-leaf15-l21": 0.31874805985446825,
+        "hgb-leaf15-l20": 0.33736657150496974
+      },
+      "rule": "Full frozen menu required; minimum April half-Brier; exact ties menu order",
+      "selection_rows": 569,
+      "refit": false
+    },
+    "rebound-C": {
+      "status": "evaluable",
+      "selected": "hgb-leaf7-l21",
+      "selection_scores": {
+        "logistic-C0.1": 0.3999837553954249,
+        "logistic-C1": 0.4927578233476507,
+        "hgb-leaf7-l21": 0.3327127621286384,
+        "hgb-leaf7-l20": 0.3374314368075024,
+        "hgb-leaf15-l21": 0.3473393088197261,
+        "hgb-leaf15-l20": 0.36282746019182327
+      },
+      "rule": "Full frozen menu required; minimum April half-Brier; exact ties menu order",
+      "selection_rows": 475,
+      "refit": false
+    },
+    "rebound-P": {
+      "status": "evaluable",
+      "selected": "hgb-leaf7-l21",
+      "selection_scores": {
+        "logistic-C0.1": 0.3996099761684965,
+        "logistic-C1": 0.4917084200238062,
+        "hgb-leaf7-l21": 0.3295158785766671,
+        "hgb-leaf7-l20": 0.3387831683821315,
+        "hgb-leaf15-l21": 0.34750570572881895,
+        "hgb-leaf15-l20": 0.3643800665600454
+      },
+      "rule": "Full frozen menu required; minimum April half-Brier; exact ties menu order",
+      "selection_rows": 475,
+      "refit": false
+    },
+    "rebound-R": {
+      "status": "evaluable",
+      "selected": "hgb-leaf7-l20",
+      "selection_scores": {
+        "logistic-C0.1": 0.4177336917304971,
+        "logistic-C1": 0.4424945058085129,
+        "hgb-leaf7-l21": 0.32173853010251463,
+        "hgb-leaf7-l20": 0.32001055143210494,
+        "hgb-leaf15-l21": 0.3307954480925745,
+        "hgb-leaf15-l20": 0.3411779038598374
+      },
+      "rule": "Full frozen menu required; minimum April half-Brier; exact ties menu order",
+      "selection_rows": 475,
+      "refit": false
+    }
+  },
+  "required_embedding_checks": 12,
+  "all_executed_embeddings_pass": true,
+  "cohort_rows": 4160,
+  "matched_downstream_rows": 3724,
+  "source_inputs_unchanged": true,
+  "scientific_acceptance": "pending independent review",
+  "no_new_market_data": true,
+  "no_confidence_intervals": true,
+  "no_profit_or_original_goal_closure_claim": true
+}

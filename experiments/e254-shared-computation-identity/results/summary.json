@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source_state_revision": 187,
+  "experiment_ids": [
+    "E-254"
+  ],
+  "execution_statuses": [
+    "completed"
+  ],
+  "assessments": [
+    "valid_in_declared_exact_scope"
+  ],
+  "headline_result": "The direct and restoration compilers were exactly identical in the declared scope.",
+  "result_records": [
+    {
+      "result_id": "R-022",
+      "source_task_id": "T-012",
+      "experiment_id": "E-254",
+      "revision": 1,
+      "status": "accepted_in_scope",
+      "assessment": "valid_candidate_specific_identity",
+      "execution_status": "completed",
+      "reported_at": "2026-09-21T23:17:51.345674+00:00",
+      "evidence_manifest_sha256": "1d2fed44d3847e45e2e2016c6532231cbb086cbf560e23017f94a7df01e73697",
+      "review_ids": [
+        "RV-020"
+      ],
+      "summary": "Author reports exact direct/restoration compiler identity for a fixed retrospective monotone robust-loss candidate; scientific acceptance pending.",
+      "decision_id": "D-032",
+      "accepted_at": "2026-09-22T00:20:20.196509+00:00"
+    }
+  ]
+}

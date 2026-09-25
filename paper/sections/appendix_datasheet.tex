@@ -1,0 +1,42 @@
+\section{Datasheet for the released programme}
+\label{app:datasheet}
+
+We summarize the released artifacts in the datasheet style, so a reader can judge fitness for
+reuse before touching the code.
+
+\paragraph{Motivation.} The programme exists to test, as controlled interventions on real
+market data, whether more granular or more accurately reconstructed order-book information
+improves decisions. It was built to keep scientific status honest: negatives, controlled
+mechanisms, inconclusive runs, and blocked endpoints are all represented rather than filtered
+to positive findings.
+
+\paragraph{Composition.} The release contains thirty curated experiment packages
+(Table~\ref{tab:programme}) covering three real-data studies (Q16 reconstruction, Q17
+forecast-to-decision, Q18 sufficiency factorial), controlled simulator mechanisms,
+breakout/rebound cohorts, temporal-persistence checks, and source-and-schema certification.
+Each package holds a question statement, a method description, compact machine-readable
+results, selected figures, a provenance record, and a scientific-status label. Numeric results
+in this paper are staged under \texttt{experiments/results/} and every table is generated
+directly from those files.
+
+\paragraph{Collection process.} Market observations were acquired from Hyperliquid
+perpetual-futures feeds under the provider's terms. Native on-change best-bid/offer data back
+Q17. Sampled-L2 receipt-clock snapshots back Q18. Certified BTC breakout and rebound cohorts
+back the Q16 reconstruction diagnostic. Every experiment is admitted only after a
+source-and-schema audit certifies event ordering and receipt timing.
+
+\paragraph{Preprocessing and labeling.} Features and normalization are fit on training portions
+only and frozen before any test date is scored. Targets are past-only definitions of
+short-horizon moves or fill/adverse/no-move outcomes. No test-date information enters feature
+construction, and no per-view retuning is permitted.
+
+\paragraph{Distribution and licensing.} Code is released under a permissive license. Raw market
+dumps and event-level derivatives are excluded under the provider's internal-analysis terms and
+represented by checksums and acquisition instructions. Each package ships a license-clean smoke
+fixture so its entry point runs without the restricted data. No committed path assumes access
+to the original development machine, and secrets remain in ignored local configuration.
+
+\paragraph{Maintenance and known gaps.} The one blocked endpoint, native-FIFO count
+tightening on a fully admitted order-lifecycle cohort, is documented with its exact public
+source (a $195.3$ GB December 2025 Level-4 Hyperliquid archive) and a bounded washout audit, so
+it can be completed by a future user. It is labeled blocked, not done.

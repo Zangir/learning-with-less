@@ -1,0 +1,730 @@
+{
+  "schema_version": 1,
+  "curated_at": "2026-09-25",
+  "integration_branch": "feat/curated-experiments",
+  "scope": "Executable source, tests, compact configuration, and entry points curated from immutable historical branches and local artifact exports. Generated findings and narrative artifacts are outside this manifest.",
+  "policy": {
+    "historical_branches_merged": false,
+    "generated_results_copied": false,
+    "absolute_machine_paths_retained": false,
+    "raw_or_private_data_copied": false,
+    "licenses": "No LICENSE, COPYING, or NOTICE files existed in the inspected historical source branches. No code license was invented. Any dataset license statement in acquisition metadata applies to that dataset, not automatically to the code."
+  },
+  "shared_source": [
+    {
+      "path": "src/drc_lob/data_certification",
+      "consumer_packages": [
+        "experiments/e200-event-clock",
+        "experiments/e201-initial-state",
+        "experiments/e202-day-blocks-budget",
+        "experiments/e203-observation-contract",
+        "experiments/e204-label-execution-feasibility"
+      ],
+      "source": {
+        "branch": "feat/t008-data-certification",
+        "commit": "a8d6237d28f37a3b00d687585926eaf60e242aa2",
+        "source_roots": [
+          "t008",
+          "t008_r2",
+          "t008_r3",
+          "t008_r4"
+        ]
+      },
+      "reason": "The certification implementation is shared once because these packages consume the same parsing, clock, contract, and source-verification machinery.",
+      "curated_tree": {
+        "file_count": 91,
+        "sha256": "37751d530d1ed72258c26fd7e7587b7c31434b27a36cc3c25e87f01abf9ecf05"
+      }
+    }
+  ],
+  "packages": [
+    {
+      "package": "experiments/e001-btc-data-audit",
+      "experiment_ids": [
+        "E001"
+      ],
+      "source": {
+        "kind": "local-artifact-export",
+        "task": "T-001",
+        "source_root": "research-artifacts/drc-lob/T-001"
+      },
+      "curated_components": [
+        "artifact Python sources",
+        "contract tests"
+      ],
+      "curated_tree": {
+        "file_count": 9,
+        "sha256": "a041b7c52ec207ceb26c13d8f6294e863d8e7075339aa6a1973f57428838505a"
+      }
+    },
+    {
+      "package": "experiments/e002-clock-anchor-feasibility",
+      "experiment_ids": [
+        "E002"
+      ],
+      "source": {
+        "kind": "local-artifact-export",
+        "task": "T-006",
+        "source_root": "research-artifacts/drc-lob/T-006"
+      },
+      "curated_components": [
+        "artifact Python sources",
+        "contract tests"
+      ],
+      "curated_tree": {
+        "file_count": 5,
+        "sha256": "d8462f1b6246db65bd78d34b903910b4b0693c9b9dc7908d8459867a55148fa2"
+      }
+    },
+    {
+      "package": "experiments/e016-q16-real-data",
+      "experiment_ids": [
+        "E016",
+        "E266"
+      ],
+      "source": {
+        "branch": "feat/t019-q16-empirical",
+        "commit": "1162461281c79599cc7fe6ffea4d1ec71f177cdd",
+        "source_root": "q16_transfer"
+      },
+      "curated_components": [
+        "q16_transfer implementation",
+        "portable tests",
+        "frozen small configuration"
+      ],
+      "curated_tree": {
+        "file_count": 39,
+        "sha256": "7374939421a1c7ba0b233e92901e0db3fc7e4bad587bc6edac845d75233db75d"
+      }
+    },
+    {
+      "package": "experiments/e017-q17-real-data",
+      "experiment_ids": [
+        "E017",
+        "E267"
+      ],
+      "source": [
+        {
+          "branch": "feat/t010-q17-hyperliquid",
+          "commit": "217dcedc98b248641a74f0c301cc24c4629f0cb7",
+          "source_root": "q17_transfer"
+        },
+        {
+          "branch": "feat/q18-hyperliquid-adapter",
+          "commit": "faa8aa47106dd7607fdf35e8a8cc7109f8764fe1",
+          "source_root": "completion",
+          "selection": [
+            "q17_receipt.py",
+            "q17_runs.py",
+            "receipt_features.py",
+            "runtime.py",
+            "q18_runs.py helper"
+          ]
+        }
+      ],
+      "curated_components": [
+        "Q17 transfer implementation",
+        "receipt/completion implementation",
+        "tests",
+        "frozen small configuration"
+      ],
+      "curated_tree": {
+        "file_count": 33,
+        "sha256": "0294d8d7fd87d6a801ada0796428bff06263df262cfe0f28ac7f6b438b3dfafb"
+      }
+    },
+    {
+      "package": "experiments/e018-q18-real-data",
+      "experiment_ids": [
+        "E018",
+        "E268"
+      ],
+      "source": {
+        "branch": "feat/q18-hyperliquid-adapter",
+        "commit": "faa8aa47106dd7607fdf35e8a8cc7109f8764fe1",
+        "source_roots": [
+          "q18_adapter",
+          "completion",
+          "q17_transfer dependency"
+        ]
+      },
+      "curated_components": [
+        "Q18 adapter",
+        "completion implementation",
+        "Q17 dependency closure",
+        "tests",
+        "frozen small configuration"
+      ],
+      "curated_tree": {
+        "file_count": 37,
+        "sha256": "93310872493d61943d9b2dfcbe6c5af3269ff22409d1d8fedfaa9ca6a70feda9"
+      }
+    },
+    {
+      "package": "experiments/e205-simulator-mechanism-validation",
+      "experiment_ids": [
+        "E205"
+      ],
+      "source": {
+        "branch": "feat/t012-mechanism",
+        "commit": "f48ff2d6828d3573b226764cc1af0b62f594bf3e",
+        "source_root": "r5"
+      },
+      "curated_components": [
+        "T012 r5 executable source",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 4,
+        "sha256": "8c047ef720b92357ec36212d341552323c625eb22587f0974ed243f66d265923"
+      }
+    },
+    {
+      "package": "experiments/e210-controlled-action-ambiguity",
+      "experiment_ids": [
+        "E210"
+      ],
+      "source": {
+        "branch": "feat/t012-mechanism",
+        "commit": "f48ff2d6828d3573b226764cc1af0b62f594bf3e",
+        "source_root": "r2"
+      },
+      "curated_components": [
+        "T012 r2 executable source",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 4,
+        "sha256": "46e178b06bb48cd5c0677f7f15d9939799c080b5a10ad5c105404636529e2695"
+      }
+    },
+    {
+      "package": "experiments/e253-breakout-rebound-protocol",
+      "experiment_ids": [
+        "E253"
+      ],
+      "source": {
+        "branch": "feat/t016-fixed-persistence",
+        "commit": "d3b48b7906284fe6261e5693a0a227aa644fa166",
+        "primary_stage": "p0",
+        "dependency_closure": [
+          "p0"
+        ]
+      },
+      "curated_components": [
+        "immutable T016 stage dependency closure",
+        "historical tests where present",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 7,
+        "sha256": "dafd4f202e723de2d03349e41a17fb8fd3a4528081e863b9e915d51bc5141808"
+      }
+    },
+    {
+      "package": "experiments/e254-shared-computation-identity",
+      "experiment_ids": [
+        "E254"
+      ],
+      "source": {
+        "branch": "feat/t012-mechanism",
+        "commit": "f48ff2d6828d3573b226764cc1af0b62f594bf3e",
+        "source_root": "r4"
+      },
+      "curated_components": [
+        "T012 r4 executable source",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 3,
+        "sha256": "faafc0382021bb17c85db86e297bdbeae67d69e2f193337b508b038d035f8d93"
+      }
+    },
+    {
+      "package": "experiments/e255-breakout-rebound-extraction",
+      "experiment_ids": [
+        "E255"
+      ],
+      "source": {
+        "branch": "feat/t016-fixed-persistence",
+        "commit": "d3b48b7906284fe6261e5693a0a227aa644fa166",
+        "primary_stage": "p1",
+        "dependency_closure": [
+          "p0",
+          "p1"
+        ]
+      },
+      "curated_components": [
+        "immutable T016 stage dependency closure",
+        "historical tests where present",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 13,
+        "sha256": "3bdc5a0287442212529f70c6012ad697da5f7a9872a10e1c99e120bbfdaf470c"
+      }
+    },
+    {
+      "package": "experiments/e256-restricted-simulator",
+      "experiment_ids": [
+        "E256"
+      ],
+      "source": {
+        "branch": "feat/t012-restricted-simulator",
+        "commit": "9b61af0592104876e8a2d26ac8ae2787282d4241",
+        "source_root": "r6"
+      },
+      "curated_components": [
+        "T012 r6 executable source",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 9,
+        "sha256": "2f85ea64e95c1aa2a959c5aed75d157cbde8d50b763010b960b1bdaca8d2cf7e"
+      }
+    },
+    {
+      "package": "experiments/e257-btc-development-cohort",
+      "experiment_ids": [
+        "E257"
+      ],
+      "source": {
+        "branch": "feat/t016-fixed-persistence",
+        "commit": "d3b48b7906284fe6261e5693a0a227aa644fa166",
+        "primary_stage": "p1",
+        "dependency_closure": [
+          "p0",
+          "p1"
+        ]
+      },
+      "curated_components": [
+        "immutable T016 stage dependency closure",
+        "historical tests where present",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 13,
+        "sha256": "86e463d8070d8ae988384e0f918a31805a917a630257a22563a8d160f0fb98c8"
+      }
+    },
+    {
+      "package": "experiments/e258-controlled-fill-prediction",
+      "experiment_ids": [
+        "E258"
+      ],
+      "source": {
+        "branch": "feat/t012-controlled-fill-study",
+        "commit": "2afe44f809e6c17bb40069b1860995b891901f66",
+        "source_root": "r7"
+      },
+      "curated_components": [
+        "T012 r7 executable source",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 11,
+        "sha256": "e38fdd005b4894adb0cc4b820e39b89f0cd5fe0f41f3330d64fdceb9d627d32d"
+      }
+    },
+    {
+      "package": "experiments/e259-coarse-predicted-rich-comparison",
+      "experiment_ids": [
+        "E259"
+      ],
+      "source": {
+        "branch": "feat/t016-fixed-persistence",
+        "commit": "d3b48b7906284fe6261e5693a0a227aa644fa166",
+        "primary_stage": "p2",
+        "dependency_closure": [
+          "p0",
+          "p1",
+          "p2"
+        ]
+      },
+      "curated_components": [
+        "immutable T016 stage dependency closure",
+        "historical tests where present",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 24,
+        "sha256": "234805d37e4f848104b85c4bf1214c7f0407950380ec1336ca15f83c9d3b9fca"
+      }
+    },
+    {
+      "package": "experiments/e260-rich-label-identifiability",
+      "experiment_ids": [
+        "E260"
+      ],
+      "source": {
+        "branch": "feat/t012-shift-label-novelty",
+        "commit": "e1b65d48850189c47bb7fa241303a760a9d7a989",
+        "source_root": "r8"
+      },
+      "curated_components": [
+        "T012 r8 executable source",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 4,
+        "sha256": "b5079726c336cd4274863009dc49e20f40cd1803e2ed20b92d8a98145e42011a"
+      }
+    },
+    {
+      "package": "experiments/e261-temporal-evaluation",
+      "experiment_ids": [
+        "E261"
+      ],
+      "source": {
+        "branch": "feat/t016-fixed-persistence",
+        "commit": "d3b48b7906284fe6261e5693a0a227aa644fa166",
+        "primary_stage": "p3",
+        "dependency_closure": [
+          "p0",
+          "p1",
+          "p2",
+          "p3"
+        ]
+      },
+      "curated_components": [
+        "immutable T016 stage dependency closure",
+        "historical tests where present",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 30,
+        "sha256": "73cd110e3d483533151448518652d07f809e1fa5610cd3f8d24c774dade197a0"
+      }
+    },
+    {
+      "package": "experiments/e262-participant-checkpoint-cancelled",
+      "experiment_ids": [
+        "E262"
+      ],
+      "source": null,
+      "curated_components": [],
+      "implementation": false,
+      "reason": "The experiment is cancelled; no implementation was invented.",
+      "curated_tree": {
+        "file_count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "package": "experiments/e263-contribution-triage",
+      "experiment_ids": [
+        "E263"
+      ],
+      "source": {
+        "branch": "feat/t012-contribution-triage",
+        "commit": "797ffe1152076f66bf2dee39d94c15e285526770",
+        "source_root": "r9"
+      },
+      "curated_components": [
+        "T012 r9 executable source",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 5,
+        "sha256": "d3e558023238a0b38d4736170e484c07f9eafd89b3fcbd3b99862f19b8eef573"
+      }
+    },
+    {
+      "package": "experiments/e264-fixed-output-diagnosis",
+      "experiment_ids": [
+        "E264"
+      ],
+      "source": {
+        "branch": "feat/t016-fixed-persistence",
+        "commit": "d3b48b7906284fe6261e5693a0a227aa644fa166",
+        "primary_stage": "p4",
+        "dependency_closure": [
+          "p0",
+          "p1",
+          "p2",
+          "p3",
+          "p4"
+        ]
+      },
+      "curated_components": [
+        "immutable T016 stage dependency closure",
+        "historical tests where present",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 38,
+        "sha256": "90970e802020a5c7bcfdf58cbf636148dd0f531664105ac42d1be1c1baf86ac1"
+      }
+    },
+    {
+      "package": "experiments/e265-hyperliquid-source-recovery",
+      "experiment_ids": [
+        "E265"
+      ],
+      "source": {
+        "branch": "feat/t018-source-recovery",
+        "commit": "e638930f2fde8f5fd9b3aec264237ee44261507f",
+        "source_root": "source_recovery"
+      },
+      "curated_components": [
+        "source acquisition and verification implementation",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 17,
+        "sha256": "f228c7f946eb197aa4bb36637b23b457070550227d8f376fda81ac22822bb4d9"
+      }
+    },
+    {
+      "package": "experiments/e269-persistence-preparation",
+      "experiment_ids": [
+        "E269"
+      ],
+      "source": {
+        "branch": "feat/t016-fixed-persistence",
+        "commit": "d3b48b7906284fe6261e5693a0a227aa644fa166",
+        "primary_stage": "p5",
+        "dependency_closure": [
+          "p0",
+          "p1",
+          "p2",
+          "p3",
+          "p4",
+          "p5"
+        ]
+      },
+      "curated_components": [
+        "immutable T016 stage dependency closure",
+        "historical tests where present",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 46,
+        "sha256": "8b1b477beb9fb8ab88cd4a8dd82aa7ed762c17c6a0e6b39f531a6ac85d4bff9e"
+      }
+    },
+    {
+      "package": "experiments/e270-btc-persistence-source",
+      "experiment_ids": [
+        "E270"
+      ],
+      "source": {
+        "branch": "feat/t018-source-recovery",
+        "commit": "e638930f2fde8f5fd9b3aec264237ee44261507f",
+        "source_root": "source_recovery",
+        "selection": [
+          "settings.py",
+          "single_date_source.py",
+          "export_native_bbo.py",
+          "verify_single_date.py",
+          "seal_single_date.py",
+          "q18_later_source.py"
+        ]
+      },
+      "curated_components": [
+        "single-date source recovery subset",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 8,
+        "sha256": "3ace238098275803706d30630132cac321f48e62240a1ce1e54c4b6858ef4922"
+      }
+    },
+    {
+      "package": "experiments/e271-fixed-model-persistence",
+      "experiment_ids": [
+        "E271"
+      ],
+      "source": {
+        "branch": "feat/t016-fixed-persistence",
+        "commit": "d3b48b7906284fe6261e5693a0a227aa644fa166",
+        "primary_stage": "p5",
+        "dependency_closure": [
+          "p0",
+          "p1",
+          "p2",
+          "p3",
+          "p4",
+          "p5"
+        ]
+      },
+      "curated_components": [
+        "immutable T016 stage dependency closure",
+        "historical tests where present",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 46,
+        "sha256": "040207d8c935e7759f63a9e29963d3b1e37184f8544aeb3be6e560f43a40b37d"
+      }
+    },
+    {
+      "package": "experiments/e272-information-value-design",
+      "experiment_ids": [
+        "E272"
+      ],
+      "source": {
+        "branch": "feat/t012-information-value-design",
+        "commit": "521ef160c290c0ffdf0c3fc21e28ee257c391943",
+        "source_root": "r10"
+      },
+      "curated_components": [
+        "T012 r10 executable source",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 5,
+        "sha256": "5ae9130d67a1224df804900b88453a98b75ac20d69157895da3436088b68a03d"
+      }
+    },
+    {
+      "package": "experiments/e273-book-washout",
+      "experiment_ids": [
+        "E273"
+      ],
+      "source": {
+        "branch": "feat/t023-book-washout-mini",
+        "commit": "6e3f98c33272ace1cbbbee6f0b046b7d0b318d77",
+        "source_root": "code"
+      },
+      "curated_components": [
+        "washout replay and plotting implementation",
+        "tests",
+        "dependency pins",
+        "package entry point"
+      ],
+      "curated_tree": {
+        "file_count": 10,
+        "sha256": "c95de228a29cd90c9459b2edf8898bc63048e913afe8ab23bbdb1b68763dd7fd"
+      }
+    }
+  ],
+  "curation_notes": [
+    "T016 downstream packages contain their exact historical stage dependency closure so top-level imports remain truthful without rewriting the experiment logic.",
+    "Q18 includes the historical Q17 transfer dependency used by its completion implementation.",
+    "Q17 and Q18 completion entry points require a user-supplied sanitized, hash-bound config/run-plan.json and corresponding package-local runtime cache; private or machine-bound historical plans were intentionally excluded.",
+    "Operational capture scripts may still require external binaries, credentials, network access, or frozen input files described by their package documentation.",
+    "Package-local runtime directories replace retained machine-specific output and input paths."
+  ],
+  "excluded_host_only_helpers": [
+    "t008_r2/code/finalize_r2.py",
+    "t008_r2/code/december_proof.py",
+    "t008_r2/code/render_report.py",
+    "t008_r3/code/finalize_r3.py",
+    "t008_r3/code/render_r3_report.py",
+    "t008_r3/code/participant_finalize.py",
+    "t008_r4/code/finalize_r4.py",
+    "t008_r4/code/delta_holdings_probe.py",
+    "t008_r4/code/build_assessment.py",
+    "t008_r4/code/source_publication.py",
+    "t008_r4/code/verify_prior.py",
+    "t008_r4/participant-premises/build_matrix.py",
+    "T012 stage render_report.py helpers",
+    "t008_r2/code/compile_report.sh"
+  ],
+  "portability_changes": [
+    "Converted retained machine-specific input and output paths to paths relative to each package or repository runtime directory.",
+    "Added Windows-safe fallbacks around POSIX-only resource imports where exercised by portable certification and washout code.",
+    "Replaced a machine-specific Node.js executable path with the executable name node.",
+    "Added test import shims and minimal package __init__.py files without changing experiment algorithms.",
+    "Moved the T008 clock guard test output to a temporary directory so verification does not generate tracked evidence."
+  ],
+  "verification": [
+    {
+      "check": "Python AST parse",
+      "status": "passed",
+      "result": "496 Python files parsed"
+    },
+    {
+      "check": "machine-absolute-path scan",
+      "status": "passed",
+      "result": "0 retained host-specific absolute paths in curated source, tests, configuration, entry points, or this manifest"
+    },
+    {
+      "check": "Q16 portable subset",
+      "status": "passed",
+      "result": "41 passed, 14 subtests passed in 0.20s",
+      "command": "pytest -q tests/test_adapter.py tests/test_r2_selector.py"
+    },
+    {
+      "check": "Q16 full suite",
+      "status": "environment-blocked",
+      "result": "collection requires z3-solver and POSIX resource support not present in the current Windows environment"
+    },
+    {
+      "check": "Q17 portable suite excluding pinned-runtime test",
+      "status": "passed",
+      "result": "85 passed, 18 skipped, 64 subtests passed in 4.46s"
+    },
+    {
+      "check": "Q17 full suite",
+      "status": "environment-mismatch",
+      "result": "85 passed, 18 skipped, 11 failed because the historical runtime pin is intentionally enforced"
+    },
+    {
+      "check": "Q18 suite",
+      "status": "passed",
+      "result": "49 passed, 9 skipped, 11 subtests passed in 9.30s"
+    },
+    {
+      "check": "T016 p0",
+      "status": "passed",
+      "result": "32 passed, 8 subtests passed in 0.07s"
+    },
+    {
+      "check": "T016 p1",
+      "status": "passed",
+      "result": "23 passed, 32 subtests passed in 0.18s"
+    },
+    {
+      "check": "T016 p2 comparison subset",
+      "status": "passed",
+      "result": "36 passed, 39 subtests passed in 1.24s"
+    },
+    {
+      "check": "T016 p2 full suite",
+      "status": "environment-mismatch",
+      "result": "6 failed because historical scikit-learn==1.7.2 is not active"
+    },
+    {
+      "check": "T016 p3 evaluation subset",
+      "status": "passed",
+      "result": "4 passed in 1.19s"
+    },
+    {
+      "check": "T016 p3 full suite",
+      "status": "artifact-blocked",
+      "result": "10 failed because intentionally excluded large frozen model artifacts are absent"
+    },
+    {
+      "check": "T016 p4",
+      "status": "passed",
+      "result": "25 passed, 19 subtests passed in 10.30s"
+    },
+    {
+      "check": "T016 p5",
+      "status": "passed",
+      "result": "4 passed in 0.14s"
+    },
+    {
+      "check": "T001 and T006 artifact tests",
+      "status": "passed",
+      "result": "9 passed in 0.12s"
+    },
+    {
+      "check": "T008 semantic clock guards",
+      "status": "passed",
+      "result": "6 cases passed"
+    },
+    {
+      "check": "T008 live contract",
+      "status": "partial",
+      "result": "4 passed; 2 setup errors because the historical branch did not track affirmative_shared_contract.json"
+    },
+    {
+      "check": "T023 washout tests",
+      "status": "environment-blocked",
+      "result": "collection requires pyroaring, pinned in package config but not installed in the current Windows environment"
+    }
+  ]
+}

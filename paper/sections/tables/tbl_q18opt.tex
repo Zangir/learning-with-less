@@ -1,0 +1,15 @@
+\begin{table}[h]\centering
+\caption{Q18 optimizer diagnostic: own-clock loss at depth 1 and depth 5 by asset and neural
+budget. A positive shallow-minus-deep value means shallow inputs fit better. Source:
+\texttt{experiments/results/q18\_figure\_data.json}.}
+\label{tab:q18opt}
+\begin{tabular}{lrrrr}
+\toprule
+asset & budget & depth-1 loss & depth-5 loss & shallow $-$ deep \\
+\midrule
+BTC & 60 & 0.307662 & 0.314045 & -0.006383 \\
+BTC & 600 & 0.307170 & 0.316755 & -0.009585 \\
+ETH & 60 & 0.291022 & 0.277982 & 0.013041 \\
+ETH & 600 & 0.289594 & 0.281961 & 0.007633 \\
+\bottomrule
+\end{tabular}\end{table}

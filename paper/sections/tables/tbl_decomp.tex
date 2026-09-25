@@ -1,0 +1,76 @@
+\begin{longtable}{llllrrr}
+\caption{Q16 loss-gap decomposition into a class-mixture term and a within-class term, by
+family, contrast, and metric. The mixture term localizes the earlier apparent depth
+advantage. Source: \texttt{experiments/results/e264\_decompositions.csv}.}
+\label{tab:decomp}\\
+\toprule
+family & contrast & metric & status & $\Delta$ & mix & within \\
+\midrule
+\endfirsthead
+\toprule
+family & contrast & metric & status & $\Delta$ & mix & within \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+breakout & equal\_day & C & evaluable & 0.006682 & 0.020763 & -0.014081 \\
+breakout & equal\_day & P & evaluable & 0.013920 & 0.021523 & -0.007603 \\
+breakout & equal\_day & R & evaluable & 0.024499 & 0.022805 & 0.001694 \\
+breakout & equal\_day & onehot-F & evaluable & -0.021897 & -0.021897 & 0.000000 \\
+breakout & equal\_day & onehot-A & evaluable & -0.022745 & -0.022745 & 0.000000 \\
+breakout & equal\_day & onehot-N & evaluable & 0.044642 & 0.044642 & 0.000000 \\
+breakout & equal\_day & uniform & evaluable & -0.000000 & 0.000000 & -0.000000 \\
+breakout & equal\_day & train-frequency & evaluable & 0.013284 & 0.013284 & 0.000000 \\
+breakout & equal\_day & P-C & evaluable & 0.007238 & 0.000760 & 0.006478 \\
+breakout & equal\_day & R-C & evaluable & 0.017817 & 0.002042 & 0.015775 \\
+breakout & equal\_day & R-P & evaluable & 0.010579 & 0.001282 & 0.009297 \\
+breakout & equal\_day & C-frequency & evaluable & -0.006602 & 0.007479 & -0.014081 \\
+breakout & equal\_day & P-frequency & evaluable & 0.000636 & 0.008239 & -0.007603 \\
+breakout & equal\_day & R-frequency & evaluable & 0.011215 & 0.009521 & 0.001694 \\
+breakout & equal\_day & frequency-uniform & evaluable & 0.013284 & 0.013284 & 0.000000 \\
+breakout & pooled & C & evaluable & 0.023057 & 0.035486 & -0.012429 \\
+breakout & pooled & P & evaluable & 0.029897 & 0.036989 & -0.007092 \\
+breakout & pooled & R & evaluable & 0.042561 & 0.039458 & 0.003103 \\
+breakout & pooled & onehot-F & evaluable & -0.053973 & -0.053973 & 0.000000 \\
+breakout & pooled & onehot-A & evaluable & -0.030975 & -0.030975 & 0.000000 \\
+breakout & pooled & onehot-N & evaluable & 0.084948 & 0.084948 & 0.000000 \\
+breakout & pooled & uniform & evaluable & -0.000000 & 0.000000 & 0.000000 \\
+breakout & pooled & train-frequency & evaluable & 0.022671 & 0.022671 & -0.000000 \\
+breakout & pooled & P-C & evaluable & 0.006839 & 0.001503 & 0.005337 \\
+breakout & pooled & R-C & evaluable & 0.019504 & 0.003972 & 0.015532 \\
+breakout & pooled & R-P & evaluable & 0.012664 & 0.002469 & 0.010195 \\
+breakout & pooled & C-frequency & evaluable & 0.000386 & 0.012815 & -0.012429 \\
+breakout & pooled & P-frequency & evaluable & 0.007226 & 0.014318 & -0.007092 \\
+breakout & pooled & R-frequency & evaluable & 0.019890 & 0.016787 & 0.003103 \\
+breakout & pooled & frequency-uniform & evaluable & 0.022671 & 0.022671 & 0.000000 \\
+rebound & equal\_day & C & evaluable & 0.008829 & 0.008453 & 0.000375 \\
+rebound & equal\_day & P & evaluable & 0.008006 & 0.009437 & -0.001431 \\
+rebound & equal\_day & R & evaluable & 0.018077 & 0.014875 & 0.003202 \\
+rebound & equal\_day & onehot-F & evaluable & -0.016623 & -0.016623 & 0.000000 \\
+rebound & equal\_day & onehot-A & evaluable & -0.046166 & -0.046166 & 0.000000 \\
+rebound & equal\_day & onehot-N & evaluable & 0.062788 & 0.062788 & 0.000000 \\
+rebound & equal\_day & uniform & evaluable & 0.000000 & -0.000000 & -0.000000 \\
+rebound & equal\_day & train-frequency & evaluable & 0.006565 & 0.006565 & -0.000000 \\
+rebound & equal\_day & P-C & evaluable & -0.000823 & 0.000984 & -0.001806 \\
+rebound & equal\_day & R-C & evaluable & 0.009249 & 0.006422 & 0.002827 \\
+rebound & equal\_day & R-P & evaluable & 0.010071 & 0.005438 & 0.004633 \\
+rebound & equal\_day & C-frequency & evaluable & 0.002264 & 0.001888 & 0.000375 \\
+rebound & equal\_day & P-frequency & evaluable & 0.001441 & 0.002872 & -0.001431 \\
+rebound & equal\_day & R-frequency & evaluable & 0.011512 & 0.008310 & 0.003202 \\
+rebound & equal\_day & frequency-uniform & evaluable & 0.006565 & 0.006565 & -0.000000 \\
+rebound & pooled & C & evaluable & 0.014667 & 0.008656 & 0.006011 \\
+rebound & pooled & P & evaluable & 0.016578 & 0.010108 & 0.006470 \\
+rebound & pooled & R & evaluable & 0.021834 & 0.017754 & 0.004080 \\
+rebound & pooled & onehot-F & evaluable & -0.019597 & -0.019597 & 0.000000 \\
+rebound & pooled & onehot-A & evaluable & -0.075886 & -0.075886 & 0.000000 \\
+rebound & pooled & onehot-N & evaluable & 0.095482 & 0.095482 & 0.000000 \\
+rebound & pooled & uniform & evaluable & -0.000000 & 0.000000 & 0.000000 \\
+rebound & pooled & train-frequency & evaluable & 0.007775 & 0.007775 & -0.000000 \\
+rebound & pooled & P-C & evaluable & 0.001911 & 0.001452 & 0.000458 \\
+rebound & pooled & R-C & evaluable & 0.007166 & 0.009098 & -0.001931 \\
+rebound & pooled & R-P & evaluable & 0.005256 & 0.007646 & -0.002390 \\
+rebound & pooled & C-frequency & evaluable & 0.006892 & 0.000881 & 0.006011 \\
+rebound & pooled & P-frequency & evaluable & 0.008803 & 0.002333 & 0.006470 \\
+rebound & pooled & R-frequency & evaluable & 0.014058 & 0.009979 & 0.004080 \\
+rebound & pooled & frequency-uniform & evaluable & 0.007775 & 0.007775 & -0.000000 \\
+\end{longtable}
